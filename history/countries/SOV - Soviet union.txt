@@ -283,6 +283,10 @@ add_to_faction = TAN
 add_ideas = {
 	trotskyite_plot
 	home_of_revolution
+	SOV_nikolai_yezhov  ## Yezhov is in charge
+
+	#laws
+	limited_exports
 }
 
 create_country_leader = {

@@ -1,0 +1,12 @@
+leader_traits = {
+
+
+	SOV_secret_police_chief_0 = {
+		sprite = 13
+		random = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}
