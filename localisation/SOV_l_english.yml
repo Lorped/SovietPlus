@@ -1,2 +1,12 @@
 ﻿l_english:
  SOV_secret_police_chief_0:0 "Efficient Executioner"
+ SOV_finish_the_five_year_plan:0 "Complete the five-year plan"
+ SOV_finish_the_five_year_plan_desc:0 "The Union needs to increase its industrial capacity. The second five-year plan is essential for its development. We must complete it, whatever it takes."
+ SOV_strength_gosplan:0 "Strength the GOSPLAN"
+ SOV_strength_gosplan_desc:0 "The State Planning Committee of the USSR (Gosudarstvennyj komitet po Planirovaniju) is essential for planning our development"
+ SOV_review_gosplan:0 "Review the GOSPLAN"
+ SOV_review_gosplan_desc:0 "The State Planning Committee of the USSR (Gosudarstvennyj komitet po Planirovaniju) is filled with reformist bureaucrats. We must give much decision power to the Red Army officers"
+ SOV_focus_on_military_industry:0 "to do"
+ SOV_focus_on_military_industry_desc:0 "to do"
+ SOV_improve_infrastructure:0 "Improve our railroad network"
+ SOV_improve_infrastructure_desc:0 "The Union's infrastructures and raildroads are old. We must improve and modernize them in order to substain the industrialization effort"
