@@ -11,7 +11,7 @@ if = {
 
 set_research_slots = 3
 set_stability = 0.4      ## WAS 0.5
-set_war_support = 0.6    ## WAS 0.8
+set_war_support = 0.5    ## WAS 0.8
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -22,7 +22,7 @@ set_technology = {
 	tech_military_police = 1
 	tech_mountaineers = 1
 	motorised_infantry = 1
-	paratroopers = 1
+	## paratroopers = 1   ## No paratroopers
 	gw_artillery = 1
 	interwar_antiair = 1
 	gwtank = 1
