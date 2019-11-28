@@ -1,9 +1,96 @@
 ideas = {
 	country = {
-		militarized_schools = {
+
+		SOV_idea_2_5_year_plan = {
+			available = { has_defensive_war = no }
 
 			removal_cost = -1
 
+			allowed = {
+				always = no # Added via focus
+			}
+
+			research_bonus = {
+				industry = -0.4
+				electronics = -0.4
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = man_five_year_plan_industry
+
+			modifier = {
+				min_export = -0.25
+				production_speed_industrial_complex_factor = 0.10
+				production_speed_arms_factory_factor = 0.10
+				production_speed_synthetic_refinery_factor = 0.05
+				production_speed_bunker_factor = -0.25
+			}
+		}
+
+		SOV_idea_2_5_year_plan_CIC = {
+			available = { has_defensive_war = no }
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via focus
+			}
+
+			research_bonus = {
+				industry = -0.4
+				electronics = -0.4
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = man_five_year_plan_industry
+
+			modifier = {
+				min_export = -0.25
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_arms_factory_factor = 0.05
+				production_speed_synthetic_refinery_factor = 0.05
+				production_speed_bunker_factor = -0.25
+			}
+		}
+
+		SOV_idea_2_5_year_plan_MIL = {
+			available = { has_defensive_war = no }
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via focus
+			}
+
+			research_bonus = {
+				industry = -0.4
+				electronics = -0.4
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = man_five_year_plan_industry
+
+			modifier = {
+				min_export = -0.25
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.15
+				production_speed_synthetic_refinery_factor = 0.05
+				production_speed_bunker_factor = -0.25
+			}
+		}
+
+	
+		militarized_schools = {
+			removal_cost = -1
 			allowed = {
 				always = no # Added via focus
 			}
@@ -682,7 +769,6 @@ ideas = {
 			available =
 			{
 				NOT = { has_country_flag = purged_kalinin }
-				NOT = { has_country_flag = counter_purge }
 			}
 
 
@@ -692,7 +778,7 @@ ideas = {
 
 		SOV_lavrentiy_beria = {
 
-			picture = generic_army_europe_4
+			## picture = generic_army_europe_4
 
 			allowed = {
 				original_tag = SOV
@@ -704,9 +790,7 @@ ideas = {
 					tooltip =  SOV_beria_idea
 					has_country_flag = purge_2_group_a
 				}
-				NOT = {
-					has_country_flag = counter_purge
-				}
+
 			}
 
 			traits = { ideological_crusader }
@@ -744,7 +828,6 @@ ideas = {
 
 			available =
 			{
-				NOT = { has_country_flag = counter_purge }
 				NOT = { has_country_flag = purge_2_group_a }
 			}
 
@@ -770,7 +853,6 @@ ideas = {
 			available =
 			{
 				NOT = { has_country_flag = purged_khrushchev }
-				NOT = { has_country_flag = counter_purge }
 				if = {
 					limit = { has_dlc = "Man the Guns" }
 					NOT = { has_autonomy_state = autonomy_supervised_state }
@@ -1152,7 +1234,6 @@ ideas = {
 			}
 			available =
 			{
-				NOT = { has_country_flag = counter_purge }
 				custom_trigger_tooltip = {
 				tooltip = SOV_konev_civil_war
 					NOT = {
