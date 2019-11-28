@@ -1,3 +1,40 @@
 spriteTypes = {
 
+  spriteType = {
+    name = "GFX_idea_lavrentiy_beria"
+    texturefile = "gfx/ideas/idea_lavrentiy_beria.dds"
+  }
+
+  spriteType = {
+    name = "GFX_idea_five_year_plan"
+    texturefile = "gfx/ideas/SOV_five_years.dds"
+  }
+
+
+
+  spriteType = {
+		name = "GFX_sov_five_year_plan_IC_1"
+		texturefile = "gfx/interface/goals/SOV_five_year_plan_1.dds"
+	}
+
+  spriteType = {
+    name = "GFX_sov_five_year_plan_MIC_1"
+    texturefile = "gfx/interface/goals/SOV_five_year_plan_2.dds"
+  }
+
+  spriteType = {
+		name = "GFX_sov_five_year_plan_IC_2"
+		texturefile = "gfx/interface/goals/SOV_five_year_plan_3.dds"
+	}
+
+  spriteType = {
+    name = "GFX_sov_five_year_plan_MIC_2"
+    texturefile = "gfx/interface/goals/SOV_five_year_plan_4.dds"
+  }
+
+  spriteType = {
+    name = "GFX_sov_add_production_quota"
+    texturefile = "gfx/interface/goals/SOV_add_production_quota.dds"
+  }
+
  }
