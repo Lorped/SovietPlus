@@ -52,7 +52,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_strength_gosplan
-		icon = GFX_sov_five_year_plan_1
+		icon = GFX_sov_five_year_plan_IC_1
 		x = 4
 		y = 1
 		cost = 10
@@ -75,7 +75,7 @@ focus_tree = {
 	#Focus for review GOSPLAN
 	focus = {
 		id = SOV_review_gosplan
-		icon = GFX_goal_unknown
+		icon = GFX_sov_five_year_plan_MIC_1
 		x = 6
 		y = 1
 		cost = 10
@@ -200,7 +200,7 @@ focus_tree = {
 	#Focus for Focus on Heavy industry
 	focus = {
 		id = SOV_focus_on_heavy_industry
-		icon = GFX_goal_unknown
+		icon = GFX_sov_five_year_plan_IC_2
 		x = 4
 		y = 2
 		cost = 10
@@ -300,7 +300,7 @@ focus_tree = {
 	#Focus for focus on Military industry
 	focus = {
 		id = SOV_focus_on_military_industry
-		icon = GFX_goal_unknown
+		icon = GFX_sov_five_year_plan_MIC_2
 		x = 6
 		y = 2
 		cost = 10
@@ -597,7 +597,7 @@ focus_tree = {
 	#Focus for Add Production Quota
 	focus = {
 		id = SOV_add_production_quota
-		icon = GFX_goal_unknown
+		icon = GFX_sov_add_production_quota
 		x = 1
 		y = 2
 		cost = 10
