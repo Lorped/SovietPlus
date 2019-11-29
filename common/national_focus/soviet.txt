@@ -21,7 +21,7 @@ focus_tree = {
 	focus = {
 		id = SOV_finish_the_five_year_plan
 		icon = GFX_goal_generic_construct_civ_factory
-		x = 1
+		x = 0
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -340,7 +340,7 @@ focus_tree = {
 	focus = {
 		id = SOV_improve_infrastructure
 		icon = GFX_goal_generic_construct_infrastructure
-		x = 1
+		x = 0
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
@@ -513,7 +513,7 @@ focus_tree = {
 	focus = {
 		id = SOV_add_production_quota
 		icon = GFX_sov_add_production_quota
-		x = 1
+		x = 0
 		y = 2
 		cost = 10
 		available_if_capitulated = yes
@@ -526,18 +526,161 @@ focus_tree = {
 		}
 	}
 
-
-
-
-
-
-
-
-
-
-
-
-
+	#Focus for Transiberiana
+	focus = {
+		id = SOV_transsiberian
+		icon = GFX_goal_generic_soviet_construction
+		x = 2
+		y = 2
+		cost = 17.2
+		prerequisite = { focus = SOV_improve_infrastructure }
+		completion_reward = {
+			add_to_variable = { var = 5_year_plan_progress value = 5 }
+			custom_effect_tooltip = SOV_transsiberian_tt
+			hidden_effect = {
+			##	219 = { # Moscow
+			##		add_building_construction = {
+			##			type = infrastructure
+			##			level = 3
+			##			instant_build = yes
+			##		}
+			##	}
+				248 = { # Yaroslavl
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+				351 = { # Vologda
+					add_building_construction = {
+						type = infrastructure
+						level = 4
+						instant_build = yes
+					}
+				}
+				400 = { # Kirov
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+				398 = { # Perm
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+				573 = { # Zlatoust
+					add_building_construction = {
+						type = infrastructure
+						level = 4
+						instant_build = yes
+					}
+				}
+				653 = { # Sverdlovsk
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+				403 = { # Tyumen
+					add_building_construction = {
+						type = infrastructure
+						level = 4
+						instant_build = yes
+					}
+				}
+				571 = { # Omsk
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+				570 = { # Novosibirsk
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+				569 = { # Kemerovo
+					add_building_construction = {
+						type = infrastructure
+						level = 4
+						instant_build = yes
+					}
+				}
+				568 = { # Krasnoyarsk
+					add_building_construction = {
+						type = infrastructure
+						level = 4
+						instant_build = yes
+					}
+				}
+				567 = { # Bratsk
+					add_building_construction = {
+						type = infrastructure
+						level = 4
+						instant_build = yes
+					}
+				}
+				566 = { # Irkutsk
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+				564 = { # Ulan Ude
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+				563 = { # Chita
+					add_building_construction = {
+						type = infrastructure
+						level = 4
+						instant_build = yes
+					}
+				}
+				561 = { # Amur
+					add_building_construction = {
+						type = infrastructure
+						level = 4
+						instant_build = yes
+					}
+				}
+				657 = { # Biribidzhan
+					add_building_construction = {
+						type = infrastructure
+						level = 4
+						instant_build = yes
+					}
+				}
+				409 = { # Khabarovsk
+					add_building_construction = {
+						type = infrastructure
+						level = 4
+						instant_build = yes
+					}
+				}
+				408 = { # Vladivostok
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
 
 
 
