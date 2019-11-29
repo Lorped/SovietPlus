@@ -16,9 +16,18 @@
  SOV_focus_on_military_industry_desc:0 "The military industry must support the civil industry to guide the development of the Union."
  SOV_improve_infrastructure:0 "Improve our railroad network"
  SOV_improve_infrastructure_desc:0 "The Union's infrastructures and raildroads are old. We must improve and modernize them in order to substain the industrialization effort"
- SOV_add_production_quota:0 "Add production quota"
- SOV_add_production_quota_desc:0 "Add production quota desc"
+ SOV_add_production_quota:0 "Increase production quotas"
+ SOV_add_production_quota_desc:0 "The Five-Year Plan requires that the production quotas of basic resources must be incremented."
+
  SOV_5_year_plan_tt:0 "This enormous undertaking will increase the 5 year plan's rate of completion by §G5%§!"
+
+ SOV_5_year_plan_decisions:0 "The Five Year Plan - Production Quotas"
+ SOV_5_year_plan_2_tt:0 "This mission will be completed once you have §G100% progress§! through Decisions and Focuses"
+ SOV_5_year_plan_oil:0 "Increase Quotas for Petrochemical plants"
+ SOV_5_year_plan_steel:0 "Increase Quotas for Steel foundries"
+ SOV_5_year_plan_tungsten:0 "Increase Quotas for Tungsten mines"
+ SOV_5_year_plan_aluminium:0 "Increase Quotas for Aluminium production"
+ SOV_5_year_plan_chromium:0 "Increase Quotas for Rare Materials mines"
 
  soviet.118.t:0 "Stalin is happy"
  soviet.118.d:0 "The effort required to bring the Union to the same level as the Western capitalist powers has been immense. However, every Soviet citizen has contributed to this fundamental success. The full completion of this five-year plan is proof that the socialist model can bring social progress and the full development of our nation."
