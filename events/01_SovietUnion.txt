@@ -2,7 +2,7 @@
 # Soviet Events
 ###########################
 
-## add_namespace = soviet
+add_namespace = soviet
 
 country_event = {  ## Stalin is happy
 	id = soviet.118

@@ -22,7 +22,7 @@ ideas = {
 			picture = five_year_plan
 
 			modifier = {
-				min_export = -0.25
+				min_export = -0.20
 				production_speed_industrial_complex_factor = 0.10
 				production_speed_arms_factory_factor = 0.10
 				production_speed_synthetic_refinery_factor = 0.05
@@ -51,7 +51,7 @@ ideas = {
 			picture = five_year_plan
 
 			modifier = {
-				min_export = -0.25
+				min_export = -0.20
 				production_speed_industrial_complex_factor = 0.15
 				production_speed_arms_factory_factor = 0.05
 				production_speed_synthetic_refinery_factor = 0.05
@@ -80,7 +80,7 @@ ideas = {
 			picture = five_year_plan
 
 			modifier = {
-				min_export = -0.25
+				min_export = -0.20
 				production_speed_industrial_complex_factor = 0.05
 				production_speed_arms_factory_factor = 0.15
 				production_speed_synthetic_refinery_factor = 0.05
@@ -826,7 +826,7 @@ ideas = {
 			traits = { SOV_secret_police_chief_0 }
 
 			modifier = {
-				political_power_factor = 0.25
+				political_power_factor = 0.15
 				political_advisor_cost_factor = 0.2
 				army_chief_cost_factor = 0.2
 				foreign_subversive_activites = -0.4

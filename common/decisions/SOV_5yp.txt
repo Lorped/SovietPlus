@@ -68,7 +68,7 @@ SOV_5_year_plan_decisions = {
 		icon = steel
 
 		available = {
-			has_completed_focus = SOV_the_quotas_must_be_fulfilled
+			has_completed_focus = SOV_add_production_quota
 			any_owned_state = {
 				NOT = { has_state_flag = SOV_exhausted_resources }
 				has_resources_amount = {
@@ -132,7 +132,7 @@ SOV_5_year_plan_decisions = {
 		icon = tungsten
 
 		available = {
-			has_completed_focus = SOV_the_quotas_must_be_fulfilled
+			has_completed_focus = SOV_add_production_quota
 			any_owned_state = {
 				NOT = { has_state_flag = SOV_exhausted_resources }
 				has_resources_amount = {
@@ -196,7 +196,7 @@ SOV_5_year_plan_decisions = {
 		icon = aluminium
 
 		available = {
-			has_completed_focus = SOV_the_quotas_must_be_fulfilled
+			has_completed_focus = SOV_add_production_quota
 			any_owned_state = {
 				NOT = { has_state_flag = SOV_exhausted_resources }
 				has_resources_amount = {
@@ -259,7 +259,7 @@ SOV_5_year_plan_decisions = {
 		icon = chromium
 
 		available = {
-			has_completed_focus = SOV_the_quotas_must_be_fulfilled
+			has_completed_focus = SOV_add_production_quota
 			any_owned_state = {
 				NOT = { has_state_flag = SOV_exhausted_resources }
 				has_resources_amount = {
@@ -438,6 +438,8 @@ SOV_5_year_plan_decisions = {
 			}
 		}
 
+		custom_effect_tooltip = SOV_5_year_plan_2_tt
+
 		timeout_effect = {
 			remove_ideas = SOV_idea_2_5_year_plan
       remove_ideas = SOV_idea_2_5_year_plan_MIL
@@ -467,7 +469,7 @@ SOV_5_year_plan_decisions = {
         country_event = { days = 1 id = soviet.118 }
       }
 
- 			custom_effect_tooltip = SOV_5_year_plan_2_tt
+
 			set_variable = {
 			   var = 5_year_plan_progress
 			   value = 0

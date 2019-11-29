@@ -504,8 +504,9 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			add_to_variable = { var = 5_year_plan_progress value = 5 }
 		}
-		add_to_variable = { var = 5_year_plan_progress value = 5 }
+
 	}
 
 	#Focus for Add Production Quota
