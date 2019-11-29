@@ -771,25 +771,20 @@ ideas = {
 				NOT = { has_country_flag = purged_kalinin }
 			}
 
-
-
 			traits = { popular_figurehead }
 		}
 
 		lavrentiy_beria = {
 
-
 			allowed = {
 				original_tag = SOV
 			}
 
-			available =
-			{
+			available = {
 				custom_trigger_tooltip = {
 					tooltip =  SOV_beria_idea
 					has_country_flag = purge_2_group_a
 				}
-
 			}
 
 			traits = { ideological_crusader }
@@ -813,12 +808,10 @@ ideas = {
 			allowed = {
 				original_tag = SOV
 			}
-
 			traits = { captain_of_industry }
 		}
 
 		SOV_nikolai_yezhov = {
-
 			picture = generic_army_europe_2
 
 			allowed = {
@@ -845,7 +838,6 @@ ideas = {
 
 		nikita_khrushchev = {
 
-
 			allowed = {
 				original_tag = "SOV"
 			}
@@ -857,8 +849,6 @@ ideas = {
 					NOT = { has_autonomy_state = autonomy_supervised_state }
 				}
 			}
-
-
 
 			traits = { communist_revolutionary }
 
@@ -940,7 +930,6 @@ ideas = {
 
 	army_chief = {
 
-
 		semyon_timoshenko = {
 			#Also unit leader: 404
 
@@ -960,7 +949,6 @@ ideas = {
 					}
 				}
 			}
-
 
 
 			traits = { army_chief_reform_2 }
@@ -990,8 +978,6 @@ ideas = {
 				}
 			}
 
-
-
 			traits = { army_chief_drill_1 }
 
 			ai_will_do = {
@@ -1001,7 +987,6 @@ ideas = {
 
 		alexander_yegorov = {
 
-
 			allowed = {
 				original_tag = SOV
 			}
@@ -1009,7 +994,6 @@ ideas = {
 			{
 				NOT = { has_country_flag = purge_1_group_a }
 			}
-
 
 
 			# PURGED
@@ -1022,7 +1006,6 @@ ideas = {
 
 		vasily_blucher = {
 
-
 			allowed = {
 				original_tag = SOV
 
@@ -1031,8 +1014,6 @@ ideas = {
 			{
 				NOT = { has_country_flag = purge_1_group_a }
 			}
-
-
 
 			# PURGED
 			traits = { army_chief_maneuver_2 }
@@ -1042,21 +1023,18 @@ ideas = {
 			}
 		}
 	}
+
 	navy_chief = {
 
 		pyotr_smirnov = {
 
-
 			allowed = {
 				original_tag = SOV
-
 			}
 			available =
 			{
 				NOT = { has_country_flag = purge_1_group_a }
 			}
-
-
 
 			# PURGED
 			traits = { navy_chief_naval_aviation_1 }
@@ -1068,17 +1046,14 @@ ideas = {
 
 		mikhail_frinovsky = {
 
-
 			allowed = {
 				original_tag = SOV
-
 			}
+
 			available =
 			{
 				NOT = { has_country_flag = purge_1_group_a }
 			}
-
-
 
 			# PURGED
 			traits = { navy_chief_commerce_raiding_1 }
@@ -1090,17 +1065,13 @@ ideas = {
 
 		nikolay_kuznetsov = {
 
-
 			allowed = {
 				original_tag = SOV
-
 			}
 			available =
 			{
 				NOT = { has_country_flag = purge_2_group_b }
 			}
-
-
 
 			# Not Purged, but eventually demoted
 			traits = { navy_chief_reform_2 }
@@ -1112,10 +1083,8 @@ ideas = {
 
 		ivan_yumashev = {
 
-
 			allowed = {
 				original_tag = SOV
-
 			}
 			available =
 			{
