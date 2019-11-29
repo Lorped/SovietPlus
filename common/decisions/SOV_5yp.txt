@@ -438,8 +438,6 @@ SOV_5_year_plan_decisions = {
 			}
 		}
 
-		custom_effect_tooltip = SOV_5_year_plan_2_tt
-
 		timeout_effect = {
 			remove_ideas = SOV_idea_2_5_year_plan
       remove_ideas = SOV_idea_2_5_year_plan_MIL
