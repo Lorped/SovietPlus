@@ -1,5 +1,135 @@
 SOV_5_year_plan_decisions = {
 
+
+	SOV_5_year_plan_industry = {
+
+		icon = generic_construction
+
+		available = {
+			any_owned_state = {
+				NOT = { has_state_flag = SOV_already_improved }
+				free_building_slots = {
+					building = arms_factory
+					size > 1
+					include_locked = no
+				}
+				free_building_slots = {
+					building = industrial_complex
+					size > 2
+					include_locked = no
+				}
+			}
+		}
+
+		cost = 25
+
+		ai_will_do = {
+			factor = 10000 #YES!!
+		}
+
+		visible = {
+			tag = SOV
+			OR = {
+				has_idea = SOV_idea_2_5_year_plan
+				has_idea = SOV_idea_2_5_year_plan_MIL
+				has_idea = SOV_idea_2_5_year_plan_CIC
+			}
+		}
+
+		days_remove = 100
+
+		modifier = {
+			stability_factor = -0.1
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					has_idea = SOV_idea_2_5_year_plan
+				}
+				random_owned_state = {
+					limit = {
+						NOT = { has_state_flag = SOV_already_improved }
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = no
+						}
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = no
+						}
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					set_state_flag = SOV_already_improved
+				}
+			}
+			if = {
+				limit = {
+					has_idea = SOV_idea_2_5_year_plan_CIC
+				}
+				random_owned_state = {
+					limit = {
+						NOT = { has_state_flag = SOV_already_improved }
+						free_building_slots = {
+							building = industrial_complex
+							size > 2
+							include_locked = no
+						}
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					set_state_flag = SOV_already_improved
+				}
+			}
+			if = {
+				limit = {
+					has_idea = SOV_idea_2_5_year_plan_MIL
+				}
+				random_owned_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = no
+						}
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = no
+						}
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+					set_state_flag = SOV_already_improved
+				}
+			}
+			custom_effect_tooltip = SOV_5_year_plan_tt
+			add_to_variable = { var = 5_year_plan_progress value = 5 }
+		}
+	}
+
 	SOV_5_year_plan_oil = {
 
 		icon = oil
@@ -468,10 +598,10 @@ SOV_5_year_plan_decisions = {
       }
 
 
-			set_variable = {
-			   var = 5_year_plan_progress
-			   value = 0
-			}
+			#set_variable = {
+			#   var = 5_year_plan_progress
+			#   value = 0
+			#}
 		}
 	}
 

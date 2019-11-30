@@ -1,10 +1,10 @@
 ﻿l_english:
- SOV_idea_2_5_year_plan:0 "The five-year plan"
+ SOV_idea_2_5_year_plan:0 "The Five-Year Plan"
  SOV_idea_2_5_year_plan_desc:0 "The second five-year plan is an essential step in the modernization of our country. Every effort must be aimed at achieving the set goals, in the established times."
- SOV_idea_2_5_year_plan_CIC:0 "Complete the five-year plan (industrial focus)"
- SOV_idea_2_5_year_plan_MIL:0 "Complete the five-year plan (mixed focus)"
+ SOV_idea_2_5_year_plan_CIC:0 "The Five-Year Plan (industrial focus)"
+ SOV_idea_2_5_year_plan_MIL:0 "The Five-Year Plan (mixed focus)"
  SOV_secret_police_chief_0:0 "Efficient Executioner"
- SOV_finish_the_five_year_plan:0 "Complete the five-year plan"
+ SOV_finish_the_five_year_plan:0 "Complete the Five-Year Plan"
  SOV_finish_the_five_year_plan_desc:0 "The Union needs to increase its industrial capacity. The second five-year plan is essential for its development. We must complete it, whatever it takes."
  SOV_strength_gosplan:0 "Strength the GOSPLAN"
  SOV_strength_gosplan_desc:0 "The State Planning Committee of the USSR (Gos. komitet po Plan.) iis essential for the development and planning of our development. Its competences and its managerial capacity must be strengthened and extended."
@@ -21,8 +21,8 @@
 
  SOV_5_year_plan_tt:0 "Our effort will increase the completion of the Five-Year Plan by §G5%§!"
 
- SOV_5_year_plan_decisions:0 "The Five Year Plan"
- SOV_5_year_plan_decisions_desc:0 "The Five Year Plan requires to boost our Industry and increase our Production Quotas. This mission will be completed once you have §G100%§! progress through Decisions and Focuses. Right now it is [Root.Get5YearPlanLevel] complete."
+ SOV_5_year_plan_decisions:0 "The Five-Year Plan"
+ SOV_5_year_plan_decisions_desc:0 "The Five-Year Plan requires to boost our Industry and increase our Production Quotas. This mission will be completed once you have §G100%§! progress through Decisions and Focuses. Right now it is [Root.Get5YearPlanLevel] complete."
  SOV_5_year_plan_0:0 "§R0%§!"
  SOV_5_year_plan_10:0 "§R10%§!"
  SOV_5_year_plan_20:0 "§R20%§!"
@@ -48,6 +48,7 @@
  SOV_5_year_plan_100:0 "§100%!§!"
 
  SOV_exhausted_resources:0 "State's Resources has not been exhausted"
+ SOV_already_improved:0 "State's Industry has not been improved"
 
  SOV_2_5_year_plan_mission:0 "Five-Year Plan time schedule"
  SOV_5_year_plan_mission_tt:0 "This mission will be completed once you have §G100% progress§! through Decisions and Focuses."
@@ -57,16 +58,17 @@
  SOV_5_year_plan_tungsten:0 "Increase Quotas for Tungsten mines"
  SOV_5_year_plan_aluminium:0 "Increase Quotas for Aluminium production"
  SOV_5_year_plan_chromium:0 "Increase Quotas for Rare Materials mines"
+ SOV_5_year_plan_industry:0 "Improve our Industrial Capacity"
 
  soviet.118.t:0 "Stalin is happy"
  soviet.118.d:0 "The effort required to bring the Union to the same level as the western capitalist powers has been immense. However, every Soviet citizen has contributed to this fundamental success. The full completion of this five-year plan is the proof that the socialist model can bring social progress and the full development of our nation."
  soviet.118.a:0 "For the glory of the mighty Soviet Union"
 
  soviet.119.t:0 "Stalin is not happy"
- soviet.119.d:0 "Sometimes when it comes to dealing with the Man of Steel himself, the odd result here and there doesn’t hurt. But in this case, those results were far below his expectations. You are summoned to Stalin’s office (effective immediately), and there the man sits comfortably in his chair, puffing away at his pipe, enormous plumes of smoke obscuring most of his face following your entrance through half-closed eyes. He gestures to the chair on the other side of his desk. Maybe this wasn’t as bad as you had feared.  Oh how very were you indeed. Stalin leaps to his feet and bends over the entire length of the desk until his face is no less than a foot away from yours. His eyes wide with a severely unwelcoming glower. You go to open your mouth, but no sooner have your lips even parted, Stalin tears you to shreds. Beginning with the typical accusations of being a traitor and an agent working against the Motherland, to outright tirades regarding how well you have been treated and why would you go against your home, your family, your leader.  Eventually Stalin manages to calm himself down and seats himself down to top up his pipe. His eyes return to a passive, half closed state as he focuses on the pipe bowl in front of him. After what feels like ages he finally announces that you will not punished too severely, but your family will be placed under very heavy scrutiny and should you fail again, well, you will find out. And with that he points the door, whereupon a guard opens it and ‘helps’ you out. "
- soviet.119.a:0 "Should I be thankful that I am alive?"
+ soviet.119.d:0 "Having failed the objectives of our Five-Year Plan is a heavy defeat for the Union. Certainly reactionary, troskists elements and spies of the capitalist powers have been working in the shadows to prevent Socialism in the Soviet Union from bridging the gap with other nations. This will surely have consequences in the future. At the moment we have to concentrate even more on eradicating these elements within ourselves. "
+ soviet.119.a:0 "A serious defeat for the Socialism"
 
 
  SOV_transsiberian:0 "Modernization the Trans-Siberian Railway"
- SOV_transsiberian_desc:0 "The Trans-Siberian was built 30 years ago. The whole structure must be modernized in order to allow us to exploit the enormous resources of our Motherland."
+ SOV_transsiberian_desc:0 "The Trans-Siberian was built more than 30 years ago. The whole structure must be modernized in order to allow us to exploit the enormous resources of our Motherland."
  SOV_transsiberian_tt:0 "It increases the level of infrastructure along the Trans-Siberian Railway."
