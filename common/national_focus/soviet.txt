@@ -682,7 +682,34 @@ focus_tree = {
 		}
 	}
 
+	#focus for The Great Ourge
+	focus = {
+		id = SOV_great_purge
+		icon = GFX_goal_generic_war_with_comintern
+		available = {
+			NOT = { has_country_flag = counter_purge }
+			has_government = communism
+		}
+		x = 22
+		y = 0
+		cost = 2
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				any_claim = yes
+				has_war = yes
+			}
+		}
 
+		select_effect = {
+			country_event = { id = soviet.24 days = 1 }
+			set_country_flag = SOV_purge_started
+		}
+		completion_reward = {
+
+		}
+	}
 
 }
 ###

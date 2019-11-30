@@ -16,3 +16,23 @@ SOV_5_year_plan_decisions = {
 		}
 	}
 }
+
+SOV_The_Great_Purge_Decisions = {
+	allowed = {
+		original_tag = SOV
+	}
+
+	icon = generic_communism
+
+	available = {
+		SOV = {
+			has_country_flag = SOV_The_Great_Purge
+		}
+	}
+
+	visible = {
+		SOV = {
+			has_country_flag = SOV_The_Great_Purge
+		}
+	}
+}

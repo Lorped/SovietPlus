@@ -1,0 +1,38 @@
+SOV_The_Great_Purge_Decisions = {
+
+	SOV_The_Great_Purge_mission = {
+
+		icon = oppression
+
+		available = {
+			SOV = {
+				has_country_flag = SOV_The_Great_Purge_Completed
+			}
+		}
+
+		days_mission_timeout = 540
+
+		is_good = yes
+
+		fire_only_once = yes
+
+		visible = {
+			tag = SOV
+		}
+
+		activation = {
+			has_country_flag = SOV_The_Great_Purge
+		}
+
+		timeout_effect = {
+		}
+
+		cancel_trigger = {
+		}
+
+		complete_effect = {
+		}
+	}
+
+
+}
