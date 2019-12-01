@@ -17,8 +17,8 @@ country_event = {
 	}
 }
 
-# Great Purge - Trial of the Anti-Soviet Trotskyist Center
-# WAS - Trial of the Sixteen
+# Great Purge - Trial of the Sixteen
+#
 #
 country_event = {
 	id = soviet.125
@@ -59,7 +59,7 @@ country_event = {
     ai_chance = {
       factor = 0
     }
-    name = soviet.25.c
+    name = soviet.125.b
     add_political_power = -75
     set_country_flag = purged_party_members
   }
@@ -76,6 +76,155 @@ country_event = {
 	##		remove_ideas = nikita_khrushchev
 	##	}
 	## }
+
+
+}
+
+
+country_event = {
+	id = soviet.126
+	title = soviet.126.t
+	desc = soviet.126.d
+	picture = GFX_report_event_soviet_purge_trial
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SOV
+		has_country_flag = {
+			flag = SOV_The_Great_Purge
+			days > 90
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		ai_chance = {
+			factor = 100
+		}
+		name = soviet.126.a
+		custom_effect_tooltip = remove_political_advisor
+		show_ideas_tooltip = karl_radek
+		set_country_flag = purged_radek
+    add_timed_idea = { idea = SOV_idea_purge_intellectuals  days = 30 }
+		hidden_effect = {
+			remove_ideas = karl_radek
+		}
+	}
+  option = {
+    ai_chance = {
+      factor = 0
+    }
+    name = soviet.125.b
+    add_timed_idea = { idea = SOV_idea_purge_intellectuals  days = 60 }
+    add_political_power = -50
+    set_country_flag = purged_party_members2
+  }
+
+}
+
+
+
+# Great Purge - Secret Trial of the Generals
+country_event = {
+	id = soviet.127
+	title = soviet.127.t
+	desc = soviet.127.d
+	picture = GFX_report_event_soviet_purge_officers_01
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SOV
+		has_country_flag = {
+			flag = SOV_The_Great_Purge
+			days > 120
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		ai_chance = {
+			factor = 100
+		}
+		name = soviet.127.a
+		set_country_flag = purge_1_group_a
+    set_country_flag = purged_rokossovsky
+
+		custom_effect_tooltip = remove_theorist
+		show_ideas_tooltip = mikhail_tukhachevsky
+
+		custom_effect_tooltip = remove_chief_of_army
+		show_ideas_tooltip = alexander_yegorov
+    show_ideas_tooltip = vasily_blucher
+    show_ideas_tooltip = konstantin_rokossovsky    ## we will add later
+
+		custom_effect_tooltip = remove_chief_of_navy
+		show_ideas_tooltip = pyotr_smirnov
+		show_ideas_tooltip = mikhail_frinovsky
+
+    remove_unit_leader = 401 #mikhail_tukhachevsky, field marshal
+    remove_unit_leader = 413 #yegorov, field marshal
+    remove_unit_leader = 414 #blucher, field marshal
+    remove_unit_leader = 415 #primakov, general
+    remove_unit_leader = 416 #kork, general
+    remove_unit_leader = 402 #konstantin_rokossovsky, general  ## we will add later
+
+
+		hidden_effect = {
+			remove_ideas = mikhail_tukhachevsky
+			remove_ideas = alexander_yegorov
+			remove_ideas = vasily_blucher
+			remove_ideas = pyotr_smirnov
+			remove_ideas = mikhail_frinovsky
+		}
+
+    add_timed_idea = {
+      idea = officers_purged
+      days = 1460
+    }
+
+	}
+
+	option = {
+		ai_chance = {
+			factor = 0
+		}
+		name = soviet.127.b
+		set_country_flag = purge_1_group_b
+
+    add_stability = -0.15
+    add_political_power = -50
+
+    add_timed_idea = {
+      idea = officers_purged
+      days = 1460
+    }
+
+		## custom_effect_tooltip = remove_chief_of_army
+		## show_ideas_tooltip = semyon_timoshenko
+		## show_ideas_tooltip = kliment_voroshilov
+		## custom_effect_tooltip = remove_chief_of_navy
+		## show_ideas_tooltip = ivan_yumashev
+		## custom_effect_tooltip = remove_military_high_command
+		## show_ideas_tooltip = vladimir_kasatonov
+		## remove_unit_leader = 405 #kliment_voroshilov, field marshal
+		## remove_unit_leader = 404 #semyon_timoshenko, general
+		## remove_unit_leader = 403 #vladimir_kasatonov, naval commander
+		## custom_effect_tooltip = soviet.27_tt
+		## hidden_effect = {
+		##  remove_ideas = semyon_timoshenko
+		## 	remove_ideas = kliment_voroshilov
+		##  remove_ideas = ivan_yumashev
+		## 	remove_ideas = vladimir_kasatonov
+		## }
+	}
 
 
 }

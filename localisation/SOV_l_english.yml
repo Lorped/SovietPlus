@@ -2,8 +2,12 @@
  SOV_idea_2_5_year_plan:0 "The Five-Year Plan"
  SOV_idea_2_5_year_plan_desc:0 "The second five-year plan is an essential step in the modernization of our country. Every effort must be aimed at achieving the set goals, in the established times."
  SOV_idea_2_5_year_plan_CIC:0 "The Five-Year Plan (industrial focus)"
+ SOV_idea_2_5_year_plan_CIC_desc:0 "The second five-year plan is an essential step in the modernization of our country. Every effort must be aimed at achieving the set goals, in the established times."
  SOV_idea_2_5_year_plan_MIL:0 "The Five-Year Plan (mixed focus)"
+ SOV_idea_2_5_year_plan_MIL_desc:0 "The second five-year plan is an essential step in the modernization of our country. Every effort must be aimed at achieving the set goals, in the established times."
+
  SOV_secret_police_chief_0:0 "Efficient Executioner"
+
  SOV_finish_the_five_year_plan:0 "Complete the Five-Year Plan"
  SOV_finish_the_five_year_plan_desc:0 "The Union needs to increase its industrial capacity. The second five-year plan is essential for its development. We must complete it, whatever it takes."
  SOV_strength_gosplan:0 "Strength the GOSPLAN"
@@ -82,13 +86,30 @@
  SOV_The_Great_Purge_Completed:0 "The Soviet Union is free from Troskists and traitors"
 
 
- soviet.125.t:0 "Trial of the Anti-Soviet Trotskyist Center"
+ soviet.125.t:0 "Trial of the Trotskyite-Zinovievite Bloc"
  soviet.125.d:0 "Despite Leon Trotsky being forced into exile, Joseph Stalin fears that he has secret supporters within the party. A series of rapid arrests and brutal interrogations have yielded confessions and testimonies conveniently pointing to some of Stalin's rivals. However, the more questions are asked and the deeper the secret police delves into letters and journals, the more people are implicated, if indirectly.\n\nAmong other accusations, the member of the Counter-Revolutionary Bloc were incriminated with the assassination of Kirov and plotting to kill Stalin. After confessing to the charges, all were sentenced to death and executed"
- soviet.125.a:0 "Kamenev and Zinoviev are both guilty like their fellows"
+ soviet.125.a:0 "Kamenev and Zinoviev are both guilty, like their fellows"
+ soviet.125.b:0 "Their confession is sufficient, for now, but we must further investigate"
+
+ soviet.126.t:0 "Trial of the anti-Soviet Trotskyite-centre"
+ soviet.126.d:0 "The Trotskyist center led by Radek and other intellectuals is certainly in contact with both Trotsky and emissaries of foreign nations who are conspiring against the Soviet Union. Their confessions also show that betrayal is much more extensive than one might think."
+ soviet.126.a:0 "We cannot afford to leave them unpunished"
+ soviet.126.b:0 "A light sentence is sufficient"
+
+ soviet.127.t:0 "Secret Trial of the Generals"
+ soviet.127.d:0 "The Red Army has always been home to subversive elements, ever since Trotsky himself was Commissar of War. Documents acquired by the NKVD have implicated several high-ranking officers as not only traitors, but spies. Mikhail Tukhachevsky is among the most prominent of the suspects, and one Stalin is keen to rid the army of. Meanwhile, the navy's frequent contact with foreigners has led to many of them being arrested as well.\n\nAlthough there are documents from our enemies proving their guilt, there is no telling if they fabricated them, or if they were given false information by those who wanted this purge in motion to begin with."
+ soviet.127.a:0 "Tukhachevsky and others must be tried in secret and executed immediately."
+ soviet.127.b:0 "We must look for rotten apples in the lower ranks of the army"
+
+ SOV_idea_purge_intellectuals:0 "Rectification of Intelligentsia"
+ SOV_idea_purge_intellectuals_desc:0 "Our intelligentsia must be cleaned of counter-revolutionaries elements"
 
  purged_kamenev:0 "Purged by Stalin"
  purged_zinoviev:0 "Purged by Stalin"
+ purged_radek:0 "Purged by Stalin"
+ purged_rokossovsky:0 "Purged by Stalin"
 
  lev_kamenev:0 "Lev Kamenev"
  grigory_zinoviev:0 "Grigory Zinoviev"
+ karl_radek:0 "Karl Radek"
  SOV_veteran_communist:0 "Veteran communist"

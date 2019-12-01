@@ -108,6 +108,29 @@ ideas = {
 			}
 		}
 
+		SOV_idea_purge_intellectuals = {
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = purge_intellectuals
+
+			research_bonus = {
+				synth_resources = -0.10
+				rocketry = -0.10
+				nuclear = -0.10
+				electronics = -0.10
+			}
+
+		}
+
 
 
 
@@ -929,6 +952,29 @@ ideas = {
 			}
 		}
 
+		karl_radek = {
+
+			allowed = {
+				original_tag = "SOV"
+			}
+			available =
+			{
+				NOT = { has_country_flag = purged_radek }
+			}
+
+			traits = { economist }
+
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
 
 
 #####
@@ -1339,7 +1385,7 @@ ideas = {
 			}
 			available =
 			{
-				NOT = { has_country_flag = purge_1_group_b }
+				NOT = { has_country_flag = purged_rokossovsky }
 				has_completed_focus = SOV_positive_heroism
 			}
 

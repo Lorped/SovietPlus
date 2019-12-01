@@ -16,6 +16,11 @@ spriteTypes = {
   }
 
   spriteType = {
+    name = "GFX_idea_karl_radek"
+    texturefile = "gfx/ideas/idea_karl_radek.dds"
+  }
+
+  spriteType = {
     name = "GFX_idea_five_year_plan"
     texturefile = "gfx/ideas/SOV_five_years.dds"
   }
@@ -24,6 +29,13 @@ spriteTypes = {
     name = "GFX_idea_purge_time"
     texturefile = "gfx/ideas/SOV_purge_time.dds"
   }
+
+  spriteType = {
+    name = "GFX_idea_purge_intellectuals"
+    texturefile = "gfx/ideas/SOV_purge_intellectuals.dds"
+  }
+
+
 
 
   spriteType = {
