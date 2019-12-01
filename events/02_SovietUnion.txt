@@ -1,0 +1,138 @@
+﻿###########################
+# Soviet Events
+###########################
+
+add_namespace = soviet
+
+country_event = {  ## ADD General Zhukov + Vasilevsky + Chernyakhovsky + Pliyev + Yeryomenko + Cherevichenko + Fedyuninsky + Moskalenko + Lelyushenko
+	id = soviet.200
+	title = soviet.200.t
+	desc = soviet.200.d
+	picture = GFX_report_event_stalin_01
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = soviet.200.a
+		ai_chance = { factor = 100 }
+
+
+		create_corps_commander = {
+			name = "Georgy Zhukov"
+			id = 410
+				picture = "Portrait_Soviet_Gregory_Zhukov.dds"
+			traits = { winter_specialist armor_officer media_personality war_hero }
+			skill = 5
+
+
+			attack_skill = 5
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 5
+		}
+
+		create_corps_commander = {
+			name = "Aleksandr Vasilevsky"
+			id = 407
+				picture = "Portrait_Soviet_Aleksandr_Vasilevsky.dds"
+			traits = { armor_officer politically_connected }
+			skill = 4
+
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+		}
+
+		create_corps_commander = {
+			name = "Ivan Chernyakhovsky"
+				picture = "Portrait_Soviet_Ivan_Chernyakhovsky.dds"
+			traits = { armor_officer }
+			skill = 1
+
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+
+		create_corps_commander = {
+			name = "Issa Pliyev"
+				picture = "Portrait_Soviet_Issa_Pliyev.dds"
+			traits = { cavalry_officer }
+			skill = 1
+
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+
+		create_corps_commander = {
+			name = "Andrey Yeryomenko"
+				picture = "Portrait_Soviet_Andrey_Yeryomenko.dds"
+			traits = { cavalry_officer trait_reckless }
+			skill = 1
+
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+
+		create_corps_commander = {
+			name = "Yakov Cherevichenko"
+				picture = "Portrait_Soviet_Yakov_Cherevichenko.dds"
+			traits = { cavalry_officer }
+			skill = 3
+
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+
+		create_corps_commander = {
+			name = "Ivan Fedyuninsky"
+				picture = "Portrait_Soviet_Ivan_Fedyuninsky.dds"
+			traits = { infantry_officer }
+			skill = 1
+
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+
+		create_corps_commander = {
+			name = "Kirill Moskalenko"
+				picture = "Portrait_Soviet_Kirill_Moskalenko.dds"
+			traits = {  }
+			skill = 3
+
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+
+		create_corps_commander = {
+			name = "Dmitry Lelyushenko"
+				picture = "Portrait_Soviet_Dmitri_Danilovich_Lelyushenko.dds"
+			traits = {armor_officer trait_reckless  }
+			skill = 1
+
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+
+  }
+}
