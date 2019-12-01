@@ -80,3 +80,15 @@
  SOV_The_Great_Purge_Decisions_desc:0 "To identify and eliminate every spy and traitor of the Revolution will not be an easy or quick task"
  SOV_The_Great_Purge_mission:0 "The time of the Great Purge"
  SOV_The_Great_Purge_Completed:0 "The Soviet Union is free from Troskists and traitors"
+
+
+ soviet.125.t:0 "Trial of the Anti-Soviet Trotskyist Center"
+ soviet.125.d:0 "Despite Leon Trotsky being forced into exile, Joseph Stalin fears that he has secret supporters within the party. A series of rapid arrests and brutal interrogations have yielded confessions and testimonies conveniently pointing to some of Stalin's rivals. However, the more questions are asked and the deeper the secret police delves into letters and journals, the more people are implicated, if indirectly.\n\nAmong other accusations, the member of the Counter-Revolutionary Bloc were incriminated with the assassination of Kirov and plotting to kill Stalin. After confessing to the charges, all were sentenced to death and executed"
+ soviet.125.a:0 "Kamenev and Zinoviev are both guilty like their fellows"
+
+ purged_kamenev:0 "Purged by Stalin"
+ purged_zinoviev:0 "Purged by Stalin"
+
+ lev_kamenev:0 "Lev Kamenev"
+ grigory_zinoviev:0 "Grigory Zinoviev"
+ SOV_veteran_communist:0 "Veteran communist"

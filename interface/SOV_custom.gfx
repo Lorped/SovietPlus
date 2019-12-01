@@ -6,6 +6,16 @@ spriteTypes = {
   }
 
   spriteType = {
+    name = "GFX_idea_lev_kamenev"
+    texturefile = "gfx/ideas/idea_lev_kamenev.dds"
+  }
+
+  spriteType = {
+    name = "GFX_idea_grigory_zinoviev"
+    texturefile = "gfx/ideas/idea_grigory_zinoviev.dds"
+  }
+
+  spriteType = {
     name = "GFX_idea_five_year_plan"
     texturefile = "gfx/ideas/SOV_five_years.dds"
   }

@@ -696,87 +696,9 @@ country_event = {
 #### THE GREAT PURGE
 ###########################################################
 
-# Great Purge - Begins
-country_event = {
-	id = soviet.24
-	title = soviet.24.t
-	desc = soviet.24.d
-	picture = GFX_report_event_soviet_purge_speech
 
-	is_triggered_only = yes
 
-	option = {
-		name = soviet.24.a
-		set_country_flag = SOV_The_Great_Purge
-	}
-}
 
-# Great Purge - Trial of the Anti-Soviet Trotskyist Center
-country_event = {
-	id = soviet.25
-	title = soviet.25.t
-	desc = soviet.25.d
-	picture = GFX_report_event_soviet_purge_trial
-
-	fire_only_once = yes
-
-	trigger = {
-		tag = SOV
-		has_country_flag = {
-			flag = SOV_The_Great_Purge
-			days > 30
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 1
-	}
-
-	option = {
-		ai_chance = {
-			factor = 30
-		}
-		name = soviet.25.a
-		custom_effect_tooltip = remove_political_advisor
-		show_ideas_tooltip = mikhail_kalinin
-		set_country_flag = purged_kalinin
-		hidden_effect = {
-			remove_ideas = mikhail_kalinin
-		}
-	}
-	option = {
-		ai_chance = {
-			factor = 30
-		}
-		name = soviet.25.b
-		custom_effect_tooltip = remove_political_advisor
-		show_ideas_tooltip = nikita_khrushchev
-		set_country_flag = purged_khrushchev
-		hidden_effect = {
-			remove_ideas = nikita_khrushchev
-		}
-	}
-	option = {
-		ai_chance = {
-			factor = 30
-		}
-		name = soviet.25.c
-		add_political_power = -75
-		set_country_flag = purged_party_members
-	}
-	option = {
-		ai_chance = {
-			factor = 10
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-		name = soviet.25.e
-		set_country_flag = no_political_purge
-		custom_effect_tooltip = soviet.27_tt2
-	}
-}
 
 # Great Purge - Secret Trial of the Generals
 country_event = {

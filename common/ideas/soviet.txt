@@ -868,10 +868,52 @@ ideas = {
 			available =
 			{
 				NOT = { has_country_flag = purged_khrushchev }
-				if = {
-					limit = { has_dlc = "Man the Guns" }
-					NOT = { has_autonomy_state = autonomy_supervised_state }
+			}
+
+			traits = { silent_workhorse }
+
+			do_effect = {
+				NOT = {
+					has_government = communism
 				}
+			}
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		lev_kamenev = {
+
+			allowed = {
+				original_tag = "SOV"
+			}
+			available =
+			{
+				NOT = { has_country_flag = purged_kamenev }
+			}
+
+			traits = { SOV_veteran_communist }
+
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		grigory_zinoviev = {
+
+			allowed = {
+				original_tag = "SOV"
+			}
+			available =
+			{
+				NOT = { has_country_flag = purged_zinoviev }
 			}
 
 			traits = { communist_revolutionary }
@@ -886,6 +928,8 @@ ideas = {
 				factor = 0
 			}
 		}
+
+
 
 #####
 ##
