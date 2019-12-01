@@ -72,3 +72,11 @@
  SOV_transsiberian:0 "Modernization the Trans-Siberian Railway"
  SOV_transsiberian_desc:0 "The Trans-Siberian was built more than 30 years ago. The whole structure must be modernized in order to allow us to exploit the enormous resources of our Motherland."
  SOV_transsiberian_tt:0 "It increases the level of infrastructure along the Trans-Siberian Railway."
+
+ SOV_idea_purge_time:0 "The Great Purge"
+ SOV_idea_purge_time:0 "Traitors and spies are everywhere. We must eradicate every troskist and reactionary element that is working for the ruin of the Soviet Union."
+
+ SOV_The_Great_Purge_Decisions:0 "The Great Purge"
+ SOV_The_Great_Purge_Decisions_desc:0 "To identify and eliminate every spy and traitor of the Revolution will not be an easy or quick task"
+ SOV_The_Great_Purge_mission:0 "The time of the Great Purge"
+ SOV_The_Great_Purge_Completed:0 "The Soviet Union is free from Troskists and traitors"

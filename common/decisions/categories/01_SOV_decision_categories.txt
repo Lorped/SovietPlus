@@ -26,13 +26,13 @@ SOV_The_Great_Purge_Decisions = {
 
 	available = {
 		SOV = {
-			has_country_flag = SOV_The_Great_Purge
+			has_idea = SOV_idea_purge_time
 		}
 	}
 
 	visible = {
 		SOV = {
-			has_country_flag = SOV_The_Great_Purge
+			has_idea = SOV_idea_purge_time
 		}
 	}
 }

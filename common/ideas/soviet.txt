@@ -88,6 +88,30 @@ ideas = {
 			}
 		}
 
+		SOV_idea_purge_time = {
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = purge_time
+
+			modifier = {
+				political_power_gain = -1.0
+				weekly_manpower = -500
+			}
+		}
+
+
+
+
+
 
 		militarized_schools = {
 			removal_cost = -1

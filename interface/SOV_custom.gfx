@@ -10,6 +10,10 @@ spriteTypes = {
     texturefile = "gfx/ideas/SOV_five_years.dds"
   }
 
+  spriteType = {
+    name = "GFX_idea_purge_time"
+    texturefile = "gfx/ideas/SOV_purge_time.dds"
+  }
 
 
   spriteType = {
