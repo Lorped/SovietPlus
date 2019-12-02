@@ -93,7 +93,7 @@ country_event = {
 		tag = SOV
 		has_country_flag = {
 			flag = SOV_The_Great_Purge
-			days > 90
+			days > 150
 		}
 	}
 
@@ -109,7 +109,7 @@ country_event = {
 		custom_effect_tooltip = remove_political_advisor
 		show_ideas_tooltip = karl_radek
 		set_country_flag = purged_radek
-    add_timed_idea = { idea = SOV_idea_purge_intellectuals  days = 30 }
+    add_timed_idea = { idea = SOV_idea_purge_intellectuals  days = 60 }
 		hidden_effect = {
 			remove_ideas = karl_radek
 		}
@@ -119,7 +119,7 @@ country_event = {
       factor = 0
     }
     name = soviet.125.b
-    add_timed_idea = { idea = SOV_idea_purge_intellectuals  days = 60 }
+    add_timed_idea = { idea = SOV_idea_purge_intellectuals  days = 120 }
     add_political_power = -50
     set_country_flag = purged_party_members2
   }
@@ -141,7 +141,7 @@ country_event = {
 		tag = SOV
 		has_country_flag = {
 			flag = SOV_The_Great_Purge
-			days > 120
+			days > 270
 		}
 	}
 
@@ -226,5 +226,50 @@ country_event = {
 		## }
 	}
 
+
+  # Great Purge - Trial of the 21
+  country_event = {
+  	id = soviet.128
+  	title = soviet.128.t
+  	desc = soviet.128.d
+  	picture = GFX_report_event_soviet_purge_officers_02
+
+  	fire_only_once = yes
+
+  	trigger = {
+  		tag = SOV
+  		has_country_flag = {
+  			flag = SOV_The_Great_Purge
+  			days > 390
+  		}
+  	}
+
+  	mean_time_to_happen = {
+  		days = 1
+  	}
+
+  	option = {
+  		ai_chance = {
+  			factor = 100
+  		}
+  		name = soviet.128.a
+
+      add_timed_idea = { idea = SOV_idea_purge_intellectuals  days = 120 }
+  		add_political_power = -50
+
+  	}
+
+  	option = {
+  		ai_chance = {
+  			factor = 0
+  		}
+  		name = soviet.128.b
+  		set_country_flag = purge_1_group_b
+
+      add_stability = -0.15
+      add_political_power = -50
+
+      
+  	}
 
 }

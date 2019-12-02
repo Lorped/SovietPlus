@@ -101,6 +101,11 @@
  soviet.127.a:0 "Tukhachevsky and others must be tried in secret and executed immediately."
  soviet.127.b:0 "We must look for rotten apples in the lower ranks of the army"
 
+ soviet.128.t:0 "Titolo"
+ soviet.128.d:0 "Desc"
+ soviet.128.a:0 "Opz. A"
+ soviet.128.b:0 "Opz. B"
+
  SOV_idea_purge_intellectuals:0 "Rectification of Intelligentsia"
  SOV_idea_purge_intellectuals_desc:0 "Our intelligentsia must be cleaned of counter-revolutionaries elements"
 
@@ -108,6 +113,7 @@
  purged_zinoviev:0 "Purged by Stalin"
  purged_radek:0 "Purged by Stalin"
  purged_rokossovsky:0 "Purged by Stalin"
+ purged_yezhov:0 "Purged by Stalin"
 
  lev_kamenev:0 "Lev Kamenev"
  grigory_zinoviev:0 "Grigory Zinoviev"

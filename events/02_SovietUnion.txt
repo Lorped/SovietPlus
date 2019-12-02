@@ -159,7 +159,7 @@ country_event = {  ## ADD General Rokossovsky
 
 		create_corps_commander = {
 			name = "Konstantin Rokossovsky"
-			id = 402
+			#id = 402
 				picture = "Portrait_Soviet_Konstantin_Rokossovsky.dds"
 			traits = {  armor_officer trait_cautious brilliant_strategist }
 			skill = 4
