@@ -256,7 +256,11 @@ country_event = {
 
       add_timed_idea = { idea = SOV_idea_purge_intellectuals  days = 120 }
   		add_political_power = -50
-
+			set_country_flag = purged_bucharin
+			hidden_effect = {
+				remove_ideas = nikolaj_bucharin
+			}
+			
   	}
 
   	option = {
@@ -269,7 +273,7 @@ country_event = {
       add_stability = -0.15
       add_political_power = -50
 
-      
+
   	}
 
 }

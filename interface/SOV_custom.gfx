@@ -21,6 +21,11 @@ spriteTypes = {
   }
 
   spriteType = {
+    name = "GFX_idea_nikolaj_bucharin"
+    texturefile = "gfx/ideas/idea_nikolaj_bucharin.dds"
+  }
+
+  spriteType = {
     name = "GFX_idea_five_year_plan"
     texturefile = "gfx/ideas/SOV_five_years.dds"
   }

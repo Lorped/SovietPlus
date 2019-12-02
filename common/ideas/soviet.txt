@@ -931,7 +931,7 @@ ideas = {
 			}
 		}
 
-		nicolaj_bucharin = {
+		nikolaj_bucharin = {
 			allowed = {
 				original_tag = "SOV"
 			}

@@ -101,10 +101,10 @@
  soviet.127.a:0 "Tukhachevsky and others must be tried in secret and executed immediately."
  soviet.127.b:0 "We must look for rotten apples in the lower ranks of the army"
 
- soviet.128.t:0 "Titolo"
- soviet.128.d:0 "Desc"
- soviet.128.a:0 "Opz. A"
- soviet.128.b:0 "Opz. B"
+ soviet.128.t:0 "The trial of the 21"
+ soviet.128.d:0 "Bukharin and the other right-wing members of the party must be tried in a large public trial, so that everyone sees the degeneration of the conspiracy of Rightists and Trotskyites."
+ soviet.128.a:0 "The confession of Bucharin decided its fate"
+ soviet.128.b:0 "A character of this caliber must be spared"
 
  SOV_idea_purge_intellectuals:0 "Rectification of Intelligentsia"
  SOV_idea_purge_intellectuals_desc:0 "Our intelligentsia must be cleaned of counter-revolutionaries elements"
@@ -119,7 +119,8 @@
  lev_kamenev:0 "Lev Kamenev"
  grigory_zinoviev:0 "Grigory Zinoviev"
  karl_radek:0 "Karl Radek"
- nicolaj_bucharin:0 "Nicolaj Bucharin"
+ nikolaj_bucharin:0 "Nikolaj Bucharin"
 
- SOV_veteran_communist:0 "Veteran communist"
+ SOV_veteran_communist:0 "Veteran Communist"
  SOV_secret_police_chief_0:0 "Efficient Executioner"
+ SOV_comintern_workhorse:0 "Comintern Workhorse"
