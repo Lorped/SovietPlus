@@ -10,7 +10,7 @@ SOV_The_Great_Purge_Decisions = {
 			}
 		}
 
-		days_mission_timeout = 540
+		days_mission_timeout = 480
 
 		is_good = no
 

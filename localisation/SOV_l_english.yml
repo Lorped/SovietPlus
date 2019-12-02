@@ -86,12 +86,25 @@
  SOV_The_Great_Purge_Completed:0 "The Soviet Union is free from Troskists and traitors"
 
 
+ soviet.55.t:0 "Scientist accused of Anti-Sovietic Activities"
+ soviet.55.d:0 "Academic activity must be constantly monitored, because even among scientists the seed of betrayal can be nested."
+ soviet.55.a:0 "A few months in Siberia will be enough"
+
+ soviet.56.t:0 "Army Officer Accused of Treason"
+ soviet.56.d:0 "An unwise official criticized the Red Army's training systems. Obviously this is a clear sign of defeatism and betrayal."
+ soviet.56.a:0 "He will be better trained in Siberia"
+
+soviet.57.t:0 "Writer Published an apology of Trotskyism"
+soviet.57.d:0 "A writer's books are a clear apology of Troskism and of the worst revisionist ideologies."
+soviet.57.a:0 "Dispose him and the books"
+
+
  soviet.125.t:0 "Trial of the Trotskyite-Zinovievite Bloc"
  soviet.125.d:0 "Despite Leon Trotsky being forced into exile, Joseph Stalin fears that he has secret supporters within the party. A series of rapid arrests and brutal interrogations have yielded confessions and testimonies conveniently pointing to some of Stalin's rivals. However, the more questions are asked and the deeper the secret police delves into letters and journals, the more people are implicated, if indirectly.\n\nAmong other accusations, the member of the Counter-Revolutionary Bloc were incriminated with the assassination of Kirov and plotting to kill Stalin. After confessing to the charges, all were sentenced to death and executed"
  soviet.125.a:0 "Kamenev and Zinoviev are both guilty, like their fellows"
  soviet.125.b:0 "Their confession is sufficient, for now, but we must further investigate"
 
- soviet.126.t:0 "Trial of the anti-Soviet Trotskyite-centre"
+ soviet.126.t:0 "Trial of the Anti-Soviet Trotskyite Centre"
  soviet.126.d:0 "The Trotskyist center led by Radek and other intellectuals is certainly in contact with both Trotsky and emissaries of foreign nations who are conspiring against the Soviet Union. Their confessions also show that betrayal is much more extensive than one might think."
  soviet.126.a:0 "We cannot afford to leave them unpunished"
  soviet.126.b:0 "A light sentence is sufficient"
@@ -101,7 +114,7 @@
  soviet.127.a:0 "Tukhachevsky and others must be tried in secret and executed immediately."
  soviet.127.b:0 "We must look for rotten apples in the lower ranks of the army"
 
- soviet.128.t:0 "The trial of the 21"
+ soviet.128.t:0 "The Trial of the 21"
  soviet.128.d:0 "Bukharin and the other right-wing members of the party must be tried in a large public trial, so that everyone sees the degeneration of the conspiracy of Rightists and Trotskyites."
  soviet.128.a:0 "The confession of Bucharin decided its fate"
  soviet.128.b:0 "A character of this caliber must be spared"

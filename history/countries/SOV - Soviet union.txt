@@ -103,7 +103,7 @@ if = {
 	}
 	country_event = { id = soviet.42 days = 146 }
 	set_country_flag = purged_party_members
-	set_country_flag = purge_1_group_a
+	set_country_flag = purged_generals
 	remove_ideas = mikhail_tukhachevsky
 	remove_unit_leader = 401
 	remove_ideas = alexander_yegorov

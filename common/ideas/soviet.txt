@@ -1045,7 +1045,7 @@ ideas = {
 			}
 			available =
 			{
-				NOT = { has_country_flag = purge_1_group_b }
+				NOT = { has_country_flag = purged_soldiers }
 				hidden_trigger = {
 					NOT = {
 						any_other_country = {
@@ -1069,7 +1069,7 @@ ideas = {
 			}
 			available =
 			{
-				NOT = { has_country_flag = purge_1_group_b }
+				NOT = { has_country_flag = purged_soldiers }
 				hidden_trigger = {
 					NOT = {
 						any_other_country = {
@@ -1092,7 +1092,7 @@ ideas = {
 			}
 			available =
 			{
-				NOT = { has_country_flag = purge_1_group_a }
+				NOT = { has_country_flag = purged_generals }
 			}
 			# PURGED
 			traits = { army_chief_defensive_2 }
@@ -1107,7 +1107,7 @@ ideas = {
 			}
 			available =
 			{
-				NOT = { has_country_flag = purge_1_group_a }
+				NOT = { has_country_flag = purged_generals }
 			}
 			# PURGED
 			traits = { army_chief_maneuver_2 }
@@ -1125,7 +1125,7 @@ ideas = {
 			}
 			available =
 			{
-				NOT = { has_country_flag = purge_1_group_a }
+				NOT = { has_country_flag = purged_generals }
 			}
 			# PURGED
 			traits = { navy_chief_naval_aviation_1 }
@@ -1140,7 +1140,7 @@ ideas = {
 			}
 			available =
 			{
-				NOT = { has_country_flag = purge_1_group_a }
+				NOT = { has_country_flag = purged_generals }
 			}
 			# PURGED
 			traits = { navy_chief_commerce_raiding_1 }
@@ -1170,7 +1170,7 @@ ideas = {
 			}
 			available =
 			{
-				NOT = { has_country_flag = purge_1_group_b }
+				NOT = { has_country_flag = purged_soldiers }
 			}
 			traits = { navy_chief_decisive_battle_2 }
 			ai_will_do = {
@@ -1371,7 +1371,7 @@ ideas = {
 			}
 			available =
 			{
-				NOT = { has_country_flag = purge_1_group_b }
+				NOT = { has_country_flag = purged_soldiers }
 				hidden_trigger = {
 					NOT = {
 						any_other_country = {
@@ -1650,7 +1650,7 @@ ideas = {
 			}
 			available =
 			{
-				NOT = { has_country_flag = purge_1_group_a }
+				NOT = { has_country_flag = purged_generals }
 			}
 			cost = 250
 			research_bonus = {
