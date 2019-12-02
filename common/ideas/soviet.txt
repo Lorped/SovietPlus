@@ -829,7 +829,13 @@ ideas = {
 					has_country_flag = purged_yezhov
 				}
 			}
-			traits = { ideological_crusader }
+			traits = { SOV_secret_police_chief_0 }
+			modifier = {
+				political_power_factor = 0.15
+				political_advisor_cost_factor = 0.2
+				army_chief_cost_factor = 0.2
+				foreign_subversive_activites = -0.5
+			}
 		}
 
 		SOV_vyacheslav_molotov = {
@@ -915,6 +921,26 @@ ideas = {
 				NOT = { has_country_flag = purged_zinoviev }
 			}
 			traits = { communist_revolutionary }
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		nicolaj_bucharin = {
+			allowed = {
+				original_tag = "SOV"
+			}
+			available =
+			{
+				NOT = { has_country_flag = purged_bucharin }
+			}
+			traits = { SOV_comintern_workhorse }
+
 			do_effect = {
 				NOT = {
 					has_government = communism

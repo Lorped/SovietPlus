@@ -6,7 +6,7 @@
  SOV_idea_2_5_year_plan_MIL:0 "The Five-Year Plan (mixed focus)"
  SOV_idea_2_5_year_plan_MIL_desc:0 "The second five-year plan is an essential step in the modernization of our country. Every effort must be aimed at achieving the set goals, in the established times."
 
- SOV_secret_police_chief_0:0 "Efficient Executioner"
+
 
  SOV_finish_the_five_year_plan:0 "Complete the Five-Year Plan"
  SOV_finish_the_five_year_plan_desc:0 "The Union needs to increase its industrial capacity. The second five-year plan is essential for its development. We must complete it, whatever it takes."
@@ -114,8 +114,12 @@
  purged_radek:0 "Purged by Stalin"
  purged_rokossovsky:0 "Purged by Stalin"
  purged_yezhov:0 "Purged by Stalin"
+ purged_bucharin:0 "Purged by Stalin"
 
  lev_kamenev:0 "Lev Kamenev"
  grigory_zinoviev:0 "Grigory Zinoviev"
  karl_radek:0 "Karl Radek"
+ nicolaj_bucharin:0 "Nicolaj Bucharin"
+
  SOV_veteran_communist:0 "Veteran communist"
+ SOV_secret_police_chief_0:0 "Efficient Executioner"
