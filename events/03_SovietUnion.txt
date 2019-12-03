@@ -61,6 +61,10 @@ country_event = {
     }
     name = soviet.125.b
     add_political_power = -75
+		add_popularity = {
+    	ideology = democracy
+    	popularity = 0.05
+		}
     set_country_flag = purged_party_members
   }
 }
@@ -191,6 +195,9 @@ country_event = {
       idea = officers_purged
       days = 1460
     }
+		hidden_effect = {
+			country_event = { id = soviet.37 days = 146 }
+		}
 
 		## custom_effect_tooltip = remove_chief_of_army
 		## show_ideas_tooltip = semyon_timoshenko
@@ -238,9 +245,11 @@ country_event = {
 			factor = 100
 		}
 		name = soviet.128.a
-    add_timed_idea = { idea = SOV_idea_purge_intellectuals  days = 60 }
-		add_political_power = -50
+		custom_effect_tooltip = remove_political_advisor
+		show_ideas_tooltip = nikolaj_bucharin
 		set_country_flag = purged_bucharin
+		add_timed_idea = { idea = SOV_idea_purge_intellectuals  days = 60 }
+		add_political_power = -50
 		hidden_effect = {
 			remove_ideas = nikolaj_bucharin
 		}
@@ -284,7 +293,17 @@ country_event = {
 	option = {
 		name = soviet.53.a
 		remove_ideas = trotskyite_plot
-		## add_ideas = trotskyite_plot_purged
+		if = {
+			limit = {
+				or = {
+					has_country_flag = purged_soldiers
+					has_country_flag = purged_intellectuals
+					has_country_flag = purged_party_members2
+					set_country_flag = purged_party_members
+				}
+			}
+			add_ideas = trotskyite_plot_purged
+		}
 		add_stability = 0.05
 		set_country_flag = purged_yezhov
 		hidden_effect = {

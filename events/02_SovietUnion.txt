@@ -1,10 +1,357 @@
-﻿###########################
-# Soviet Events
-###########################
-
+###########################################################
+#### THE GREAT PURGE - NEW OFFICERS
+###########################################################
 add_namespace = soviet
 
-country_event = {  ## ADD General Zhukov + Vasilevsky + Chernyakhovsky + Pliyev + Yeryomenko + Cherevichenko + Fedyuninsky + Moskalenko + Lelyushenko
+# Purge - New officers less dumb. Regaining org
+country_event = {
+	id = soviet.37
+	title = soviet.37.t
+	desc = soviet.37.d
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+
+	trigger = {	has_idea = officers_purged }
+
+	immediate = {
+		hidden_effect = {
+			remove_ideas = officers_purged
+			add_timed_idea = {
+				idea = officers_purged_2
+				days = 1314
+			}
+			country_event = { id = soviet.38 days = 146 }
+			country_event = { id = soviet.200 days = 365 }  ## 5 more generals
+			country_event = { id = soviet.201 days = 500 }  ## 4 more generals
+			country_event = { id = soviet.210 days = 700 }  ## Rokossovsky
+		}
+	}
+	option = {
+		name = soviet.37.a
+		custom_effect_tooltip = soviet.37.a_tt
+	}
+}
+# Purge - New officers less dumb. Regaining org
+country_event = {
+	id = soviet.38
+	title = soviet.37.t
+	desc = soviet.37.d
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+
+	trigger = {	has_idea = officers_purged_2 }
+
+	immediate = {
+		hidden_effect = {
+			remove_ideas = officers_purged_2
+			add_timed_idea = {
+				idea = officers_purged_3
+				days = 1168
+			}
+			if = {
+				limit = { has_idea = SOV_great_patriotic_war }
+				remove_ideas = SOV_great_patriotic_war
+				add_ideas = SOV_great_patriotic_war_2
+			}
+			country_event = { id = soviet.39 days = 146 }
+		}
+	}
+	option = {
+		name = soviet.37.a
+		custom_effect_tooltip = soviet.37.a_tt
+	}
+}
+# Purge - New officers less dumb. Regaining org
+country_event = {
+	id = soviet.39
+	title = soviet.37.t
+	desc = soviet.37.d
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+
+	trigger = {	has_idea = officers_purged_3 }
+
+	immediate = {
+		hidden_effect = {
+			remove_ideas = officers_purged_3
+			add_timed_idea = {
+				idea = officers_purged_4
+				days = 1022
+			}
+			country_event = { id = soviet.40 days = 146 }
+		}
+	}
+	option = {
+		name = soviet.37.a
+		custom_effect_tooltip = soviet.37.a_tt
+	}
+}
+# Purge - New officers less dumb. Regaining org
+country_event = {
+	id = soviet.40
+	title = soviet.37.t
+	desc = soviet.37.d
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+
+	trigger = {	has_idea = officers_purged_4 }
+
+	immediate = {
+		hidden_effect = {
+			remove_ideas = officers_purged_4
+			add_timed_idea = {
+				idea = officers_purged_5
+				days = 876
+			}
+			if = {
+				limit = { has_idea = SOV_great_patriotic_war_2 }
+				remove_ideas = SOV_great_patriotic_war_2
+				add_ideas = SOV_great_patriotic_war_3
+			}
+			country_event = { id = soviet.41 days = 146 }
+		}
+	}
+	option = {
+		name = soviet.37.a
+		custom_effect_tooltip = soviet.37.a_tt
+	}
+}
+# Purge - New officers less dumb. Regaining org
+country_event = {
+	id = soviet.41
+	title = soviet.37.t
+	desc = soviet.37.d
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+
+	trigger = {	has_idea = officers_purged_5 }
+
+	immediate = {
+	hidden_effect = {
+			remove_ideas = officers_purged_5
+			add_timed_idea = {
+				idea = officers_purged_6
+				days = 730
+			}
+			country_event = { id = soviet.42 days = 146 }
+		}
+	}
+	option = {
+		name = soviet.37.a
+		custom_effect_tooltip = soviet.37.a_tt
+	}
+}
+# Purge - New officers less dumb. Regaining org
+country_event = {
+	id = soviet.42
+	title = soviet.37.t
+	desc = soviet.37.d
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+
+	trigger = {	has_idea = officers_purged_6 }
+
+	immediate = {
+		hidden_effect = {
+			remove_ideas = officers_purged_6
+			add_timed_idea = {
+				idea = officers_purged_7
+				days = 584
+			}
+			if = {
+				limit = { has_idea = SOV_great_patriotic_war_3 }
+				remove_ideas = SOV_great_patriotic_war_3
+				add_ideas = SOV_great_patriotic_war_4
+			}
+			country_event = { id = soviet.43 days = 146 }
+		}
+	}
+	option = {
+		name = soviet.37.a
+		custom_effect_tooltip = soviet.37.a_tt
+	}
+}
+# Purge - New officers less dumb. Regaining org
+country_event = {
+	id = soviet.43
+	title = soviet.37.t
+	desc = soviet.37.d
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+
+	trigger = {	has_idea = officers_purged_7 }
+
+	immediate = {
+		hidden_effect = {
+			remove_ideas = officers_purged_7
+			add_timed_idea = {
+				idea = officers_purged_8
+				days = 438
+			}
+			country_event = { id = soviet.44 days = 146 }
+		}
+	}
+	option = {
+		name = soviet.37.a
+		custom_effect_tooltip = soviet.37.a_tt
+	}
+}
+# Purge - New officers less dumb. Regaining org
+country_event = {
+	id = soviet.44
+	title = soviet.37.t
+	desc = soviet.37.d
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+
+	trigger = {	has_idea = officers_purged_8 }
+
+	immediate = {
+		hidden_effect = {
+			remove_ideas = officers_purged_8
+			add_timed_idea = {
+				idea = officers_purged_9
+				days = 292
+			}
+			if = {
+				limit = { has_idea = SOV_great_patriotic_war_4 }
+				remove_ideas = SOV_great_patriotic_war_4
+				add_ideas = SOV_great_patriotic_war_5
+			}
+			country_event = { id = soviet.45 days = 146 }
+		}
+	}
+	option = {
+		name = soviet.37.a
+		custom_effect_tooltip = soviet.37.a_tt
+	}
+}
+# Purge - New officers less dumb. Regaining org
+country_event = {
+	id = soviet.45
+	title = soviet.37.t
+	desc = soviet.37.d
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+
+	trigger = {	has_idea = officers_purged_9 }
+
+	immediate = {
+		hidden_effect = {
+			remove_ideas = officers_purged_9
+			add_timed_idea = {
+				idea = officers_purged_10
+				days = 146
+			}
+		}
+		country_event = { id = soviet.47 days = 146 }
+	}
+	option = {
+		name = soviet.37.a
+		custom_effect_tooltip = soviet.37.a_tt
+	}
+}
+# Purge - Fighting defensive war against major
+country_event = {
+	id = soviet.46
+	title = soviet.46.t
+	desc = soviet.46.d
+	picture = GFX_report_event_soldiers_marching
+
+	is_triggered_only = yes
+
+	trigger = {
+
+	}
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					OR = {
+						has_idea = officers_purged
+						has_idea = officers_purged_2
+					}
+				}
+				add_ideas = SOV_great_patriotic_war
+			}
+			if = {
+				limit = {
+					OR = {
+						has_idea = officers_purged_3
+						has_idea = officers_purged_4
+					}
+				}
+				add_ideas = SOV_great_patriotic_war_2
+			}
+			if = {
+				limit = {
+					OR = {
+						has_idea = officers_purged_5
+						has_idea = officers_purged_6
+					}
+				}
+				add_ideas = SOV_great_patriotic_war_3
+			}
+			if = {
+				limit = {
+					OR = {
+						has_idea = officers_purged_7
+						has_idea = officers_purged_8
+					}
+				}
+				add_ideas = SOV_great_patriotic_war_4
+			}
+			if = {
+				limit = {
+					OR = {
+						has_idea = officers_purged_9
+						has_idea = officers_purged_10
+					}
+				}
+				add_ideas = SOV_great_patriotic_war_5
+			}
+		}
+	}
+
+	option = {
+		name = soviet.46.a
+		custom_effect_tooltip = soviet.46.a_tt
+	}
+}
+# Purge - Special event to remove patriotic war if it has been added
+country_event = {
+	id = soviet.47
+
+	hidden = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = { has_idea = SOV_great_patriotic_war_5 }
+			remove_ideas = SOV_great_patriotic_war_5
+		}
+	}
+}
+
+
+###########################################################
+#### THE GREAT PURGE - NEW OFFICERS -END
+###########################################################
+
+
+
+country_event = {  ## ADD General  Yeryomenko + Cherevichenko + Fedyuninsky + Moskalenko + Lelyushenko
 	id = soviet.200
 	title = soviet.200.t
 	desc = soviet.200.d
@@ -23,56 +370,7 @@ country_event = {  ## ADD General Zhukov + Vasilevsky + Chernyakhovsky + Pliyev 
 		ai_chance = { factor = 100 }
 
 
-		create_corps_commander = {
-			name = "Georgy Zhukov"
-			id = 410
-				picture = "Portrait_Soviet_Gregory_Zhukov.dds"
-			traits = { winter_specialist armor_officer media_personality war_hero }
-			skill = 5
 
-
-			attack_skill = 5
-			defense_skill = 2
-			planning_skill = 4
-			logistics_skill = 5
-		}
-
-		create_corps_commander = {
-			name = "Aleksandr Vasilevsky"
-			id = 407
-				picture = "Portrait_Soviet_Aleksandr_Vasilevsky.dds"
-			traits = { armor_officer politically_connected }
-			skill = 4
-
-			attack_skill = 4
-			defense_skill = 4
-			planning_skill = 3
-			logistics_skill = 2
-		}
-
-		create_corps_commander = {
-			name = "Ivan Chernyakhovsky"
-				picture = "Portrait_Soviet_Ivan_Chernyakhovsky.dds"
-			traits = { armor_officer }
-			skill = 1
-
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-		}
-
-		create_corps_commander = {
-			name = "Issa Pliyev"
-				picture = "Portrait_Soviet_Issa_Pliyev.dds"
-			traits = { cavalry_officer }
-			skill = 1
-
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-		}
 
 		create_corps_commander = {
 			name = "Andrey Yeryomenko"
@@ -137,6 +435,80 @@ country_event = {  ## ADD General Zhukov + Vasilevsky + Chernyakhovsky + Pliyev 
   }
 }
 
+
+country_event = {  ## ADD General Zhukov + Vasilevsky + Chernyakhovsky + Pliyev
+	id = soviet.201
+	title = soviet.200.t
+	desc = soviet.200.d
+	picture = GFX_report_event_stalin_01
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = soviet.200.a
+		ai_chance = { factor = 100 }
+
+		create_corps_commander = {
+			name = "Georgy Zhukov"
+			id = 410
+				picture = "Portrait_Soviet_Gregory_Zhukov.dds"
+			traits = { winter_specialist armor_officer media_personality war_hero }
+			skill = 5
+
+			attack_skill = 5
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 5
+		}
+
+		create_corps_commander = {
+			name = "Aleksandr Vasilevsky"
+			id = 407
+				picture = "Portrait_Soviet_Aleksandr_Vasilevsky.dds"
+			traits = { armor_officer politically_connected }
+			skill = 4
+
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+		}
+
+		create_corps_commander = {
+			name = "Ivan Chernyakhovsky"
+				picture = "Portrait_Soviet_Ivan_Chernyakhovsky.dds"
+			traits = { armor_officer }
+			skill = 1
+
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+
+		create_corps_commander = {
+			name = "Issa Pliyev"
+				picture = "Portrait_Soviet_Issa_Pliyev.dds"
+			traits = { cavalry_officer }
+			skill = 1
+
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+  }
+}
+
+
+
+
 country_event = {  ## ADD General Rokossovsky
 	id = soviet.210
 	title = soviet.210.t
@@ -152,7 +524,7 @@ country_event = {  ## ADD General Rokossovsky
 	}
 
 	option = {
-		name = soviet.200.a
+		name = soviet.210.a
 		ai_chance = { factor = 100 }
 
 		clr_country_flag = purged_rokossovsky
