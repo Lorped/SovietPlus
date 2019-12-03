@@ -68,4 +68,9 @@ spriteTypes = {
     texturefile = "gfx/interface/goals/SOV_add_production_quota.dds"
   }
 
+  spriteType = {
+    name = "GFX_sov_nkvd_power"
+    texturefile = "gfx/interface/goals/GFX_sov_nkvd_power.dds"
+  }
+
  }

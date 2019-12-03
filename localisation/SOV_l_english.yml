@@ -22,6 +22,9 @@
  SOV_improve_infrastructure_desc:0 "The Union's infrastructures and raildroads are old. We must improve and modernize them in order to substain the industrialization effort"
  SOV_add_production_quota:0 "Increase production quotas"
  SOV_add_production_quota_desc:0 "The Five-Year Plan requires that the production quotas of basic resources must be incremented."
+ SOV_nkvd_power:0 "NKVD Primacy"
+ SOV_nkvd_power_desc:0 "Our security agency must be strengthened to better control the activities of Soviet citizens and ensure greater safety for the Union"
+
 
  SOV_5_year_plan_tt:0 "Our effort will increase the completion of the Five-Year Plan by §G5%§!"
 

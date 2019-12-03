@@ -689,7 +689,7 @@ focus_tree = {
 		available = {
 			has_government = communism
 		}
-		x = 14
+		x = 10
 		y = 0
 		cost = 2
 		ai_will_do = {
@@ -715,3 +715,30 @@ focus_tree = {
 
 }
 ###
+
+focus = {
+		id = SOV_nkvd_power
+		icon = GFX_sov_nkvd_power
+		prerequisite = {
+			focus = SOV_great_purge
+		}
+		# mutually_exclusive = { focus = SOV_rehabilitated_military }
+		x = -2
+		y = 1
+		relative_position_id = SOV_great_purge
+		cost = 10
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 1000
+				any_claim = yes
+				has_war = yes
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = nkvd_1
+		}
+	}

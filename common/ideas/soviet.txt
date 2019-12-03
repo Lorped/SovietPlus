@@ -207,7 +207,10 @@ ideas = {
 			}
 
 			modifier = {
-				subversive_activites_upkeep = -0.5
+				foreign_subversive_activites = -0.5
+				communism_drift = 0.005
+				weekly_manpower = -100
+				stability_weekly = 0.005
 			}
 		}
 
@@ -834,7 +837,7 @@ ideas = {
 				political_power_factor = 0.15
 				political_advisor_cost_factor = 0.2
 				army_chief_cost_factor = 0.2
-				foreign_subversive_activites = -0.5
+				foreign_subversive_activites = -0.2
 			}
 		}
 
@@ -868,7 +871,7 @@ ideas = {
 				political_power_factor = 0.25
 				political_advisor_cost_factor = 0.2
 				army_chief_cost_factor = 0.2
-				foreign_subversive_activites = -0.4
+				foreign_subversive_activites = -0.2
 			}
 
 		}
