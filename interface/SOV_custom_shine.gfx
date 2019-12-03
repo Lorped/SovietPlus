@@ -169,7 +169,7 @@ spriteTypes = {
   }
 
   SpriteType = {
-    name = "GFX_sov_add_production_quota_shine"
+    name = "GFX_sov_nkvd_power_shine"
     texturefile = "gfx/interface/goals/SOV_nkvd_power.dds"
     effectFile = "gfx/FX/buttonstate.lua"
     animation = {

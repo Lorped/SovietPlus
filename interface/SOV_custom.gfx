@@ -70,7 +70,7 @@ spriteTypes = {
 
   spriteType = {
     name = "GFX_sov_nkvd_power"
-    texturefile = "gfx/interface/goals/GFX_sov_nkvd_power.dds"
+    texturefile = "gfx/interface/goals/SOV_nkvd_power.dds"
   }
 
  }
