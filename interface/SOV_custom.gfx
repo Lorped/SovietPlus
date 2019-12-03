@@ -27,7 +27,17 @@ spriteTypes = {
 
   spriteType = {
     name = "GFX_idea_five_year_plan"
-    texturefile = "gfx/ideas/SOV_five_years.dds"
+    texturefile = "gfx/ideas/SOV_five_year_plan.dds"
+  }
+
+  spriteType = {
+    name = "GFX_idea_five_year_plan_MIL"
+    texturefile = "gfx/ideas/SOV_five_year_plan_MIL.dds"
+  }
+
+  spriteType = {
+    name = "GFX_idea_five_year_plan_CIC"
+    texturefile = "gfx/ideas/SOV_five_year_plan_CIC.dds"
   }
 
   spriteType = {

@@ -682,28 +682,6 @@ focus_tree = {
 		}
 	}
 
-	#Focus for Strength GOSPLAN
-	focus = {
-		id = SOV_strength_gosplan
-		icon = GFX_sov_five_year_plan_IC_1
-		x = 4
-		y = 1
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_finish_the_five_year_plan }
-		mutually_exclusive = { focus = SOV_review_gosplan }
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-		}
-
-		completion_reward = {
-			add_ideas = SOV_nikolai_voznesensky
-			swap_ideas = { remove_idea = SOV_idea_2_5_year_plan add_idea = SOV_idea_2_5_year_plan_CIC }
-			add_to_variable = { var = 5_year_plan_progress value = 10 }
-		}
-	}
 
 	#Focus for Gosstandart
 	focus = {
