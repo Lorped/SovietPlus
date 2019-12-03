@@ -62,7 +62,7 @@ country_event = {
     name = soviet.125.b
     add_political_power = -75
 		add_popularity = {
-    	ideology = democracy
+    	ideology = democratic
     	popularity = 0.05
 		}
     set_country_flag = purged_party_members
@@ -105,7 +105,7 @@ country_event = {
     ai_chance = {
       factor = 0
     }
-    name = soviet.125.b
+    name = soviet.126.b
     add_timed_idea = { idea = SOV_idea_purge_intellectuals  days = 120 }
     add_political_power = -50
     set_country_flag = purged_party_members2
@@ -299,7 +299,7 @@ country_event = {
 					has_country_flag = purged_soldiers
 					has_country_flag = purged_intellectuals
 					has_country_flag = purged_party_members2
-					set_country_flag = purged_party_members
+					has_country_flag = purged_party_members
 				}
 			}
 			add_ideas = trotskyite_plot_purged
