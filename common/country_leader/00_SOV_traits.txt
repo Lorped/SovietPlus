@@ -26,8 +26,6 @@ leader_traits = {
 			armor = {
 				soft_attack = 0.02
 				hard_attack = 0.02
-				defense = 0.02
-				breakthrough = 0.02
 				reliability = 0.02
 				build_cost_ic = 0.05 instant = yes
 			}
@@ -47,7 +45,6 @@ leader_traits = {
 				air_ground_attack = 0.02
 				air_defence = 0.02
 				reliability = 0.02
-				build_cost_ic = 0.05 instant = yes
 				build_cost_ic = 0.05 instant = yes
 			}
 			strat_bomber_equipment = {
