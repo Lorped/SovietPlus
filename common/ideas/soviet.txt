@@ -134,27 +134,6 @@ ideas = {
 
 
 
-
-
-		militarized_schools = {
-			removal_cost = -1
-			allowed = {
-				always = no # Added via focus
-			}
-
-			allowed_civil_war = {
-				NOT = {
-					has_government = democratic
-				}
-			}
-
-			picture = generic_manpower_bonus
-
-			modifier = {
-				conscription = 0.005
-			}
-		}
-
 		idea_stakanovite = {
 			removal_cost = -1
 
@@ -186,13 +165,35 @@ ideas = {
 			has_government = communism
 		}
 
-		picture = generic_production_bonus
+		picture = gosstandart
 
 		modifier = {
 		}
 		traits = { SOV_quality }
 	}
 
+
+
+
+
+			militarized_schools = {
+				removal_cost = -1
+				allowed = {
+					always = no # Added via focus
+				}
+
+				allowed_civil_war = {
+					NOT = {
+						has_government = democratic
+					}
+				}
+
+				picture = generic_manpower_bonus
+
+				modifier = {
+					conscription = 0.005
+				}
+			}
 
 
 		workers_culture = {

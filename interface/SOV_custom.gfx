@@ -50,7 +50,15 @@ spriteTypes = {
     texturefile = "gfx/ideas/SOV_purge_intellectuals.dds"
   }
 
+  #spriteType = {
+  #  name = "GFX_idea_stakanovite"
+  #  texturefile = "gfx/ideas/SOV_stakanovite.dds"
+  #}
 
+  spriteType = {
+    name = "GFX_idea_gosstandart"
+    texturefile = "gfx/ideas/SOV_gosstandart.dds"
+  }
 
 
   spriteType = {
@@ -81,6 +89,16 @@ spriteTypes = {
   spriteType = {
     name = "GFX_sov_nkvd_power"
     texturefile = "gfx/interface/goals/SOV_nkvd_power.dds"
+  }
+
+  spriteType = {
+    name = "GFX_stakanovite"
+    texturefile = "gfx/interface/goals/SOV_stakanovite.dds"
+  }
+
+  spriteType = {
+    name = "GFX_gosstandart"
+    texturefile = "gfx/interface/goals/SOV_gosstandart.dds"
   }
 
  }
