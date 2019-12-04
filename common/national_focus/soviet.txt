@@ -719,8 +719,72 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = SOV_transpolar_flights
+		icon = GFX_sov_transpolar_flight
+		x = 11
+		y = 0
+		cost = 5
+		ai_will_do = {
+			factor = 8
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			#if = {
+			#	limit = {
+			#		NOT = { has_completed_focus = SOV_collectivist_propaganda }
+			#	}
+			#	custom_effect_tooltip = SOV_suggest_collectivist_propaganda_tt
+			#}
+			#if = {
+			#	limit = {
+			#		has_completed_focus = SOV_collectivist_propaganda
+			#	}
+			#	add_political_power = 100
+			#}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}
+			#add_tech_bonus = {
+			#	bonus = 1.0
+			#	uses = 1
+			#	category = medium_air
+			#	category = heavy_air
+			#}
+		}
+	}
+
+	focus = {
+		id = SOV_aviation_cult
+		icon = GFX_aviation_cult
+		prerequisite = { focus = SOV_transpolar_flights }
+		x = 11
+		y = 4
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
 
 
+		available_if_capitulated = yes
+
+		completion_reward = {
+			air_experience = 25
+
+			add_tech_bonus = {
+				name = air_bonus
+				bonus = 1
+				uses = 1
+				category = light_air
+				category = medium_air
+				category = heavy_air
+			}
+		}
+	}
 
 
 	#focus for The Great Purge

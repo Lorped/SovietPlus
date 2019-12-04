@@ -145,7 +145,7 @@ ideas = {
 				has_government = communism
 			}
 
-			picture = generic_production_bonus
+			picture = stakanovite
 
 			modifier = {
 				production_factory_efficiency_gain_factor = 0.15

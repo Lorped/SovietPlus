@@ -158,3 +158,8 @@ soviet.57.a:0 "Dispose him and the books"
  idea_stakanovite_desc:0 "Alexey Stakhanov, true soviet model worker, inspires other workers in the whole Soviet Union"
 
  SOV_quality:0 "Quality Focus"
+
+ SOV_transpolar_flight:0 "sov t p"
+ SOV_transpolar_flight_desc:0 "sov t p desc"
+ SOV_aviation_cult:0 "sov av c"
+ SOV_aviation_cult_desc:0 "sov av c desc"

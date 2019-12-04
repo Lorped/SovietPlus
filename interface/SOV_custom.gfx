@@ -60,6 +60,11 @@ spriteTypes = {
     texturefile = "gfx/ideas/SOV_gosstandart.dds"
   }
 
+  spriteType = {
+    name = "GFX_idea_stakanovite"
+    texturefile = "gfx/ideas/SOV_stakanovite.dds"
+  }
+
 
   spriteType = {
 		name = "GFX_sov_five_year_plan_IC_1"
@@ -99,6 +104,11 @@ spriteTypes = {
   spriteType = {
     name = "GFX_gosstandart"
     texturefile = "gfx/interface/goals/SOV_gosstandart.dds"
+  }
+
+  spriteType = {
+    name = "GFX_sov_transpolar_flight"
+    texturefile = "gfx/interface/goals/SOV_transpolar_flight.dds"
   }
 
  }
