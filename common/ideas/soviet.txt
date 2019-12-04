@@ -3,24 +3,18 @@ ideas = {
 
 		SOV_idea_2_5_year_plan = {
 			available = { has_defensive_war = no }
-
 			removal_cost = -1
-
 			allowed = {
 				always = no # Added via focus
 			}
-
+			allowed_civil_war = {
+				has_government = communism
+			}
+			picture = five_year_plan
 			research_bonus = {
 				industry = -0.4
 				electronics = -0.4
 			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-
-			picture = five_year_plan
-
 			modifier = {
 				min_export = -0.20
 				production_speed_industrial_complex_factor = 0.10
@@ -32,24 +26,18 @@ ideas = {
 
 		SOV_idea_2_5_year_plan_CIC = {
 			available = { has_defensive_war = no }
-
 			removal_cost = -1
-
 			allowed = {
 				always = no # Added via focus
 			}
-
+			allowed_civil_war = {
+				has_government = communism
+			}
+			picture = five_year_plan_CIC
 			research_bonus = {
 				industry = -0.4
 				electronics = -0.4
 			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-
-			picture = five_year_plan_CIC
-
 			modifier = {
 				min_export = -0.20
 				production_speed_industrial_complex_factor = 0.15
@@ -61,24 +49,18 @@ ideas = {
 
 		SOV_idea_2_5_year_plan_MIL = {
 			available = { has_defensive_war = no }
-
 			removal_cost = -1
-
 			allowed = {
 				always = no # Added via focus
 			}
-
+			allowed_civil_war = {
+				has_government = communism
+			}
+			picture = five_year_plan_MIL
 			research_bonus = {
 				industry = -0.4
 				electronics = -0.4
 			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-
-			picture = five_year_plan_MIL
-
 			modifier = {
 				min_export = -0.20
 				production_speed_industrial_complex_factor = 0.05
@@ -89,19 +71,14 @@ ideas = {
 		}
 
 		SOV_idea_purge_time = {
-
 			removal_cost = -1
-
 			allowed = {
 				always = no # Added via focus
 			}
-
 			allowed_civil_war = {
 				has_government = communism
 			}
-
 			picture = purge_time
-
 			modifier = {
 				political_power_gain = -1.0
 				weekly_manpower = -500
@@ -109,70 +86,290 @@ ideas = {
 		}
 
 		SOV_idea_purge_intellectuals = {
-
 			removal_cost = -1
-
 			allowed = {
 				always = no # Added via focus
 			}
-
 			allowed_civil_war = {
 				has_government = communism
 			}
-
 			picture = purge_intellectuals
-
 			research_bonus = {
 				synth_resources = -0.10
 				rocketry = -0.10
 				nuclear = -0.10
 				electronics = -0.10
 			}
-
 		}
-
-
-
 
 		idea_stakanovite = {
 			removal_cost = -1
-
 			allowed = {
 				always = no # Added via focus
 			}
-
 			allowed_civil_war = {
 				has_government = communism
 			}
-
 			picture = stakanovite
-
 			modifier = {
 				production_factory_efficiency_gain_factor = 0.15
 				production_factory_max_efficiency_factor = 0.05
-				# stability_weekly = -0.002
+				## stability_weekly = -0.002
 			}
 		}
 
-	idea_gosstandart = {
-		removal_cost = -1
-
-		allowed = {
-			always = no # Added via focus
+		idea_gosstandart = {
+			removal_cost = -1
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			picture = gosstandart
+			modifier = {
+			}
+			traits = { SOV_quality }
 		}
 
-		allowed_civil_war = {
-			has_government = communism
+		nkvd = {
+			removal_cost = -1
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			picture = nkvd
+			modifier = {
+				foreign_subversive_activites = -0.5
+				communism_drift = 0.05
+				weekly_manpower = -100
+				stability_weekly = 0.005
+			}
 		}
 
-		picture = gosstandart
-
-		modifier = {
+		officers_purged = {
+			removal_cost = -1
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			picture = officers_purged
+			research_bonus = {
+				land_doctrine = -0.10
+				naval_doctrine = -0.10
+				air_doctrine = -0.10
+			}
+			modifier = {
+				army_org_factor = -0.5
+				send_volunteer_factor = -0.8
+				industrial_capacity_factory = -0.2
+				training_time_factor = 0.5
+			}
 		}
-		traits = { SOV_quality }
-	}
 
+		officers_purged_2 = {
+			removal_cost = -1
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			picture = officers_purged
+			research_bonus = {
+				land_doctrine = -0.09
+				naval_doctrine = -0.09
+				air_doctrine = -0.09
+			}
+			modifier = {
+				army_org_factor = -0.45
+				send_volunteer_factor = -0.74
+				industrial_capacity_factory = -0.18
+				training_time_factor = 0.45
+			}
+		}
 
+		officers_purged_3 = {
+			removal_cost = -1
+			picture = officers_purged
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			research_bonus = {
+				land_doctrine = -0.08
+				naval_doctrine = -0.08
+				air_doctrine = -0.08
+			}
+			modifier = {
+				army_org_factor = -0.4
+				send_volunteer_factor = -0.68
+				industrial_capacity_factory = -0.16
+				training_time_factor = 0.4
+			}
+		}
+
+		officers_purged_4 = {
+			removal_cost = -1
+			picture = officers_purged
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			research_bonus = {
+				land_doctrine = -0.07
+				naval_doctrine = -0.07
+				air_doctrine = -0.07
+			}
+			modifier = {
+				army_org_factor = -0.35
+				send_volunteer_factor = -0.62
+				industrial_capacity_factory = -0.14
+				training_time_factor = 0.35
+			}
+		}
+
+		officers_purged_5 = {
+			removal_cost = -1
+			picture = officers_purged
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			research_bonus = {
+				land_doctrine = -0.06
+				naval_doctrine = -0.06
+				air_doctrine = -0.06
+			}
+			modifier = {
+				army_org_factor = -0.30
+				send_volunteer_factor = -0.56
+				industrial_capacity_factory = -0.12
+				training_time_factor = 0.3
+			}
+		}
+
+		officers_purged_6 = {
+			removal_cost = -1
+			picture = officers_purged
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			research_bonus = {
+				land_doctrine = -0.05
+				naval_doctrine = -0.05
+				air_doctrine = -0.05
+			}
+			modifier = {
+				army_org_factor = -0.25
+				send_volunteer_factor = -0.5
+				industrial_capacity_factory = -0.10
+				training_time_factor = 0.25
+			}
+		}
+
+		officers_purged_7 = {
+			removal_cost = -1
+			picture = officers_purged
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			research_bonus = {
+				land_doctrine = -0.04
+				naval_doctrine = -0.04
+				air_doctrine = -0.04
+			}
+			modifier = {
+				army_org_factor = -0.20
+				send_volunteer_factor = -0.44
+				industrial_capacity_factory = -0.08
+				training_time_factor = 0.2
+			}
+		}
+
+		officers_purged_8 = {
+			removal_cost = -1
+			picture = officers_purged
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			research_bonus = {
+				land_doctrine = -0.03
+				naval_doctrine = -0.03
+				air_doctrine = -0.03
+			}
+			modifier = {
+				army_org_factor = -0.15
+				send_volunteer_factor = -0.38
+				industrial_capacity_factory = -0.06
+				training_time_factor = 0.15
+			}
+		}
+
+		officers_purged_9 = {
+			removal_cost = -1
+			picture = officers_purged
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			research_bonus = {
+				land_doctrine = -0.02
+				naval_doctrine = -0.02
+				air_doctrine = -0.02
+			}
+			modifier = {
+				army_org_factor = -0.10
+				send_volunteer_factor = -0.32
+				industrial_capacity_factory = -0.04
+				training_time_factor = 0.1
+			}
+		}
+
+		officers_purged_10 = {
+			removal_cost = -1
+			picture = officers_purged
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			research_bonus = {
+				land_doctrine = -0.01
+				naval_doctrine = -0.01
+				air_doctrine = -0.01
+			}
+			modifier = {
+				army_org_factor = -0.05
+				send_volunteer_factor = -0.26
+				industrial_capacity_factory = -0.02
+				training_time_factor = 0.05
+			}
+		}
+
+		
 
 
 
@@ -236,24 +433,7 @@ ideas = {
 			}
 		}
 
-		nkvd = {
-			removal_cost = -1
 
-			allowed = {
-				always = no # Added via focus
-			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-
-			modifier = {
-				foreign_subversive_activites = -0.5
-				communism_drift = 0.05
-				weekly_manpower = -100
-				stability_weekly = 0.005
-			}
-		}
 
 		nkvd_2 = {
 			removal_cost = -1
@@ -415,265 +595,7 @@ ideas = {
 			}
 		}
 
-		officers_purged = {
-			removal_cost = -1
 
-			allowed = {
-				always = no # Added via focus
-			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-
-			research_bonus = {
-				land_doctrine = -0.10
-				naval_doctrine = -0.10
-				air_doctrine = -0.10
-			}
-
-			modifier = {
-				army_org_factor = -0.5
-				send_volunteer_factor = -0.8
-				industrial_capacity_factory = -0.2
-				training_time_factor = 0.5
-			}
-		}
-
-		officers_purged_2 = {
-			removal_cost = -1
-
-			picture = officers_purged
-
-			allowed = {
-				always = no # Added via focus
-			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-
-			research_bonus = {
-				land_doctrine = -0.09
-				naval_doctrine = -0.09
-				air_doctrine = -0.09
-			}
-
-			modifier = {
-				army_org_factor = -0.45
-				send_volunteer_factor = -0.74
-				industrial_capacity_factory = -0.18
-				training_time_factor = 0.45
-			}
-		}
-		officers_purged_3 = {
-			removal_cost = -1
-
-			picture = officers_purged
-
-			allowed = {
-				always = no # Added via focus
-			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-
-			research_bonus = {
-				land_doctrine = -0.08
-				naval_doctrine = -0.08
-				air_doctrine = -0.08
-			}
-
-			modifier = {
-				army_org_factor = -0.4
-				send_volunteer_factor = -0.68
-				industrial_capacity_factory = -0.16
-				training_time_factor = 0.4
-			}
-		}
-		officers_purged_4 = {
-			removal_cost = -1
-
-			picture = officers_purged
-
-			allowed = {
-				always = no # Added via focus
-			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-
-			research_bonus = {
-				land_doctrine = -0.07
-				naval_doctrine = -0.07
-				air_doctrine = -0.07
-			}
-
-			modifier = {
-				army_org_factor = -0.35
-				send_volunteer_factor = -0.62
-				industrial_capacity_factory = -0.14
-				training_time_factor = 0.35
-			}
-		}
-		officers_purged_5 = {
-			removal_cost = -1
-
-			picture = officers_purged
-
-			allowed = {
-				always = no # Added via focus
-			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-
-			research_bonus = {
-				land_doctrine = -0.06
-				naval_doctrine = -0.06
-				air_doctrine = -0.06
-			}
-
-			modifier = {
-				army_org_factor = -0.30
-				send_volunteer_factor = -0.56
-				industrial_capacity_factory = -0.12
-				training_time_factor = 0.3
-			}
-		}
-		officers_purged_6 = {
-			removal_cost = -1
-
-			picture = officers_purged
-
-			allowed = {
-				always = no # Added via focus
-			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-
-			research_bonus = {
-				land_doctrine = -0.05
-				naval_doctrine = -0.05
-				air_doctrine = -0.05
-			}
-
-			modifier = {
-				army_org_factor = -0.25
-				send_volunteer_factor = -0.5
-				industrial_capacity_factory = -0.10
-				training_time_factor = 0.25
-			}
-		}
-		officers_purged_7 = {
-			removal_cost = -1
-
-			picture = officers_purged
-
-			allowed = {
-				always = no # Added via focus
-			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-
-			research_bonus = {
-				land_doctrine = -0.04
-				naval_doctrine = -0.04
-				air_doctrine = -0.04
-			}
-
-			modifier = {
-				army_org_factor = -0.20
-				send_volunteer_factor = -0.44
-				industrial_capacity_factory = -0.08
-				training_time_factor = 0.2
-			}
-		}
-		officers_purged_8 = {
-			removal_cost = -1
-
-			picture = officers_purged
-
-			allowed = {
-				always = no # Added via focus
-			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-
-			research_bonus = {
-				land_doctrine = -0.03
-				naval_doctrine = -0.03
-				air_doctrine = -0.03
-			}
-
-			modifier = {
-				army_org_factor = -0.15
-				send_volunteer_factor = -0.38
-				industrial_capacity_factory = -0.06
-				training_time_factor = 0.15
-			}
-		}
-		officers_purged_9 = {
-			removal_cost = -1
-
-			picture = officers_purged
-
-			allowed = {
-				always = no # Added via focus
-			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-
-			research_bonus = {
-				land_doctrine = -0.02
-				naval_doctrine = -0.02
-				air_doctrine = -0.02
-			}
-
-			modifier = {
-				army_org_factor = -0.10
-				send_volunteer_factor = -0.32
-				industrial_capacity_factory = -0.04
-				training_time_factor = 0.1
-			}
-		}
-		officers_purged_10 = {
-			removal_cost = -1
-
-			picture = officers_purged
-
-			allowed = {
-				always = no # Added via focus
-			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-
-			research_bonus = {
-				land_doctrine = -0.01
-				naval_doctrine = -0.01
-				air_doctrine = -0.01
-			}
-
-			modifier = {
-				army_org_factor = -0.05
-				send_volunteer_factor = -0.26
-				industrial_capacity_factory = -0.02
-				training_time_factor = 0.05
-			}
-		}
 
 		SOV_great_patriotic_war = {
 			removal_cost = -1

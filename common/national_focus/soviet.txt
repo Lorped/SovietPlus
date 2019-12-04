@@ -847,6 +847,29 @@ focus = {
 		}
 	}
 
+	focus = {
+		id = SOV_stalin_constitution
+		icon = GFX_SOV_stalin_constitution
+		prerequisite = { focus = SOV_great_purge }
+		relative_position_id = SOV_great_purge
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 50
+				any_claim = yes
+				has_war = yes
+			}
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.1
+		}
+	}
+
 
 	}
 	###
