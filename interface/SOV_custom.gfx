@@ -126,5 +126,29 @@ spriteTypes = {
     texturefile = "gfx/interface/goals/SOV_cult_of_personality.dds"
   }
 
+  spriteType = {
+    name = "GFX_sov_aviation_cult"
+    texturefile = "gfx/interface/goals/SOV_aviation_cult.dds"
+  }
+
+  spriteType = {
+    name = "GFX_sov_stalin_constitution"
+    texturefile = "gfx/interface/goals/SOV_stalin_constitution.dds"
+  }
+
+  spriteType = {
+    name = "GFX_sov_socialist_science"
+    texturefile = "gfx/interface/goals/SOV_socialist_science.dds"
+  }
+
+  spriteType = {
+    name = "GFX_sov_secure_baltic"
+    texturefile = "gfx/interface/goals/SOV_secure_baltic.dds"
+  }
+
+  spriteType = {
+    name = "GFX_sov_secure_bessarabia"
+    texturefile = "gfx/interface/goals/SOV_secure_bessarabia.dds"
+  }
 
  }
