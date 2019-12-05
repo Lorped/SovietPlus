@@ -15,8 +15,6 @@ focus_tree = {
 
 	default = no
 
-
-
 	#Focus for Finish the Five Year plan
 	focus = {
 		id = SOV_finish_the_five_year_plan
@@ -506,7 +504,6 @@ focus_tree = {
 			}
 			add_to_variable = { var = 5_year_plan_progress value = 5 }
 		}
-
 	}
 
 	#Focus for Add Production Quota
@@ -682,7 +679,6 @@ focus_tree = {
 		}
 	}
 
-
 	#Focus for Gosstandart
 	focus = {
 		id = SOV_gosstandart
@@ -719,6 +715,7 @@ focus_tree = {
 		}
 	}
 
+	#Focus for Transpolar Flight
 	focus = {
 		id = SOV_transpolar_flights
 		icon = GFX_sov_transpolar_flight
@@ -728,36 +725,17 @@ focus_tree = {
 		ai_will_do = {
 			factor = 8
 		}
-
 		available_if_capitulated = yes
-
 		completion_reward = {
-			#if = {
-			#	limit = {
-			#		NOT = { has_completed_focus = SOV_collectivist_propaganda }
-			#	}
-			#	custom_effect_tooltip = SOV_suggest_collectivist_propaganda_tt
-			#}
-			#if = {
-			#	limit = {
-			#		has_completed_focus = SOV_collectivist_propaganda
-			#	}
-			#	add_political_power = 100
-			#}
 			add_tech_bonus = {
 				bonus = 1.0
 				uses = 1
 				category = air_doctrine
 			}
-			#add_tech_bonus = {
-			#	bonus = 1.0
-			#	uses = 1
-			#	category = medium_air
-			#	category = heavy_air
-			#}
 		}
 	}
 
+	#Focus for Aviation Cult
 	focus = {
 		id = SOV_aviation_cult
 		icon = GFX_aviation_cult
@@ -768,24 +746,60 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			air_experience = 25
-
 			add_tech_bonus = {
 				name = air_bonus
 				bonus = 1
 				uses = 1
 				category = light_air
 				category = medium_air
-				category = heavy_air
 			}
 		}
 	}
 
+	#Focus for Positive heroism
+	focus = {
+		id = SOV_positive_heroism
+		icon = GFX_sov_positive_heroism
+		prerequisite = {
+			focus = SOV_stakanovite
+			focus = SOV_gosstandart
+		}
+		x = 9
+		y = 2
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_political_power = 120
+			add_ideas = SOV_soviet_propaganda
+		}
+	}
+
+	#Focus for Cult of personality
+	focus = {
+		id = SOV_cult_of_personality
+		icon = GFX_sov_cult_of_personality
+		prerequisite = { focus = SOV_positive_heroism }
+		x = 9
+		y = 3
+		cost = 10
+		ai_will_do = {
+			factor = 8
+		}
+		available_if_capitulated = yes
+		available = {
+			communism > 0.99
+			has_stability > 0.6
+		}
+		completion_reward = {
+			add_ideas = SOV_stalin_the_father_of_socialism
+		}
+	}
 
 	#focus for The Great Purge
 	focus = {
@@ -805,7 +819,6 @@ focus_tree = {
 				has_war = yes
 			}
 		}
-
 		select_effect = {
 			country_event = { id = soviet.24 days = 1 }
 			set_country_flag = SOV_purge_started
@@ -818,9 +831,8 @@ focus_tree = {
 		}
 	}
 
-
-
-focus = {
+	#focus for nkvd
+	focus = {
 		id = SOV_nkvd_power
 		icon = GFX_sov_nkvd_power
 		prerequisite = {
@@ -839,17 +851,16 @@ focus = {
 				has_war = yes
 			}
 		}
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_ideas = nkvd
 		}
 	}
 
+	#focus for Stalin Const
 	focus = {
 		id = SOV_stalin_constitution
-		icon = GFX_SOV_stalin_constitution
+		icon = GFX_sov_stalin_constitution
 		prerequisite = { focus = SOV_great_purge }
 		relative_position_id = SOV_great_purge
 		x = 0
@@ -871,5 +882,5 @@ focus = {
 	}
 
 
-	}
+}
 	###

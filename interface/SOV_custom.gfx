@@ -65,6 +65,11 @@ spriteTypes = {
     texturefile = "gfx/ideas/SOV_stakanovite.dds"
   }
 
+  spriteType = {
+    name = "GFX_idea_soviet_propaganda"
+    texturefile = "gfx/ideas/SOV_soviet_propaganda.dds"
+  }
+
 
   spriteType = {
 		name = "GFX_sov_five_year_plan_IC_1"
@@ -110,5 +115,16 @@ spriteTypes = {
     name = "GFX_sov_transpolar_flight"
     texturefile = "gfx/interface/goals/SOV_transpolar_flight.dds"
   }
+
+  spriteType = {
+    name = "GFX_sov_positive_heroism"
+    texturefile = "gfx/interface/goals/SOV_positive_heroism.dds"
+  }
+
+  spriteType = {
+    name = "GFX_sov_cult_of_personality"
+    texturefile = "gfx/interface/goals/SOV_cult_of_personality.dds"
+  }
+
 
  }

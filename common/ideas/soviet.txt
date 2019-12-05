@@ -369,9 +369,22 @@ ideas = {
 			}
 		}
 
-		
+		SOV_soviet_propaganda = {
+			removal_cost = -1
+			picture = soviet_propaganda
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			modifier = {
+				stability_weekly = 0.01
+				communism_drift = 0.10
+			}
+		}
 
-
+###############################################
 
 			militarized_schools = {
 				removal_cost = -1
@@ -393,20 +406,17 @@ ideas = {
 			}
 
 
+
+
 		workers_culture = {
-
 			removal_cost = -1
-
 			allowed = {
 				always = no # Added via focus
 			}
-
 			allowed_civil_war = {
 				has_government = communism
 			}
-
 			picture = generic_production_bonus
-
 			modifier = {
 				production_speed_buildings_factor = 0.10
 			}
@@ -737,24 +747,7 @@ ideas = {
 
 		}
 
-		SOV_collectivist_propaganda = {
-			removal_cost = -1
 
-			picture = generic_communism_drift_bonus
-
-			allowed = {
-				always = no # Added via focus
-			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-
-			modifier = {
-				stability_factor = 0.2
-			}
-
-		}
 
 		SOV_scientist_defect = {
 
