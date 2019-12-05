@@ -1,0 +1,117 @@
+
+SOV_no_massive_recruiting = {
+	name = "No massive recruiting"
+	desc = ""
+
+	enable = {
+		original_tag = SOV
+		OR = {
+			has_idea = disarmed_nation
+			has_idea = volunteer_only
+			has_idea = limited_conscription
+			check_variable = { manpower_k > 1000 }
+		}
+		NOT = {
+			OR = {
+				has_war_with = GER
+				has_war_with = JAP
+				has_war_with = USA
+				has_war_with = ENG
+			}
+		}
+	}
+	abort = {
+		OR = {
+			has_war_with = GER
+			has_war_with = JAP
+			has_war_with = USA
+			has_war_with = ENG
+		}
+		check_variable = { manpower_k < 3000 }
+	}
+
+
+	focus_factors = {
+
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		service_by_requirement = -10
+	}
+	traits = {
+
+	}
+
+	ai_strategy = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+SOV_war_is_near = {
+	name = "War is near"
+	desc = ""
+
+	enable = {
+		original_tag = SOV
+		date > 1939.01.01
+		OR = {
+			has_idea = disarmed_nation
+			has_idea = volunteer_only
+		}
+		threat > 0.3
+	}
+	abort = {
+		OR = {
+			has_war_with = GER
+			has_war_with = JAP
+			has_war_with = USA
+			has_war_with = ENG
+			has_idea = limited_conscription
+			has_idea = extensive_conscription
+		}
+	}
+
+
+	focus_factors = {
+
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		limited_conscription = 10
+	}
+	traits = {
+
+	}
+
+	ai_strategy = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

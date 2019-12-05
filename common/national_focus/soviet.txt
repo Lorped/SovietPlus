@@ -824,7 +824,7 @@ focus_tree = {
 	#Focus for Increase rubber production
 	focus = {
 		id = SOV_increase_rubber
-		icon = GFX_sov_increase_rubber
+		icon = GFX_goal_generic_soviet_construction
 		prerequisite = {
 			focus = SOV_add_production_quota
 		}
