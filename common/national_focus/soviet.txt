@@ -1110,5 +1110,31 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = SOV_komsomol
+		icon = GFX_sov_komsomol
+		prerequisite = { focus = SOV_stalin_constitution }
+		x = 0
+		y = 1
+		relative_position_id = SOV_stalin_constitution
+		cost = 10
+		ai_will_do = {
+			factor = 4
+			modifier = {
+				factor = 3
+				has_war = yes
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = militarized_schools
+		}
+	}
+
+
+
+
 }
 	###

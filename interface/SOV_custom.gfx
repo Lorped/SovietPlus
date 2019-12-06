@@ -176,4 +176,9 @@ spriteTypes = {
     texturefile = "gfx/ideas/SOV_cult_of_personality.dds"
   }
 
+  spriteType = {
+    name = "GFX_sov_komsomol"
+    texturefile = "gfx/interface/goals/SOV_komsomol.dds"
+  }
+
  }

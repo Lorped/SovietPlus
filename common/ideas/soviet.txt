@@ -170,6 +170,27 @@ ideas = {
 			}
 		}
 
+		nkvd_2 = {
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			modifier = {
+				foreign_subversive_activites = -0.5
+				communism_drift = 0.1
+				weekly_manpower = -100
+				#stability_weekly = 0.005
+				army_morale_factor = 0.1
+			}
+			traits = { SOV_trickleback }
+		}
+
 		officers_purged = {
 			removal_cost = -1
 			allowed = {
@@ -430,27 +451,27 @@ ideas = {
       }
     }
 
-###############################################
-
-			militarized_schools = {
-				removal_cost = -1
-				allowed = {
-					always = no # Added via focus
-				}
-
-				allowed_civil_war = {
-					NOT = {
-						has_government = democratic
-					}
-				}
-
-				picture = generic_manpower_bonus
-
-				modifier = {
-					conscription = 0.005
-				}
+		militarized_schools = {
+			removal_cost = -1
+			allowed = {
+				always = no # Added via focus
 			}
 
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = komsomol
+
+			modifier = {
+				conscription = 0.01
+				training_time_factor = -0.1
+			}
+		}
+
+
+
+###############################################
 
 
 
@@ -507,6 +528,8 @@ ideas = {
 				land_reinforce_rate = 0.05
 			}
 		}
+
+
 
 		comintern_influence = {
 

@@ -21,6 +21,14 @@ leader_traits = {
 		stability_factor = 0.05
 	}
 
+	SOV_trickleback = {
+		equipment_bonus = {
+			infantry = {
+				casualty_trickleback = 0.1
+			}
+		}
+	}
+
 	SOV_quality = {
 		equipment_bonus = {
 			armor = {
