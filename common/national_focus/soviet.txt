@@ -746,7 +746,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_finish_the_five_year_plan }
 		mutually_exclusive = { focus = SOV_gosstandart }
 		ai_will_do = {
-			factor = 0
+			factor = 10
 		}
 		completion_reward = {
 			add_ideas = idea_stakanovite
@@ -809,7 +809,7 @@ focus_tree = {
 		y = 2
 		cost = 10
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 		available_if_capitulated = yes
 		completion_reward = {
@@ -827,15 +827,15 @@ focus_tree = {
 		y = 3
 		cost = 10
 		ai_will_do = {
-			factor = 8
+			factor = 10
 		}
 		available_if_capitulated = yes
 		available = {
-			communism > 0.99
+			communism > 0.98
 			has_stability > 0.6
 		}
 		completion_reward = {
-			add_ideas = SOV_stalin_the_father_of_socialism
+			add_ideas = SOV_cult_of_personality
 		}
 	}
 

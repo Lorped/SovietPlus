@@ -405,6 +405,31 @@ ideas = {
 			}
 		}
 
+		SOV_molotov_ribbentrop_pact = {
+			removal_cost = -1
+			picture = soviet_german_friendship
+			allowed = {
+				always = no # Added via event
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+		}
+
+		SOV_cult_of_personality = {
+      removal_cost = -1
+      picture = cult_of_personality
+      allowed = {
+        always = no # Added via event
+      }
+      allowed_civil_war = {
+        has_government = communism
+      }
+      modifier = {
+        stability_factor = 0.30
+      }
+    }
+
 ###############################################
 
 			militarized_schools = {
@@ -753,20 +778,7 @@ ideas = {
 		}
 
 
-		SOV_molotov_ribbentrop_pact = {
-			removal_cost = -1
 
-			picture = soviet_german_friendship
-
-			allowed = {
-				always = no # Added via event
-			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-
-		}
 
 
 

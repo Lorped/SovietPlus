@@ -171,4 +171,9 @@ spriteTypes = {
     texturefile = "gfx/ideas/SOV_third_five_year_plan.dds"
   }
 
+  spriteType = {
+    name = "GFX_idea_cult_of_personality"
+    texturefile = "gfx/ideas/SOV_cult_of_personality.dds"
+  }
+
  }
