@@ -334,10 +334,47 @@ focus_tree = {
 	}
 
 
+	#Focus for Third Five-Year Plan
+	focus = {
+		id = SOV_third_five_year_plan
+		icon = GFX_sov_third_five_year_plan
+		relative_position_id = SOV_focus_on_heavy_industry
+		x = 1
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = SOV_focus_on_heavy_industry
+			focus = SOV_focus_on_military_industry
+		}
+		prerequisite = {
+			NOT = {
+				OR = {
+					has_idea = SOV_idea_2_5_year_plan_MIL
+					has_idea = SOV_idea_2_5_year_plan_CIC
+				}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		bypass = {
+			has_defensive_war = yes
+		}
+		completion_reward = {
+			add_timed_idea {
+				idea = SOV_idea_3_5_year_plan
+				days = 1825
+			}
+		}
+	}
+
 	#Focus for Improve infrastructure
 	focus = {
 		id = SOV_improve_infrastructure
 		icon = GFX_goal_generic_construct_infrastructure
+		relative_position_id = SOV_finish_the_five_year_plan
 		x = 0
 		y = 1
 		cost = 10
@@ -510,8 +547,9 @@ focus_tree = {
 	focus = {
 		id = SOV_add_production_quota
 		icon = GFX_sov_add_production_quota
+		relative_position_id = SOV_improve_infrastructure
 		x = 0
-		y = 2
+		y = 1
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = SOV_improve_infrastructure }
@@ -527,7 +565,8 @@ focus_tree = {
 	focus = {
 		id = SOV_transsiberian
 		icon = GFX_goal_generic_soviet_construction
-		x = 2
+		relative_position_id = SOV_improve_infrastructure
+		x = 0
 		y = 2
 		cost = 17.2
 		prerequisite = { focus = SOV_improve_infrastructure }

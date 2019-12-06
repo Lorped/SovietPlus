@@ -155,4 +155,15 @@ spriteTypes = {
     name = "GFX_sov_increase_rubber"
     texturefile = "gfx/interface/goals/SOV_increase_rubber.dds"
   }
+
+  spriteType = {
+    name = "GFX_sov_third_five_year_plan"
+    texturefile = "gfx/interface/goals/SOV_third_five_year_plan.dds"
+  }
+
+  spriteType = {
+    name = "GFX_idea_third_five_year"
+    texturefile = "gfx/interface/ideas/SOV_third_five_year_plan.dds"
+  }
+
  }

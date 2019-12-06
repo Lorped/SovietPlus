@@ -178,3 +178,8 @@ soviet.57.a:0 "Dispose him and the books"
  SOV_increase_rubber_desc:0 "Sov incr rubber desc"
  ## SOV_claims_on_baltic:0 ""
  ## SOV_claims_on_baltic_desc:0 ""
+
+ SOV_third_five_year_plan:0 "The third Five-Year Plan"
+ SOV_third_five_year_plan_desc:0 "The third Five-Year Plan will be the final step of our contry into the future."
+ SOV_idea_third_five_year_plan:0 "The third Five-Year Plan"
+ SOV_idea_third_five_year_plan_desc:0 "Workers, onward! On the path to progress and prosperity"
