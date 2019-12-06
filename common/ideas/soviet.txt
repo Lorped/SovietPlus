@@ -12,7 +12,7 @@ ideas = {
 			}
 			picture = third_five_year_plan
 			research_bonus = {
-				industry = -0.2
+				industry = -0.1
 			}
 			modifier = {
 				production_speed_industrial_complex_factor = 0.10
@@ -33,11 +33,11 @@ ideas = {
 			}
 			picture = five_year_plan
 			research_bonus = {
-				industry = -0.4
-				electronics = -0.4
+				industry = -0.2
+				electronics = -0.2
 			}
 			modifier = {
-				min_export = -0.20
+				min_export = -0.10
 				production_speed_industrial_complex_factor = 0.10
 				production_speed_arms_factory_factor = 0.10
 				production_speed_synthetic_refinery_factor = 0.05
@@ -56,11 +56,11 @@ ideas = {
 			}
 			picture = five_year_plan_CIC
 			research_bonus = {
-				industry = -0.4
-				electronics = -0.4
+				industry = -0.2
+				electronics = -0.2
 			}
 			modifier = {
-				min_export = -0.20
+				min_export = -0.10
 				production_speed_industrial_complex_factor = 0.15
 				production_speed_arms_factory_factor = 0.05
 				production_speed_synthetic_refinery_factor = 0.05
@@ -79,11 +79,11 @@ ideas = {
 			}
 			picture = five_year_plan_MIL
 			research_bonus = {
-				industry = -0.4
-				electronics = -0.4
+				industry = -0.2
+				electronics = -0.2
 			}
 			modifier = {
-				min_export = -0.20
+				min_export = -0.10
 				production_speed_industrial_complex_factor = 0.05
 				production_speed_arms_factory_factor = 0.15
 				production_speed_synthetic_refinery_factor = 0.05
@@ -466,6 +466,7 @@ ideas = {
 			modifier = {
 				conscription = 0.01
 				training_time_factor = -0.1
+				communism_drift = 0.1
 			}
 		}
 
@@ -507,25 +508,6 @@ ideas = {
 
 			modifier = {
 				enemy_partisan_effect = -0.2
-			}
-		}
-
-
-
-		nkvd_2 = {
-			removal_cost = -1
-
-			allowed = {
-				always = no # Added via focus
-			}
-
-			allowed_civil_war = {
-				has_government = communism
-			}
-
-			modifier = {
-				subversive_activites_upkeep = -0.5
-				land_reinforce_rate = 0.05
 			}
 		}
 
@@ -606,17 +588,13 @@ ideas = {
 
 		rehabilitated_military_focus = {
 			removal_cost = -1
-
 			allowed = {
 				always = no # Added via focus
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			picture = generic_morale_bonus
-
 			modifier = {
 				land_reinforce_rate = 0.02
 				army_morale_factor = 0.10
@@ -625,15 +603,12 @@ ideas = {
 
 		home_of_revolution = {
 			removal_cost = -1
-
 			allowed = {
 				always = no # Added via focus
 			}
-
 			allowed_civil_war = {
 				has_government = communism
 			}
-
 			modifier = {
 				drift_defence_factor = 0.5
 			}
@@ -644,15 +619,12 @@ ideas = {
 
 		trotskyite_plot = {
 			removal_cost = -1
-
 			allowed = {
 				always = no # Added via focus
 			}
-
 			allowed_civil_war = {
 				has_government = communism
 			}
-
 			modifier = {
 				stability_factor = -0.2
 			}
@@ -660,15 +632,12 @@ ideas = {
 
 		trotskyite_plot_purged = {
 			removal_cost = -1
-
 			allowed = {
 				always = no # Added via focus
 			}
-
 			allowed_civil_war = {
 				has_government = communism
 			}
-
 			modifier = {
 				stability_factor = -0.05
 			}
@@ -678,23 +647,18 @@ ideas = {
 
 		SOV_great_patriotic_war = {
 			removal_cost = -1
-
 			picture = generic_intel_bonus
-
 			allowed = {
 				always = no # Added via event
 			}
-
 			allowed_civil_war = {
 				has_government = communism
 			}
-
 			research_bonus = {
 				land_doctrine = 0.05
 				naval_doctrine = 0.05
 				air_doctrine = 0.05
 			}
-
 			modifier = {
 				army_org_factor = 0.45
 				war_support_factor = 0.2
@@ -703,23 +667,18 @@ ideas = {
 
 		SOV_great_patriotic_war_2 = {
 			removal_cost = -1
-
 			picture = generic_intel_bonus
-
 			allowed = {
 				always = no # Added via event
 			}
-
 			allowed_civil_war = {
 				has_government = communism
 			}
-
 			research_bonus = {
 				land_doctrine = 0.04
 				naval_doctrine = 0.04
 				air_doctrine = 0.04
 			}
-
 			modifier = {
 				army_org_factor = 0.35
 				war_support_factor = 0.15
@@ -728,23 +687,18 @@ ideas = {
 
 		SOV_great_patriotic_war_3 = {
 			removal_cost = -1
-
 			picture = generic_intel_bonus
-
 			allowed = {
 				always = no # Added via event
 			}
-
 			allowed_civil_war = {
 				has_government = communism
 			}
-
 			research_bonus = {
 				land_doctrine = 0.03
 				naval_doctrine = 0.03
 				air_doctrine = 0.03
 			}
-
 			modifier = {
 				army_org_factor = 0.25
 				war_support_factor = 0.1
@@ -753,23 +707,18 @@ ideas = {
 
 		SOV_great_patriotic_war_4 = {
 			removal_cost = -1
-
 			picture = generic_intel_bonus
-
 			allowed = {
 				always = no # Added via event
 			}
-
 			allowed_civil_war = {
 				has_government = communism
 			}
-
 			research_bonus = {
 				land_doctrine = 0.02
 				naval_doctrine = 0.02
 				air_doctrine = 0.02
 			}
-
 			modifier = {
 				army_org_factor = 0.15
 				war_support_factor = 0.05
@@ -778,17 +727,13 @@ ideas = {
 
 		SOV_great_patriotic_war_5 = {
 			removal_cost = -1
-
 			picture = generic_intel_bonus
-
 			allowed = {
 				always = no # Added via event
 			}
-
 			allowed_civil_war = {
 				has_government = communism
 			}
-
 			research_bonus = {
 				land_doctrine = 0.01
 				naval_doctrine = 0.01
@@ -799,11 +744,6 @@ ideas = {
 				army_org_factor = 0.05
 			}
 		}
-
-
-
-
-
 
 		SOV_scientist_defect = {
 

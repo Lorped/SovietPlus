@@ -181,4 +181,9 @@ spriteTypes = {
     texturefile = "gfx/interface/goals/SOV_komsomol.dds"
   }
 
+  spriteType = {
+    name = "GFX_idea_komsomol"
+    texturefile = "gfx/ideas/idea_komsomol.dds"
+  }
+
  }

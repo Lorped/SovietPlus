@@ -1114,7 +1114,7 @@ focus_tree = {
 		id = SOV_komsomol
 		icon = GFX_sov_komsomol
 		prerequisite = { focus = SOV_stalin_constitution }
-		x = 0
+		x = 2
 		y = 1
 		relative_position_id = SOV_stalin_constitution
 		cost = 10
