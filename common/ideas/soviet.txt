@@ -164,7 +164,7 @@ ideas = {
 			picture = nkvd
 			modifier = {
 				foreign_subversive_activites = -0.5
-				communism_drift = 0.05
+				communism_drift = 0.1
 				weekly_manpower = -100
 				stability_weekly = 0.005
 			}
@@ -826,8 +826,8 @@ ideas = {
 			traits = { smooth_talking_charmer }
 		}
 
-		SOV_nikolai_voznesensky = {
-			picture = generic_political_advisor_europe_2
+		nikolai_voznesensky = {
+			# picture = generic_political_advisor_europe_2
 			allowed = {
 				original_tag = SOV
 			}

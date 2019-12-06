@@ -1149,8 +1149,8 @@ country_event = {
 
 	trigger = {
 		tag = SOV
-		FROM = { tag = ROM }
-		NOT = { has_country_flag = bessarabia_demand }
+		#FROM = { tag = ROM }
+		#NOT = { has_country_flag = bessarabia_demand }
 		78 = {
 			is_claimed_by = SOV
 			is_owned_by = ROM
@@ -1163,11 +1163,11 @@ country_event = {
 		name = soviet.30.a
 		ROM = { country_event = { days = 2 id = romania.1 } }
 	}
-	option = {
-		name = soviet.30.b
-		ai_chance = { factor = 0 }
-		#
-	}
+	#option = {
+	#	name = soviet.30.b
+	#	ai_chance = { factor = 0 }
+	#	#
+	#}
 }
 
 # Demand Karjala
@@ -1213,10 +1213,10 @@ country_event = {
 
 	trigger = {
 		tag = SOV
-		FROM = {
-			tag = EST
-			any_owned_state = { is_claimed_by = SOV }
-		}
+		#FROM = {
+		#	tag = EST
+		#	any_owned_state = { is_claimed_by = SOV }
+		#}
 		NOT = { has_country_flag = estonia_demand }
 	}
 
@@ -1226,11 +1226,11 @@ country_event = {
 		name = soviet.32.a
 		EST = { country_event = { days = 2 id = baltic.1 } }
 	}
-	option = {
-		name = soviet.32.b
-		ai_chance = { factor = 0 }
-		#
-	}
+	#option = {
+	#	name = soviet.32.b
+	#	ai_chance = { factor = 0 }
+	#	#
+	#}
 }
 
 # Oppress Latvia
@@ -1244,10 +1244,10 @@ country_event = {
 
 	trigger = {
 		tag = SOV
-		FROM = {
-			tag = LAT
-			any_owned_state = { is_claimed_by = SOV }
-		}
+		#FROM = {
+		#	tag = LAT
+		#	any_owned_state = { is_claimed_by = SOV }
+		#}
 		NOT = { has_country_flag = latvia_demand }
 	}
 
@@ -1257,11 +1257,11 @@ country_event = {
 		name = soviet.33.a
 		LAT = { country_event = { days = 2 id = baltic.2 } }
 	}
-	option = {
-		name = soviet.33.b
-		ai_chance = { factor = 0 }
-		#
-	}
+	#option = {
+	#	name = soviet.33.b
+	#	ai_chance = { factor = 0 }
+	#	#
+	#}
 }
 
 # Oppress Lithuania
@@ -1275,10 +1275,10 @@ country_event = {
 
 	trigger = {
 		tag = SOV
-		FROM = {
-			tag = LIT
-			any_owned_state = { is_claimed_by = SOV }
-		}
+		#FROM = {
+		#	tag = LIT
+		#	any_owned_state = { is_claimed_by = SOV }
+		#}
 		NOT = { has_country_flag = lithuania_demand }
 	}
 
@@ -1288,11 +1288,11 @@ country_event = {
 		name = soviet.34.a
 		LIT = { country_event = { days = 2 id = baltic.3 } }
 	}
-	option = {
-		name = soviet.34.b
-		ai_chance = { factor = 0 }
-		#
-	}
+	#option = {
+	#	name = soviet.34.b
+	#	ai_chance = { factor = 0 }
+	#	#
+	#}
 }
 
 # Communist government in FROM baltic country and they wish to be annexed
