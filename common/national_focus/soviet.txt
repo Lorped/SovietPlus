@@ -1233,7 +1233,28 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = SOV_peoples_commissariat
+		icon = GFX_sov_pdci
+		prerequisite = { focus = SOV_stalin_constitution }
+		x = 4
+		y = 1
+		relative_position_id = SOV_stalin_constitution
+		cost = 10
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 5
+				has_war = yes
+			}
+		}
 
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = peoples_commissariat_focus
+		}
+	}
 
 
 }
