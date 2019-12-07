@@ -191,4 +191,9 @@ spriteTypes = {
     texturefile = "gfx/interface/goals/SOV_secure_finland.dds"
   }
 
+  spriteType = {
+    name = "GFX_sov_magnitogorsk"
+    texturefile = "gfx/interface/goals/SOV_magnitogorsk.dds"
+  }
+
  }

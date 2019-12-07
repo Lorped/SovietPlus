@@ -36,7 +36,7 @@ SOV_5_year_plan_decisions = {
 			}
 		}
 
-		days_remove = 100
+		days_remove = 70
 
 		modifier = {
 			stability_factor = -0.1
@@ -161,7 +161,7 @@ SOV_5_year_plan_decisions = {
 		cost = 35
 
 		ai_will_do = {
-			factor = 20 #PROBALY
+			factor = 500 #PROBALY
 		}
 
 		modifier = {
@@ -224,7 +224,7 @@ SOV_5_year_plan_decisions = {
 		cost = 35
 
 		ai_will_do = {
-			factor = 20 #PROBALY
+			factor = 500 #PROBALY
 		}
 
 		modifier = {
@@ -288,7 +288,7 @@ SOV_5_year_plan_decisions = {
 		cost = 35
 
 		ai_will_do = {
-			factor = 20 #PROBALY
+			factor = 500 #PROBALY
 		}
 
 
@@ -352,7 +352,7 @@ SOV_5_year_plan_decisions = {
 		cost = 35
 
 		ai_will_do = {
-			factor = 20 #PROBALY
+			factor = 1000 #PROBALY
 		}
 
 		modifier = {
@@ -415,7 +415,7 @@ SOV_5_year_plan_decisions = {
 		cost = 35
 
 		ai_will_do = {
-			factor = 10 #LESS PROBABLY
+			factor = 100 #LESS PROBABLY
 		}
 
 		modifier = {

@@ -567,7 +567,7 @@ focus_tree = {
 		relative_position_id = SOV_improve_infrastructure
 		x = 2
 		y = 1
-		cost = 17.2
+		cost = 10
 		prerequisite = { focus = SOV_improve_infrastructure }
 		completion_reward = {
 			add_to_variable = { var = 5_year_plan_progress value = 5 }
@@ -721,7 +721,7 @@ focus_tree = {
 	focus = {
 		id = SOV_magnitogorsk
 		icon = GFX_sov_magnitogorsk
-		relative_position_id = { SOV_transsiberian }
+		relative_position_id =  SOV_transsiberian
 		x = 0
 		y = 1
 		cost = 10
@@ -1131,8 +1131,8 @@ focus_tree = {
 	focus = {
 		id = SOV_claim_bessarabia
 		icon = GFX_sov_secure_bessarabia
-		prerequisite = { focus = GFX_sov_secure_finland }
-		relative_position_id = GFX_sov_secure_finland
+		prerequisite = { focus = SOV_baltic_security }
+		relative_position_id = SOV_baltic_security
 		x = 0
 		y = 1
 		cost = 5
