@@ -186,4 +186,9 @@ spriteTypes = {
     texturefile = "gfx/ideas/idea_komsomol.dds"
   }
 
+  spriteType = {
+    name = "GFX_sov_secure_finland"
+    texturefile = "gfx/interface/goals/SOV_secure_finland.dds"
+  }
+
  }

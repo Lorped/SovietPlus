@@ -717,6 +717,70 @@ focus_tree = {
 		}
 	}
 
+	#Focus for Magnitogorsk
+	focus = {
+		id = SOV_magnitogorsk
+		icon = GFX_sov_magnitogorsk
+		relative_position_id = { SOV_transsiberian }
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_transsiberian }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_full_control_of_state = 582
+		}
+
+		complete_tooltip = {
+			582 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+			582 = {
+				add_resource = {
+					type = steel
+					amount = 25
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 582 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 4
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+			582 = {
+				add_resource = {
+					type = steel
+					amount = 25
+				}
+			}
+		}
+	}
+
+
+
+
 	#Focus for Gosstandart
 	focus = {
 		id = SOV_gosstandart
@@ -1027,12 +1091,48 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+			id = SOV_baltic_security
+			icon = GFX_sov_secure_finland
+			prerequisite = { focus = SOV_claims_on_baltic }
+			relative_position_id = SOV_claims_on_baltic
+			x = 0
+			y = 1
+			cost = 2
+			available = {
+				SOV = {
+					has_full_control_of_state = 13
+				}
+			}
+			ai_will_do = {
+				factor = 100
+				modifier = {
+					factor = 0
+					date < 1939.3.1
+				}
+			}
+			bypass = {
+				OR = {
+					owns_state = 146
+					146 = { is_claimed_by = ROOT }
+				}
+
+			}
+			completion_reward = {
+				add_state_claim = 146 # Karjala
+				SOV = { country_event = soviet.31 }
+				add_named_threat = { threat = 1 name = SOV_baltic_security }
+			}
+		}
+
+
+
 
 	focus = {
 		id = SOV_claim_bessarabia
 		icon = GFX_sov_secure_bessarabia
-		prerequisite = { focus = SOV_claims_on_baltic }
-		relative_position_id = SOV_claims_on_baltic
+		prerequisite = { focus = GFX_sov_secure_finland }
+		relative_position_id = GFX_sov_secure_finland
 		x = 0
 		y = 1
 		cost = 5
