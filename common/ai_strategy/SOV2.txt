@@ -284,7 +284,7 @@ sov_build_a_lot_of_fighters = {
 	ai_strategy = {
 		type = equipment_production_factor
 		id = cas
-		value = 10 ## was -30
+		value = 20 ## was -30
 	}
 	ai_strategy = {
 		type = equipment_variant_production_factor
@@ -299,7 +299,7 @@ sov_build_a_lot_of_fighters = {
 	ai_strategy = {
 		type = equipment_production_factor
 		id = tactical_bomber
-		value = 20
+		value = 10 ## was 20
 	}
 }
 

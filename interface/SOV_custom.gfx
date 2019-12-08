@@ -196,4 +196,20 @@ spriteTypes = {
     texturefile = "gfx/interface/goals/SOV_magnitogorsk.dds"
   }
 
+  spriteType = {
+    name = "GFX_sov_pdci"
+    texturefile = "gfx/interface/goals/SOV_pdci.dds"
+  }
+
+  spriteType = {
+    name = "GFX_sov_t34"
+    texturefile = "gfx/interface/goals/SOV_t34.dds"
+  }
+
+  spriteType = {
+    name = "GFX_sov_il2"
+    texturefile = "gfx/interface/goals/SOV_il2.dds"
+  }
+
+
  }

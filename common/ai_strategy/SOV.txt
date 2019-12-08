@@ -474,7 +474,6 @@ spanish_civil_war_SOV = {
 		SPR = { has_civil_war = yes }
 		NOT = { has_global_flag = scw_over }
 	}
-
 	abort = {
 		OR = {
 			SPR = { has_civil_war = no }
@@ -482,7 +481,6 @@ spanish_civil_war_SOV = {
 			has_war = yes
 		}
 	}
-
 	ai_strategy = {
 		type = befriend
 		id = "SPR"
@@ -498,7 +496,6 @@ spanish_civil_war_SOV = {
 		id = "SPR"
 		value = 100
 	}
-
 }
 
 SOV_template_design_1 = {

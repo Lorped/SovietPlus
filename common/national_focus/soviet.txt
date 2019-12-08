@@ -1011,7 +1011,7 @@ focus_tree = {
 		icon = GFX_sov_stalin_constitution
 		prerequisite = { focus = SOV_great_purge }
 		relative_position_id = SOV_great_purge
-		x = 0
+		x = 2
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -1253,6 +1253,65 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = peoples_commissariat_focus
+		}
+	}
+
+	focus = {
+		id = SOV_t34
+		icon = GFX_sov_t34
+		prerequisite = { focus = SOV_peoples_commissariat }
+		x = -2
+		y = 1
+		relative_position_id = SOV_peoples_commissariat
+		cost = 5
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 5
+				has_war = yes
+			}
+		}
+
+		available_if_capitulated = yes
+		bypass = {
+			has_tech = improved_medium_tank
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = med_armor_bonus
+				ahead_reduction = 2
+				category = cat_medium_armor
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_il2
+		icon = GFX_sov_il2
+		prerequisite = { focus = SOV_peoples_commissariat }
+		available = { has_tech = CAS1 }
+		x = 0
+		y = 1
+		relative_position_id = SOV_peoples_commissariat
+		cost = 5
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 5
+				has_war = yes
+			}
+		}
+		available_if_capitulated = yes
+		bypass = {
+			has_tech = CAS2
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAS2_bonus
+    		bonus = 1
+    		uses = 1
+				category = cas_bomber
+			}
 		}
 	}
 

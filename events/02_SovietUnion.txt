@@ -454,6 +454,8 @@ country_event = {  ## ADD General Zhukov + Vasilevsky + Chernyakhovsky + Pliyev
 		name = soviet.200.a
 		ai_chance = { factor = 100 }
 
+		set_country_flag = zhukov_available
+
 		create_corps_commander = {
 			name = "Georgy Zhukov"
 			id = 410

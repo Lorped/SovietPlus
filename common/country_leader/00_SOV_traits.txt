@@ -1,7 +1,57 @@
 leader_traits = {
 
+	SOV_CAS_manufacturer = {
+		random = no
+		equipment_bonus = {
+			CAS_equipment = {
+				air_ground_attack = 0.1
+				reliability = 0.1
+				build_cost_ic = -0.05 instant = yes
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	SOV_fighter_manufacturer = {
+		random = no
+		equipment_bonus = {
+			fighter_equipment = {
+				air_attack = 0.1
+				air_range = 0.05
+				air_agility = 0.1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	SOV_fighter_manufacturer_2 = {
+		random = no
+		equipment_bonus = {
+			fighter_equipment = {
+				air_agility = 0.2
+				maximum_speed = 0.1
+			}
+		}
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+
 
 	SOV_secret_police_chief_0 = {
+		sprite = 13
+		random = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	SOV_secret_police_chief_1 = {
 		sprite = 13
 		random = yes
 		ai_will_do = {
@@ -26,6 +76,17 @@ leader_traits = {
 			infantry = {
 				casualty_trickleback = 0.1
 			}
+		}
+	}
+
+	SOV_tough_negotiator = {
+		random = no
+		sprite = 13
+		opinion_gain_monthly_same_ideology_factor = 0.5
+		trade_opinion_factor = 0.05
+
+		ai_will_do = {
+			factor = 0
 		}
 	}
 
