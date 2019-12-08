@@ -19,9 +19,9 @@ focus_tree = {
 	focus = {
 		id = SOV_finish_the_five_year_plan
 		icon = GFX_goal_generic_construct_civ_factory
-		x = 0
+		x = 2
 		y = 0
-		cost = 10
+		cost = 7.15
 		ai_will_do = {
 			factor = 5
 		}
@@ -55,7 +55,7 @@ focus_tree = {
 		icon = GFX_sov_five_year_plan_IC_1
 		x = 4
 		y = 1
-		cost = 5
+		cost = 4.29
 		available_if_capitulated = yes
 		prerequisite = { focus = SOV_finish_the_five_year_plan }
 		mutually_exclusive = { focus = SOV_review_gosplan }
@@ -78,7 +78,7 @@ focus_tree = {
 		icon = GFX_sov_five_year_plan_MIC_1
 		x = 6
 		y = 1
-		cost = 5
+		cost = 4.29
 		available_if_capitulated = yes
 		prerequisite = { focus = SOV_finish_the_five_year_plan }
 		mutually_exclusive = { focus = SOV_strength_gosplan }
@@ -341,7 +341,7 @@ focus_tree = {
 		relative_position_id = SOV_focus_on_heavy_industry
 		x = 1
 		y = 1
-		cost = 5
+		cost = 4.29
 		available_if_capitulated = yes
 		prerequisite = {
 			focus = SOV_focus_on_heavy_industry
@@ -374,9 +374,10 @@ focus_tree = {
 		id = SOV_improve_infrastructure
 		icon = GFX_goal_generic_construct_infrastructure
 		relative_position_id = SOV_finish_the_five_year_plan
-		x = 0
+		x = -2
+
 		y = 1
-		cost = 10
+		cost = 7.15
 		available_if_capitulated = yes
 		prerequisite = { focus = SOV_finish_the_five_year_plan }
 		ai_will_do = {
@@ -549,7 +550,7 @@ focus_tree = {
 		relative_position_id = SOV_improve_infrastructure
 		x = 0
 		y = 1
-		cost = 5
+		cost = 4.29
 		available_if_capitulated = yes
 		prerequisite = { focus = SOV_improve_infrastructure }
 		ai_will_do = {
@@ -821,9 +822,9 @@ focus_tree = {
 	focus = {
 		id = SOV_transpolar_flights
 		icon = GFX_sov_transpolar_flight
-		x = 11
+		x = 12
 		y = 0
-		cost = 5
+		cost = 4.29
 		ai_will_do = {
 			factor = 8
 		}
@@ -839,11 +840,14 @@ focus_tree = {
 
 	#Focus for Aviation Cult
 	focus = {
-		id = SOV_aviation_cult
+		id = SOV_air_volunteers
 		icon = GFX_aviation_cult
-		prerequisite = { focus = SOV_transpolar_flights }
-		x = 11
-		y = 4
+		prerequisite = {
+			focus = SOV_transpolar_flights
+			focus = SOV_operation_zet
+		}
+		x = 12
+		y = 2
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -856,7 +860,11 @@ focus_tree = {
 				bonus = 1
 				uses = 1
 				category = light_air
-				category = medium_air
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
 			}
 		}
 	}
@@ -988,9 +996,9 @@ focus_tree = {
 		}
 		# mutually_exclusive = { focus = SOV_rehabilitated_military }
 		relative_position_id = SOV_great_purge
-		x = -2
+		x = 2
 		y = 1
-		cost = 5
+		cost = 4.29
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -1011,7 +1019,7 @@ focus_tree = {
 		icon = GFX_sov_stalin_constitution
 		prerequisite = { focus = SOV_great_purge }
 		relative_position_id = SOV_great_purge
-		x = 2
+		x = 4
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -1036,7 +1044,7 @@ focus_tree = {
 		relative_position_id = SOV_stalin_constitution
 		x = 0
 		y = 1
-		cost = 5
+		cost = 4.29
 		available = {
 			AND = {
 				POL = { has_war = yes }
@@ -1133,7 +1141,7 @@ focus_tree = {
 		relative_position_id = SOV_baltic_security
 		x = 0
 		y = 1
-		cost = 5
+		cost = 4.29
 		available = {
 		}
 		ai_will_do = {
@@ -1238,7 +1246,7 @@ focus_tree = {
 		x = 4
 		y = 1
 		relative_position_id = SOV_stalin_constitution
-		cost = 7
+		cost = 7.16
 		ai_will_do = {
 			factor = 5
 			modifier = {
@@ -1261,7 +1269,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = SOV_peoples_commissariat
-		cost = 5
+		cost = 4.29
 		ai_will_do = {
 			factor = 5
 			modifier = {
@@ -1291,7 +1299,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_peoples_commissariat
-		cost = 5
+		cost = 4.29
 		ai_will_do = {
 			factor = 5
 			modifier = {
@@ -1334,7 +1342,7 @@ focus_tree = {
 		relative_position_id = SOV_great_purge
 		x = 0
 		y = 1
-		cost = 7
+		cost = 7.16
 		ai_will_do = {
 			factor = 10
 		}
@@ -1361,7 +1369,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		continue_if_invalid = yes
-		cost = 7
+		cost = 7.16
 		ai_will_do = {
 			factor = 1
 		}
@@ -1512,6 +1520,25 @@ focus_tree = {
 		}
 	}
 
+
+	focus = {
+		id = SOV_nkvd_divisions
+		icon = GFX_SOV_goal_NKVD
+		prerequisite = { focus = SOV_nkvd_power }
+		prerequisite = { focus = SOV_lessons_of_war }
+		relative_position_id = SOV_nkvd_power
+		x = 0
+		y = 3
+		cost = 7.16
+		ai_will_do = {
+			factor = 10
+
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			swap_ideas = { remove_idea = nkvd add_idea = nkvd_2 }
+		}
+	}
 
 }
 	###

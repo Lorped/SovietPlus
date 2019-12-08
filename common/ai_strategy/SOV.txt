@@ -628,7 +628,6 @@ SOV_pp_spending = {
 			date > 1944.1.1
 		}
 	}
-
 	ai_strategy = { # dont burn PP on admirals if you need manpower laws
 		type = pp_spend_priority
 		id = admiral
@@ -659,7 +658,7 @@ SOV_play_nice_with_ribbentrop_pact = {
 	}
 }
 
-SOV_dont_send_people_in china = {
+SOV_dont_send_people_in_china = {
 	enable = {
 		tag = SOV
 		JAP = { has_war_with = CHI }

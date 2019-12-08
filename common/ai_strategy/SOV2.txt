@@ -57,54 +57,6 @@ try_to_befriend_finland = {
 }
 
 
-
-help_mao_SOV = {
-	enable = {
-		original_tag = SOV
-		OR = {
-			has_completed_focus = SOV_support_mao
-			has_completed_focus = SOV_permanent_revolution
-		}
-		PRC = {
-			has_government = communism
-		}
-		NOT = { has_completed_focus = SOV_reconcile_japan }
-	}
-
-	abort = {
-		OR = {
-			NOT = { has_government = communism }
-			has_non_aggression_pact_with = JAP
-			has_completed_focus = SOV_reconcile_japan
-			has_completed_focus = SOV_operation_zet
-			AND = {
-				has_war_with = GER
-				surrender_progress > 0.2
-			}
-		}
-	}
-	ai_strategy = {
-		type = befriend
-		id = "PRC"
-		value = 100
-	}
-	ai_strategy = {
-		type = befriend
-		id = "SIK"
-		value = 50
-	}
-	ai_strategy = {
-		type = support
-		id = "SIK"
-		value = 50
-	}
-	ai_strategy = {
-		type = support
-		id = "PRC"
-		value = 150
-	}
-}
-
 china_struggles_against_jap_SOV = {
 	enable = {
 		original_tag = SOV
@@ -116,20 +68,12 @@ china_struggles_against_jap_SOV = {
 			CHI = { has_war_with = JAP }
 			PRC = { has_war_with = JAP }
 		}
-		NOT = {
-			OR = {
-				has_completed_focus = SOV_reconcile_japan
-				has_completed_focus = SOV_support_mao
-			}
-		}
-
 	}
 	abort = {
 		OR = {
 			NOT = { CHI = { has_war_with = JAP } }
 			NOT = { has_government = communism }
 			has_non_aggression_pact_with = JAP
-			has_completed_focus = SOV_reconcile_japan
 			AND = {
 				has_war_with = GER
 				surrender_progress > 0.2
@@ -501,48 +445,21 @@ build_civs_not_mils_comrade = {
 		value = 90
 	}
 }
-build_civs_not_mils_1939 = {
+
+build_civs_not_mils_comrade = {
 	enable = {
 		tag = SOV
-		has_start_date > 1939.01.01
-		NOT = {
-			OR = {
-				has_war_with = GER
-				has_war_with = JAP
-				has_war_with = ENG
-				has_war_with = POL
-			}
-		}
+		date < 1939.06.01
+		has_war = no
 	}
 	abort_when_not_enabled = yes
 	ai_strategy = {
 		type = building_target
 		id = industrial_complex
-		value = 110
+		value = 30
 	}
 }
 
-## still_build_more_civ = {
-##	enable = {
-##		tag = SOV
-##		date < 1940.01.01
-##	}
-##	abort = {
-##		OR = {
-##			has_war = yes
-##			date > 1940.01.01
-##			OR = {
-##				date > 1939.06.01
-##				NOT = { has_global_flag = sov_yes_pact }
-##			}
-##			threat > 0.7
-##		}
-##	}
-##	ai_strategy = {
-##		type = added_military_to_civilian_factory_ratio
-##		value = -50
-##	}
-## }
 
 SOV_start_building_MIL = {   # come se non ci fosse un domani...
 	enable = {
@@ -551,26 +468,11 @@ SOV_start_building_MIL = {   # come se non ci fosse un domani...
 	}
 	ai_strategy = {
 		type = added_military_to_civilian_factory_ratio
-		value = 50
+		value = 150
 	}
 }
 
-## now_build_your_mils_sov = {
-##	enable = {
-##		tag = SOV
-##		date > 1941.1.1
-##		has_war = yes
-##	}
-##	abort = {
-##		NOT = {
-##			has_war = yes
-##		}
-##	}
-##	ai_strategy = {
-##		type = added_military_to_civilian_factory_ratio
-##		value = 60
-##	}
-## }
+
 
 dockyards_useless_now = {
 	enable = {
@@ -664,11 +566,10 @@ sov_historical_expand_navy = {
 		id = dockyard
 		value = 10
 	}
-
 }
 
 
-sov_warning_fin_is_up_to_something = {
+sov_warning_fin_want_mess_with_stalin = {
 	enable = {
 		tag = SOV
 		FIN = { has_idea = FIN_German_support }
@@ -692,141 +593,17 @@ sov_warning_fin_is_up_to_something = {
 	}
 }
 
-Support_commie_france_strategy = {
-	enable = {
-		tag = SOV
-		has_completed_focus = SOV_support_left_france
-	}
-	abort = {
-		OR = {
-			has_war_with = FRA
-			FRA = { is_in_faction_with = ENG }
-		}
-	}
-	ai_strategy = {
-		type = befriend
-		id = "FRA"
-		value = 50
-	}
-	ai_strategy = {
-		type = alliance
-		id = "FRA"
-		value = 75
-	}
-}
 
-Baltic_communism_strategy = {
-	enable = {
-		tag = SOV
-		has_completed_focus = SOV_baltic_communism
-	}
-	abort = {
-		OR = {
-			has_war_with = EST
-			has_war_with = LIT
-			has_war_with = LAT
-			has_completed_focus = SOV_claims_on_baltic
-		}
-	}
-	ai_strategy = {
-		type = befriend
-		id = "EST"
-		value = 50
-	}
-	ai_strategy = {
-		type = alliance
-		id = "EST"
-		value = 50
-	}
-	ai_strategy = {
-		type = befriend
-		id = "LIT"
-		value = 50
-	}
-	ai_strategy = {
-		type = alliance
-		id = "LIT"
-		value = 50
-	}
-	ai_strategy = {
-		type = befriend
-		id = "LAT"
-		value = 50
-	}
-	ai_strategy = {
-		type = alliance
-		id = "LAT"
-		value = 50
-	}
-}
 
-SOV_Support_czechs = {
-	enable = {
-		tag = SOV
-		has_completed_focus = SOV_support_left_czechoslovakia
-		CZE = { has_war = yes }
-		OR = {
-			GER = {
-				has_government = fascism
-				has_war = yes
-			}
-			JAP = {
-				has_government = fascism
-				has_war = yes
-			}
-			HUN = {
-				has_government = fascism
-				has_war = yes
-			}
-		}
-	}
-	abort = {
-		has_war = yes
-		surrender_progress > 0.1
-	}
 
-	ai_strategy = {
-		type = befriend
-		id = "CZE"
-		value = 50
-	}
-	ai_strategy = {
-		type = support
-		id = "CZE"
-		value = 50
-	}
-	ai_strategy = {
-		type = send_volunteers_desire
-		id = "CZE"
-		value = 75
-	}
-}
 
-SOV_baltic_allies = { #used to prevent baltic countries from joining PRC
-	enable = {
-		OR = {
-			tag = EST
-			tag = LAT
-			tag = LIT
-		}
-		is_in_faction = no
-		SOV = { has_completed_focus = SOV_baltic_communism }
-	}
-	abort = {
-		has_war_with = SOV
-	}
-	ai_strategy = {
-		type = alliance
-		id = "PRC"
-		value = -500
-	}
-}
+
 
 
 sov_expand_rubber_production = {
 	enable = {
 		tag = SOV
-		has_completed_focus = SOV_Rubber_Industry
+		has_completed_focus = SOV_increase_rubber
 		OR = {
 			JAP = { has_war_with = ENG }
 			has_war_with = ENG
