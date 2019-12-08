@@ -659,6 +659,48 @@ SOV_play_nice_with_ribbentrop_pact = {
 	}
 }
 
+SOV_dont_send_people_in china = {
+	enable = {
+		tag = SOV
+		JAP = { has_war_with = CHI }
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "CHI"
+		value = -100
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "PRC"
+		value = -100
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "GXC"
+		value = -100
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "YUN"
+		value = -100
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "XSM"
+		value = -100
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "SHX"
+		value = -100
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "SIK"
+		value = -100
+	}
+}
+
 SOV_naval_role_ratios_historical = {
 	enable = {
 		has_dlc = "Man the Guns"

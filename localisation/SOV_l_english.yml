@@ -131,6 +131,9 @@ soviet.57.a:0 "Dispose him and the books"
 
  SOV_idea_purge_intellectuals:0 "Rectification of Intelligentsia"
  SOV_idea_purge_intellectuals_desc:0 "Our intelligentsia must be cleaned of counter-revolutionaries elements"
+ SOV_foreign_production:0 "China Support"
+ SOV_foreign_production_desc:0 "We support China in its war against Japan."
+
 
  purged_kamenev:0 "Purged by Stalin"
  purged_zinoviev:0 "Purged by Stalin"
@@ -154,8 +157,8 @@ soviet.57.a:0 "Dispose him and the books"
  SOV_trickleback:0 "Political Commissar"
  SOV_tough_negotiator:0 "Expert Negotiator"
  SOV_CAS_manufacturer:0 "CAS Designer"
-  SOV_fighter_manufacturer:0 "Fighter Designer"
-  SOV_fighter_manufacturer_2:0 "Fighter Designer"
+ SOV_fighter_manufacturer:0 "Fighter Designer"
+ SOV_fighter_manufacturer_2:0 "Fighter Designer"
 
  SOV_gosstandart:0 "The Gosstandart Committee"
  SOV_gosstandart_desc:0 "Our production must focus on quality rather than sheer quantity, to reach the hightest standard in the world"
@@ -196,5 +199,5 @@ soviet.57.a:0 "Dispose him and the books"
  SOV_komsomol:0 "The Komsomol"
  SOV_komsomol_desc:0 "The Komsomol Desc"
 
-  SOV_magnitogorsk:0 "Magnitogorsk"
-  SOV_magnitogorsk_desc:0 "Magnitogorsk Desc"
+ SOV_magnitogorsk:0 "Magnitogorsk"
+ SOV_magnitogorsk_desc:0 "Magnitogorsk Desc"

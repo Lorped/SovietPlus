@@ -1195,11 +1195,11 @@ country_event = {
 		name = soviet.31.a
 		FIN = { country_event = { days = 2 id = finland.1 } }
 	}
-	option = {
-		name = soviet.31.b
-		ai_chance = { factor = 0 }
-		#
-	}
+	#option = {
+	#	name = soviet.31.b
+	#	ai_chance = { factor = 0 }
+	#	#
+	#}
 }
 
 # Oppress Estonia
