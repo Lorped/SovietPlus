@@ -171,8 +171,8 @@ soviet.57.a:0 "Dispose him and the books"
 
  SOV_quality:0 "Quality Focus"
 
- SOV_transpolar_flight:0 "sov trans fli"
- SOV_transpolar_flight_desc:0 "trans fli desc"
+ ## SOV_transpolar_flights:0 "sov trans fli"
+ ## SOV_transpolar_flights_desc:0 "trans fli desc"
  SOV_aviation_cult:0 "sov av c"
  SOV_aviation_cult_desc:0 "sov av c desc"
  SOV_cult_of_personality:0 "sov cult person"
@@ -183,8 +183,8 @@ soviet.57.a:0 "Dispose him and the books"
  SOV_socialist_science_desc:0 "Socialist science desc"
  ## SOV_stalin_constitution:0 "Socialist science"
  ## SOV_stalin_constitution_desc:0 "Socialist science desc"
- SOV_increase_rubber:0 "SOV increase rubber"
- SOV_increase_rubber_desc:0 "Sov incr rubber desc"
+ SOV_increase_rubber:0 "Increase the Synthetic Rubber Production "
+ SOV_increase_rubber_desc:0 "Rubber is an essential element for modern industrial production. Being dependent on foreign imports could bring the Soviet Union into a dangerous condition in case of conflict."
  ## SOV_claims_on_baltic:0 ""
  ## SOV_claims_on_baltic_desc:0 ""
 
@@ -197,7 +197,10 @@ soviet.57.a:0 "Dispose him and the books"
  SOV_cult_of_personality_desc:0 "Stalin, the father of the socialism"
 
  SOV_komsomol:0 "The Komsomol"
- SOV_komsomol_desc:0 "The Komsomol Desc"
+ SOV_komsomol_desc:0 "The All-Union Leninist Young Communist League (Kom.So.Mol) educates Soviet youth in the ideals of Marxism and helps to shape future citizens of the Union."
 
  SOV_magnitogorsk:0 "Magnitogorsk"
  SOV_magnitogorsk_desc:0 "Magnitogorsk Desc"
+
+SOV_lessons_of_the_winter_war:0 "Lessons of the Winter War"
+SOV_lessons_of_the_winter_war_desc:0 "The war with Finland taught us the value of logistics in harsh terrains, as well as the correct use of tanks and airforces. Our generals have learnt invaluable lessons that will surely prove useful in the future."

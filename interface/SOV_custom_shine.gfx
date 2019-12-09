@@ -361,11 +361,11 @@ spriteTypes = {
   }
 
   SpriteType = {
-    name = "GFX_sov_aviation_cult_shine"
-    texturefile = "gfx/interface/goals/SOV_aviation_cult.dds"
+    name = "GFX_sov_air_volunteers_shine"
+    texturefile = "gfx/interface/goals/SOV_air_volunteers.dds"
     effectFile = "gfx/FX/buttonstate.lua"
     animation = {
-      animationmaskfile = "gfx/interface/goals/SOV_aviation_cult.dds"
+      animationmaskfile = "gfx/interface/goals/SOV_air_volunteers.dds"
       animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
       animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
       animationlooping = no			# yes or no ;)
@@ -378,7 +378,7 @@ spriteTypes = {
     }
 
     animation = {
-      animationmaskfile = "gfx/interface/goals/SOV_aviation_cult.dds"
+      animationmaskfile = "gfx/interface/goals/SOV_air_volunteers.dds"
       animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
       animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
       animationlooping = no			# yes or no ;)
@@ -872,5 +872,68 @@ spriteTypes = {
     legacy_lazy_load = no
   }
 
+  SpriteType = {
+    name = "GFX_sov_nkvd_divisions_shine"
+    texturefile = "gfx/interface/goals/SOV_nkvd_divisions.dds"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+      animationmaskfile = "gfx/interface/goals/SOV_nkvd_divisions.dds"
+      animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+      animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+      animationlooping = no			# yes or no ;)
+      animationtime = 0.75				# in seconds
+      animationdelay = 0			# in seconds
+      animationblendmode = "add"       #add, multiply, overlay
+      animationtype = "scrolling"      #scrolling, rotating, pulsing
+      animationrotationoffset = { x = 0.0 y = 0.0 }
+      animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+
+    animation = {
+      animationmaskfile = "gfx/interface/goals/SOV_nkvd_divisions.dds"
+      animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+      animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+      animationlooping = no			# yes or no ;)
+      animationtime = 0.75				# in seconds
+      animationdelay = 0			# in seconds
+      animationblendmode = "add"       #add, multiply, overlay
+      animationtype = "scrolling"      #scrolling, rotating, pulsing
+      animationrotationoffset = { x = 0.0 y = 0.0 }
+      animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+  }
+
+  SpriteType = {
+    name = "GFX_sov_lessons_of_war_shine"
+    texturefile = "gfx/interface/goals/SOV_lessons_of_war.dds"
+    effectFile = "gfx/FX/buttonstate.lua"
+    animation = {
+      animationmaskfile = "gfx/interface/goals/SOV_lessons_of_war.dds"
+      animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+      animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+      animationlooping = no			# yes or no ;)
+      animationtime = 0.75				# in seconds
+      animationdelay = 0			# in seconds
+      animationblendmode = "add"       #add, multiply, overlay
+      animationtype = "scrolling"      #scrolling, rotating, pulsing
+      animationrotationoffset = { x = 0.0 y = 0.0 }
+      animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+
+    animation = {
+      animationmaskfile = "gfx/interface/goals/SOV_lessons_of_war.dds"
+      animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+      animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+      animationlooping = no			# yes or no ;)
+      animationtime = 0.75				# in seconds
+      animationdelay = 0			# in seconds
+      animationblendmode = "add"       #add, multiply, overlay
+      animationtype = "scrolling"      #scrolling, rotating, pulsing
+      animationrotationoffset = { x = 0.0 y = 0.0 }
+      animationtexturescale = { x = 1.0 y = 1.0 }
+    }
+    legacy_lazy_load = no
+  }
 
  }

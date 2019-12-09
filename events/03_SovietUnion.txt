@@ -308,6 +308,7 @@ country_event = {
 		set_country_flag = purged_yezhov
 		hidden_effect = {
 			remove_ideas = SOV_nikolai_yezhov
+			add_ideas = lavrentiy_beria
 		}
 	}
 }

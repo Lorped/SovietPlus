@@ -841,7 +841,7 @@ focus_tree = {
 	#Focus for Aviation Cult
 	focus = {
 		id = SOV_air_volunteers
-		icon = GFX_aviation_cult
+		icon = GFX_sov_air_volunteers
 		prerequisite = {
 			focus = SOV_transpolar_flights
 			focus = SOV_operation_zet
@@ -1393,7 +1393,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SOV_eastern_security
+		id = SOV_far_east_fortification
 		icon = GFX_sov_eastern_security
 		prerequisite = { focus = SOV_operation_zet }
 		relative_position_id = SOV_great_purge
@@ -1503,9 +1503,9 @@ focus_tree = {
 
 
 	focus = {
-		id = SOV_lessons_of_war
-		icon = SOV_eastern_security
-		prerequisite = { focus = SOV_eastern_security }
+		id = SOV_lessons_of_the_winter_war
+		icon = GFX_sov_lessons_of_war
+		prerequisite = { focus = SOV_far_east_fortification }
 		relative_position_id = SOV_great_purge
 		x = 0
 		y = 3
@@ -1554,7 +1554,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_nkvd_divisions
-		icon = GFX_SOV_goal_NKVD
+		icon = GFX_sov_nkvd_divisions
 		prerequisite = { focus = SOV_nkvd_power }
 		prerequisite = { focus = SOV_lessons_of_war }
 		relative_position_id = SOV_nkvd_power

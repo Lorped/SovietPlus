@@ -74,7 +74,7 @@ leader_traits = {
 	SOV_trickleback = {
 		equipment_bonus = {
 			infantry = {
-				casualty_trickleback = 0.1
+				casualty_trickleback = 0.1 instant = yes
 			}
 		}
 	}

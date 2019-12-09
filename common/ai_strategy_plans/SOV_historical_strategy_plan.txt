@@ -31,6 +31,7 @@ SOV_historical_plan = {
 		#ASAP
 		SOV_cult_of_personality
 
+
 		#SOV_defense_of_moscow
 		#SOV_move_industry_to_urals
 		#SOV_Leningrad_Fort_Region	#new
@@ -39,7 +40,7 @@ SOV_historical_plan = {
 		#SOV_Molotov_Line			#new
 
 		#1936
-		SOV_finish__the_five_year_plan
+		SOV_finish_the_five_year_plan
 		SOV_strength_gosplan
 		SOV_focus_on_heavy_industry
 		SOV_improve_infrastructure
@@ -47,6 +48,11 @@ SOV_historical_plan = {
 		SOV_stakanovite
 		SOV_socialist_science
 		SOV_great_purge
+
+		SOV_operation_zet
+		SOV_air_volunteers
+		SOV_lessons_of_the_winter_war
+
 		SOV_positive_heroism
 		SOV_nkvd_power
 		SOV_stalin_constitution
@@ -54,9 +60,18 @@ SOV_historical_plan = {
 		SOV_transsiberian
 		SOV_magnitogorsk
 		SOV_komsomol
+		SOV_third_five_year_plan
+		SOV_transpolar_flights
+		SOV_peoples_commissariat
 
-		SOV_continue_urbanisation		#new
-		SOV_Approve_next_five_year_plan	#new
+		SOV_far_east_fortification
+
+		SOV_claims_on_baltic
+		SOV_baltic_security
+		SOV_claim_bessarabia
+
+
+
 		SOV_production_effort
 		SOV_stalin_constitution2
 		#1937
@@ -64,13 +79,13 @@ SOV_historical_plan = {
 		SOV_extra_tech_slot_early
 		SOV_improve_railway
 		SOV_Rubber_Industry			#new
-		SOV_transpolar_flights
+
 		#1938
 		SOV_great_purge
 		SOV_ocean_going_navy
 		SOV_expand_navy_industry	#new
 		#1939
-		SOV_peoples_commissariat
+
 		SOV_anti_fascist_diplomacy
 		SOV_far_east_fortification
 		SOV_operation_zet
