@@ -221,5 +221,15 @@ spriteTypes = {
     texturefile = "gfx/interface/goals/SOV_il2.dds"
   }
 
+  spriteType = {
+    name = "GFX_sov_eastern_security"
+    texturefile = "gfx/interface/goals/SOV_eastern_security.dds"
+  }
+
+  spriteType = {
+    name = "GFX_sov_leningrad_institute"
+    texturefile = "gfx/interface/goals/SOV_leningrad_institute.dds"
+  }
+
 
  }

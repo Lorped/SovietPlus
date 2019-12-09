@@ -931,6 +931,37 @@ focus_tree = {
 		}
 	}
 
+
+	focus = {
+		id = SOV_leningrad_institute
+			icon = GFX_sov_leningrad_institute
+			prerequisite = { focus = SOV_socialist_science }
+			continue_if_invalid = yes
+			available_if_capitulated = yes
+			x = 0
+			y = 1
+			relative_position_id = SOV_socialist_science
+			cost = 7.16
+
+			available = {
+				has_tech = computing_machine
+			}
+
+			ai_will_do = {
+				factor = 8
+			}
+
+			completion_reward = {
+				add_ideas = leningrad_polytechnical_institute
+				add_tech_bonus = {
+					category = electronics
+					uses = 2
+					bonus = 1
+				}
+			}
+		}
+
+
 	#Focus for Increase rubber production
 	focus = {
 		id = SOV_increase_rubber
