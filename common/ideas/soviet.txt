@@ -817,7 +817,7 @@ ideas = {
 		}
 
 		SOV_vyacheslav_molotov = {
-			picture = generic_political_advisor_europe_1
+			picture = vyacheslav_molotov
 			allowed = {
 				original_tag = SOV
 			}
@@ -839,7 +839,7 @@ ideas = {
 		}
 
 		SOV_nikolai_yezhov = {
-			picture = generic_army_europe_2
+			picture = nikolai_yezhov
 			allowed = {
 				original_tag = SOV
 			}
