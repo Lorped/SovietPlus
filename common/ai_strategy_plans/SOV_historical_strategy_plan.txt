@@ -4,21 +4,8 @@ SOV_historical_plan = {
 
 	enable = {
 		original_tag = SOV
-		#OR = {
-		#	AND = {
-		#		is_historical_focus_on = yes
-		#		has_game_rule = {
-		#			rule = SOV_ai_behavior
-		#			option = DEFAULT
-		#		}
-		#	}
-		#	has_country_flag = SOV_AI_RANDOM_COMMUNIST_HISTORICAL
-		#	has_game_rule = {
-		#		rule = SOV_ai_behavior
-		#		option = HISTORICAL
-		#	}
-		#}
 	}
+
 	abort = {
 		OR = {
 			is_subject = yes
@@ -30,7 +17,6 @@ SOV_historical_plan = {
 
 		#ASAP
 		SOV_cult_of_personality
-
 
 		#SOV_defense_of_moscow
 		#SOV_move_industry_to_urals
@@ -69,7 +55,6 @@ SOV_historical_plan = {
 		SOV_claims_on_baltic
 		SOV_baltic_security
 		SOV_claim_bessarabia
-
 
 
 		SOV_production_effort
@@ -131,15 +116,14 @@ SOV_historical_plan = {
 	}
 
 	research = {
-
 	}
 
 	ideas = {
-
 	}
+
 	traits = {
 		# captain_of_industry = 10
-		popular_figurehead = 5
+		# popular_figurehead = 5
 	}
 
 

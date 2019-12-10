@@ -21,7 +21,7 @@ SOV_unit_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = garrison
-		value = 4
+		value = 3
 	}
 
 	ai_strategy = {
@@ -63,19 +63,19 @@ SOV_unit_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = mechanized
-		value = 0
+		value = 5
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = armor
-		value = 12	##was 5
+		value = 16	##was 5
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = infantry
-		value = 38 #From 40 because doctrine (less than)70
+		value = 30 #From 40 because doctrine (less than)70
 	}
 
 	#Air unit factors
@@ -180,7 +180,7 @@ SOV_unit_production = {
 	ai_strategy = {
 		type = equipment_production_min_factories
 		id = fighter
-		value = 5
+		value = 10
 	}
 }
 

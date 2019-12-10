@@ -21,6 +21,7 @@ country_event = {  ## Stalin is happy
 	option = {
 		name = soviet.118.a
 		ai_chance = { factor = 100 }
+		remove_ideas = nikolai_voznesensky
   }
 }
 

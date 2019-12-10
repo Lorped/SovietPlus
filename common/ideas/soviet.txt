@@ -31,8 +31,8 @@ ideas = {
 				industry = -0.1
 			}
 			modifier = {
-				production_speed_industrial_complex_factor = 0.10
-				production_speed_arms_factory_factor = 0.10
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
 				production_speed_synthetic_refinery_factor = 0.05
 				production_speed_bunker_factor = -0.25
 			}
@@ -54,8 +54,8 @@ ideas = {
 			}
 			modifier = {
 				min_export = -0.10
-				production_speed_industrial_complex_factor = 0.10
-				production_speed_arms_factory_factor = 0.10
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.05
 				production_speed_synthetic_refinery_factor = 0.05
 				production_speed_bunker_factor = -0.25
 			}
@@ -77,8 +77,8 @@ ideas = {
 			}
 			modifier = {
 				min_export = -0.10
-				production_speed_industrial_complex_factor = 0.15
-				production_speed_arms_factory_factor = 0.05
+				production_speed_industrial_complex_factor = 0.10
+				## production_speed_arms_factory_factor = 0.00
 				production_speed_synthetic_refinery_factor = 0.05
 				production_speed_bunker_factor = -0.25
 			}
@@ -100,8 +100,8 @@ ideas = {
 			}
 			modifier = {
 				min_export = -0.10
-				production_speed_industrial_complex_factor = 0.05
-				production_speed_arms_factory_factor = 0.15
+				##production_speed_industrial_complex_factor = 0.00
+				production_speed_arms_factory_factor = 0.10
 				production_speed_synthetic_refinery_factor = 0.05
 				production_speed_bunker_factor = -0.25
 			}
