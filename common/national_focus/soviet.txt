@@ -1556,7 +1556,7 @@ focus_tree = {
 		id = SOV_nkvd_divisions
 		icon = GFX_sov_nkvd_divisions
 		prerequisite = { focus = SOV_nkvd_power }
-		prerequisite = { focus = SOV_lessons_of_war }
+		prerequisite = { focus = SOV_lessons_of_the_winter_war }
 		relative_position_id = SOV_nkvd_power
 		x = 0
 		y = 3
