@@ -456,7 +456,7 @@ build_civs_not_mils_comrade = {
 	ai_strategy = {
 		type = building_target
 		id = industrial_complex
-		value = 30
+		value = 90
 	}
 }
 
@@ -514,38 +514,7 @@ time_to_leave_light_tanks = {
 
 }
 
-sov_higher_armor_tank_production = {
-	enable = {
-		tag = SOV
-		date > 1941.1.1
-		has_tech = improved_medium_tank
-		has_template_ai_majority_unit = medium_armor
-	}
-	abort = {
-		OR = {
-			has_tech = main_battle_tank
-			AND = {
-				has_war = yes
-				surrender_progress > 0.5
-			}
-		}
-	}
-	ai_strategy = {
-		type = equipment_variant_production_factor
-		id = motorized_equipment
-		value = 25
-	}
-	ai_strategy = {
-		type = equipment_production_factor
-		id = armor
-		value = 10
-	}
-	ai_strategy = {
-		type = role_ratio
-		id = armor
-		value = 15
-	}
-}
+
 
 sov_historical_expand_navy = {
 	enable = {
@@ -578,11 +547,6 @@ sov_warning_fin_want_mess_with_stalin = {
 	abort = {
 		OR = {
 			has_war_with = FIN
-			AND = {
-				NOT = { FIN = { has_idea = FIN_German_support } }
-				NOT = { FIN = { has_idea = FIN_German_advisors } }
-				NOT = { FIN = { has_idea = FIN_strengthen_fascists } }
-			}
 			date > 1944.01.01
 		}
 	}
@@ -592,10 +556,6 @@ sov_warning_fin_want_mess_with_stalin = {
 		value = 100
 	}
 }
-
-
-
-
 
 
 

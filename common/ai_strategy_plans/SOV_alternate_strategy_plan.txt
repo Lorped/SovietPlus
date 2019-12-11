@@ -124,7 +124,7 @@ SOV_historical_plan = {
 	}
 	traits = {
 		# captain_of_industry = 10
-		popular_figurehead = 5
+		#popular_figurehead = 5
 	}
 
 
