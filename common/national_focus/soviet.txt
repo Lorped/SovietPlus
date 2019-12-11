@@ -15,6 +15,46 @@ focus_tree = {
 
 	default = no
 
+	focus = {
+		id = SOV_spanish_war
+		icon = GFX_sov_spanish_war
+		mutually_exclusive = { focus = SOV_send_volunteer }
+
+		available = {
+			SPR = {
+				has_civil_war = yes
+			}
+		}
+		bypass = {
+			SPR = {
+				has_civil_war = no
+			}
+		}
+		continue_if_invalid = yes
+		x = 5
+		y = 0
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			SPR = {
+				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 6000 producer = SOV }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = 1000 producer = SOV }
+				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 1000 producer = SOV }
+				add_opinion_modifier = { target = SOV modifier = large_increase  }
+			}
+			add_timed_idea = {
+				idea = SOV_helping_spain
+				days = 120
+			}
+		}
+	}
+
+
+
 	#Focus for Finish the Five Year plan
 	focus = {
 		id = SOV_finish_the_five_year_plan

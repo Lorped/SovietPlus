@@ -11,6 +11,7 @@ ideas = {
 			}
 			modifier = {
 				drift_defence_factor = 0.5
+				send_volunteer_factor = -0.8
 			}
 			rule = {
 				can_create_factions = yes
@@ -522,6 +523,24 @@ ideas = {
 			modifier = {
 				industrial_capacity_factory = -0.05
 				consumer_goods_factor = 0.03
+			}
+		}
+
+		SOV_helping_spain = {
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			picture = HUN_treaty_of_triannon
+
+			modifier = {
+				industrial_capacity_factory = -0.05
+				consumer_goods_factor = 0.02
 			}
 		}
 

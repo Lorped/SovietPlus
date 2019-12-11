@@ -52,7 +52,7 @@
  SOV_5_year_plan_97:0 "§G97%§!"
  SOV_5_year_plan_98:0 "§G98%§!"
  SOV_5_year_plan_99:0 "§G99%§!"
- SOV_5_year_plan_100:0 "§100%!§!"
+ SOV_5_year_plan_100:0 "§G100%!§!"
 
  SOV_exhausted_resources:0 "State's Resources has not been exhausted"
  SOV_already_improved:0 "State's Industry has not been improved"
@@ -134,6 +134,9 @@ soviet.57.a:0 "Dispose him and the books"
  SOV_foreign_production:0 "China Support"
  SOV_foreign_production_desc:0 "We support China in its war against Japan."
 
+ SOV_spanish_war:0 "The Spanish Civil War"
+ SOV_spanish_war_desc:0 "Although the Comrade Stalin has signed the Non-Intervention Agreement, we have to support the spanish comrades in their fight against the fascists as much as we can."
+
 
  purged_kamenev:0 "Purged by Stalin"
  purged_zinoviev:0 "Purged by Stalin"
@@ -200,7 +203,7 @@ soviet.57.a:0 "Dispose him and the books"
  SOV_komsomol_desc:0 "The All-Union Leninist Young Communist League (Kom.So.Mol) educates Soviet youth in the ideals of Marxism and helps to shape future citizens of the Union."
 
  SOV_magnitogorsk:0 "Magnitogorsk"
- SOV_magnitogorsk_desc:0 "Magnitogorsk Desc"
+ SOV_magnitogorsk_desc:0 "Magnitogorsk, a remote siberian city, must become one of the largest industrial installations of the Soviet Union. The city itself, due to the high concentration of steel mills, will be a national strategic hub, to be protected with appropriate secrecy."
 
 SOV_lessons_of_the_winter_war:0 "Lessons of the Winter War"
 SOV_lessons_of_the_winter_war_desc:0 "The war with Finland taught us the value of logistics in harsh terrains, as well as the correct use of tanks and airforces. Our generals have learnt invaluable lessons that will surely prove useful in the future."
