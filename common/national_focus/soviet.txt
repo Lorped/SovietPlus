@@ -18,7 +18,6 @@ focus_tree = {
 	focus = {
 		id = SOV_spanish_war
 		icon = GFX_sov_spanish_war
-		mutually_exclusive = { focus = SOV_send_volunteer }
 
 		available = {
 			SPR = {
