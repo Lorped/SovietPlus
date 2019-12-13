@@ -8,20 +8,71 @@ armored_SOV = {
 	}
 	match_to_count = 0.5
 
-	medium_armor_40w_SOV = {
+	light_armor = {
 		upgrade_prio = {
-			factor = 150
+			factor = 1
 			modifier = {
-				factor = 150
+				factor = 0
 				has_tech = basic_medium_tank
 			}
 		}
 		production_prio = {
-				factor = 10
-				modifier = {
-					factor = 10
-				}
+			factor = 1
+			modifier = {
+				factor = 0
+				has_tech = basic_medium_tank
 			}
+		}
+
+		target_width = 20.0
+		width_weight = 3.0
+    column_swap_factor = 1.5
+
+		target_template = {
+			weight = 0.95
+			match_value = 10000.0
+
+			support = {
+				engineer = 1
+				recon = 1
+				logistics_company = 1
+			}
+			regiments = {
+				light_armor = 4
+				motorized = 6
+			}
+		}
+
+		allowed_types = {
+      heavy_armor
+      medium_armor
+			light_armor
+			motorized
+			mechanized
+			medium_sp_artillery_brigade
+			light_sp_artillery_brigade
+
+			engineer
+			recon
+			logistics_company
+		}
+	}
+
+
+	medium_armor = {
+		upgrade_prio = {
+			factor = 50
+			modifier = {
+				factor = 50
+				has_tech = basic_medium_tank
+			}
+		}
+		production_prio = {
+			factor = 10
+			modifier = {
+				factor = 10
+			}
+		}
 
 		target_width = 42.0
 		width_weight = 3.0
@@ -29,7 +80,7 @@ armored_SOV = {
 
 		target_template = {
 			weight = 0.95
-			match_value = 5000.0
+			match_value = 10000.0
 
 			support = {
 				engineer = 1
@@ -37,7 +88,6 @@ armored_SOV = {
 				maintenance_company = 1
 				logistics_company = 1
 			}
-
 			regiments = {
 				heavy_armor = 2
         medium_armor = 6
@@ -59,6 +109,63 @@ armored_SOV = {
 			maintenance_company
 			logistics_company
 			anti_air
+		}
+	}
+}
+
+
+motorized_SOV = {
+
+	available_for = {
+		SOV
+	}
+	roles = {
+		motorized
+	}
+	match_to_count = 0.5
+
+	motorized = {
+		upgrade_prio = {
+			factor = 50
+			modifier = {
+				factor = 1
+			}
+		}
+		production_prio = {
+			factor = 10
+			modifier = {
+				factor = 10
+			}
+		}
+
+		target_width = 20.0
+		width_weight = 3.0
+    column_swap_factor = 1.5
+
+		target_template = {
+			weight = 0.95
+			match_value = 10000.0
+
+			support = {
+				engineer = 1
+				recon = 1
+				logistics_company = 1
+			}
+			regiments = {
+				motorized = 7
+				light_sp_artillery_brigade = 2
+			}
+		}
+
+		allowed_types = {
+			motorized
+			mechanized
+			light_sp_artillery_brigade
+			medium_sp_artillery_brigade
+			engineer
+			recon
+			maintenance_company
+			logistics_company
 		}
 	}
 }
@@ -132,8 +239,8 @@ infantry_SOV = {
 	}
 }
 
-mountaineers_SOV = {
 
+mountaineers_SOV = {
 	available_for = {
 		SOV
 	}
@@ -143,11 +250,8 @@ mountaineers_SOV = {
 	upgrade_prio = {
 		factor = 2
 	}
-
 	match_to_count = 0.60
-
 	mountaineers_default_SOV = {
-
 		upgrade_prio = {
 			factor = 100
 			modifier = {
@@ -160,25 +264,20 @@ mountaineers_SOV = {
 				factor = 10
 			}
 		}
-
 		target_width = 20
 		width_weight = 3
 		column_swap_factor = 0.2
-
 		target_template = {
 			weight = 0.9
-			match_value = 6000.0
-
+			match_value = 10000.0
 			support = {
 				engineer = 1
 				artillery = 1
 			}
-
 			regiments = {
 				mountaineers = 10
 			}
 		}
-
 		allowed_types = {
 			engineer
 			artillery
@@ -194,7 +293,6 @@ marines_SOV = {
 	roles = {
 		marines
 	}
-
 	upgrade_prio = {
 		factor = 1
 		modifier = {
@@ -204,33 +302,26 @@ marines_SOV = {
 			}
 		}
 	}
-
 	match_to_count = 0.60
-
 	marine_default_SOV = {
-
 		upgrade_prio = {
-			factor = 2
+			factor = 1
 			modifier = {
 				factor = 1
 			}
 		}
-
 		target_width = 6.0
 		width_weight = 1.0
-		column_swap_factor = 0.1
-
+		column_swap_factor = 0.2
 		target_template = {
 			weight = 0.9
 			match_value = 5000.0
-
 			support = {
 			}
 			regiments = {
 				marine = 3
 			}
 		}
-
 		allowed_types = {
 			marine
 		}
@@ -238,7 +329,6 @@ marines_SOV = {
 }
 
 paratroopers_SOV = {
-
 	available_for = {
 		SOV
 	}
@@ -246,7 +336,7 @@ paratroopers_SOV = {
 		paratrooper
 	}
 	upgrade_prio = {
-		factor = 100
+		factor = 1
 		modifier = {
 			factor = 0
 			NOT = {
@@ -254,15 +344,7 @@ paratroopers_SOV = {
 			}
 		}
 	}
-	production_prio = {
-			factor = 1
-			modifier = {
-				factor = 0
-			}
-		}
-
 	match_to_count = 0.60
-
 	paratrooper_default_SOV = {
 		upgrade_prio = {
 			factor = 1
@@ -270,25 +352,20 @@ paratroopers_SOV = {
 				factor = 1
 			}
 		}
-
-		target_width = 9.9
+		target_width = 10
 		width_weight = 3.0
 		column_swap_factor = 0.1
-
 		target_template = {
 			weight = 0.9
 			match_value = 5000.0
-
 			support = {
 				engineer = 1
 				artillery = 1
 			}
-
 			regiments = {
 				paratrooper= 5
 			}
 		}
-
 		allowed_types = {
 			paratrooper
 			engineer
@@ -308,19 +385,15 @@ garrison_SOV = {
 	upgrade_prio = {
 		factor = 10
 		modifier = {
-			factor = 0
+			factor = 1
 			ai_has_role_template = garrison
 		}
 	}
 
 	match_to_count = 0.8
-
-
 	garrison_SOV = {
-
 		upgrade_prio = {
 			factor = 1
-
 			modifier = {
 				factor = 1
 			}
@@ -332,25 +405,19 @@ garrison_SOV = {
 			}
 		}
 		reinforce_prio = 0
-		custom_icon = 7
-
 		target_width = 1.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
-
 		target_template = {
 			weight = 0.9
 			match_value = 5000.0
-
 			support = {
 				military_police = 1
 			}
-
 			regiments = {
 				cavalry = 4
 			}
 		}
-
 		allowed_types = {
 			military_police
 			cavalry

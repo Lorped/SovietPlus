@@ -1,0 +1,237 @@
+﻿###########################
+# New Soviet Events
+###########################
+
+add_namespace = finland
+
+
+# Finland joined Axis - add claim and stuff
+
+country_event = {
+	id = finland.90
+	picture = GFX_report_event_generic_conference
+	title = finland.90.t
+	desc = text = finland.90.d
+
+	trigger = {
+		is_in_faction_with = GER
+	}
+	mean_time_to_happen = {	days = 1 }
+	fire_only_once = yes
+
+	option = {
+		name = finland.90.a
+		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 15000 producer = GER }
+		add_equipment_to_stockpile = { type = support_equipment_1 amount = 500 producer = GER }
+		add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 300 producer = GER }
+		add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 100 producer = GER }
+
+		add_tech_bonus = {
+			name = land_doc_bonus
+			bonus = 1.0
+			uses = 2
+			category = land_doctrine
+		}
+
+		if = {
+			limit = {
+				OR = { has_idea = volunteer_only has_idea = limited_conscription}
+			}
+			add_ideas = { extensive_conscription }
+			add_political_power = -75
+		}
+
+		add_state_claim = 213
+		add_state_claim = 215
+		add_state_claim = 216
+		add_state_claim = 195
+
+		add_timed_idea = {
+			idea = FIN_support_fascists
+			days = 730
+		}
+		add_timed_idea = {
+			idea = FIN_german_support
+			days = 730
+		}
+		add_timed_idea = {
+			idea = FIN_german_advisors
+			days = 730
+		}
+
+		set_country_flag = FIN_war_again
+	}
+}
+
+#Finland defeated again...
+
+
+country_event = {
+	id = finland.91
+	picture = GFX_report_event_soviet_soldiers
+	title = finland.91.t
+	desc = finland.91.d
+
+	trigger = {
+		original_tag = FIN
+		has_capitulated = yes
+		has_country_flag = FIN_war_again
+		has_war_with = SOV
+	}
+	mean_time_to_happen = {
+		days = 30
+	}
+	fire_only_once = yes
+
+	option = {
+		name = finland.91.a
+		ai_chance = { factor = 100 }
+		SOV = {
+			country_event = {
+				id = finland.92
+				days = 2
+			}
+		}
+		add_stability = 0.1
+	}
+	option = {
+		name = finland.91.b
+		ai_chance = { factor = 0 }
+		add_stability = -0.1
+		add_war_support = -0.4
+	}
+}
+
+
+# Treaty of Moscow?
+country_event = {
+	id = finland.92
+	picture = GFX_report_event_soviet_finnish_pact
+	title = finland.92.t
+	desc = finland.92.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = finland.92.a
+		ai_chance = { factor = 100 }
+		SOV = {
+			white_peace = {
+				tag = FIN
+				message = FIN_agree_peace
+			}
+		}
+		if = {
+			limit = {
+				FIN = { has_war_with = ENG }
+			}
+			ENG = {
+				white_peace = {
+					tag = FIN
+					message = FIN_agree_peace
+				}
+			}
+		}
+		transfer_state = 147
+		transfer_state = 722
+		if = {
+			limit = {
+				79 = {
+					is_claimed_by = FIN
+				}
+			}
+			FIN = { remove_state_claim = 79 }
+		}
+		if = {
+			limit = {
+				216 = {
+					is_claimed_by = FIN
+				}
+			}
+			FIN = { remove_state_claim = 216 }
+		}
+		if = {
+			limit = {
+				215 = {
+					is_claimed_by = FIN
+				}
+			}
+			FIN = { remove_state_claim = 215 }
+		}
+		if = {
+			limit = {
+				213 = {
+					is_claimed_by = FIN
+				}
+			}
+			FIN = { remove_state_claim = 213 }
+		}
+		if = {
+			limit = {
+				195 = {
+					is_claimed_by = FIN
+				}
+			}
+			FIN = { remove_state_claim = 195 }
+		}
+		FIN = {
+			if = {
+				limit = {
+					is_in_faction = yes
+				}
+				leave_faction = yes
+			}
+			if = {
+				limit = {
+					has_idea = FIN_german_advisors
+				}
+				remove_ideas = FIN_german_advisors
+			}
+			if = {
+				limit = {
+					has_idea = FIN_support_fascists
+				}
+				remove_ideas = FIN_support_fascists
+			}
+			if = {
+				limit = {
+					has_idea = FIN_german_support
+				}
+				remove_ideas = FIN_german_support
+			}
+			add_ideas = {
+				disarmed_nation
+				civilian_economy
+			}
+			add_timed_idea = {
+				idea = FIN_Treaty_of_Moscow
+				days = 2000
+			}
+			set_political_party = {
+				ideology = fascism
+				popularity = 0.01
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.10
+			}
+			set_war_support = 0.00
+			clr_country_flag = FIN_preparing_ww
+		}
+		GER = {
+			diplomatic_relation = {
+				country = FIN
+				relation = military_access
+				active = no
+			}
+		}
+	}
+	option = {	#We have other plans
+		name = finland.92.b
+		ai_chance = {
+			factor = 0
+		}
+		add_political_power = -25
+	}
+}

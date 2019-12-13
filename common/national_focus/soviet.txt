@@ -884,6 +884,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_transpolar_flights
 			focus = SOV_operation_zet
+			focus = SOV_spanish_war
 		}
 		x = 12
 		y = 2
@@ -1336,6 +1337,7 @@ focus_tree = {
 		id = SOV_t34
 		icon = GFX_sov_t34
 		prerequisite = { focus = SOV_peoples_commissariat }
+		available = { has_tech = basic_medium_tank }
 		x = -2
 		y = 1
 		relative_position_id = SOV_peoples_commissariat

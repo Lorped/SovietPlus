@@ -21,56 +21,15 @@ SOV_unit_production = {
 	###
 	# ARMY role_ratio
 	###
-	ai_strategy = {
-		type = role_ratio
-		id = garrison
-		value = -100
-	}
-	ai_strategy = {
-		type = role_ratio
-		id = suppression
-		value = 1
-	}
-	ai_strategy = {
-		type = role_ratio
-		id = paratroopers
-		value = 0
-	}
-	ai_strategy = {
-		type = role_ratio
-		id = mountaineers
-		value = 2
-	}
-	ai_strategy = {
-		type = role_ratio
-		id = marines
-		value = -100
-	}
-	ai_strategy = {
-		type = role_ratio
-		id = cavalry
-		value = -100
-	}
-	ai_strategy = {
-		type = role_ratio
-		id = motorized
-		value = 10
-	}
-	ai_strategy = {
-		type = role_ratio
-		id = mechanized
-		value = 5
-	}
-	ai_strategy = {
-		type = role_ratio
-		id = armor
-		value = 16	##was 5
-	}
-	ai_strategy = {
-		type = role_ratio
-		id = infantry
-		value = 30 #From 40 because doctrine (less than)70
-	}
+	ai_strategy = { type = role_ratio		id = garrison			value = 0		}
+	ai_strategy = {	type = role_ratio		id = suppression	value = 0		}
+	ai_strategy = {	type = role_ratio		id = paratroopers	value = 0		}
+	ai_strategy = {	type = role_ratio		id = mountaineers	value = 2		}
+	ai_strategy = {	type = role_ratio		id = marines			value = 0		}
+	ai_strategy = {	type = role_ratio		id = cavalry			value = 0		}
+	ai_strategy = {	type = role_ratio		id = motorized		value = 15	}
+	ai_strategy = {	type = role_ratio		id = armor				value = 15	}
+	ai_strategy = {	type = role_ratio		id = infantry			value = 68	}
 
 	###
 	# Air unit_ratio
@@ -134,24 +93,29 @@ SOV_unit_production = {
 	##  Equipment production
 	###
 	ai_strategy = {
-		type = equipment_production_factor
+		type = equipment_variant_production_factor
 		id = fighter
 		value = 30	## was 20
 	}
 	ai_strategy = {
 		type = equipment_production_factor
-		id = infantry
-		value = 30	## too high ??
+		id = support_equipment
+		value = 30
 	}
 	ai_strategy = {
-		type = equipment_variant_production_factor
-		id = support_equipment
-		value = 30	#added altogether
+		type = equipment_production_factor
+		id = infantry
+		value = 50	## too high ??
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = motorized_equipment
+		value = 20	## too high ??
 	}
 	ai_strategy = {
 		type = equipment_production_factor
 		id = artillery
-		value = 60	## was 30
+		value = 30
 	}
 	ai_strategy = {
 		type = equipment_production_factor
@@ -161,12 +125,12 @@ SOV_unit_production = {
 	ai_strategy = {
 		type = equipment_production_factor
 		id = anti_tank
-		value = 60
+		value = 40
 	}
 	ai_strategy = {
 		type = equipment_production_factor
 		id = armor
-		value = 20	#up from 5
+		value = 20	# will be increased later
 	}
 	ai_strategy = {
 		type = equipment_variant_production_factor
@@ -196,20 +160,19 @@ sov_higher_armor_tank_production = {
 			}
 		}
 	}
+
+	ai_strategy = {	type = role_ratio		id = motorized		value = 20	}
+	ai_strategy = {	type = role_ratio		id = armor				value = 20	}
+
 	ai_strategy = {
-		type = equipment_variant_production_factor
+		type = equipment_production_factor
 		id = motorized_equipment
 		value = 25
 	}
 	ai_strategy = {
-		type = equipment_production_factor
+		type = equipment_variant_production_factor
 		id = armor
 		value = 30
-	}
-	ai_strategy = {
-		type = role_ratio
-		id = armor
-		value = 20
 	}
 }
 
@@ -322,7 +285,6 @@ claims_on_romania = {
 			country_exists = ROM
 		}
 	}
-
 	ai_strategy = {
 		type = antagonize
 		id = "ROM"
@@ -388,6 +350,7 @@ spanish_civil_war_SOV = {
 	}
 }
 
+
 SOV_template_design_1 = {
 	enable = {
 		original_tag = SOV
@@ -397,47 +360,15 @@ SOV_template_design_1 = {
 		date > 1940.1.1
 	}
 
-	ai_strategy = {
-		type = template_prio
-		id = motorized
-		value = 10
-	}
+	ai_strategy = {	type = template_prio	id = infantry			value = 50	}
+	ai_strategy = {	type = template_prio	id = motorized		value = 20	}
+	ai_strategy = {	type = template_prio	id = light_armor	value = 50	}
+	ai_strategy = {	type = template_prio	id = mountaineers	value = 50	}
+	ai_strategy = {	type = template_prio	id = medium_armor	value = -10	}
+	ai_strategy = {	type = template_prio	id = cavalry			value = -100	}
+	ai_strategy = {	type = template_prio	id = heavy_armor	value = -100	}
+	ai_strategy = {	type = template_prio	id = paratroopers	value = -100	}
 
-	ai_strategy = {
-		type = template_prio
-		id = cavalry
-		value = -100
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = light_armor
-		value = 50
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = medium_armor
-		value = -10
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = heavy_armor
-		value = -50
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = paratroopers
-		value = -50
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = infantry
-		value = 50
-	}
 }
 
 SOV_template_design_2 = {
@@ -446,63 +377,16 @@ SOV_template_design_2 = {
 		date > 1940.1.1
 	}
 
-	ai_strategy = {
-		type = template_prio
-		id = cavalry
-		value = -100
-	}
+	ai_strategy = {	type = template_prio	id = infantry			value = 10	}
+	ai_strategy = {	type = template_prio	id = motorized		value = 20	}
+	ai_strategy = {	type = template_prio	id = light_armor	value = -100	}
+	ai_strategy = {	type = template_prio	id = medium_armor	value = 80	}
+	ai_strategy = {	type = template_prio	id = modern_armor	value = 80	}
+	ai_strategy = {	type = template_prio	id = heavy_armor	value = -100	}
+	ai_strategy = {	type = template_prio	id = mountaineers	value = 50	}
+	ai_strategy = {	type = template_prio	id = cavalry			value = -100	}
+	ai_strategy = {	type = template_prio	id = paratroopers	value = -100	}
 
-	ai_strategy = {
-		type = template_prio
-		id = light_armor
-		value = -10	 #down from 10
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = medium_armor
-		value = 80
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = modern_armor
-		value = 60
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = heavy_armor
-		value = 10
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = paratroopers
-		value = -50
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = infantry
-		value = 10
-	}
-
-	ai_strategy = {
-		type = equipment_production_factor
-		id = anti_air
-		value = 50
-	}
-	ai_strategy = {
-		type = equipment_production_factor
-		id = armor
-		value = 20
-	}
-	ai_strategy = {
-		type = equipment_production_factor
-		id = motorized
-		value = 10
-	}
 }
 
 SOV_pp_spending = {

@@ -241,5 +241,10 @@ spriteTypes = {
     texturefile = "gfx/interface/goals/SOV_lessons_of_war.dds"
   }
 
+  spriteType = {
+    name = "GFX_sov_operation_zet"
+    texturefile = "gfx/interface/goals/SOV_operation_zet.dds"
+  }
+
 
  }
