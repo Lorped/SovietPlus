@@ -11,7 +11,7 @@ country_event = {
 	id = finland.90
 	picture = GFX_report_event_generic_conference
 	title = finland.90.t
-	desc = text = finland.90.d
+	desc = finland.90.d
 
 	trigger = {
 		is_in_faction_with = GER
