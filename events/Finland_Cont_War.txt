@@ -14,6 +14,7 @@ country_event = {
 	desc = finland.90.d
 
 	trigger = {
+		original_tag = FIN
 		is_in_faction_with = GER
 	}
 	mean_time_to_happen = {	days = 1 }
@@ -93,6 +94,7 @@ country_event = {
 			}
 		}
 		add_stability = 0.1
+		set_country_flag = FIN_lost_again
 	}
 	option = {
 		name = finland.91.b
@@ -217,7 +219,7 @@ country_event = {
 				popularity = 0.10
 			}
 			set_war_support = 0.00
-			clr_country_flag = FIN_preparing_ww
+
 		}
 		GER = {
 			diplomatic_relation = {

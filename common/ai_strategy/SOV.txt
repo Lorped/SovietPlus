@@ -27,9 +27,9 @@ SOV_unit_production = {
 	ai_strategy = {	type = role_ratio		id = mountaineers	value = 2		}
 	ai_strategy = {	type = role_ratio		id = marines			value = 0		}
 	ai_strategy = {	type = role_ratio		id = cavalry			value = 0		}
-	ai_strategy = {	type = role_ratio		id = motorized		value = 15	}
-	ai_strategy = {	type = role_ratio		id = armor				value = 15	}
-	ai_strategy = {	type = role_ratio		id = infantry			value = 68	}
+	ai_strategy = {	type = role_ratio		id = motorized		value = 10	}
+	ai_strategy = {	type = role_ratio		id = armor				value = 10	}
+	ai_strategy = {	type = role_ratio		id = infantry			value = 78	}
 
 	###
 	# Air unit_ratio
@@ -147,9 +147,8 @@ SOV_unit_production = {
 sov_higher_armor_tank_production = {
 	enable = {
 		tag = SOV
-		date > 1941.1.1
+		#date > 1941.1.1
 		has_tech = improved_medium_tank
-		has_template_ai_majority_unit = medium_armor
 	}
 	abort = {
 		OR = {
@@ -298,10 +297,6 @@ germany_enemy = {
 	enable = {
 		tag = SOV
 		country_exists = GER
-		OR = {
-			has_completed_focus = SOV_anti_fascist_diplomacy
-			has_completed_focus = SOV_permanent_revolution
-		}
 		OR = {
 			date > 1940.01.01
 			GER = { has_war = yes }

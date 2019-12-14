@@ -246,5 +246,9 @@ spriteTypes = {
     texturefile = "gfx/interface/goals/SOV_operation_zet.dds"
   }
 
+  spriteType = {
+    name = "GFX_sov_spanish_war"
+    texturefile = "gfx/interface/goals/SOV_scw.dds"
+  }
 
  }

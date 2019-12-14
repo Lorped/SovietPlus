@@ -30,7 +30,7 @@ focus_tree = {
 			}
 		}
 		continue_if_invalid = yes
-		x = 5
+		x = 12
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -861,7 +861,7 @@ focus_tree = {
 	focus = {
 		id = SOV_transpolar_flights
 		icon = GFX_sov_transpolar_flight
-		x = 12
+		x = 14
 		y = 0
 		cost = 4.29
 		ai_will_do = {
@@ -1035,7 +1035,7 @@ focus_tree = {
 		available = {
 			has_government = communism
 		}
-		x = 14
+		x = 16
 		y = 0
 		cost = 2
 		ai_will_do = {
@@ -1611,6 +1611,275 @@ focus_tree = {
 			swap_ideas = { remove_idea = nkvd add_idea = nkvd_2 }
 		}
 	}
+
+	focus = {
+		id = SOV_build_molotov_line
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = SOV_claims_on_baltic }
+		available = {
+			has_offensive_war = no
+			AND = {
+				has_full_control_of_state = 11
+				has_full_control_of_state = 12
+				has_full_control_of_state = 89
+				has_full_control_of_state = 91
+				has_full_control_of_state = 93
+				has_full_control_of_state = 94
+				has_full_control_of_state = 95
+				has_full_control_of_state = 96
+				has_full_control_of_state = 97
+				has_full_control_of_state = 189
+				has_full_control_of_state = 190
+				has_full_control_of_state = 191
+			}
+		}
+		x = 3
+		y = 3
+		relative_position_id = SOV_claims_on_baltic
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		cancel_if_invalid = yes
+		select_effect = {
+			add_timed_idea = {
+				idea = SOV_military_build
+				days = 70
+			}
+		}
+
+		completion_reward = {
+			11 = {
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 6407
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 5
+					province = 6296
+					instant_build = yes
+				}
+			}
+			89 = {
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 11411
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 6431
+					instant_build = yes
+				}
+			}
+			95 = {
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 9359
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 3366
+					instant_build = yes
+				}
+			}
+			91 = {
+				add_building_construction = {
+					type = bunker
+					level = 5
+					province = 11479
+					instant_build = yes
+				}
+			}
+			94 = {
+				add_building_construction = {
+					type = bunker
+					level = 7
+					province = 3392
+					instant_build = yes
+				}
+			}
+			189 = {
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 9731
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 6360
+					instant_build = yes
+				}
+			}
+			97 = {
+				add_building_construction = {
+					type = bunker
+					level = 5
+					province = 3393
+					instant_build = yes
+				}
+			}
+			190 = {
+				add_building_construction = {
+					type = bunker
+					level = 4
+					province = 9262
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_improve_stalin_line
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = SOV_build_molotov_line }
+		available = { has_offensive_war = no }
+		x = 1
+		y = 1
+		relative_position_id = SOV_build_molotov_line
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		select_effect = {
+      add_timed_idea = {
+				idea = SOV_military_build
+				days = 70
+			}
+    }
+		completion_reward = {
+			209 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 6
+						province = 415
+						instant_build = yes
+					}
+				}
+				#add_building_construction = {
+				#	type = bunker
+				#	level = 6
+				#	province = 209
+				#	instant_build = yes
+				#}
+			}
+			210 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 4
+						province = 3333
+						instant_build = yes
+					}
+				}
+			}
+			207 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 4
+						province = 3219
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 4
+						province = 6371
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 4
+						province = 6220
+						instant_build = yes
+					}
+				}
+			}
+			206 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 4
+						province = 11370
+						instant_build = yes
+					}
+				}
+			}
+			202 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 7
+						province = 525
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 7
+						province = 3494
+						instant_build = yes
+					}
+				}
+
+			}
+			203 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 7
+						province = 11409
+						instant_build = yes
+					}
+				}
+			}
+			192 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 754
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 741
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province = 11670
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+
+
+
+
 
 }
 	###

@@ -6,7 +6,7 @@ Until_Winter_war_stay_out_of_axis_FIN = {
 		OR = { tag = FIN tag = GER }
 
 		NOT = {
-			GER = { focus_progress = { focus = GER_ussr_war_goal progress > 0.5 } }
+			GER = { focus_progress = { focus = GER_ussr_war_goal progress > 0.2 } }
 			GER = { has_war_with = SOV }
 		}
 	}
@@ -17,7 +17,7 @@ Until_Winter_war_stay_out_of_axis_FIN = {
 	ai_strategy = { type = alliance   	id = "FIN"     value = -500 }
 }
 
-EAI_continuation_war = {
+FIN_continuation_war = {
 	enable = {
 		is_historical_focus_on = yes
 		OR = { tag = FIN tag = GER }
@@ -25,7 +25,7 @@ EAI_continuation_war = {
 		NOT = { 146 = { is_controlled_by = FIN } }
 
 		OR = {
-			GER = { focus_progress = { focus = GER_ussr_war_goal progress > 0.5 } }
+			GER = { focus_progress = { focus = GER_ussr_war_goal progress > 0.2 } }
 			GER = { has_war_with = SOV }
 		}
 
@@ -45,8 +45,12 @@ EAI_continuation_war = {
 			has_completed_focus = GER_ussr_war_goal
 			NOT = { has_war_with = SOV }
 		}
+		FIN = {
+			has_country_flag = FIN_lost_again
+		}
 	}
 
-	ai_strategy = { type = alliance   	id = "GER"     value = 500 }
-	ai_strategy = { type = alliance   	id = "FIN"     value = 500 }
+	ai_strategy = { type = alliance   	id = "GER"    value = 500 }
+	ai_strategy = { type = alliance   	id = "FIN"    value = 500 }
+	ai_strategy = { type = antagonize		id = "SOV"		value = 500	}
 }
