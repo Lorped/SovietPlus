@@ -10,30 +10,9 @@
 # protect
 # influence
 
-### A-is_historical
-###
-## SOV_dont_take_claims_on_POL_we_got_focus = {
-##	enable = {
-##		tag = SOV
-##		country_exists = POL
-##		has_completed_focus = SOV_claims_on_poland
-##	}
-##
-##	abort = {
-##		OR = {
-##			NOT = { country_exists = POL }
-##			has_completed_focus = SOV_demand_eastern_poland
-##			date > 1941.01.01
-##			has_war_with = POL
-##		}
-##	}
-##
-##	ai_strategy = {
-##		type = ignore_claim
-##		id = "POL"
-##		value = 1
-##	}
-## }
+#########################
+# TRY TO BEFRIEND FINLAND AFTER WINTER WAR (almost useless)
+#########################
 
 try_to_befriend_finland = {
 	enable = {
@@ -56,14 +35,13 @@ try_to_befriend_finland = {
 	}
 }
 
+#########################
+# SUPPORT CHINA AND (MORE) PRC
+#########################
 
 china_struggles_against_jap_SOV = {
 	enable = {
 		original_tag = SOV
-		OR = {
-			has_completed_focus = SOV_anti_fascist_diplomacy
-			has_completed_focus = SOV_internationalism
-		}
 		OR = {
 			CHI = { has_war_with = JAP }
 			PRC = { has_war_with = JAP }
@@ -89,7 +67,7 @@ china_struggles_against_jap_SOV = {
 	ai_strategy = {
 		type = support
 		id = "CHI"
-		value = 100
+		value = 80
 	}
 	ai_strategy = {
 		type = befriend
@@ -99,21 +77,23 @@ china_struggles_against_jap_SOV = {
 	ai_strategy = {
 		type = support
 		id = "PRC"
-		value = 130
+		value = 150
 	}
 }
+
+#########################
+# SUPPORT CHINA AND (LESS) PRC
+#########################
 
 china_after_ZET_focus = {
 	enable = {
 		original_tag = SOV
 		has_completed_focus = SOV_operation_zet
-		has_government = communism
 		CHI = { has_war_with = JAP }
 	}
 	abort = {
 		OR = {
 			NOT = { CHI = { has_war_with = JAP } }
-			NOT = { has_government = communism }
 			has_non_aggression_pact_with = JAP
 			AND = {
 				has_war_with = GER
@@ -134,9 +114,13 @@ china_after_ZET_focus = {
 	ai_strategy = {
 		type = support
 		id = "CHI"
-		value = 130
+		value = 150
 	}
 }
+
+#########################
+# ATTACK JAP AFTER GER
+#########################
 
 attack_japan_when_adolf_is_down = {
 	enable = {
@@ -190,23 +174,10 @@ attack_man_sov = {
 	}
 }
 
-attack_china_sov = {
-	enable = {
-		tag = SOV
-		has_completed_focus = SOV_attack_china
-		country_exists = CHI
-	}
-	abort = {
-		NOT = {
-			country_exists = CHI
-		}
-	}
-	ai_strategy = {
-		type = antagonize
-		id = "SIK"
-		value = 200
-	}
-}
+
+#########################
+# REMEMBER to build fighters!
+#########################
 
 sov_build_a_lot_of_fighters = {
 	enable = {
@@ -247,7 +218,11 @@ sov_build_a_lot_of_fighters = {
 	}
 }
 
-sov_new_aircraft_upgrade = {  ##not too early
+#########################
+# NOT TO EARLY NEW AIRCRAFT '44'
+#########################
+
+sov_new_aircraft_upgrade = {
 	enable = {
 		original_tag = SOV
 		OR = {
@@ -281,35 +256,7 @@ sov_new_aircraft_upgrade = {  ##not too early
 	}
 }
 
-sov_always_need_ammo = {
-	enable = {
-		original_tag = SOV
-		has_war_with = GER
-		surrender_progress > 0.2
-	}
-	abort = {
-		OR = {
-			has_war = no
-			has_capitulated = yes
-			surrender_progress < 0.0
-		}
-	}
-	ai_strategy = {
-		type = equipment_production_factor
-		id = infantry
-		value = 20
-	}
-	ai_strategy = {
-		type = equipment_production_factor
-		id = fighter
-		value = 20
-	}
-	ai_strategy = {
-		type = equipment_production_factor
-		id = armor
-		value = -10
-	}
-}
+
 increase_that_air_count = {
 	enable = {
 		original_tag = SOV
@@ -345,7 +292,7 @@ increase_that_air_count = {
 	ai_strategy = {
 		type = equipment_variant_production_factor
 		id = heavy_fighter_equipment
-		value = -60	#up from -80 8.9
+		value =  -200
 	}
 	ai_strategy = {
 		type = equipment_production_factor
@@ -432,19 +379,7 @@ SOV_no_plane_build_AA = {
 	}
 }
 
-build_civs_not_mils_comrade = {
-	enable = {
-		tag = SOV
-		date < 1938.01.01
-		has_war = no
-	}
-	abort_when_not_enabled = yes
-	ai_strategy = {
-		type = building_target
-		id = industrial_complex
-		value = 90
-	}
-}
+
 
 build_civs_not_mils_comrade = {
 	enable = {
@@ -456,7 +391,11 @@ build_civs_not_mils_comrade = {
 	ai_strategy = {
 		type = building_target
 		id = industrial_complex
-		value = 90
+		value = 900
+	}
+	ai_strategy = {
+		type = added_military_to_civilian_factory_ratio
+		value = -150
 	}
 }
 
