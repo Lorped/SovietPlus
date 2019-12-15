@@ -50,11 +50,6 @@ country_event = {
 				idea = officers_purged_3
 				days = 1168
 			}
-			if = {
-				limit = { has_idea = SOV_great_patriotic_war }
-				remove_ideas = SOV_great_patriotic_war
-				add_ideas = SOV_great_patriotic_war_2
-			}
 			country_event = { id = soviet.39 days = 146 }
 		}
 	}
@@ -106,11 +101,6 @@ country_event = {
 			add_timed_idea = {
 				idea = officers_purged_5
 				days = 876
-			}
-			if = {
-				limit = { has_idea = SOV_great_patriotic_war_2 }
-				remove_ideas = SOV_great_patriotic_war_2
-				add_ideas = SOV_great_patriotic_war_3
 			}
 			country_event = { id = soviet.41 days = 146 }
 		}
@@ -164,11 +154,6 @@ country_event = {
 				idea = officers_purged_7
 				days = 584
 			}
-			if = {
-				limit = { has_idea = SOV_great_patriotic_war_3 }
-				remove_ideas = SOV_great_patriotic_war_3
-				add_ideas = SOV_great_patriotic_war_4
-			}
 			country_event = { id = soviet.43 days = 146 }
 		}
 	}
@@ -221,11 +206,6 @@ country_event = {
 				idea = officers_purged_9
 				days = 292
 			}
-			if = {
-				limit = { has_idea = SOV_great_patriotic_war_4 }
-				remove_ideas = SOV_great_patriotic_war_4
-				add_ideas = SOV_great_patriotic_war_5
-			}
 			country_event = { id = soviet.45 days = 146 }
 		}
 	}
@@ -264,85 +244,21 @@ country_event = {
 country_event = {
 	id = soviet.46
 	title = soviet.46.t
-	desc = soviet.46.d
+	desc = soviet.46.dx
 	picture = GFX_report_event_soldiers_marching
 
 	is_triggered_only = yes
 
 	trigger = {
-
 	}
-
-	immediate = {
-		hidden_effect = {
-			if = {
-				limit = {
-					OR = {
-						has_idea = officers_purged
-						has_idea = officers_purged_2
-					}
-				}
-				add_ideas = SOV_great_patriotic_war
-			}
-			if = {
-				limit = {
-					OR = {
-						has_idea = officers_purged_3
-						has_idea = officers_purged_4
-					}
-				}
-				add_ideas = SOV_great_patriotic_war_2
-			}
-			if = {
-				limit = {
-					OR = {
-						has_idea = officers_purged_5
-						has_idea = officers_purged_6
-					}
-				}
-				add_ideas = SOV_great_patriotic_war_3
-			}
-			if = {
-				limit = {
-					OR = {
-						has_idea = officers_purged_7
-						has_idea = officers_purged_8
-					}
-				}
-				add_ideas = SOV_great_patriotic_war_4
-			}
-			if = {
-				limit = {
-					OR = {
-						has_idea = officers_purged_9
-						has_idea = officers_purged_10
-					}
-				}
-				add_ideas = SOV_great_patriotic_war_5
-			}
-		}
-	}
-
 	option = {
-		name = soviet.46.a
-		custom_effect_tooltip = soviet.46.a_tt
+		name = soviet.46.ax
+
 	}
 }
-# Purge - Special event to remove patriotic war if it has been added
-country_event = {
-	id = soviet.47
 
-	hidden = yes
 
-	is_triggered_only = yes
 
-	immediate = {
-		if = {
-			limit = { has_idea = SOV_great_patriotic_war_5 }
-			remove_ideas = SOV_great_patriotic_war_5
-		}
-	}
-}
 
 
 ###########################################################
@@ -543,7 +459,6 @@ country_event = {  ## ADD General Rokossovsky
 			planning_skill = 2
 			logistics_skill = 4
 		}
-
 
 
   }

@@ -52,7 +52,7 @@
  SOV_5_year_plan_97:0 "§G97%§!"
  SOV_5_year_plan_98:0 "§G98%§!"
  SOV_5_year_plan_99:0 "§G99%§!"
- SOV_5_year_plan_100:0 "§G100%!§!"
+ SOV_5_year_plan_100:0 "§G100%§!"
 
  SOV_exhausted_resources:0 "State's Resources has not been exhausted"
  SOV_already_improved:0 "State's Industry has not been improved"
@@ -221,6 +221,9 @@ soviet.57.a:0 "Dispose him and the books"
  FIN_german_advisors:0 "German military advisors"
  FIN_german_advisors_desc:0 "German military advisors collaborate with our officers"
 
+ finland.89.t:0 "Retake our lands"
+ finland.89.d:0 "The soviets are fighting against the Germany, we can retake our core territories"
+ finland.89.a:0 "The time is now!"
  finland.91.t:0 "The war is lost. Again."
  finland.91.d:0 "The war is lost. We must seek an agreement with the Soviet Union to prevent further suffering."
  finland.91.a:0 "The best thing to do."
@@ -233,3 +236,13 @@ soviet.57.a:0 "Dispose him and the books"
  finland.91.d:0 "The conditions for peace are similar to what had been agreed after the Winter War. Anyway our northern borders are safe."
  finland.91.a:0 "Problem resolved"
  FIN_agree_peace:0 "Peace, comrades"
+
+ soviet.46.dx:0 "The recent purges among our officers have left the Red Army far more vulnerable to German aggression"
+ soviet.46.ax:0 "we must fix it as soon as possible!"
+
+ SOV_military_build:0 "Our resources are partially committed to important military projects"
+
+ soviet.120.t:0 "Operation Barbarossa"
+ soviet.120.d:0 "The German army's sudden attack took our forces off guard. It will be difficult to regain control of military operations, and for a few weeks we will only have to resist and reorganize"
+ soviet.120.a:0 "Comrade Stalin will not be happy"
+ SOV_barbarossa:0 "Surpise attack"

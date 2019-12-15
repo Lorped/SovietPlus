@@ -1,14 +1,161 @@
-# befriend
-# conquer
-# antagonize
-# build_ship
-# build_army
-# unit_ratio
-# build_building
-# research_tech
-# garrison
-# protect
-# influence
+#######################
+# NO ACCESS
+#######################
+
+AI_SOV_no_access_to_allies = {
+	enable = {
+		is_in_faction_with = ENG
+		has_war_together_with = SOV
+		NOT = { is_in_faction_with = SOV }
+	}
+	abort_when_not_enabled = yes
+	reversed = yes
+	ai_strategy = { type = befriend id = "SOV" value = -200 }
+}
+
+claims_on_baltic = {
+	enable = {
+		tag = SOV
+		has_completed_focus = SOV_claims_on_baltic
+		OR = {
+			country_exists = LAT
+			country_exists = LIT
+      country_exists = EST  #### New
+		}
+	}
+	abort = {
+		NOT = {
+			country_exists = LAT
+			country_exists = LIT
+      country_exists = EST ### New
+		}
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "LAT"
+		value = 200
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "LIT"
+		value = 200
+	}
+  ai_strategy = {          ### NEW
+    type = antagonize
+    id = "EST"
+    value = 200
+  }
+}
+
+#####################
+# AGAINST FIN when claiming
+#######################
+
+claims_on_finland = {
+	enable = {
+		tag = SOV
+		has_completed_focus = SOV_baltic_security
+		country_exists = FIN
+	}
+	abort = {
+		OR = {
+			NOT = {
+				country_exists = FIN
+			}
+			FIN = {
+				has_government = ROOT
+			}
+			controls_state = 146 #Karelija
+		}
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "FIN"
+		value = 200
+	}
+}
+
+#####################
+# AGAINST Romania when claiming
+#######################
+
+claims_on_romania = {
+	enable = {
+		tag = SOV
+		has_completed_focus = SOV_claim_bessarabia
+		country_exists = ROM
+	}
+	abort = {
+		NOT = {
+			country_exists = ROM
+		}
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "ROM"
+		value = 200
+	}
+}
+
+#####################
+# AGAINST GER if not M-R
+#######################
+
+germany_enemy = {
+	enable = {
+		tag = SOV
+		country_exists = GER
+		OR = {
+			date > 1940.01.01
+			GER = { has_war = yes }
+		}
+		NOT = { has_global_flag = sov_yes_pact }
+	}
+	abort = {
+		NOT = { country_exists = GER }
+	}
+
+	ai_strategy = {
+		type = antagonize
+		id = "GER"
+		value = 200
+	}
+}
+
+#####################
+# SUPPORT SPA
+#######################
+
+spanish_civil_war_SOV = {
+	enable = {
+		original_tag = SOV
+		has_government = communism
+		SPR = { has_civil_war = yes }
+		NOT = { has_global_flag = scw_over }
+	}
+	abort = {
+		OR = {
+			SPR = { has_civil_war = no }
+			has_global_flag = scw_over
+			has_war = yes
+		}
+	}
+	ai_strategy = {
+		type = befriend
+		id = "SPR"
+		value = 100
+	}
+	ai_strategy = {
+		type = support
+		id = "SPR"
+		value = 75
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "SPR"
+		value = 100
+	}
+}
 
 #########################
 # TRY TO BEFRIEND FINLAND AFTER WINTER WAR (almost useless)
@@ -174,6 +321,82 @@ attack_man_sov = {
 	}
 }
 
+########################
+# RESPECT M-R
+#########################
+
+SOV_play_nice_with_ribbentrop_pact = {
+	enable = {
+		tag = SOV
+		has_global_flag = sov_yes_pact
+		GER = { has_war_with = POL }
+		date < 1941.1.1
+	}
+	abort = {
+		OR ={
+			GER = { has_war_with = SOV }
+			NOT = { GER = { has_war_with = POL } }
+			date > 1941.1.1
+		}
+	}
+
+	# respect the spirit of the law ;)
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "POL"
+		value = -100
+	}
+}
+
+
+########################
+# NO VOLUNTEERS IN CHINA
+#########################
+
+SOV_dont_send_people_in_china = {
+	enable = {
+		tag = SOV
+		JAP = { has_war_with = CHI }
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "CHI"
+		value = -100
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "PRC"
+		value = -100
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "GXC"
+		value = -100
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "YUN"
+		value = -100
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "XSM"
+		value = -100
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "SHX"
+		value = -100
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "SIK"
+		value = -100
+	}
+}
+
+
+
 
 #########################
 # REMEMBER to build fighters!
@@ -218,43 +441,7 @@ sov_build_a_lot_of_fighters = {
 	}
 }
 
-#########################
-# NOT TO EARLY NEW AIRCRAFT '44'
-#########################
 
-sov_new_aircraft_upgrade = {
-	enable = {
-		original_tag = SOV
-		OR = {
-			has_tech = fighter2
-			has_tech = CAS2
-		}
-		OR = {
-			date > 1942.01.01
-			has_war = yes
-		}
-	}
-	abort = {
-		AND = {
-			has_tech = fighter2
-			has_tech = CAS2
-		}
-		OR = {
-			has_tech = fighter3
-			has_tech = CAS3
-		}
-	}
-	ai_strategy = {
-		type = production_upgrade_desire_offset
-		id = fighter_equipment_2
-		value = 500
-	}
-	ai_strategy = {
-		type = production_upgrade_desire_offset
-		id = CAS_equipment_2
-		value = 500
-	}
-}
 
 
 increase_that_air_count = {
@@ -324,7 +511,7 @@ SOV_no_plane_build_AA = {
 			type = fighter
 			size < 300
 		}
-		surrender_progress > 0.7
+		surrender_progress > 0.6
 	}
 	abort = {
 		OR = {
@@ -379,7 +566,9 @@ SOV_no_plane_build_AA = {
 	}
 }
 
-
+######################
+# CIC - MIC
+######################
 
 build_civs_not_mils_comrade = {
 	enable = {
@@ -413,7 +602,7 @@ SOV_start_building_MIL = {   # come se non ci fosse un domani...
 
 
 
-dockyards_useless_now = {
+SOV_dockyards_useless_now = {
 	enable = {
 		tag = SOV
 		has_war_with = GER
@@ -430,28 +619,6 @@ dockyards_useless_now = {
 }
 
 
-time_to_leave_light_tanks = {
-	enable = {
-		tag = SOV
-		date > 1941.1.1
-		has_tech = improved_medium_tank
-		has_template_ai_majority_unit = medium_armor
-	}
-	abort = {
-		has_tech = main_battle_tank
-	}
-	ai_strategy = {
-		type = equipment_variant_production_factor
-		id = light_tank_equipment
-		value = -60
-	}
-	ai_strategy = {
-		type = equipment_variant_production_factor
-		id = medium_tank_equipment
-		value = 60
-	}
-
-}
 
 
 
@@ -476,11 +643,14 @@ sov_historical_expand_navy = {
 	}
 }
 
+#########################
+#  MISC
+#########################
 
-sov_warning_fin_want_mess_with_stalin = {
+sov_warning_fin_want_mess_with_you = {
 	enable = {
 		tag = SOV
-		FIN = { has_idea = FIN_German_support }
+		FIN = { has_idea = FIN_german_support }
 		has_war_with = GER
 	}
 	abort = {
@@ -495,7 +665,6 @@ sov_warning_fin_want_mess_with_stalin = {
 		value = 100
 	}
 }
-
 
 
 

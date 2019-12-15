@@ -562,8 +562,145 @@ ideas = {
 		}
 
 
+
+	SOV_barbarossa = {
+		removal_cost = -1
+		picture = generic_intel_bonus
+		allowed = {
+			always = no # Added via event
+		}
+		modifier = {
+			army_org_factor = -0.25    ## too harsh ???
+		}
+	}
+
+###############################################
+#  UNUSED
 ###############################################
 
+SOV_great_patriotic_war = {
+	removal_cost = -1
+
+	picture = generic_intel_bonus
+
+	allowed = {
+		always = no # Added via event
+	}
+
+	allowed_civil_war = {
+		has_government = communism
+	}
+
+	research_bonus = {
+		land_doctrine = 0.05
+		naval_doctrine = 0.05
+		air_doctrine = 0.05
+	}
+
+	modifier = {
+		army_org_factor = 0.45
+		war_support_factor = 0.2
+	}
+}
+
+SOV_great_patriotic_war_2 = {
+	removal_cost = -1
+
+	picture = generic_intel_bonus
+
+	allowed = {
+		always = no # Added via event
+	}
+
+	allowed_civil_war = {
+		has_government = communism
+	}
+
+	research_bonus = {
+		land_doctrine = 0.04
+		naval_doctrine = 0.04
+		air_doctrine = 0.04
+	}
+
+	modifier = {
+		army_org_factor = 0.35
+		war_support_factor = 0.15
+	}
+}
+
+SOV_great_patriotic_war_3 = {
+	removal_cost = -1
+
+	picture = generic_intel_bonus
+
+	allowed = {
+		always = no # Added via event
+	}
+
+	allowed_civil_war = {
+		has_government = communism
+	}
+
+	research_bonus = {
+		land_doctrine = 0.03
+		naval_doctrine = 0.03
+		air_doctrine = 0.03
+	}
+
+	modifier = {
+		army_org_factor = 0.25
+		war_support_factor = 0.1
+	}
+}
+
+SOV_great_patriotic_war_4 = {
+	removal_cost = -1
+
+	picture = generic_intel_bonus
+
+	allowed = {
+		always = no # Added via event
+	}
+
+	allowed_civil_war = {
+		has_government = communism
+	}
+
+	research_bonus = {
+		land_doctrine = 0.02
+		naval_doctrine = 0.02
+		air_doctrine = 0.02
+	}
+
+	modifier = {
+		army_org_factor = 0.15
+		war_support_factor = 0.05
+	}
+}
+
+SOV_great_patriotic_war_5 = {
+	removal_cost = -1
+
+	picture = generic_intel_bonus
+
+	allowed = {
+		always = no # Added via event
+	}
+
+	allowed_civil_war = {
+		has_government = communism
+	}
+
+	research_bonus = {
+		land_doctrine = 0.01
+		naval_doctrine = 0.01
+		air_doctrine = 0.01
+	}
+
+	modifier = {
+		army_org_factor = 0.05
+	}
+}
 
 
 		workers_culture = {
@@ -704,107 +841,6 @@ ideas = {
 		}
 
 
-
-		SOV_great_patriotic_war = {
-			removal_cost = -1
-			picture = generic_intel_bonus
-			allowed = {
-				always = no # Added via event
-			}
-			allowed_civil_war = {
-				has_government = communism
-			}
-			research_bonus = {
-				land_doctrine = 0.05
-				naval_doctrine = 0.05
-				air_doctrine = 0.05
-			}
-			modifier = {
-				army_org_factor = 0.45
-				war_support_factor = 0.2
-			}
-		}
-
-		SOV_great_patriotic_war_2 = {
-			removal_cost = -1
-			picture = generic_intel_bonus
-			allowed = {
-				always = no # Added via event
-			}
-			allowed_civil_war = {
-				has_government = communism
-			}
-			research_bonus = {
-				land_doctrine = 0.04
-				naval_doctrine = 0.04
-				air_doctrine = 0.04
-			}
-			modifier = {
-				army_org_factor = 0.35
-				war_support_factor = 0.15
-			}
-		}
-
-		SOV_great_patriotic_war_3 = {
-			removal_cost = -1
-			picture = generic_intel_bonus
-			allowed = {
-				always = no # Added via event
-			}
-			allowed_civil_war = {
-				has_government = communism
-			}
-			research_bonus = {
-				land_doctrine = 0.03
-				naval_doctrine = 0.03
-				air_doctrine = 0.03
-			}
-			modifier = {
-				army_org_factor = 0.25
-				war_support_factor = 0.1
-			}
-		}
-
-		SOV_great_patriotic_war_4 = {
-			removal_cost = -1
-			picture = generic_intel_bonus
-			allowed = {
-				always = no # Added via event
-			}
-			allowed_civil_war = {
-				has_government = communism
-			}
-			research_bonus = {
-				land_doctrine = 0.02
-				naval_doctrine = 0.02
-				air_doctrine = 0.02
-			}
-			modifier = {
-				army_org_factor = 0.15
-				war_support_factor = 0.05
-			}
-		}
-
-		SOV_great_patriotic_war_5 = {
-			removal_cost = -1
-			picture = generic_intel_bonus
-			allowed = {
-				always = no # Added via event
-			}
-			allowed_civil_war = {
-				has_government = communism
-			}
-			research_bonus = {
-				land_doctrine = 0.01
-				naval_doctrine = 0.01
-				air_doctrine = 0.01
-			}
-
-			modifier = {
-				army_org_factor = 0.05
-			}
-		}
-
 		SOV_scientist_defect = {
 
 			picture = generic_research_bonus
@@ -820,6 +856,10 @@ ideas = {
 		}
 	}
 
+
+##############################################
+#  Political Advisors
+###############################################
 
 	political_advisor = {
 

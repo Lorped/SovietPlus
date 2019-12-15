@@ -1,56 +1,14 @@
-# finland joins axis
+##############
+# IF FIN join axis, tons of german divisions flock there
+############
 
-Until_Winter_war_stay_out_of_axis_FIN = {
+Please_stay_out_of_axis_FIN = {
 	enable = {
 		is_historical_focus_on = yes
 		OR = { tag = FIN tag = GER }
 
-		NOT = {
-			GER = { focus_progress = { focus = GER_ussr_war_goal progress > 0.2 } }
-			GER = { has_war_with = SOV }
-		}
 	}
-
-	abort_when_not_enabled = yes
 
 	ai_strategy = { type = alliance   	id = "GER"     value = -500 }
 	ai_strategy = { type = alliance   	id = "FIN"     value = -500 }
-}
-
-FIN_continuation_war = {
-	enable = {
-		is_historical_focus_on = yes
-		OR = { tag = FIN tag = GER }
-		FIN = { has_war = no }
-		NOT = { 146 = { is_controlled_by = FIN } }
-
-		OR = {
-			GER = { focus_progress = { focus = GER_ussr_war_goal progress > 0.2 } }
-			GER = { has_war_with = SOV }
-		}
-
-		if = { limit = { GER = { has_war_with = NOR } }
-			OR = { # dont join if norway hasnt fallen - otherwise finland will throw its entire army against norway
-				NOR = { has_capitulated = yes }
-				NOR = { exists = no }
-				NOR = { is_subject = yes }
-				NOR = { has_government = fascism }
-				FIN = { has_war_with = NOR }
-			}
-		}
-	}
-
-	abort = {
-		GER = {
-			has_completed_focus = GER_ussr_war_goal
-			NOT = { has_war_with = SOV }
-		}
-		FIN = {
-			has_country_flag = FIN_lost_again
-		}
-	}
-
-	ai_strategy = { type = alliance   	id = "GER"    value = 500 }
-	ai_strategy = { type = alliance   	id = "FIN"    value = 500 }
-	ai_strategy = { type = antagonize		id = "SOV"		value = 500	}
 }

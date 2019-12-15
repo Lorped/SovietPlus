@@ -17,13 +17,14 @@ SOV_historical_plan = {
 
 		#ASAP
 		SOV_cult_of_personality
+		SOV_spanish_war
 
 		#SOV_defense_of_moscow
 		#SOV_move_industry_to_urals
 		#SOV_Leningrad_Fort_Region	#new
 		#SOV_lessons_of_war
 		#SOV_Volga_River_Defense		#new
-		#SOV_Molotov_Line			#new
+
 
 		#1936
 		SOV_finish_the_five_year_plan
@@ -56,35 +57,15 @@ SOV_historical_plan = {
 		SOV_baltic_security
 		SOV_claim_bessarabia
 
-
-		SOV_production_effort
-		SOV_stalin_constitution2
-		#1937
-		SOV_collectivist_propaganda
-		SOV_extra_tech_slot_early
-		SOV_improve_railway
-		SOV_Rubber_Industry			#new
-
-		#1938
-		SOV_great_purge
-		SOV_ocean_going_navy
-		SOV_expand_navy_industry	#new
-		#1939
-
-		SOV_anti_fascist_diplomacy
-		SOV_far_east_fortification
-		SOV_operation_zet
+		SOV_build_molotov_line
 		SOV_improve_stalin_line
-		#1940
-		SOV_claims_on_baltic
-		SOV_baltic_security
-		SOV_claims_on_poland
-		SOV_claim_bessarabia
-		SOV_socialist_realism
+
+		
+
+
 
 		#1941
-		SOV_militarized_schools
-		SOV_workers_culture
+
 		SOV_infrastructure_effort
 		SOV_demand_eastern_poland
 		SOV_Test_New_Rocket_Weapons		#new

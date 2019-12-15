@@ -878,7 +878,7 @@ if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	### Ship Variants ###
 	create_equipment_variant = {
-		name = "Series I Debakrist"
+		name = "Series I Dekabrist"
 		type = submarine_1
 		upgrades = {
 			ship_reliability_upgrade = 1
