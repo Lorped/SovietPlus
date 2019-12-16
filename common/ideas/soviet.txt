@@ -518,7 +518,7 @@ ideas = {
 				has_government = communism
 			}
 
-			picture = HUN_treaty_of_triannon
+			picture = GFX_sov_factory_use
 
 			modifier = {
 				industrial_capacity_factory = -0.05
@@ -536,7 +536,7 @@ ideas = {
 				has_government = communism
 			}
 
-			picture = HUN_treaty_of_triannon
+			picture = GFX_sov_factory_use
 
 			modifier = {
 				industrial_capacity_factory = -0.05
@@ -554,7 +554,7 @@ ideas = {
 				has_government = communism
 			}
 
-			picture = HUN_treaty_of_triannon
+			picture = GFX_sov_factory_use
 
 			modifier = {
 				civilian_factory_use = 10
@@ -565,7 +565,7 @@ ideas = {
 
 	SOV_barbarossa = {
 		removal_cost = -1
-		picture = generic_intel_bonus
+		picture = GFX_sov_barbarossa
 		allowed = {
 			always = no # Added via event
 		}

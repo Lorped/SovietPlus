@@ -251,4 +251,14 @@ spriteTypes = {
     texturefile = "gfx/interface/goals/SOV_scw.dds"
   }
 
+  spriteType = {
+    name = "GFX_sov_factory_use"
+    texturefile = "gfx/interface/ideas/SOV_factory_use.dds"
+  }
+
+  spriteType = {
+    name = "GFX_sov_barbarossa"
+    texturefile = "gfx/interface/ideas/SOV_barbarossa.dds"
+  }
+
  }
