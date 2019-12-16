@@ -33,7 +33,7 @@ ideas = {
 			}
 			modifier = {
 				production_speed_industrial_complex_factor = 0.05
-				## production_speed_arms_factory_factor = 0.05
+				production_speed_arms_factory_factor = -0.05
 				production_speed_synthetic_refinery_factor = 0.05
 				production_speed_bunker_factor = -0.25
 			}
@@ -56,7 +56,7 @@ ideas = {
 			modifier = {
 				min_export = -0.10
 				production_speed_industrial_complex_factor = 0.05
-				## production_speed_arms_factory_factor = 0.05
+				production_speed_arms_factory_factor = -0.05
 				production_speed_synthetic_refinery_factor = 0.05
 				production_speed_bunker_factor = -0.25
 			}
@@ -79,7 +79,7 @@ ideas = {
 			modifier = {
 				min_export = -0.10
 				production_speed_industrial_complex_factor = 0.10
-				## production_speed_arms_factory_factor = 0.00
+				production_speed_arms_factory_factor = -0.10
 				production_speed_synthetic_refinery_factor = 0.05
 				production_speed_bunker_factor = -0.25
 			}
@@ -102,7 +102,7 @@ ideas = {
 			modifier = {
 				min_export = -0.10
 				##production_speed_industrial_complex_factor = 0.00
-				production_speed_arms_factory_factor = 0.05
+				##production_speed_arms_factory_factor = 0.05
 				production_speed_synthetic_refinery_factor = 0.05
 				production_speed_bunker_factor = -0.25
 			}
@@ -1190,7 +1190,7 @@ SOV_great_patriotic_war_5 = {
 				NOT = { has_country_flag = purged_generals }
 			}
 			# PURGED
-			traits = { navy_chief_naval_aviation_1 }
+			traits = { navy_fleet_logistics_1  }
 			ai_will_do = {
 				factor = 0
 			}
@@ -1379,7 +1379,7 @@ SOV_great_patriotic_war_5 = {
 			# Not purged, but tried and tortured, then released
 			traits = { army_armored_3 }
 			ai_will_do = {
-				factor = 1
+				factor = 2
 			}
 		}
 
@@ -1393,7 +1393,7 @@ SOV_great_patriotic_war_5 = {
 			}
 			traits = { air_airborne_1 }
 			ai_will_do = {
-				factor = 1
+				factor = 0
 			}
 		}
 
@@ -1506,36 +1506,28 @@ SOV_great_patriotic_war_5 = {
 
 		morozov_design_bureau = {
 			allowed = {
-				OR = {
-					original_tag = SOV
-					AND = {
-						OR = {
-							is_literally_china = yes
-							tag = MAN
-						}
-						has_dlc = "Waking the Tiger"
-					}
-				}
+				original_tag = SOV
 			}
 			available = {
-				if = {
-					limit = {
-						OR = {
-							is_literally_china = yes
-							tag = MAN
-						}
-					}
-					has_completed_focus = CHI_hire_soviet_designer
-					NOT = {
-						has_war_with = SOV
-					}
-				}
+				has_completed_focus = SOV_morozov
 			}
 			research_bonus = {
 				armor = 0.15
 			}
-			traits = { fast_tank_manufacturer }
-			modifier = {
+			equipment_bonus = {
+				medium_tank_equipment = {
+					build_cost_ic = -0.05
+					reliability = -0.05
+				}
+				medium_tank_destroyer_equipment = {
+					build_cost_ic = -0.05
+					reliability = -0.05
+				}
+				medium_tank_artillery_equipment = {
+					build_cost_ic = -0.05
+					reliability = -0.05
+
+				}
 			}
 		}
 
@@ -1546,20 +1538,31 @@ SOV_great_patriotic_war_5 = {
 			research_bonus = {
 				armor = 0.15
 			}
-			traits = { medium_tank_manufacturer }
-			modifier = {
+			equipment_bonus = {
+				light_tank_equipment = {
+					soft_attack = 0.05
+					maximum_speed = 0.05
+					reliability = 0.05
+				}
 			}
+
 		}
 
 		okmo = {
 			allowed = {
 				original_tag = SOV
 			}
+			available = {
+				has_completed_focus = SOV_okmo
+			}
 			research_bonus = {
 				armor = 0.15
 			}
-			traits = { heavy_tank_manufacturer }
-			modifier = {
+			equipment_bonus = {
+					heavy_tank_equipment = {
+					build_cost_ic = -0.05
+						reliability = -0.1
+				}
 			}
 		}
 	}

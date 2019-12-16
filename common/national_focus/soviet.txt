@@ -26,7 +26,7 @@ focus_tree = {
 			has_global_flag = scw_over
 		}
 		continue_if_invalid = yes
-		x = 12
+		x = 14
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -858,7 +858,7 @@ focus_tree = {
 	focus = {
 		id = SOV_transpolar_flights
 		icon = GFX_sov_transpolar_flight
-		x = 14
+		x = 12
 		y = 0
 		cost = 4.29
 		ai_will_do = {
@@ -883,7 +883,7 @@ focus_tree = {
 			focus = SOV_operation_zet
 			focus = SOV_spanish_war
 		}
-		x = 12
+		x = 14
 		y = 2
 		cost = 10
 		ai_will_do = {
@@ -1032,7 +1032,7 @@ focus_tree = {
 		available = {
 			has_government = communism
 		}
-		x = 16
+		x = 18
 		y = 0
 		cost = 2
 		ai_will_do = {
@@ -1064,7 +1064,7 @@ focus_tree = {
 		}
 		# mutually_exclusive = { focus = SOV_rehabilitated_military }
 		relative_position_id = SOV_great_purge
-		x = 2
+		x = 0
 		y = 1
 		cost = 4.29
 		ai_will_do = {
@@ -1087,7 +1087,7 @@ focus_tree = {
 		icon = GFX_sov_stalin_constitution
 		prerequisite = { focus = SOV_great_purge }
 		relative_position_id = SOV_great_purge
-		x = 4
+		x = 2
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -1409,7 +1409,7 @@ focus_tree = {
 			}
 		}
 		relative_position_id = SOV_great_purge
-		x = 0
+		x = -2
 		y = 1
 		cost = 7.16
 		ai_will_do = {
@@ -1870,6 +1870,44 @@ focus_tree = {
 					}
 				}
 			}
+		}
+	}
+
+	focus = {
+		id = SOV_morozov
+		icon = GFX_sov_morozov
+		prerequisite = { focus = SOV_third_five_year_plan }
+		mutually_exclusive = { focus = SOV_okmo }
+		x = -1
+		y = 1
+		relative_position_id = SOV_third_five_year_plan
+		cost = 7.15
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 5
+				has_war = yes
+			}
+		}
+		completion_reward = {
+			add_ideas = morozov_design_bureau
+		}
+	}
+
+	focus = {
+		id = SOV_okmo
+		icon = GFX_sov_okmo
+		prerequisite = { focus = SOV_third_five_year_plan }
+		mutually_exclusive = { focus = SOV_morozov }
+		x = 1
+		y = 1
+		relative_position_id = SOV_third_five_year_plan
+		cost = 7.15
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = morozov_design_bureau
 		}
 	}
 

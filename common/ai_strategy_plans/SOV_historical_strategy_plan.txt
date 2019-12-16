@@ -57,10 +57,11 @@ SOV_historical_plan = {
 		SOV_baltic_security
 		SOV_claim_bessarabia
 
+		SOV_morozov
 		SOV_build_molotov_line
 		SOV_improve_stalin_line
 
-		
+
 
 
 
@@ -69,10 +70,8 @@ SOV_historical_plan = {
 		SOV_infrastructure_effort
 		SOV_demand_eastern_poland
 		SOV_Test_New_Rocket_Weapons		#new
-		SOV_nkvd_primacy
 		SOV_anti_capitalist_diplomacy
 		SOV_expand_red_fleet
-		SOV_nkvd_divisions
 		#1942
 		SOV_anti_colonialist_rebels
 		SOV_heroes_of_the_union			#new

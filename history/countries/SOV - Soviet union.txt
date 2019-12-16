@@ -42,7 +42,6 @@ set_technology = {
 	marines = 1  ## NEW
 }
 
-#load_oob = "SOV_marines"     ## TO ADD A FREE TEMPLATE and some divs.
 
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }

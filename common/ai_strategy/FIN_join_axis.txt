@@ -6,9 +6,34 @@ Please_stay_out_of_axis_FIN = {
 	enable = {
 		is_historical_focus_on = yes
 		OR = { tag = FIN tag = GER }
-
 	}
+	ai_strategy = { type = alliance   	id = "GER"     value = -1000 }
+	ai_strategy = { type = alliance   	id = "FIN"     value = -1000 }
+}
 
-	ai_strategy = { type = alliance   	id = "GER"     value = -500 }
-	ai_strategy = { type = alliance   	id = "FIN"     value = -500 }
+Please_stay_out_of_JAP_FIN = {
+	enable = {
+		is_historical_focus_on = yes
+		OR = { tag = FIN tag = JAP }
+	}
+	ai_strategy = { type = alliance   	id = "JAP"     value = -1000 }
+	ai_strategy = { type = alliance   	id = "FIN"     value = -1000 }
+}
+
+Dont_ever_think_about_China = {
+	enable = {
+		is_historical_focus_on = yes
+		OR = { tag = FIN tag = CHI }
+	}
+	ai_strategy = { type = alliance   	id = "CHI"     value = -1000 }
+	ai_strategy = { type = alliance   	id = "FIN"     value = -1000 }
+}
+
+Dont_ever_think_about_China2 = {
+	enable = {
+		is_historical_focus_on = yes
+		OR = { tag = FIN tag = PRC }
+	}
+	ai_strategy = { type = alliance   	id = "PRC"     value = -1000 }
+	ai_strategy = { type = alliance   	id = "FIN"     value = -1000 }
 }
