@@ -252,13 +252,28 @@ spriteTypes = {
   }
 
   spriteType = {
-    name = "GFX_sov_factory_use"
+    name = "GFX_idea_sov_factory_use"
     texturefile = "gfx/interface/ideas/SOV_factory_use.dds"
   }
 
   spriteType = {
-    name = "GFX_sov_barbarossa"
+    name = "GFX_idea_sov_barbarossa"
     texturefile = "gfx/interface/ideas/SOV_barbarossa.dds"
+  }
+
+  spriteType = {
+    name = "GFX_sov_okmo"
+    texturefile = "gfx/interface/goals/SOV_okmo.dds"
+  }
+
+  spriteType = {
+    name = "GFX_sov_morozov"
+    texturefile = "gfx/interface/goals/SOV_morozov.dds"
+  }
+
+  spriteType = {
+    name = "GFX_sov_great_patriotic"
+    texturefile = "gfx/interface/goals/SOV_great_patriotic_war.dds"
   }
 
  }

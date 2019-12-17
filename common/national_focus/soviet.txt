@@ -1911,6 +1911,24 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = SOV_great_patriotic
+		icon = GFX_sov_great_patriotic
+		available = {
+			SOV = { has_war_with = GER }
+			SOV = { has_defensive_war = yes }
+		}
+
+		x = 10
+		y = 4
+		cost = 2.15
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+		}
+	}
 
 
 
