@@ -276,4 +276,9 @@ spriteTypes = {
     texturefile = "gfx/interface/goals/SOV_great_patriotic_war.dds"
   }
 
+  spriteType = {
+    name = "GFX_sov_tankograd"
+    texturefile = "gfx/interface/goals/SOV_tankograd.dds"
+  }
+
  }

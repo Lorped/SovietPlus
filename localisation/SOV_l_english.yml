@@ -183,8 +183,8 @@ soviet.57.a:0 "Dispose him and the books"
  SOV_aviation_cult_desc:0 "sov av c desc"
  SOV_soviet_propaganda:0 "Soviet Propaganda"
 
- SOV_socialist_science:0 "Socialist science"
- SOV_socialist_science_desc:0 "Socialist science desc"
+ ## SOV_socialist_science:0 "Socialist science"
+ ## SOV_socialist_science_desc:0 "Socialist science desc"
  ## SOV_stalin_constitution:0 "SOV_stalin_constitution"
  ## SOV_stalin_constitution_desc:0 "SOV_stalin_constitution_desc"
  SOV_increase_rubber:0 "Increase the Synthetic Rubber Production "
@@ -252,7 +252,16 @@ soviet.57.a:0 "Dispose him and the books"
  SOV_morozov_desc:0 "The innovative ideas of the Kharkov design office, led by Eng. Mikhail Koshkin, push for a new generation of medium tanks."
 
  SOV_okmo:0 "OKMO Design Bureau"
- SOV_okmo_desc:0 "The OKMO design team, together with the engineers from the Kirov plant in Leningrad, recommend developing a new line of heavy tanks"
+ SOV_okmo_desc:0 "The OKMO design team, together with the engineers from the Kirov plant in Leningrad, recommends developing a new line of heavy tanks"
+
+ SOV_air_volunteers:0 "Air Volunteers"
+ SOV_air_volunteers_desc:0 "Aiding our comrades would help us to develop new tactics and improve our airplanes"
 
  SOV_great_patriotic:0 "The Great Patriotic War"
  SOV_great_patriotic_desc:0 "The enemy throws new forces to the front without regard to heavy losses and penetrates deep into the Soviet Union, seizing new regions, destroying our cities and villages, killing the Soviet population.\nNot one step back! Such should now be our main slogan."
+
+ SOV_il2:0 "The Ilyushin-2 prototye"
+ SOV_il2_desc:0 "The idea for an armored ground-attack aircraft is quite old, but our models lacks the required power and performance. A new model must be designed and produced in a short timeframe."
+
+tankograd:0 "Tankograd idea"
+tankograd_desc:0 "Tankograd idea desc"

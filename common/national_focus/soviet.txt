@@ -11,7 +11,7 @@ focus_tree = {
 		}
 	}
 
-	continuous_focus_position = { x = 1000 y = 900 }
+	continuous_focus_position = { x = 0 y = 900 }
 
 	default = no
 
@@ -884,7 +884,7 @@ focus_tree = {
 			focus = SOV_spanish_war
 		}
 		x = 14
-		y = 2
+		y = 1
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -1363,11 +1363,11 @@ focus_tree = {
 	focus = {
 		id = SOV_il2
 		icon = GFX_sov_il2
-		prerequisite = { focus = SOV_peoples_commissariat }
+		prerequisite = { focus = SOV_air_volunteers }
 		available = { has_tech = CAS1 }
 		x = 0
 		y = 1
-		relative_position_id = SOV_peoples_commissariat
+		relative_position_id = SOV_air_volunteers
 		cost = 4.29
 		ai_will_do = {
 			factor = 5
@@ -1930,8 +1930,152 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = SOV_move_industry_to_urals
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = SOV_great_patriotic }
+		x = 2
+		y = 1
+		relative_position_id = SOV_great_patriotic
+		cost = 2.15
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { has_war_with = GER }
+				surrender_progress < 0.1
+			}
+			modifier = {
+				factor = 5
+				surrender_progress > 0.1
+			}
+			modifier = {
+				factor = 5
+				has_war_with = GER
+			}
+		}
+	}
 
+	focus = {
+		id = SOV_defense_of_moscow
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = SOV_move_industry_to_urals }
+		available = {
+			219 = {
+				is_controlled_by = ROOT
 
+				OR = {
+					any_neighbor_state = {
+						NOT = { is_controlled_by = ROOT }
+					}
+
+					SOV = { surrender_progress > 0.1 }
+				}
+			}
+		}
+		x = 2
+		y = 1
+		relative_position_id = SOV_move_industry_to_urals
+		cost = 5
+		bypass = {
+			NOT = {
+				controls_state = 219
+			}
+			surrender_progress > 0.3
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			army_experience = 5
+			219 = {
+				custom_effect_tooltip = SOV_defense_of_moscow_forts
+				hidden_effect = {
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 3391
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 6414
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 9348
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 301
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 9378
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 6283
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 3259
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province = 11282
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 4
+						province = 6380
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = anti_air_building
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_tankograd
+		icon = GFX_sov_tankograd
+		cost = 7.16
+		prerequisite = {
+			focus = SOV_great_patriotic
+		}
+		x = -1
+		y = 1
+		relative_position_id = SOV_great_patriotic
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 1.5
+				has_war = yes
+			}
+		}
+		completion_reward = {
+			add_ideas = tankograd
+		}
+	}
 
 
 }
