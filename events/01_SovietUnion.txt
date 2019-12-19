@@ -44,6 +44,7 @@ country_event = { ## Stalin is not happy
 		ai_chance = { factor = 100 }
 		add_stability = -0.15
 		remove_ideas = nikolai_voznesensky
+		set_country_flag = purged_voznesensky
   }
 }
 

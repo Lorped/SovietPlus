@@ -1008,6 +1008,9 @@ SOV_great_patriotic_war_5 = {
 			allowed = {
 				original_tag = SOV
 			}
+			{
+				NOT = { has_country_flag = purged_voznesensky }
+			}
 			traits = { captain_of_industry }
 		}
 
