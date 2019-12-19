@@ -19,8 +19,9 @@ SOV_historical_plan = {
 		SOV_cult_of_personality
 		SOV_spanish_war
 
-		#SOV_defense_of_moscow
-		#SOV_move_industry_to_urals
+		SOV_defense_of_moscow
+		SOV_move_industry_to_urals
+
 		#SOV_Leningrad_Fort_Region	#new
 		#SOV_lessons_of_war
 		#SOV_Volga_River_Defense		#new
@@ -61,12 +62,15 @@ SOV_historical_plan = {
 		SOV_build_molotov_line
 		SOV_improve_stalin_line
 
+		SOV_il2
+		SOV_t34
 
-
+		SOV_establish_the_stavka
+		SOV_tankograd
+		SOV_increase_il2_production
 
 
 		#1941
-
 		SOV_infrastructure_effort
 		SOV_demand_eastern_poland
 		SOV_Test_New_Rocket_Weapons		#new
@@ -77,7 +81,7 @@ SOV_historical_plan = {
 		SOV_heroes_of_the_union			#new
 		SOV_Next_Generation_Aircraft	#new
 		SOV_Air_Combat_Experience		#new
-		SOV_Kazan_Aviation_Factory		#new
+				#new
 		#1943
 		SOV_heroes_of_the_union			#new
 		SOV_War_Production_Targets		#new

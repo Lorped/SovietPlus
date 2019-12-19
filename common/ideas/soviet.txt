@@ -590,6 +590,23 @@ ideas = {
 		}
 	}
 
+	stavka = {
+		removal_cost = -1
+
+		allowed = {
+			always = no # Added via event
+		}
+
+		modifier = {
+			max_planning = 0.1
+			planning_speed = -0.25
+			army_morale_factor = 0.075
+			minimum_training_level = -0.1
+			experience_gain_factor = -0.1
+			supply_consumption_factor = -0.1
+		}
+	}
+
 
 	tankograd = {
 		removal_cost = -1
@@ -640,6 +657,28 @@ ideas = {
 			}
 			heavy_tank_aa_equipment = {
 				build_cost_ic = -0.05 instant = yes
+			}
+		}
+	}
+
+	massive_air_production = {
+
+		allowed = {
+			always = no # Added via focus
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+
+		removal_cost = -1
+
+		equipment_bonus = {
+			CAS_equipment = {
+				build_cost_ic = -0.1 instant = yes
+			}
+			fighter_equipment = {
+				build_cost_ic = -0.1 instant = yes
 			}
 		}
 	}
@@ -1429,7 +1468,7 @@ SOV_great_patriotic_war_5 = {
 			available =
 			{
 				NOT = { has_country_flag = purged_rokossovsky }
-				has_completed_focus = SOV_positive_heroism
+				has_completed_focus = SOV_establish_the_stavka
 			}
 			# Not purged, but tried and tortured, then released
 			traits = { army_armored_3 }

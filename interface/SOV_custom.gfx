@@ -281,4 +281,30 @@ spriteTypes = {
     texturefile = "gfx/interface/goals/SOV_tankograd.dds"
   }
 
+  spriteType = {
+    name = "GFX_idea_tankograd"
+    texturefile = "gfx/interface/ideas/idea_tankograd.dds"
+  }
+
+  spriteType = {
+    name = "GFX_idea_stavka"
+    texturefile = "gfx/interface/ideas/idea_stavka.dds"
+  }
+
+  spriteType = {
+    name = "GFX_sov_establish_the_stavka"
+    texturefile = "gfx/interface/goals/SOV_stavka.dds"
+  }
+
+  spriteType = {
+    name = "GFX_idea_massive_air_production"
+    texturefile = "gfx/interface/ideas/idea_massive_air_production.dds"
+  }
+
+  spriteType = {
+    name = "GFX_sov_increase_il2_production"
+    texturefile = "gfx/interface/goals/SOV_increase_il2_production.dds"
+  }
+
+
  }

@@ -260,8 +260,24 @@ soviet.57.a:0 "Dispose him and the books"
  SOV_great_patriotic:0 "The Great Patriotic War"
  SOV_great_patriotic_desc:0 "The enemy throws new forces to the front without regard to heavy losses and penetrates deep into the Soviet Union, seizing new regions, destroying our cities and villages, killing the Soviet population.\nNot one step back! Such should now be our main slogan."
 
- SOV_il2:0 "The Ilyushin-2 prototye"
+ SOV_il2:0 "The Ilyushin IL-2 prototye"
  SOV_il2_desc:0 "The idea for an armored ground-attack aircraft is quite old, but our models lacks the required power and performance. A new model must be designed and produced in a short timeframe."
 
-tankograd:0 "Tankograd idea"
-tankograd_desc:0 "Tankograd idea desc"
+ tankograd:0 "Tankograd idea"
+ tankograd_desc:0 "Tankograd idea desc"
+
+ stavka:0 "Stavka"
+ stavka_desc:0 "The Stakva is the high command of the armed forces of the Soviet Union"
+
+ massive_air_production:0 "Increase Aircraft Production"
+ massive_air_production_desc:0 "The Red Army needs aircraft as the air it breathes"
+
+
+ SOV_establish_the_stavka:0 "Establish the Stavka"
+ SOV_establish_the_stavka_desc:0 "Creating a supreme headquarters of the armed forces of the Soviet Union, we will be able to better coordinate the war operations for land, sea and air."
+ SOV_build_molotov_line:0 "Build the Molotov Line"
+ SOV_build_molotov_line_desc:0 "We have to improve the fortifications in our new westerns fronteers: the Baltic States, Eastern Poland and Bessarabia."
+ SOV_increase_il2_production:0 "Increase IL-2 Production"
+ SOV_increase_il2_production_desc:0 "Our Red Army now needs IL-2 aircraft like the air it breathes, like the bread it eats. I ask you not to try the government's patience, and demand that you manufacture more ILs. This is my final warning.\n-- Stalin"
+ massive_air_production:0 "Increase Aircraft Production"
+ massive_air_production_desc:0 "The Red Army needs aircraft as the air it breathes"
