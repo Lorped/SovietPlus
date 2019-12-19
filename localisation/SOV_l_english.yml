@@ -255,7 +255,7 @@ soviet.57.a:0 "Dispose him and the books"
  SOV_okmo_desc:0 "The OKMO design team, together with the engineers from the Kirov plant in Leningrad, recommends developing a new line of heavy tanks"
 
  SOV_air_volunteers:0 "Air Volunteers"
- SOV_air_volunteers_desc:0 "Aiding our comrades would help us to develop new tactics and improve our airplanes"
+ SOV_air_volunteers_desc:0 "Aiding other comrades and our allies, would help us to develop new tactics and improve our airplanes"
 
  SOV_great_patriotic:0 "The Great Patriotic War"
  SOV_great_patriotic_desc:0 "The enemy throws new forces to the front without regard to heavy losses and penetrates deep into the Soviet Union, seizing new regions, destroying our cities and villages, killing the Soviet population.\nNot one step back! Such should now be our main slogan."
@@ -263,8 +263,10 @@ soviet.57.a:0 "Dispose him and the books"
  SOV_il2:0 "The Ilyushin IL-2 prototye"
  SOV_il2_desc:0 "The idea for an armored ground-attack aircraft is quite old, but our models lacks the required power and performance. A new model must be designed and produced in a short timeframe."
 
- tankograd:0 "Tankograd idea"
- tankograd_desc:0 "Tankograd idea desc"
+ tankograd:0 "Tankograd"
+ tankograd_desc:0 "Chelyabinsk is nicknamed Tankograd: the \"Tank City\" "
+ SOV_tankograd:0 "Tankograd"
+ SOV_tankograd_desc:0 "During the relocation of our industries toward the Urals, concentrating our tank factories in the Chelyabinsk area will improve the efficiency in logistic and production."
 
  stavka:0 "Stavka"
  stavka_desc:0 "The Stakva is the high command of the armed forces of the Soviet Union"
@@ -274,7 +276,7 @@ soviet.57.a:0 "Dispose him and the books"
 
 
  SOV_establish_the_stavka:0 "Establish the Stavka"
- SOV_establish_the_stavka_desc:0 "Creating a supreme headquarters of the armed forces of the Soviet Union, we will be able to better coordinate the war operations for land, sea and air."
+ SOV_establish_the_stavka_desc:0 "Creating the supreme headquarters of the armed forces of the Soviet Union, we will be able to better coordinate the war operations for land, sea and air."
  SOV_build_molotov_line:0 "Build the Molotov Line"
  SOV_build_molotov_line_desc:0 "We have to improve the fortifications in our new westerns fronteers: the Baltic States, Eastern Poland and Bessarabia."
  SOV_increase_il2_production:0 "Increase IL-2 Production"
@@ -284,3 +286,9 @@ soviet.57.a:0 "Dispose him and the books"
 
  SOV_military_research:0 "Military Research"
  SOV_military_research_desc:0 "Our research centers must expand, increasing the ability to produce advanced technologies. The technological advantage can be translated into a military advantage in the field.""
+
+ SOV_borodino:0 "Operation Borodino"
+ SOV_borodino_desc:0 "Operation Borodino is the code name of our secret project to build the atomic bomb. It is a matter of utmost importance that it will be terminated as soon as possible"
+
+ SOV_t34:0 "The T-34"
+ SOV_t34_desc:0 "Mikhail Koshkin's masterpiece, the T-34, has an unprecedented combination of firepower, mobility, protection and ruggedness. It's implementation in production must be concluded ASAP."

@@ -1908,7 +1908,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_ideas = morozov_design_bureau
+			add_ideas = okmo
 		}
 	}
 
@@ -1920,7 +1920,7 @@ focus_tree = {
 			SOV = { has_defensive_war = yes }
 		}
 
-		x = 10
+		x = 12
 		y = 4
 		cost = 2.15
 		ai_will_do = {
@@ -2233,7 +2233,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_military_research
-		icon = GFX_sov_military_reseach
+		icon = GFX_sov_military_research
 		cost = 7.16
 		prerequisite = {
 			focus = SOV_great_patriotic
@@ -2252,6 +2252,81 @@ focus_tree = {
 			add_research_slot = 1
 		}
 	}
+
+	focus = {
+		id = SOV_smersh
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = SOV_great_patriotic }
+		x = 4
+		y = 1
+		relative_position_id = SOV_great_patriotic
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			#custom_effect_tooltip = SOV_smersh_tt
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = encryption_tech
+				category = decryption_tech
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_progress_cult
+		icon = GFX_sov_progress_cult
+		prerequisite = { focus = SOV_leningrad_institute }
+		x = 0
+		y = 1
+		relative_position_id = SOV_leningrad_institute
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = progress_cult_focus
+		}
+	}
+
+	focus = {
+		id = SOV_borodino
+		icon = GFX_sov_borodino
+		prerequisite = { focus = SOV_progress_cult }
+		available = {
+
+		}
+		x = 0
+		y = 1
+		relative_position_id = SOV_progress_cult
+		cost = 10
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 5
+				has_war = yes
+			}
+		}
+
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = nuclear_bonus
+				bonus = 1.0
+				uses = 1
+				category = nuclear
+			}
+		}
+	}
+
 
 }
 	###

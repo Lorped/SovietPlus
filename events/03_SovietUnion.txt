@@ -309,6 +309,7 @@ country_event = {
 		hidden_effect = {
 			remove_ideas = SOV_nikolai_yezhov
 			add_ideas = lavrentiy_beria
+			add_ideas = SOV_vyacheslav_molotov
 		}
 	}
 }

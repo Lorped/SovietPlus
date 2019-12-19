@@ -307,8 +307,18 @@ spriteTypes = {
   }
 
   spriteType = {
-    name = "GFX_sov_military_reseach"
-    texturefile = "gfx/interface/goals/SOV_military_reseach.dds"
+    name = "GFX_sov_military_research"
+    texturefile = "gfx/interface/goals/SOV_military_research.dds"
+  }
+
+  spriteType = {
+    name = "GFX_sov_progress_cult"
+    texturefile = "gfx/interface/goals/SOV_progress_cult.dds"
+  }
+
+  spriteType = {
+    name = "GFX_sov_borodino"
+    texturefile = "gfx/interface/goals/SOV_borodino.dds"
   }
 
  }

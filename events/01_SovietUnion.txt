@@ -43,6 +43,7 @@ country_event = { ## Stalin is not happy
 		name = soviet.119.a
 		ai_chance = { factor = 100 }
 		add_stability = -0.15
+		remove_ideas = nikolai_voznesensky
   }
 }
 
