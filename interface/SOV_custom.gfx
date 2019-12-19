@@ -306,5 +306,9 @@ spriteTypes = {
     texturefile = "gfx/interface/goals/SOV_increase_il2_production.dds"
   }
 
+  spriteType = {
+    name = "GFX_sov_military_reseach"
+    texturefile = "gfx/interface/goals/SOV_military_reseach.dds"
+  }
 
  }

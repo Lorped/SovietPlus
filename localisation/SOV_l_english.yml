@@ -281,3 +281,6 @@ soviet.57.a:0 "Dispose him and the books"
  SOV_increase_il2_production_desc:0 "Our Red Army now needs IL-2 aircraft like the air it breathes, like the bread it eats. I ask you not to try the government's patience, and demand that you manufacture more ILs. This is my final warning.\n-- Stalin"
  massive_air_production:0 "Increase Aircraft Production"
  massive_air_production_desc:0 "The Red Army needs aircraft as the air it breathes"
+
+ SOV_military_research:0 "Military Research"
+ SOV_military_research_desc:0 "Our research centers must expand, increasing the ability to produce advanced technologies. The technological advantage can be translated into a military advantage in the field.""
