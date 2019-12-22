@@ -72,7 +72,10 @@ SOV_historical_plan = {
 		SOV_establish_the_stavka
 		SOV_tankograd
 		SOV_increase_il2_production
+		SOV_military_research
+		SOV_sovier_women
 		SOV_smersh
+		SOV_night_witches
 
 		#1941
 		SOV_infrastructure_effort
@@ -95,7 +98,6 @@ SOV_historical_plan = {
 
 		SOV_Industrial_Mass_Production	#new
 		#1944
-		SOV_annex_tannu_tuva
 
 		SOV_war_with_japan
 	}

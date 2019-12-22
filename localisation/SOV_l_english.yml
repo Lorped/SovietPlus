@@ -193,7 +193,7 @@ soviet.57.a:0 "Dispose him and the books"
  ## SOV_claims_on_baltic_desc:0 ""
 
  SOV_third_five_year_plan:0 "The third Five-Year Plan"
- SOV_third_five_year_plan_desc:0 "The third Five-Year Plan will be the final step of our contry into the future."
+ SOV_third_five_year_plan_desc:0 "The third Five-Year Plan will be the final step for bringing our country into the future."
  SOV_idea_third_five_year_plan:0 "The third Five-Year Plan"
  SOV_idea_third_five_year_plan_2:0 "The third Five-Year Plan"
  SOV_idea_third_five_year_plan_desc:0 "Workers, onward! On the path to progress and prosperity"
@@ -203,7 +203,7 @@ soviet.57.a:0 "Dispose him and the books"
  SOV_cult_of_personality_desc:0 "Stalin, the father of the socialism, is the undisputed leader of our country. Under his guide we cannot fail."
 
  SOV_komsomol:0 "The Komsomol"
- SOV_komsomol_desc:0 "The Soviet League of Leninist Communist Youth  (Kom.So.Mol) educates Soviet youth in the ideals of Marxism and helps to shape future citizens of the Union."
+ SOV_komsomol_desc:0 "The Soviet League of Leninist Communist Youth (Kom.So.Mol) educates Soviet youth in the ideals of Marxism and helps to shape the future citizens of the Union."
 
  SOV_magnitogorsk:0 "Magnitogorsk"
  SOV_magnitogorsk_desc:0 "Magnitogorsk, a remote siberian city, must become one of the largest industrial installations of the Soviet Union. The city itself, due to the high concentration of steel mills, will be a national strategic hub, to be protected with appropriate secrecy."
@@ -266,7 +266,7 @@ soviet.57.a:0 "Dispose him and the books"
  SOV_air_volunteers_desc:0 "Aiding other comrades and our allies, would help us to develop new tactics and improve our airplanes"
 
  SOV_great_patriotic:0 "The Great Patriotic War"
- SOV_great_patriotic_desc:0 "The enemy throws new forces to the front without regard to heavy losses and penetrates deep into the Soviet Union, seizing new regions, destroying our cities and villages, killing the Soviet population.\nNot one step back! Such should now be our main slogan."
+ SOV_great_patriotic_desc:0 "The enemy throws new forces to the front without regard to heavy losses and penetrates deep into the Soviet Union, seizing new regions, destroying our cities and villages, killing the Soviet population.\nNot one step back! Such should now be our main slogan.\n-- Stalin"
 
  SOV_il2:0 "The Ilyushin IL-2 prototye"
  SOV_il2_desc:0 "The idea for an armored ground-attack aircraft is quite old, but our models lacks the required power and performance. A new model must be designed and produced in a short timeframe."
@@ -313,6 +313,8 @@ soviet.57.a:0 "Dispose him and the books"
  SOV_leningrad_fort_22_b:0 " and Karjala."
 
  SOV_the_great_patriotic_war:0 "The Great Patriotic War"
+  SOV_the_great_patriotic_war_w:0 "The Great Patriotic War"
+
 
  SOV_relocate_industry_from_dnipropetrovsk:0 "Relocate Industry from Dnipropetrovsk"
  SOV_relocate_industry_from_dnipropetrovsk_desc:0 "Evacuating the heavy machinery of our Dnipropetrovsk factories to the Urals is a huge undertaking, but it is necessary to secure our war production."
@@ -341,3 +343,13 @@ soviet.57.a:0 "Dispose him and the books"
  SOV_relocate_industry_from_minsk:0 "Relocate Industry from Minsk"
  SOV_relocate_industry_from_minsk_desc:0 "Evacuating the heavy machinery of our Minsk factories to the Urals is a huge undertaking, but it is necessary to secure our war production."
  SOV_relocate_industry_from_minsk_tt:0 "§RThese effects require control of Minsk when the decision times out.§!"
+
+SOV_soviet_women:0 "The Soviet Women"
+SOV_soviet_women_desc:0 "I'm a sniper. A woman sniper, because in our country women fight in war with men. Every now and then, someone asks me how many men I killed.\nI answer: no man, only fascists. Three hundred nine.\n--Lyudmila Pavlichenko, Hero of the Soviet Union"
+
+SOV_night_witches:0 "The Night Witches"
+SOV_night_witches_desc:0 "Major Marina Raskova asked the Comrade Stalin to obtain a permission to form female combat units. The 588th Night Bomber Regiment, the \"Night Witches\" was one of them".
+
+SOV_defense_of_stalingrad:0 "Defence of Stalingrad"
+SOV_defense_of_stalingrad_desc:0 "With the enemy advancing toward the Volga, we have to prepare a strong defensive line to protect tha Caucasus olifiled and the new industrial regions of the Urals"
+SOV_defense_of_stalingrad_tt:0 "Adds a total of §Y70 Land forts§! along the eastern shore of Volga River.\nYou must control the affected provinces when finishing this focus, for the effects to apply."

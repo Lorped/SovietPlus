@@ -336,4 +336,14 @@ spriteTypes = {
     texturefile = "gfx/interface/goals/SOV_tula.dds"
   }
 
+  spriteType = {
+    name = "GFX_sov_soviet_women"
+    texturefile = "gfx/interface/goals/SOV_soviet_women.dds"
+  }
+
+  spriteType = {
+    name = "GFX_sov_night_witches"
+    texturefile = "gfx/interface/goals/SOV_night_witches.dds"
+  }
+
  }

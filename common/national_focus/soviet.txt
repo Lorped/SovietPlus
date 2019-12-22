@@ -2477,39 +2477,403 @@ focus_tree = {
 
 
 	focus = {
-			id = SOV_soviet_women
-			icon = GFX_SOV_soviet_women
-			cost = 7.16
-			prerequisite = {
-				focus = SOV_military_research
+		id = SOV_soviet_women
+		icon = GFX_sov_soviet_women
+		cost = 7.16
+		prerequisite = {
+			focus = SOV_establish_the_stavka
+		}
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 1.5
+		}
+		relative_position_id = SOV_establish_the_stavka
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_the_great_patriotic_war
+				add_idea = SOV_the_great_patriotic_war_w
 			}
-			x = 0
-			y = 8
-			ai_will_do = {
-				factor = 1.5
-				modifier = {
-					factor = 2
-					has_war = yes
+		}
+	}
+
+	focus = {
+		id = SOV_night_witches
+		icon = GFX_sov_night_witches
+		prerequisite = { focus = SOV_soviet_women }
+		x = 0
+		y = 1
+		relative_position_id = SOV_soviet_women
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			air_experience = 150
+			set_rule = {
+				can_generate_female_aces = yes
+			}
+			add_tech_bonus = {
+				category = tactical_bomber
+				uses = 1
+				bonus = 0.5
+			}
+			if = {
+				limit = {
+					SOV = { has_full_control_of_state = 219 }
 				}
-			}
-			relative_position_id = SOV_military_research
-			completion_reward = {
-				swap_ideas = {
-					remove_idea = SOV_the_great_patriotic_war
-					add_idea = SOV_the_great_patriotic_war_w
+				custom_effect_tooltip = SOV_night_witches_tt
+				hidden_effect = {
+					load_oob = "SOV_night_witches"
 				}
 			}
 		}
+	}
+
+	focus = {
+		id = SOV_defense_of_stalingrad
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = {
+			focus = SOV_defense_of_moscow
+			focus = SOV_defense_of_leningrad
+		}
+		available = {
+			OR = {
+				256 = {
+					is_controlled_by = ROOT
+					any_neighbor_state = {
+						NOT = { is_controlled_by = ROOT }
+					}
+				}
+				217 = {
+					is_controlled_by = ROOT
+					any_neighbor_state = {
+						NOT = { is_controlled_by = ROOT }
+					}
+				}
+				SOV = { surrender_progress > 0.5 }
+			}
+			NOT = { controls_state = 219 }
+		}
+		continue_if_invalid = yes
+		bypass = {
+			NOT = {
+				controls_state = 400
+				controls_state = 256
+				controls_state = 249
+				controls_state = 250
+				controls_state = 251
+				controls_state = 401
+				controls_state = 217
+				controls_state = 236
+			}
+		}
+		x = -1
+		y = 1
+		relative_position_id = SOV_defense_of_moscow
+		cost = 15
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				factor = 3
+				surrender_progress > 0.4
+			}
+			modifier = {
+				factor = 4
+				NOT = {
+					controls_state = 219
+				}
+			}
+		}
+		completion_reward = {
+			army_experience = 20
+			custom_effect_tooltip = SOV_defense_of_stalingrad_tt
+			hidden_effect = {
+				if = {
+					limit = {
+						400 = {
+							is_controlled_by = ROOT
+						}
+					}
+					400 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 9370
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 6124
+							instant_build = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						256 = {
+							is_controlled_by = ROOT
+						}
+					}
+					256 = {
+						add_building_construction = {
+							type = bunker
+							level = 4
+							province = 3315
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 4
+							province = 11387
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 4
+							province = 9381
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = anti_air_building
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						249 = {
+							is_controlled_by = ROOT
+						}
+					}
+					249 = {
+						add_building_construction = {
+							type = bunker
+							level = 4
+							province = 6338
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 372
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = anti_air_building
+							level = 3
+							instant_build = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						250 = {
+							is_controlled_by = ROOT
+						}
+					}
+					250 = {
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 3382
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 11319
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = anti_air_building
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						251 = {
+							is_controlled_by = ROOT
+						}
+					}
+					251 = {
+						add_building_construction = {
+							type = bunker
+							level = 4
+							province = 9299
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 4
+							province = 9243
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 4
+							province = 9365
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = anti_air_building
+							level = 3
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = air_base
+							level = 4
+							instant_build = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						401 = {
+							is_controlled_by = ROOT
+						}
+					}
+					401 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 6502
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 11421
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 9432
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 3
+							province = 11523
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = anti_air_building
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						217 = {
+							is_controlled_by = ROOT
+						}
+					}
+					217 = {
+						add_building_construction = {
+							type = bunker
+							level = 5
+							province = 3529
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 5
+							province = 11484
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 5
+							province = 11474
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 4
+							province = 520
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = anti_air_building
+							level = 3
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = air_base
+							level = 3
+							instant_build = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						236 = {
+							is_controlled_by = ROOT
+						}
+					}
+					236 = {
+						add_building_construction = {
+							type = bunker
+							level = 1
+							province = 6516
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 6620
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 9753
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = bunker
+							level = 2
+							province = 757
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = anti_air_building
+							level = 2
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = air_base
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+
 
 
 
 	focus = {
 		id = SOV_war_with_japan
 		icon = GFX_focus_attack_japan
-		prerequisite = { focus = SOV_eastern_security }
-		x = 0
-		y = 10
-		relative_position_id = SOV_eastern_security
+		prerequisite = { focus = SOV_far_east_fortification }
+		x = -2
+		y = 1
+		relative_position_id = SOV_far_east_fortification
 		available = {
 		country_exists = JAP
 			custom_trigger_tooltip = {
