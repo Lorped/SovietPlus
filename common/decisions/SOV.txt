@@ -31,7 +31,7 @@ SOV_industry_relocation = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				factor = 200 # oh shit they are getting close!
+				factor = 500 # oh shit they are getting close!
 				OR = {
 					AND = {
 						owns_state = 246
@@ -90,7 +90,7 @@ SOV_industry_relocation = {
 					}
 				}
 				573 = { #Zlatoust
-					add_extra_state_shared_building_slots = 4
+					add_extra_state_shared_building_slots = 5
 					add_building_construction = {
 						type = arms_factory
 						level = 3
@@ -108,7 +108,7 @@ SOV_industry_relocation = {
 					}
 				}
 				582 = { #Magnitogorsk
-					add_extra_state_shared_building_slots = 4
+					add_extra_state_shared_building_slots = 5
 					add_building_construction = {
 						type = arms_factory
 						level = 2
@@ -162,7 +162,7 @@ SOV_industry_relocation = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				factor = 200 # oh shit they are getting close!
+				factor = 500 # oh shit they are getting close!
 				OR = {
 					AND = {
 						owns_state = 208
@@ -217,7 +217,7 @@ SOV_industry_relocation = {
 				}
 
 				580 = { #Tobolsk
-					add_extra_state_shared_building_slots = 3
+					add_extra_state_shared_building_slots = 8
 					add_building_construction = {
 						type = arms_factory
 						level = 5
@@ -270,7 +270,7 @@ SOV_industry_relocation = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				factor = 200 # oh shit they are getting close!
+				factor = 500 # oh shit they are getting close!
 				OR = {
 					AND = {
 						owns_state = 210
@@ -381,7 +381,7 @@ SOV_industry_relocation = {
     ai_will_do = {
       factor = 1
       modifier = {
-        factor = 200 # oh shit they are getting close!
+        factor = 500 # oh shit they are getting close!
         OR = {
           AND = {
             owns_state = 210
@@ -476,7 +476,7 @@ SOV_industry_relocation = {
     ai_will_do = {
       factor = 1
       modifier = {
-        factor = 200 # oh shit they are getting close!
+        factor = 500 # oh shit they are getting close!
         OR = {
           AND = {
             owns_state = 210
@@ -563,8 +563,8 @@ SOV_industry_relocation = {
     available = {
       202 = { #Kiev
         is_owned_and_controlled_by = SOV
-        industrial_complex > 3
-        arms_factory > 0
+        industrial_complex > 1
+        arms_factory > 4
       }
       402 = { is_owned_and_controlled_by = SOV } #Akhtubinsk
     }
@@ -581,7 +581,7 @@ SOV_industry_relocation = {
     ai_will_do = {
       factor = 1
       modifier = {
-        factor = 200 # oh shit they are getting close!
+        factor = 500 # oh shit they are getting close!
         OR = {
           AND = {
             owns_state = 210
@@ -627,29 +627,29 @@ SOV_industry_relocation = {
         202 = { #Kiev
           remove_building = {
             type = industrial_complex
-            level = 4
+            level = 2
           }
           remove_building = {
             type = arms_factory
-            level = 1
+            level = 5
           }
         }
         579 = { #Salekland
-          add_extra_state_shared_building_slots = 10
+          add_extra_state_shared_building_slots = 7
           add_building_construction = {
             type = industrial_complex
-            level = 4
+            level = 2
             instant_build = yes
           }
           add_building_construction = {
             type = arms_factory
-            level = 1
+            level = 5
             instant_build = yes
           }
 
           hidden_effect = {
-            damage_building = { type = industrial_complex damage = 0.4 }
-            damage_building = { type = arms_factory damage = 0.1 }
+            damage_building = { type = industrial_complex damage = 0.2 }
+            damage_building = { type = arms_factory damage = 0.5 }
           }
         }
         custom_effect_tooltip = relocate_industry_repair
@@ -686,7 +686,7 @@ SOV_industry_relocation = {
     ai_will_do = {
       factor = 1
       modifier = {
-        factor = 200 # oh shit they are getting close!
+        factor = 500 # oh shit they are getting close!
         OR = {
           AND = {
             owns_state = 210
@@ -740,7 +740,7 @@ SOV_industry_relocation = {
           }
         }
         579 = { #Salekland
-          add_extra_state_shared_building_slots = 4
+          add_extra_state_shared_building_slots = 2
           add_building_construction = {
             type = industrial_complex
             level = 1
@@ -773,14 +773,15 @@ SOV_industry_relocation = {
     available = {
       221 = { #Kharkov
         is_owned_and_controlled_by = SOV
-        arms_factory > 3
+				industrial_complex > 5
+        arms_factory > 1
       }
       40 = { is_owned_and_controlled_by = SOV } #barnaul
     }
 
     fire_only_once = yes
 
-    cost = 15
+    cost = 25
     days_remove = 15
 
     modifier = {
@@ -790,7 +791,7 @@ SOV_industry_relocation = {
     ai_will_do = {
       factor = 1
       modifier = {
-        factor = 200 # oh shit they are getting close!
+        factor = 500 # oh shit they are getting close!
         OR = {
           AND = {
             owns_state = 210
@@ -834,21 +835,31 @@ SOV_industry_relocation = {
           controls_state = 221
         }
         221 = { #Kharkov
+					remove_building = {
+            type = industrial_complex
+            level = 6
+          }
           remove_building = {
             type = arms_factory
-            level = 4
+            level = 2
           }
         }
         579 = { #Salekland
-          add_extra_state_shared_building_slots = 5
+          add_extra_state_shared_building_slots = 8
+					add_building_construction = {
+						type = industrial_complex
+						level = 6
+						instant_build = yes
+					}
           add_building_construction = {
             type = arms_factory
-            level = 4
+            level = 2
             instant_build = yes
           }
 
           hidden_effect = {
-            damage_building = { type = arms_factory damage = 0.4 }
+            damage_building = { type = arms_factory damage = 0.6 }
+						damage_building = { type = arms_factory damage = 0.2 }
           }
         }
         custom_effect_tooltip = relocate_industry_repair
@@ -884,7 +895,7 @@ SOV_industry_relocation = {
     ai_will_do = {
       factor = 1
       modifier = {
-        factor = 200 # oh shit they are getting close!
+        factor = 500 # oh shit they are getting close!
         OR = {
           AND = {
             owns_state = 210
@@ -950,7 +961,110 @@ SOV_industry_relocation = {
     }
   }
 
+	SOV_relocate_industry_from_minsk = {
 
+		icon = generic_construction
+
+		highlight_states = {
+			state = 206
+		}
+
+		available = {
+			206 = { #Minsk
+				is_owned_and_controlled_by = SOV
+				industrial_complex > 1
+				arms_factory > 1
+			}
+			580 = { is_owned_and_controlled_by = SOV } #Tobolsk
+		}
+
+		fire_only_once = yes
+
+		cost = 15
+		days_remove = 15
+
+		modifier = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 500 # oh shit they are getting close!
+				OR = {
+					AND = {
+						owns_state = 210
+						NOT = { controls_state = 210 }
+					}
+					AND = {
+						owns_state = 207
+						NOT = { controls_state = 207 }
+					}
+					AND = {
+						owns_state = 206
+						NOT = { controls_state = 206 }
+					}
+					AND = {
+						owns_state = 241
+						NOT = { controls_state = 241 }
+					}
+					AND = {
+						owns_state = 243
+						NOT = { controls_state = 243 }
+					}
+					AND = {
+						owns_state = 205
+						NOT = { controls_state = 205 }
+					}
+					AND = {
+						owns_state = 246
+						NOT = { controls_state = 246 }
+					}
+				}
+			}
+		}
+
+		visible = {
+			has_war = yes
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					controls_state = 206
+				}
+				206 = { #Minsk
+					remove_building = {
+						type = industrial_complex
+						level = 2
+					}
+					remove_building = {
+						type = arms_factory
+						level = 2
+					}
+				}
+				577 = { #Surgut
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+
+					hidden_effect = {
+						damage_building = { type = industrial_complex damage = 0.2 }
+						damage_building = { type = arms_factory damage = 0.2 }
+					}
+				}
+				custom_effect_tooltip = relocate_industry_repair
+			}
+		}
+	}
 
 	move_leningrad_aluminium_plant = { #195
 
@@ -989,7 +1103,7 @@ SOV_industry_relocation = {
 		ai_will_do = {
 			factor = 0.5
 			modifier = {
-				factor = 200 # oh shit they are getting close!
+				factor = 500 # oh shit they are getting close!
 				OR = {
 					AND = {
 						owns_state = 208
@@ -1806,7 +1920,7 @@ operations = {
       is_puppet = no
       has_army_manpower = { size > 999999 }
       has_capitulated = no
-      has_completed_focus = SOV_eastern_security
+      has_completed_focus = SOV_far_east_fortification
     }
 
     ai_will_do = {

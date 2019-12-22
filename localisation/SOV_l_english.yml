@@ -203,7 +203,7 @@ soviet.57.a:0 "Dispose him and the books"
  SOV_cult_of_personality_desc:0 "Stalin, the father of the socialism, is the undisputed leader of our country. Under his guide we cannot fail."
 
  SOV_komsomol:0 "The Komsomol"
- SOV_komsomol_desc:0 "The All-Union Leninist Young Communist League (Kom.So.Mol) educates Soviet youth in the ideals of Marxism and helps to shape future citizens of the Union."
+ SOV_komsomol_desc:0 "The Soviet League of Leninist Communist Youth  (Kom.So.Mol) educates Soviet youth in the ideals of Marxism and helps to shape future citizens of the Union."
 
  SOV_magnitogorsk:0 "Magnitogorsk"
  SOV_magnitogorsk_desc:0 "Magnitogorsk, a remote siberian city, must become one of the largest industrial installations of the Soviet Union. The city itself, due to the high concentration of steel mills, will be a national strategic hub, to be protected with appropriate secrecy."
@@ -313,3 +313,31 @@ soviet.57.a:0 "Dispose him and the books"
  SOV_leningrad_fort_22_b:0 " and Karjala."
 
  SOV_the_great_patriotic_war:0 "The Great Patriotic War"
+
+ SOV_relocate_industry_from_dnipropetrovsk:0 "Relocate Industry from Dnipropetrovsk"
+ SOV_relocate_industry_from_dnipropetrovsk_desc:0 "Evacuating the heavy machinery of our Dnipropetrovsk factories to the Urals is a huge undertaking, but it is necessary to secure our war production."
+ SOV_relocate_industry_from_dnipropetrovsk_tt:0 "§RThese effects require control of Dnipropetrovsk when the decision times out.§!"
+
+ SOV_relocate_industry_from_cherkasy:0 "Relocate Industry from Cherkasy"
+ SOV_relocate_industry_from_cherkasy_desc:0 "Evacuating the heavy machinery of our Cherkasy factories to the Urals is a huge undertaking, but it is necessary to secure our war production."
+ SOV_relocate_industry_from_cherkasy_tt:0 "§RThese effects require control of Cherkasy when the decision times out.§!"
+
+ SOV_relocate_industry_from_kiev:0 "Relocate Industry from Kiev"
+ SOV_relocate_industry_from_kiev_desc:0 "Evacuating the heavy machinery of our Kiev factories to the Urals is a huge undertaking, but it is necessary to secure our war production."
+ SOV_relocate_industry_from_kiev_tt:0 "§RThese effects require control of Kiev when the decision times out.§!"
+
+ SOV_relocate_industry_from_rostov:0 "Relocate Industry from Rostov"
+ SOV_relocate_industry_from_rostov_desc:0 "Evacuating the heavy machinery of our Rostov factories to the Urals is a huge undertaking, but it is necessary to secure our war production."
+ SOV_relocate_industry_from_rostov_tt:0 "§RThese effects require control of Rostov when the decision times out.§!"
+
+ SOV_relocate_industry_from_kharkov:0 "Relocate Industry from Kharkov"
+ SOV_relocate_industry_from_kharkov_desc:0 "Evacuating the heavy machinery of our Kharkov factories to the Urals is a huge undertaking, but it is necessary to secure our war production."
+ SOV_relocate_industry_from_kharkov_tt:0 "§RThese effects require control of Kharkov when the decision times out.§!"
+
+ SOV_relocate_industry_from_odessa:0 "Relocate Industry from Odessa"
+ SOV_relocate_industry_from_odessa_desc:0 "Evacuating the heavy machinery of our Odessa factories to the Urals is a huge undertaking, but it is necessary to secure our war production."
+ SOV_relocate_industry_from_odessa_tt:0 "§RThese effects require control of Odessa when the decision times out.§!"
+
+ SOV_relocate_industry_from_minsk:0 "Relocate Industry from Minsk"
+ SOV_relocate_industry_from_minsk_desc:0 "Evacuating the heavy machinery of our Minsk factories to the Urals is a huge undertaking, but it is necessary to secure our war production."
+ SOV_relocate_industry_from_minsk_tt:0 "§RThese effects require control of Minsk when the decision times out.§!"

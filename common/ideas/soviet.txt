@@ -724,6 +724,27 @@ ideas = {
 			mobilization_speed = 0.2
 		}
 	}
+
+	SOV_the_great_patriotic_war_w = {
+		removal_cost = -1
+
+		picture = generic_communism_drift_bonus
+
+		allowed = {
+			always = no # Added via event
+		}
+
+		allowed_civil_war = {
+			has_government = communism
+		}
+
+		modifier = {
+			conscription = 0.05
+			war_support_factor = 0.2
+			mobilization_speed = 0.2
+		}
+	}
+
 	SOV_the_great_patriotic_war_2 = {
 		removal_cost = -1
 

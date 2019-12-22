@@ -37,10 +37,10 @@ ai_focus_military_equipment_SOV = {
 
 ai_focus_military_advancements_SOV = {
 	research = {
-		#armor = 75.0
-		cat_light_armor = 45.0
-    cat_medium_armor = 400.0
-		cat_heavy_armor = 50.0
+		armor = 75.0
+		## cat_light_armor = 45.0
+    ## cat_medium_armor = 400.0
+		## cat_heavy_armor = 50.0
 
 		jet_technology = 5.0
 		land_doctrine = 100.0
