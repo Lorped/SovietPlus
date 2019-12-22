@@ -1,22 +1,27 @@
 # SovietPlus
 
-This Mod is a complete Overhaul of the Soviet Union. The aim is to depict the initial struggle of this country to reach a decent level of industrialization,
-the devasting initial months of the war and the huge effort to stop the german Army and push it back to Berlin.
+This Mod is a complete Overhaul of the Soviet Union. The aim is to depict the initial struggle of this country to reach a decent level of industrialization, the devasting initial months of the war and the huge effort to stop the german Army and push it back up to Berlin.
 The mod should be played with historical focus on.
 
 ## Some other changes
 (Without any specific order)
-Changed the traits af every political advisor
-Change some generic portraits
-You cannot use absurdly ahistorical advisors
-The only tho parties are the Soviet Communist Party and the Socialist Revolutionary Party
-Dekabrist, not "Debakrist"
-Adedd the two missing Field Marshals in '36
+* AI finally build decent INF and ARM templates!
+* Addedd a lot of political advisors (most historically purged)
+* Changed the traits vanilla political advisors
+* Changed the generic portraits with historical ones
+* You cannot use absurdly ahistorical advisors
+* The only two parties are the Soviet Communist Party and the Socialist Revolutionary Party
+* Fixed some vanilla typos like "Debakrist for "Dekabrist" etc
+* Adedd the two missing Field Marshals in '36
+* Added the Fugas Class (minesweeper)
+* Fixed the correct order of the Great Trials, and their historical outcomes
+* Rokossowsky purged and then rehabilitated
+* Finland never give up Karjala without fighting (if AI controlled)
 
 
 ## QA
-### Great Purge
-The focus is only 15 days short, but it starts a long (~14 months) period where all the major trials and some (random) flavour events occur. Take it at the right time (not too early, not too late)
+### Great Purge in 15 days??
+The focus is only 15 days short, but it just starts a long (~14 months) period where all the major trials and some (random) flavour events occur, with a costant PP spending during all this time. Take it at the right time (not too early, not too late)
 
 ### Purge officers
 You may purge some Field Marshals and Generals or focus on lower level officers. I'm not sure the second is the best choice (even if the purged generals are quite good). Beware that Winter War does not cancel the purge penalties. They may be in effect when Barbarossa happens.
@@ -35,3 +40,6 @@ Yes, it is. The Red Army has a terrible penalty for the first three months, and 
 
 ### How can I put Trotsky in charge?
 With this mod you can't, sorry.
+
+### Why Finland doesn't join Axis but starts a new war alone in 1941?
+Because joining axis may lead to strange AI behavious, like moving there 2 hundreds GER division..
