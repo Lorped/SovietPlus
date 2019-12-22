@@ -47,6 +47,7 @@ SOV_historical_plan = {
 		SOV_magnitogorsk
 		SOV_komsomol
 		SOV_third_five_year_plan
+		SOV_closed_cities_network
 		SOV_transpolar_flights
 		SOV_peoples_commissariat
 
@@ -58,16 +59,20 @@ SOV_historical_plan = {
 
 
 		SOV_morozov
+		SOV_leningrad_institute
 		SOV_build_molotov_line
 		SOV_improve_stalin_line
 
 		SOV_il2
 		SOV_t34
+		SOV_tula
+		SOV_progress_cult
+
 
 		SOV_establish_the_stavka
 		SOV_tankograd
 		SOV_increase_il2_production
-
+		SOV_smersh
 
 		#1941
 		SOV_infrastructure_effort
@@ -86,13 +91,12 @@ SOV_historical_plan = {
 		SOV_women_pilots
 		SOV_Functional_Engineering		#new
 		SOV_research_city_experiment
-		SOV_diversify_the_programme
-		SOV_closed_city_network
+
+
 		SOV_Industrial_Mass_Production	#new
 		#1944
 		SOV_annex_tannu_tuva
-		SOV_smersh
-		SOV_infrastructure_effort
+
 		SOV_war_with_japan
 	}
 

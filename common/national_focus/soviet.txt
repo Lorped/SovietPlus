@@ -815,6 +815,28 @@ focus_tree = {
 		}
 	}
 
+	#Focus for Close Cities
+	focus = {
+		id = SOV_closed_cities_network
+		icon = GFX_sov_closed_cities
+		relative_position_id =  SOV_magnitogorsk
+		x = 0
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SOV_magnitogorsk }
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_idea_third_five_year_plan
+				add_idea = SOV_idea_third_five_year_plan_2
+			}
+		}
+	}
+
 
 
 
@@ -1913,6 +1935,26 @@ focus_tree = {
 	}
 
 	focus = {
+		id = SOV_tula
+		icon = GFX_sov_tula
+		prerequisite = { focus = SOV_peoples_commissariat }
+		x = -1
+		y = 2
+		relative_position_id = SOV_peoples_commissariat
+		cost = 7.15
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 5
+				has_war = yes
+			}
+		}
+		completion_reward = {
+			add_ideas = tula_arms_plant
+		}
+	}
+
+	focus = {
 		id = SOV_great_patriotic
 		icon = GFX_sov_great_patriotic
 		available = {
@@ -1933,7 +1975,7 @@ focus_tree = {
 
 	focus = {
 		id = SOV_move_industry_to_urals
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_sov_move_industry
 		prerequisite = { focus = SOV_great_patriotic }
 		x = 2
 		y = 1

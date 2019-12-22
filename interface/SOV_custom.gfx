@@ -321,4 +321,19 @@ spriteTypes = {
     texturefile = "gfx/interface/goals/SOV_borodino.dds"
   }
 
+  spriteType = {
+    name = "GFX_sov_move_industry"
+    texturefile = "gfx/interface/goals/SOV_move_industry.dds"
+  }
+
+  spriteType = {
+    name = "GFX_sov_closed_cities"
+    texturefile = "gfx/interface/goals/SOV_closed_cities.dds"
+  }
+
+  spriteType = {
+    name = "GFX_sov_tula"
+    texturefile = "gfx/interface/goals/SOV_tula.dds"
+  }
+
  }

@@ -51,6 +51,26 @@ ideas = {
 				production_speed_bunker_factor = -0.25
 			}
 		}
+		SOV_idea_third_five_year_plan_2 = {
+			available = { has_defensive_war = no }
+			removal_cost = -1
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			picture = third_five_year_plan
+			research_bonus = {
+				industry = 0
+			}
+			modifier = {
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = -0.05
+				production_speed_synthetic_refinery_factor = 0.05
+				production_speed_bunker_factor = -0.25
+			}
+		}
 
 		SOV_idea_2_5_year_plan = {
 			available = { has_defensive_war = no }
@@ -1691,6 +1711,11 @@ ideas = {
 			}
 			traits = { infantry_equipment_manufacturer }
 			modifier = {
+			}
+			equipment_bonus = {
+				infantry_weapons = {
+					build_cost_ic = -0.02
+				}
 			}
 		}
 

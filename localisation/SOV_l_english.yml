@@ -195,7 +195,9 @@ soviet.57.a:0 "Dispose him and the books"
  SOV_third_five_year_plan:0 "The third Five-Year Plan"
  SOV_third_five_year_plan_desc:0 "The third Five-Year Plan will be the final step of our contry into the future."
  SOV_idea_third_five_year_plan:0 "The third Five-Year Plan"
+ SOV_idea_third_five_year_plan_2:0 "The third Five-Year Plan"
  SOV_idea_third_five_year_plan_desc:0 "Workers, onward! On the path to progress and prosperity"
+ SOV_idea_third_five_year_plan_2_desc:0 "Workers, onward! On the path to progress and prosperity"
 
  SOV_cult_of_personality:0 "The Cult of Personality"
  SOV_cult_of_personality_desc:0 "Stalin, the father of the socialism, is the undisputed leader of our country. Under his guide we cannot fail."
@@ -205,6 +207,10 @@ soviet.57.a:0 "Dispose him and the books"
 
  SOV_magnitogorsk:0 "Magnitogorsk"
  SOV_magnitogorsk_desc:0 "Magnitogorsk, a remote siberian city, must become one of the largest industrial installations of the Soviet Union. The city itself, due to the high concentration of steel mills, will be a national strategic hub, to be protected with appropriate secrecy."
+
+ SOV_closed_cities_network:0 "Closed City Network"
+ SOV_closed_cities_network_desc:0 "We must extend the network of closed cities, not just for production but also for research. In the long term this will benefit both industry and military research."
+
 
  SOV_lessons_of_the_winter_war:0 "Lessons of the Winter War"
  SOV_lessons_of_the_winter_war_desc:0 "The war with Finland taught us the value of logistics in harsh terrains, as well as the correct use of tanks and airforces. Our generals have learnt invaluable lessons that will surely prove useful in the future."
@@ -276,6 +282,9 @@ soviet.57.a:0 "Dispose him and the books"
  massive_air_production:0 "Increase Aircraft Production"
  massive_air_production_desc:0 "The Red Army needs aircraft as the air it breathes"
 
+ SOV_tula:0  "The Tula Arms Plant"
+ SOV_tula_desc:0 "Created by decree by Peter the Great in 1712, the old Tula Arsenal well served the tzarist army. The new Tula Arms Plant must be re-organized and fully mechanized for mass production"
+
 
  SOV_establish_the_stavka:0 "Establish the Stavka"
  SOV_establish_the_stavka_desc:0 "Creating the supreme headquarters of the armed forces of the Soviet Union, we will be able to better coordinate the war operations for land, sea and air."
@@ -290,7 +299,7 @@ soviet.57.a:0 "Dispose him and the books"
  SOV_military_research_desc:0 "Our research centers must expand, increasing the ability to produce advanced technologies. The technological advantage can be translated into a military advantage in the field.""
 
  SOV_borodino:0 "Operation Borodino"
- SOV_borodino_desc:0 "Operation Borodino is the code name of our secret project to build the atomic bomb. It is a matter of utmost importance that it will be terminated as soon as possible"
+ SOV_borodino_desc:0 "Operation Borodino is the code name of our secret project to build the atomic bomb. It is a matter of utmost importance that must be terminated as soon as possible"
 
  SOV_t34:0 "The T-34"
  SOV_t34_desc:0 "Mikhail Koshkin's masterpiece, the T-34, has an unprecedented combination of firepower, mobility, protection and ruggedness. its full implementation in production should start as soon as possible."

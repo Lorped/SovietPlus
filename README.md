@@ -11,12 +11,13 @@ The mod should be played with historical focus on.
 * Changed the generic portraits with historical ones
 * You cannot use absurdly ahistorical advisors
 * The only two parties are the Soviet Communist Party and the Socialist Revolutionary Party
-* Fixed some vanilla typos like "Debakrist for "Dekabrist" etc
+* Fixed some vanilla typos like "Debakrist for "Dekabrist" , "Guerevich" for Gurevich" etc
 * Adedd the two missing Field Marshals in '36
 * Added the Fugas Class (minesweeper)
 * Fixed the correct order of the Great Trials, and their historical outcomes
 * Rokossowsky purged and then rehabilitated
 * Finland never give up Karjala without fighting (if AI controlled)
+* Revised the jet names (and pics)
 
 
 ## QA
