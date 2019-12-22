@@ -19,12 +19,10 @@ SOV_historical_plan = {
 		SOV_cult_of_personality
 		SOV_spanish_war
 
+		SOV_great_patriotic
 		SOV_defense_of_moscow
 		SOV_move_industry_to_urals
-
-		#SOV_Leningrad_Fort_Region	#new
-		#SOV_lessons_of_war
-		#SOV_Volga_River_Defense		#new
+		SOV_defense_of_leningrad
 
 
 		#1936
@@ -58,6 +56,7 @@ SOV_historical_plan = {
 		SOV_baltic_security
 		SOV_claim_bessarabia
 
+
 		SOV_morozov
 		SOV_build_molotov_line
 		SOV_improve_stalin_line
@@ -73,9 +72,7 @@ SOV_historical_plan = {
 		#1941
 		SOV_infrastructure_effort
 		SOV_demand_eastern_poland
-		SOV_Test_New_Rocket_Weapons		#new
-		SOV_anti_capitalist_diplomacy
-		SOV_expand_red_fleet
+
 		#1942
 		SOV_anti_colonialist_rebels
 		SOV_heroes_of_the_union			#new

@@ -238,11 +238,13 @@ soviet.57.a:0 "Dispose him and the books"
  soviet.46.dx:0 "The recent purges among our officers have left the Red Army far more vulnerable to German aggression"
  soviet.46.ax:0 "we must fix it as soon as possible!"
 
+ SOV_military_build:0 "Diverted Resources"
  SOV_military_build:0 "Our resources are partially committed to important military projects"
 
  soviet.120.t:0 "Operation Barbarossa"
  soviet.120.d:0 "The German army's sudden attack took our forces off guard. It will be difficult to regain control of military operations, and for a few weeks we will only have to resist and reorganize"
  soviet.120.a:0 "Comrade Stalin will not be happy"
+
  SOV_barbarossa:0 "German surprise attack"
 
  SOV_leningrad_institute:0 "The Leningrad Institute of Technology"
@@ -291,4 +293,14 @@ soviet.57.a:0 "Dispose him and the books"
  SOV_borodino_desc:0 "Operation Borodino is the code name of our secret project to build the atomic bomb. It is a matter of utmost importance that it will be terminated as soon as possible"
 
  SOV_t34:0 "The T-34"
- SOV_t34_desc:0 "Mikhail Koshkin's masterpiece, the T-34, has an unprecedented combination of firepower, mobility, protection and ruggedness. It's implementation in production must be concluded ASAP."
+ SOV_t34_desc:0 "Mikhail Koshkin's masterpiece, the T-34, has an unprecedented combination of firepower, mobility, protection and ruggedness. its full implementation in production should start as soon as possible."
+
+ SOV_defense_of_leningrad:0 "Defence of Leningrad"
+ SOV_defense_of_leningrad_desc:0 "Since the tzar Peter the Great, Leningrad is our gate to the Baltic. It cannot fall at any cost, every possible defence must be erected to protect it."
+ SOV_defense_of_leningrad_tt:0 "Adds [Root.FortsForleningrad] in and around Lenigrad[Root.FortsForleningradB]"
+ SOV_leningrad_fort_16:0 "§Y16 Land forts§!"
+ SOV_leningrad_fort_16_b:0 "."
+ SOV_leningrad_fort_22:0 "§Y22 Land forts§!"
+ SOV_leningrad_fort_22_b:0 " and Karjala."
+
+ SOV_the_great_patriotic_war:0 "The Great Patriotic War"

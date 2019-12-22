@@ -1,0 +1,113 @@
+SOV_mine_sweeper_early = {
+	category = naval
+	roles = { naval_mine_sweeper }
+	priority = {
+		base = 1
+	}
+	available_for = { SOV }
+	early_mine_sweeper_1 = { # to make task force reinforcement work
+		role_icon_index = 5
+		priority = {
+			base = 0
+		}
+		target_variant = {
+			type = ship_hull_light_1
+			match_value = 1000
+		}
+	}
+}
+
+SOV_mine_sweeper = {
+	category = naval
+	roles = { naval_mine_sweeper }
+	priority = {
+		base = 1
+	}
+	available_for = { SOV }
+	basic_mine_sweeper = {
+		role_icon_index = 5
+		priority = {
+			base = -1
+			modifier = { add = 2 has_tech = basic_ship_hull_light }
+			modifier = { add = -0.9 has_tech = improved_ship_hull_light }
+		}
+
+		target_variant = {
+			type = ship_hull_light_2
+			match_value = 2000
+
+			modules = {
+				fixed_ship_battery_slot = ship_light_battery_1
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = empty
+				fixed_ship_radar_slot = empty
+				fixed_ship_torpedo_slot = empty
+				fixed_ship_engine_slot = { module = light_ship_engine_2 upgrade = current }
+				mid_1_custom_slot = ship_mine_warfare
+				rear_1_custom_slot = ship_mine_warfare
+			}
+		}
+
+		requirements = {
+			module = ship_mine_warfare
+		}
+	}
+	improved_mine_sweeper = {
+		role_icon_index = 5
+		priority = {
+			base = -1
+			modifier = { add = 2 has_tech = improved_ship_hull_light }
+			modifier = { add = -0.9 has_tech = advanced_ship_hull_light }
+		}
+
+		target_variant = {
+			type = ship_hull_light_3
+			match_value = 4000
+
+			modules = {
+				fixed_ship_battery_slot = ship_light_battery
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = empty
+				fixed_ship_radar_slot = empty
+				fixed_ship_torpedo_slot = empty
+				fixed_ship_engine_slot = { module = light_ship_engine_3 upgrade = current }
+				front_1_custom_slot = empty
+				mid_1_custom_slot = ship_mine_warfare
+				rear_1_custom_slot = ship_mine_warfare
+			}
+		}
+
+		requirements = {
+			module = ship_mine_warfare
+		}
+	}
+	advanced_mine_sweeper = {
+		role_icon_index = 5
+		priority = {
+			base = -1
+			modifier = { add = 2 has_tech = advanced_ship_hull_light }
+		}
+
+		target_variant = {
+			type = ship_hull_light_4
+			match_value = 6000
+
+			modules = {
+				fixed_ship_battery_slot = ship_light_battery
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = empty
+				fixed_ship_radar_slot = empty
+				fixed_ship_torpedo_slot = empty
+				fixed_ship_engine_slot = { module = light_ship_engine_4 upgrade = current }
+				front_1_custom_slot = empty
+				mid_1_custom_slot = ship_mine_warfare
+				mid_2_custom_slot = ship_mine_warfare
+				rear_1_custom_slot = ship_mine_warfare
+			}
+		}
+
+		requirements = {
+			module = ship_mine_warfare
+		}
+	}
+}

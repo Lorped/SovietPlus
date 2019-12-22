@@ -10,7 +10,7 @@ AI_SOV_no_access_to_allies = {
 	}
 	abort_when_not_enabled = yes
 	reversed = yes
-	ai_strategy = { type = befriend id = "SOV" value = -200 }
+	ai_strategy = { type = befriend id = "SOV" value = -1000 }
 }
 
 claims_on_baltic = {
@@ -570,7 +570,7 @@ SOV_no_plane_build_AA = {
 # CIC - MIC
 ######################
 
-build_civs_not_mils_comrade = {
+build_cics_not_mics_comrade = {
 	enable = {
 		tag = SOV
 		date < 1939.06.01
@@ -596,12 +596,18 @@ SOV_start_building_MIL = {   # come se non ci fosse un domani...
 	}
 	ai_strategy = {
 		type = added_military_to_civilian_factory_ratio
-		value = 150
+		value = 9000
+	}
+	ai_strategy = {
+		type = building_target
+		id = arms_factory
+		value = 9000
 	}
 }
 
-
-
+##############################################
+#  SOV NO DOCKYARD if AT WAR
+#################################################
 SOV_dockyards_useless_now = {
 	enable = {
 		tag = SOV
@@ -614,34 +620,19 @@ SOV_dockyards_useless_now = {
 	}
 	ai_strategy = {
 		type = dockyard_to_military_factory_ratio
-		value = -250
-	}
-}
-
-
-
-
-
-sov_historical_expand_navy = {
-	enable = {
-		tag = SOV
-		#is_historical_focus_on = yes
-		has_completed_focus = SOV_ocean_going_navy
-		date < 1941.01.01
-		has_war = no
-	}
-	abort = {
-		OR = {
-			has_war = yes
-			date > 1942.01.01
-		}
+		value = 0
 	}
 	ai_strategy = {
 		type = building_target
 		id = dockyard
-		value = 10
+		value = -1000
 	}
 }
+
+
+
+
+
 
 #########################
 #  MISC
@@ -667,27 +658,25 @@ sov_warning_fin_want_mess_with_you = {
 }
 
 
-
-sov_expand_rubber_production = {
-	enable = {
-		tag = SOV
-		has_completed_focus = SOV_increase_rubber
-		OR = {
-			JAP = { has_war_with = ENG }
-			has_war_with = ENG
-		}
-	}
-	abort = {
-		has_war = yes
-		surrender_progress > 0.5
-	}
-	ai_strategy = {
-		type = building_target
-		id = synthetic_refinery
-		value = 6
-	}
-
-}
+## sov_expand_rubber_production = {
+## 	enable = {
+## 		tag = SOV
+## 		has_completed_focus = SOV_increase_rubber
+## 		OR = {
+## 			JAP = { has_war_with = ENG }
+## 			has_war_with = ENG
+## 		}
+## 	}
+## 	abort = {
+## 		has_war = yes
+## 		surrender_progress > 0.5
+## 	}
+## 	ai_strategy = {
+## 		type = building_target
+## 		id = synthetic_refinery
+## 		value = 6
+## 	}
+## }
 
 sov_dont_be_dumbass_and_dow_germany = {
 	enable = {

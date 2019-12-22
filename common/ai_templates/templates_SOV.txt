@@ -14,7 +14,7 @@ armored_SOV = {
 		factor = 2.0
 
 		modifier = {
-			factor = 5
+			factor = 10
 			OR = {
 				has_tech = basic_medium_tank
 			}
@@ -29,10 +29,10 @@ armored_SOV = {
 	light_armor_default_SOV = {
 
 		upgrade_prio = {
-			factor = 2
+			factor = 5
 
 			modifier = {
-				factor = 2
+				factor = 5
 			}
 		}
 
@@ -208,10 +208,10 @@ armored_SOV = {
 	medium_armor_default_SOV = {
 
 		upgrade_prio = {
-			factor = 2
+			factor = 10
 
 			modifier = {
-				factor = 10
+				factor = 100
 				has_tech = basic_medium_tank
 				NOT = {
 					has_tech = main_battle_tank
@@ -528,9 +528,9 @@ motorized_SOV = {
 	match_to_count = 0.55
 
 	upgrade_prio = {
-		factor = 2
+		factor = 10
 		modifier = {
-			factor = 2
+			factor = 10
 		}
 	}
 
@@ -571,9 +571,12 @@ motorized_SOV = {
 
 	early_motorized_SOV = {
 		upgrade_prio = {
-			factor = 4
+			factor = 10
 			modifier = {
-				factor = 2
+				factor = 10
+			}
+			modifier = {
+				factor = 12
 				has_tech = improved_light_art
 			}
 		}
@@ -612,10 +615,10 @@ motorized_SOV = {
 
 	std_motorized_SOV = {
 		upgrade_prio = {
-			base = 4
+			base = 10
 			modifier = {
-				factor = 0
-				NOT = { has_tech = improved_light_art }
+				factor = 10
+				has_tech = improved_light_art
 			}
 		}
 
@@ -664,7 +667,7 @@ infantry_SOV = {
 	upgrade_prio = {
 		factor = 10
 		modifier = {
-			factor = 15
+			factor = 10
 		}
 	}
 
