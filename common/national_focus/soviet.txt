@@ -36,9 +36,9 @@ focus_tree = {
 
 		completion_reward = {
 			SPR = {
-				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 6000 producer = SOV }
-				add_equipment_to_stockpile = { type = support_equipment_1 amount = 1000 producer = SOV }
-				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 1000 producer = SOV }
+				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 12000 producer = SOV }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = 2000 producer = SOV }
+				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 2000 producer = SOV }
 				add_opinion_modifier = { target = SOV modifier = large_increase  }
 			}
 			army_experience = 50
@@ -1356,7 +1356,9 @@ focus_tree = {
 		id = SOV_t34
 		icon = GFX_sov_t34
 		prerequisite = { focus = SOV_peoples_commissariat }
-		available = { has_tech = basic_medium_tank }
+		available = {
+			has_tech = basic_medium_tank
+			NOT = { has_tech = improved_medium_tank } }
 		x = -2
 		y = 1
 		relative_position_id = SOV_peoples_commissariat
@@ -1376,7 +1378,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = med_armor_bonus
-				ahead_reduction = 2
+				uses = 1
+				bonus = 1.0
 				category = cat_medium_armor
 			}
 		}
@@ -1970,6 +1973,12 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = SOV_the_great_patriotic_war
+			if = {
+				limit = {
+					has_idea = limited_conscription
+				}
+				add_ideas = extensive_conscription
+			}
 		}
 	}
 
@@ -2131,6 +2140,7 @@ focus_tree = {
 		available = {
 			has_army_experience > 50
 		}
+		cancel_if_invalid = no
 		ai_will_do = {
 			factor = 1.5
 			modifier = {

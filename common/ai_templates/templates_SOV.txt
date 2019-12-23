@@ -19,7 +19,6 @@ armored_SOV = {
 				has_tech = basic_medium_tank
 			}
 		}
-
 		modifier = {
 			factor = 2
 			has_tech = main_battle_tank
@@ -27,7 +26,6 @@ armored_SOV = {
 	}
 
 	light_armor_default_SOV = {
-
 		upgrade_prio = {
 			factor = 5
 
@@ -36,9 +34,10 @@ armored_SOV = {
 			}
 		}
 
-		target_width = 18.0
+		target_width = 20.0
 		width_weight = 1.0
 		column_swap_factor = 0.5
+		reinforce_prio = 6
 
 		stat_weights = {
 			0.00 #-- default_morale
@@ -48,7 +47,7 @@ armored_SOV = {
 			1.00 #-- soft_attack
 			0.00 #-- hard_attack
 			0.10 #-- recon
-			0.01 #-- entrenchment
+			0.05 #-- entrenchment
 			0.10 #-- initiative
 			0.01 #-- casualty_trickleback
 			-0.05 #-- supply_consumption_factor
@@ -542,7 +541,7 @@ motorized_SOV = {
 			}
 		}
 
-		target_width = 12.0
+		target_width = 14.0
 		width_weight = 1.0
 		column_swap_factor = 0.9
 
@@ -596,13 +595,15 @@ motorized_SOV = {
 			}
 			regiments = {
 				motorized = 7
-				mot_artillery_brigade = 2
+				motorized_artillery_brigade = 2
 			}
 		}
 
 		allowed_types = {
 			motorized
 			mot_artillery_brigade
+			motorized_rocket_brigade
+			motorized_artillery_brigade
 			engineer
 			recon
 			logistics_company
@@ -651,6 +652,8 @@ motorized_SOV = {
 			maintenance_company
 			logistics_company
 			mot_artillery_brigade
+			motorized_artillery_brigade
+			motorized_rocket_brigade
 		}
 	}
 }
@@ -878,7 +881,7 @@ garrison_SOV = {
 			}
 		}
 		production_prio = {
-			factor = 1
+			factor = 0
 			modifier = {
 				factor = 1
 			}

@@ -69,12 +69,12 @@ SOV_unit_production = {
 	ai_strategy = {
 		type = equipment_production_factor
 		id = anti_air
-		value = 30
+		value = 20
 	}
 	ai_strategy = {
 		type = equipment_production_factor
 		id = anti_tank
-		value = 40
+		value = 30
 	}
 	ai_strategy = {
 		type = equipment_production_factor
@@ -89,7 +89,7 @@ SOV_unit_production = {
 	ai_strategy = {
 		type = equipment_production_min_factories
 		id = fighter
-		value = 12
+		value = 20
 	}
 }
 
@@ -128,6 +128,7 @@ SOV_remember_to_upgrade_stuff = {
 
 	ai_strategy = { type = production_upgrade_desire_offset id = infantry_equipment_2 	value = 300 }
 
+	#ai_strategy = { type = production_upgrade_desire_offset id = light_tank_equipment_1 						value = 200 }
 	#ai_strategy = { type = production_upgrade_desire_offset id = light_tank_equipment_2 						value = 200 }
 	#ai_strategy = { type = production_upgrade_desire_offset id = light_tank_artillery_equipment_2		value = 200 }
 	ai_strategy = { type = production_upgrade_desire_offset id = medium_tank_equipment_2						value = 300 }
@@ -187,10 +188,10 @@ SOV_higher_armor_tank_production = {
 	ai_strategy = {	type = role_ratio		id = armor				value = 20	}
 	ai_strategy = {	type = role_ratio		id = infantry			value = 63	}
 
-	ai_strategy = {	type = equipment_variant_production_factor	id = motorized_equipment		value = 30	}
+	ai_strategy = {	type = equipment_variant_production_factor	id = motorized_equipment		value = 40	}
 	ai_strategy = {	type = equipment_variant_production_factor	id = medium_tank_equipment	value = 180	}
 	ai_strategy = {	type = equipment_variant_production_factor	id = light_tank_equipment		value = -100	}
-	ai_strategy = { type = equipment_production_min_factories 	id = armor 									value = 25 }
+	ai_strategy = { type = equipment_production_min_factories 	id = armor 									value = 30 }
 
 
 
@@ -202,13 +203,13 @@ SOV_higher_armor_tank_production = {
 SOV_increase_lspart_production = {
 	enable = {
 		original_tag = SOV
-		num_of_military_factories > 50
+		num_of_military_factories > 30
 		NOT = { has_equipment = { light_tank_artillery_equipment > 500 } }
 	}
 	abort = {
 		NOT = {
 			AND = {
-				num_of_military_factories > 75
+				num_of_military_factories > 60
 				NOT = { has_equipment = { light_tank_artillery_equipment > 500 } }
 			}
 		}
@@ -225,14 +226,14 @@ SOV_increase_lspart_production = {
 SOV_increase_mspart_production = {
 	enable = {
 		original_tag = SOV
-		num_of_military_factories > 100
-		NOT = { has_equipment = { medium_tank_artillery_equipment > 2000 } }
+		num_of_military_factories > 90
+		NOT = { has_equipment = { medium_tank_artillery_equipment > 1000 } }
 	}
 	abort = {
 		NOT = {
 			AND = {
-				num_of_military_factories > 100
-				NOT = { has_equipment = { medium_tank_artillery_equipment > 2000 } }
+				num_of_military_factories > 120
+				NOT = { has_equipment = { medium_tank_artillery_equipment > 1000 } }
 			}
 		}
 	}

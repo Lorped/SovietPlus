@@ -73,7 +73,7 @@ SOV_historical_plan = {
 		SOV_tankograd
 		SOV_increase_il2_production
 		SOV_military_research
-		SOV_sovier_women
+		SOV_soviet_women
 		SOV_smersh
 		SOV_night_witches
 
@@ -82,7 +82,7 @@ SOV_historical_plan = {
 		SOV_demand_eastern_poland
 
 		#1942
-		SOV_anti_colonialist_rebels
+
 		SOV_heroes_of_the_union			#new
 		SOV_Next_Generation_Aircraft	#new
 		SOV_Air_Combat_Experience		#new
@@ -91,7 +91,7 @@ SOV_historical_plan = {
 		SOV_heroes_of_the_union			#new
 		SOV_War_Production_Targets		#new
 		SOV_Uralvagonzavod				#new
-		SOV_women_pilots
+
 		SOV_Functional_Engineering		#new
 		SOV_research_city_experiment
 
