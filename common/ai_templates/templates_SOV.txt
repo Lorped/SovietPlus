@@ -595,15 +595,18 @@ motorized_SOV = {
 			}
 			regiments = {
 				motorized = 7
-				motorized_artillery_brigade = 2
+				#motorized_artillery_brigade = 2
+				artillery = 2
 			}
 		}
 
 		allowed_types = {
 			motorized
 			mot_artillery_brigade
+			artillery_brigade
 			motorized_rocket_brigade
 			motorized_artillery_brigade
+			mot_artillery_brigade
 			engineer
 			recon
 			logistics_company

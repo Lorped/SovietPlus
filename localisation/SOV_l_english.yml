@@ -278,6 +278,8 @@ soviet.57.a:0 "Dispose him and the books"
 
  stavka:0 "Stavka"
  stavka_desc:0 "The Stakva is the high command of the armed forces of the Soviet Union"
+ stavka2:0 "Stavka"
+ stavka2_desc:0 "The Stakva is the high command of the armed forces of the Soviet Union"
 
  massive_air_production:0 "Increase Aircraft Production"
  massive_air_production_desc:0 "The Red Army needs aircraft as the air it breathes"
@@ -353,3 +355,8 @@ SOV_night_witches_desc:0 "Major Marina Raskova asked the Comrade Stalin to obtai
 SOV_defense_of_stalingrad:0 "Defence of Stalingrad"
 SOV_defense_of_stalingrad_desc:0 "With the enemy advancing toward the Volga, we have to prepare a strong defensive line to protect tha Caucasus olifiled and the new industrial regions of the Urals"
 SOV_defense_of_stalingrad_tt:0 "Adds a total of §Y70 Land forts§! along the eastern shore of Volga River.\nYou must control the affected provinces when finishing this focus, for the effects to apply."
+
+soviet_partisans:0 "Partisans activity"
+soviet_partisans_desc:0 "Civilians in the occupied territories tirelessly strike the enemy rear."
+SOV_partisans:0 "Soviet Partisans"
+SOV_partisans_desc:0 "In the occupied territories, Soviet citizens organize themselves, forming partisan groups that tirelessly hit the enemy lines of communication. This land will never be fascist."

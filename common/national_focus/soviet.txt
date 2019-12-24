@@ -11,7 +11,7 @@ focus_tree = {
 		}
 	}
 
-	continuous_focus_position = { x = 0 y = 900 }
+	continuous_focus_position = { x = 0 y = 800 }
 
 	default = no
 
@@ -1965,7 +1965,7 @@ focus_tree = {
 			SOV = { has_defensive_war = yes }
 		}
 
-		x = 12
+		x = 13
 		y = 4
 		cost = 2.15
 		ai_will_do = {
@@ -1986,8 +1986,8 @@ focus_tree = {
 		id = SOV_move_industry_to_urals
 		icon = GFX_sov_move_industry
 		prerequisite = { focus = SOV_great_patriotic }
-		x = 2
-		y = 1
+		x = 4
+		y = 2
 		relative_position_id = SOV_great_patriotic
 		cost = 2.15
 		ai_will_do = {
@@ -2134,8 +2134,8 @@ focus_tree = {
 		icon = GFX_sov_establish_the_stavka
 		cost = 7.16
 		relative_position_id = SOV_great_patriotic
-		x = -2
-		y = 1
+		x = -4
+		y = 2
 		prerequisite = { focus = SOV_great_patriotic }
 		available = {
 			has_army_experience > 50
@@ -2156,14 +2156,16 @@ focus_tree = {
 	focus = {
 		id = SOV_increase_il2_production
 		icon = GFX_sov_increase_il2_production
-		prerequisite = { focus = SOV_establish_the_stavka }
+		prerequisite = {
+			focus = SOV_establish_the_stavka
+			focus = SOV_move_industry_to_urals
+		}
 		available = {
-			has_completed_focus = SOV_move_industry_to_urals
 			249 = { is_owned_and_controlled_by = ROOT }
 		}
 		x = 0
-		y = 1
-		relative_position_id = SOV_establish_the_stavka
+		y = 3
+		relative_position_id = SOV_great_patriotic
 		cost = 10
 		ai_will_do = {
 			factor = 4
@@ -2309,7 +2311,7 @@ focus_tree = {
 		id = SOV_smersh
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = SOV_great_patriotic }
-		x = 4
+		x = 2
 		y = 1
 		relative_position_id = SOV_great_patriotic
 		cost = 10
@@ -2392,7 +2394,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = SOV_move_industry_to_urals
-		cost = 5
+		cost = 7.15
 		ai_will_do = {
 			factor = 4
 			modifier = {
@@ -2493,7 +2495,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_establish_the_stavka
 		}
-		x = -2
+		x = -1
 		y = 1
 		ai_will_do = {
 			factor = 1.5
@@ -2539,6 +2541,68 @@ focus_tree = {
 				hidden_effect = {
 					load_oob = "SOV_night_witches"
 				}
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_partisans
+		icon = GFX_sov_partisans
+		prerequisite = { focus = SOV_great_patriotic }
+		x = -2
+		y = 1
+		relative_position_id = SOV_great_patriotic
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = soviet_partisans
+		}
+	}
+
+	focus = {
+		id = SOV_operational_command
+		icon = GFX_sov_operational_command
+		prerequisite = { focus = SOV_establish_the_stavka }
+		x = 1
+		y = 1
+		relative_position_id = SOV_establish_the_stavka
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			swap_ideas = { remove_idea = stavka add_idea = stavka2 }
+			create_field_marshal = {
+				name = "Georgy Zhukov"
+				id = 410
+				picture = "Portrait_Soviet_Gregory_Zhukov.dds"
+				traits = { expert_delegator thorough_planner brilliant_strategist aggressive_assaulter }
+				skill = 4
+
+				attack_skill = 4
+				defense_skill = 3
+				planning_skill = 4
+				logistics_skill = 3
+			}
+			create_field_marshal = {
+				name = "Ivan Konev"
+				id = 408
+					picture = "Portrait_Soviet_Ivan_Konev.dds"
+				traits = { armor_officer harsh_leader politically_connected }
+				skill = 5
+
+				attack_skill = 4
+				defense_skill = 5
+				planning_skill = 2
+				logistics_skill = 5
 			}
 		}
 	}

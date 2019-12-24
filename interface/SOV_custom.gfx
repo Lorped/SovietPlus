@@ -346,4 +346,20 @@ spriteTypes = {
     texturefile = "gfx/interface/goals/SOV_night_witches.dds"
   }
 
+  spriteType = {
+    name = "GFX_idea_soviet_partisans"
+    texturefile = "gfx/interface/ideas/idea_soviet_partisans.dds"
+  }
+
+  spriteType = {
+    name = "GFX_sov_partisans"
+    texturefile = "gfx/interface/goals/SOV_partisans.dds"
+  }
+
+  spriteType = {
+    name = "GFX_sov_operational_command"
+    texturefile = "gfx/interface/goals/SOV_operational_command.dds"
+  }
+
+
  }
