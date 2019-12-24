@@ -5,12 +5,8 @@ SOV_historical_plan = {
 	enable = {
 		original_tag = SOV
 	}
-
 	abort = {
-		OR = {
-			is_subject = yes
-			has_war_with = GER
-		}
+		is_subject = yes
 	}
 
 	ai_national_focuses = {

@@ -361,5 +361,15 @@ spriteTypes = {
     texturefile = "gfx/interface/goals/SOV_operational_command.dds"
   }
 
+  spriteType = {
+    name = "GFX_sov_katyusha"
+    texturefile = "gfx/interface/goals/SOV_katyusha.dds"
+  }
+
+  spriteType = {
+    name = "GFX_sov_rockets"
+    texturefile = "gfx/interface/goals/SOV_rockets.dds"
+  }
+
 
  }
