@@ -13,3 +13,13 @@
  SOV_jet_strat_bomber_equipment_1:0 "Tupolev Tu-16"
  SOV_jet_strat_bomber_equipment_1_short:0 "Tu-16"
  SOV_jet_strat_bomber_equipment_1_desc:0 "The Tupolev Tu-16 was a twin-engined jet strategic bomber used by the Soviet Union. The Tu-16 began as a high-altitude, free-fall bomber, in the mid-1950s it was equipped to carry early Soviet cruise missiles. It has flown for more than 40 years, and the Chinese licence-built Xian H-6 remains in service with the People's Liberation Army Air Force."
+
+
+ SOV_rocket_interceptor_equipment_1:0 "Bereznay-Isayev BI-1"
+ SOV_rocket_interceptor_equipment_1_short:0 "BI-1"
+
+  SOV_rocket_interceptor_equipment_2:0 "Bereznay-Isayev BI-3"
+  SOV_rocket_interceptor_equipment_2_short:0 "BI-3"
+
+   SOV_rocket_interceptor_equipment_3:0 "Bereznay-Isayev BI-7"
+   SOV_rocket_interceptor_equipment_3_short:0 "BI-7"
