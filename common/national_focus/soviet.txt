@@ -2010,7 +2010,8 @@ focus_tree = {
 
 	focus = {
 		id = SOV_defense_of_moscow
-		icon = GFX_goal_generic_fortify_city
+		#icon = GFX_goal_generic_fortify_city
+		icon = GFX_sov_eastern_security
 		prerequisite = { focus = SOV_move_industry_to_urals }
 		available = {
 			219 = {
@@ -2406,7 +2407,8 @@ focus_tree = {
 
 	focus = {
 		id = SOV_defense_of_leningrad
-		icon = GFX_goal_generic_fortify_city
+		#icon = GFX_goal_generic_fortify_city
+		icon = GFX_sov_eastern_security
 		prerequisite = { focus = SOV_move_industry_to_urals }
 		available = {
 			195 = {
@@ -2728,7 +2730,8 @@ focus_tree = {
 
 	focus = {
 		id = SOV_defense_of_stalingrad
-		icon = GFX_goal_generic_fortify_city
+		#icon = GFX_goal_generic_fortify_city
+		icon = GFX_sov_eastern_security
 		prerequisite = {
 			focus = SOV_defense_of_moscow
 			focus = SOV_defense_of_leningrad
