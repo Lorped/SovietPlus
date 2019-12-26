@@ -60,7 +60,7 @@ country_event = {
       factor = 0
     }
     name = soviet.125.b
-    add_political_power = -75
+    add_political_power = -100
 		add_popularity = {
     	ideology = democratic
     	popularity = 0.05
@@ -107,7 +107,7 @@ country_event = {
     }
     name = soviet.126.b
     add_timed_idea = { idea = SOV_idea_purge_intellectuals  days = 120 }
-    add_political_power = -50
+    add_political_power = -75
     set_country_flag = purged_party_members2
   }
 }
@@ -188,7 +188,7 @@ country_event = {
 		name = soviet.127.b
 		set_country_flag = purged_soldiers
 
-    add_stability = -0.15
+    add_stability = -0.20
     add_political_power = -50
 
     add_timed_idea = {
@@ -310,6 +310,15 @@ country_event = {
 			remove_ideas = SOV_nikolai_yezhov
 			add_ideas = lavrentiy_beria
 			add_ideas = SOV_vyacheslav_molotov
+			add_ideas = nikita_khrushchev
+			remove_ideas = {
+				mikhail_kalinin
+				nikolai_voznesensky
+				lev_kamenev
+				grigory_zinoviev
+				nikolaj_bucharin
+				karl_radek
+			}
 		}
 	}
 }

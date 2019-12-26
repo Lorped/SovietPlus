@@ -1,22 +1,19 @@
-
-SOV_no_massive_recruiting = {
-	name = "No massive recruiting"
+Stop_recruiting_SOV_plan = {	#Soviet AI goes for service_by_requirement even at peacetime!
+	name = "Stop the recruiting , comrade Stalin"
 	desc = ""
-
 	enable = {
 		original_tag = SOV
 		OR = {
 			has_idea = disarmed_nation
 			has_idea = volunteer_only
 			has_idea = limited_conscription
-			check_variable = { manpower_k > 1000 }
+			has_manpower > 1000000
 		}
 		NOT = {
 			OR = {
 				has_war_with = GER
 				has_war_with = JAP
 				has_war_with = USA
-				has_war_with = ENG
 			}
 		}
 	}
@@ -25,30 +22,17 @@ SOV_no_massive_recruiting = {
 			has_war_with = GER
 			has_war_with = JAP
 			has_war_with = USA
-			has_war_with = ENG
 		}
-		check_variable = { manpower_k < 3000 }
+		has_manpower < 2000000
 	}
-
-
-	focus_factors = {
-
-	}
-
-	research = {
-
-	}
-
+	focus_factors = { 	}
+	research = {	}
 	ideas = {
 		service_by_requirement = -10
 	}
-	traits = {
+	traits = {	}
 
-	}
-
-	ai_strategy = {
-
-	}
+	ai_strategy = {	}
 
 	# Keep small, as it is used as a factor for some things (such as research needs)
 	# Recommended around 1.0. Useful for relation between plans
@@ -58,13 +42,11 @@ SOV_no_massive_recruiting = {
 			factor = 1.0
 		}
 	}
-
 }
 
-SOV_war_is_near = {
-	name = "War is near"
+War_is_near_SOV_plan = {	#Start recruiting a little
+	name = "Wars is near"
 	desc = ""
-
 	enable = {
 		original_tag = SOV
 		date > 1939.01.01
@@ -79,31 +61,17 @@ SOV_war_is_near = {
 			has_war_with = GER
 			has_war_with = JAP
 			has_war_with = USA
-			has_war_with = ENG
 			has_idea = limited_conscription
 			has_idea = extensive_conscription
 		}
 	}
-
-
-	focus_factors = {
-
-	}
-
-	research = {
-
-	}
-
+	focus_factors = {	}
+	research = {	}
 	ideas = {
 		limited_conscription = 10
 	}
-	traits = {
-
-	}
-
-	ai_strategy = {
-
-	}
+	traits = {	}
+	ai_strategy = {	}
 
 	# Keep small, as it is used as a factor for some things (such as research needs)
 	# Recommended around 1.0. Useful for relation between plans
@@ -113,5 +81,45 @@ SOV_war_is_near = {
 			factor = 1.0
 		}
 	}
+}
 
+War_is_now_SOV_plan = {	#Go for service_by_requirement only when needed
+	name = "War is now"
+	desc = ""
+	enable = {
+		original_tag = SOV
+		date > 1939.01.01
+		OR = {
+			has_war_with = GER
+			has_war_with = JAP
+			has_war_with = USA
+		}
+		has_idea = extensive_conscription
+		has_manpower  > 2000000
+	}
+	abort = {
+		OR = {
+			has_war_with = GER
+			has_war_with = JAP
+			has_war_with = USA
+		}
+		has_idea = extensive_conscription
+		has_manpower < 1500000
+	}
+	focus_factors = {	}
+	research = {	}
+	ideas = {
+		service_by_requirement = -10
+	}
+	traits = {	}
+	ai_strategy = {	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
 }

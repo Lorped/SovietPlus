@@ -19,6 +19,7 @@ SOV_historical_plan = {
 		SOV_defense_of_moscow
 		SOV_move_industry_to_urals
 		SOV_defense_of_leningrad
+		SOV_defense_of_stalingrad
 
 
 		#1936
@@ -70,30 +71,16 @@ SOV_historical_plan = {
 		SOV_increase_il2_production
 		SOV_military_research
 		SOV_soviet_women
+		SOV_katyusha
+		SOV_massive_production
+		SOV_operational_command
 		SOV_smersh
-		SOV_night_witches
+		SOV_guards
+		#SOV_night_witches
+		SOV_women_pilots
+		SOV_partisans
 
-		#1941
-		SOV_infrastructure_effort
-		SOV_demand_eastern_poland
-
-		#1942
-
-		SOV_heroes_of_the_union			#new
-		SOV_Next_Generation_Aircraft	#new
-		SOV_Air_Combat_Experience		#new
-				#new
-		#1943
-		SOV_heroes_of_the_union			#new
-		SOV_War_Production_Targets		#new
-		SOV_Uralvagonzavod				#new
-
-		SOV_Functional_Engineering		#new
-		SOV_research_city_experiment
-
-
-		SOV_Industrial_Mass_Production	#new
-		#1944
+		
 
 		SOV_war_with_japan
 	}
@@ -105,8 +92,7 @@ SOV_historical_plan = {
 	}
 
 	traits = {
-		# captain_of_industry = 10
-		# popular_figurehead = 5
+
 	}
 
 

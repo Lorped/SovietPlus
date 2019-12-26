@@ -157,6 +157,7 @@ soviet.57.a:0 "Dispose him and the books"
  SOV_secret_police_chief_0:0 "Efficient Executioner"
  SOV_secret_police_chief_1:0 "Prince of Terror"
  SOV_comintern_workhorse:0 "Comintern Workhorse"
+ SOV_politburo_veteran:0 "Politburo Veteran"
  SOV_trickleback:0 "Political Commissars"
  SOV_tough_negotiator:0 "Expert Negotiator"
  SOV_CAS_manufacturer:0 "CAS Designer"
@@ -296,6 +297,8 @@ soviet.57.a:0 "Dispose him and the books"
  SOV_increase_il2_production_desc:0 "Our Red Army now needs IL-2 aircraft like the air it breathes, like the bread it eats. I ask you not to try the government's patience, and demand that you manufacture more ILs. This is my final warning.\n-- Stalin"
  massive_air_production:0 "Increase Aircraft Production"
  massive_air_production_desc:0 "The Red Army needs aircraft as the air it breathes"
+ massive_war_production:0 "Massive Industrial Production"
+ massive_war_production_desc:0 "Every effort must be aimed toward the victory"
 
  SOV_military_research:0 "Military Research"
  SOV_military_research_desc:0 "Our research centers must expand, increasing the ability to produce advanced technologies. The technological advantage can be translated into a military advantage in the field.""
@@ -315,7 +318,9 @@ soviet.57.a:0 "Dispose him and the books"
  SOV_leningrad_fort_22_b:0 " and Karjala."
 
  SOV_the_great_patriotic_war:0 "The Great Patriotic War"
-  SOV_the_great_patriotic_war_w:0 "The Great Patriotic War"
+ SOV_the_great_patriotic_war_w:0 "The Great Patriotic War"
+ SOV_the_great_patriotic_war_2:0 "The Great Patriotic War"
+ SOV_the_great_patriotic_war_2w:0 "The Great Patriotic War"
 
 
  SOV_relocate_industry_from_dnipropetrovsk:0 "Relocate Industry from Dnipropetrovsk"
@@ -351,6 +356,8 @@ SOV_soviet_women_desc:0 "I'm a sniper. A woman sniper, because in our country wo
 
 SOV_night_witches:0 "The Night Witches"
 SOV_night_witches_desc:0 "Major Marina Raskova asked the Comrade Stalin to obtain a permission to form female combat units. The 588th Night Bomber Regiment, the \"Night Witches\" was one of them".
+SOV_women_pilots:0 "The Night Witches"
+SOV_women_pilots_desc:0 "Major Marina Raskova asked the Comrade Stalin to obtain a permission to form female combat units. The 588th Night Bomber Regiment, the \"Night Witches\" was one of them".
 
 SOV_defense_of_stalingrad:0 "Defence of Stalingrad"
 SOV_defense_of_stalingrad_desc:0 "With the enemy advancing toward the Volga, we have to prepare a strong defensive line to protect tha Caucasus olifiled and the new industrial regions of the Urals"
@@ -360,3 +367,18 @@ soviet_partisans:0 "Partisans activity"
 soviet_partisans_desc:0 "Civilians in the occupied territories tirelessly strike the enemy rear."
 SOV_partisans:0 "Soviet Partisans"
 SOV_partisans_desc:0 "In the occupied territories, Soviet citizens organize themselves, forming partisan groups that tirelessly hit the enemy lines of communication. This land will never be fascist."
+
+SOV_operational_command:0 "Restructuring the Fronts"
+SOV_operational_command_desc:0 "The war is not proceeding well, a restructuring of our armies and a reassignment to the various operational fronts is necessary. A Front will be mobilized for a specific operation, after which it could be reformed and tasked with another operation."
+
+SOV_guards:0 "The Guards"
+SOV_guards_desc:0 "In the past times, the Guards status were awarded to the tsarist elite units. We have to bring this tradition back, awarding this name and the correspondig elite status, to the divisions of the Red Army which have distinguished themselves in service."
+
+SOV_katyusha:0 "The Katyusha Launchers"
+SOV_katyusha_desc:0 "Our engineers in Voronezh have a simple but effective idea, consisting of racks of parallel rails on which rockets can be mounted. This can be applied to trucks, artillery tractors, tanks, and even armoured trains."
+
+SOV_rockets:0 "Soviet Rocketry"
+SOV_rockets_desc:0 "Our scientists have been studying a different type of reactive propulsion engine since early '30s. It is the time to concretize these theoretical studies into something useful for the war effort."
+
+SOV_massive_production:0 "Massive Industrial Production"
+SOV_massive_production_desc:0 "The Great Patriotic War requires that every effort be concentrated in war production. By improving the production lines and taking advantage of better manufacturing techniques, we will be able to achieve even higher production quotas."

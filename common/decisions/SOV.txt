@@ -563,8 +563,8 @@ SOV_industry_relocation = {
     available = {
       202 = { #Kiev
         is_owned_and_controlled_by = SOV
-        industrial_complex > 1
-        arms_factory > 4
+        industrial_complex > 0
+        arms_factory > 3
       }
       402 = { is_owned_and_controlled_by = SOV } #Akhtubinsk
     }
@@ -627,29 +627,29 @@ SOV_industry_relocation = {
         202 = { #Kiev
           remove_building = {
             type = industrial_complex
-            level = 2
+            level = 1
           }
           remove_building = {
             type = arms_factory
-            level = 5
+            level = 4
           }
         }
         579 = { #Salekland
           add_extra_state_shared_building_slots = 7
           add_building_construction = {
             type = industrial_complex
-            level = 2
+            level = 1
             instant_build = yes
           }
           add_building_construction = {
             type = arms_factory
-            level = 5
+            level = 4
             instant_build = yes
           }
 
           hidden_effect = {
-            damage_building = { type = industrial_complex damage = 0.2 }
-            damage_building = { type = arms_factory damage = 0.5 }
+            damage_building = { type = industrial_complex damage = 0.1 }
+            damage_building = { type = arms_factory damage = 0.4 }
           }
         }
         custom_effect_tooltip = relocate_industry_repair

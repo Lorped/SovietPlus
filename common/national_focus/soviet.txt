@@ -2130,6 +2130,28 @@ focus_tree = {
 	}
 
 	focus = {
+		id = SOV_massive_production
+		icon = GFX_sov_massive_production
+		cost = 10
+		prerequisite = {
+			focus = SOV_tankograd
+		}
+		x = 0
+		y = 1
+		relative_position_id = SOV_tankograd
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 1.5
+				has_war = yes
+			}
+		}
+		completion_reward = {
+			add_ideas = massive_war_production
+		}
+	}
+
+	focus = {
 		id = SOV_establish_the_stavka
 		icon = GFX_sov_establish_the_stavka
 		cost = 7.16
@@ -2502,15 +2524,27 @@ focus_tree = {
 		}
 		relative_position_id = SOV_establish_the_stavka
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = SOV_the_great_patriotic_war
-				add_idea = SOV_the_great_patriotic_war_w
+			if = {
+				limit = { has_idea = SOV_the_great_patriotic_war }
+				swap_ideas = {
+					remove_idea = SOV_the_great_patriotic_war
+					add_idea = SOV_the_great_patriotic_war_w
+				}
 			}
+			if = {
+				limit = { has_idea = SOV_the_great_patriotic_war_2 }
+				swap_ideas = {
+					remove_idea = SOV_the_great_patriotic_war_2
+					add_idea = SOV_the_great_patriotic_war_2w
+				}
+			}
+
 		}
 	}
 
 	focus = {
-		id = SOV_night_witches
+		#id = SOV_night_witches
+		id = SOV_women_pilots
 		icon = GFX_sov_night_witches
 		prerequisite = { focus = SOV_soviet_women }
 		x = 0
@@ -2648,7 +2682,7 @@ focus_tree = {
 			create_field_marshal = {
 				name = "Ivan Konev"
 				id = 408
-					picture = "Portrait_Soviet_Ivan_Konev.dds"
+				picture = "Portrait_Soviet_Ivan_Konev.dds"
 				traits = { armor_officer harsh_leader politically_connected }
 				skill = 5
 
@@ -2657,6 +2691,38 @@ focus_tree = {
 				planning_skill = 2
 				logistics_skill = 5
 			}
+		}
+	}
+
+	focus = {
+		id = SOV_guards
+		icon = GFX_sov_guards
+		cost = 7.16
+		prerequisite = {
+			focus = SOV_operational_command
+		}
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1.5
+		}
+		relative_position_id = SOV_operational_command
+		completion_reward = {
+			if = {
+				limit = { has_idea = SOV_the_great_patriotic_war }
+				swap_ideas = {
+					remove_idea = SOV_the_great_patriotic_war
+					add_idea = SOV_the_great_patriotic_war_2
+				}
+			}
+			if = {
+				limit = { has_idea = SOV_the_great_patriotic_war_w }
+				swap_ideas = {
+					remove_idea = SOV_the_great_patriotic_war_w
+					add_idea = SOV_the_great_patriotic_war_2w
+				}
+			}
+
 		}
 	}
 
@@ -3003,6 +3069,7 @@ focus_tree = {
 		relative_position_id = SOV_far_east_fortification
 		available = {
 		country_exists = JAP
+			has_army_manpower = { size > 1500000 }
 			custom_trigger_tooltip = {
 				tooltip = SOV_has_not_officers_purged_tt
 				NOT = { has_idea = officers_purged }
@@ -3015,6 +3082,10 @@ focus_tree = {
 				NOT = { has_idea = officers_purged_8 }
 				NOT = { has_idea = officers_purged_9 }
 				NOT = { has_idea = officers_purged_10 }
+			}
+			if = {
+				limit = { has_war_with = GER }
+				GER = { has_capitulated = yes }
 			}
 		}
 		will_lead_to_war_with = JAP

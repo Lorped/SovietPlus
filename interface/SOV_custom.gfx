@@ -371,5 +371,19 @@ spriteTypes = {
     texturefile = "gfx/interface/goals/SOV_rockets.dds"
   }
 
+  spriteType = {
+    name = "GFX_sov_guards"
+    texturefile = "gfx/interface/goals/SOV_guards.dds"
+  }
+
+  spriteType = {
+    name = "GFX_sov_massive_production"
+    texturefile = "gfx/interface/goals/SOV_massive_production.dds"
+  }
+
+  spriteType = {
+    name = "GFX_idea_massive_war_production"
+    texturefile = "gfx/interface/ideas/idea_massive_war_production.dds"
+  }
 
  }

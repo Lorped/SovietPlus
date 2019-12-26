@@ -17,8 +17,10 @@ The mod should be played with historical focus on.
 * Fixed the correct order of the Great Trials, and their historical outcomes
 * Rokossowsky purged and then rehabilitated
 * Finland never give up Karjala without fighting (if AI controlled)
-* Revised the jet names (and pics)
+* Revised the jet names (and pics) and added pics for rocket interceptors (BI-1)
 * You can relocate industries from more states (if you have the PP)
+* FIN goes to war for Karjela when SOV start losing terrain after Barbarossa (5% capitulation)
+* SOV AI has no hardocoded block on reasearch by dates but related to stored equipment
 
 
 ## QA
@@ -44,4 +46,4 @@ Yes, it is. The Red Army has a terrible penalty for the first three months, and 
 With this mod you can't, sorry.
 
 ### Why Finland doesn't join Axis but starts a new war alone in 1941?
-Because joining axis may lead to strange AI behaviors, like moving there 2 hundreds GER division..
+Because joining axis may lead to strange AI behaviors, like moving there 2 hundreds GER division there and depleting the main front..
