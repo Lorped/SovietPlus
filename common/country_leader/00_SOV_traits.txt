@@ -41,7 +41,14 @@ leader_traits = {
 		}
 	}
 
+	SOV_air_chief_reform_3 = {  # Rate at which air experience is gained increases by 15%
+		sprite = 1
+		experience_gain_air_factor = 0.15
 
+		ai_will_do = {
+			factor = 3
+		}
+	}
 
 	SOV_secret_police_chief_0 = {
 		sprite = 13

@@ -421,7 +421,7 @@ focus_tree = {
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+
 
 		complete_tooltip = {
 			208 = {
@@ -3083,16 +3083,16 @@ focus_tree = {
 	focus = {
 			id = SOV_claims_on_poland
 			icon = GFX_sov_eastern_poland
-			prerequisite = { focus = SOV_baltic_security }
+			prerequisite = { focus = SOV_stalin_constitution }
 			x = 1
 			y = 2
 			relative_position_id = SOV_baltic_security
 			cost = 10
 			ai_will_do = {
-				factor = 10
+				factor = 0
 				modifier = {
 					factor = 0
-					date < 1939.1.1
+					date > 1942.1.1
 				}
 				modifier = {
 					factor = 200

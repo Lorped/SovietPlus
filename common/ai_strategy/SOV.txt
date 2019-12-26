@@ -41,16 +41,51 @@ SOV_unit_production = {
 	###
 	##  Equipment production
 	###
+
+	################ AIR ###################
+
 	ai_strategy = {
 		type = equipment_production_factor
 		id = fighter
-		value = 30	## was 20
+		value = 50
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = cas
+		value = 20 ##
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = tactical_bomber
+		value = 10 ## was 20
 	}
 	ai_strategy = {
 		type = equipment_variant_production_factor
-		id = support_equipment
-		value = 30
+		id = heavy_fighter_equipment
+		value = -90
 	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = naval_bomber
+		value = -80
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = strat_bomber_equipment
+		value = -100  ## again .. when nuclear ???
+	}
+	ai_strategy = {
+		type = air_factory_balance
+		value = 25
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = fighter
+		value = 20
+	}
+
+	############# INF ##################
+
 	ai_strategy = {
 		type = equipment_production_factor
 		id = infantry
@@ -58,8 +93,8 @@ SOV_unit_production = {
 	}
 	ai_strategy = {
 		type = equipment_variant_production_factor
-		id = motorized_equipment
-		value = 25	## too high ??
+		id = support_equipment
+		value = 30
 	}
 	ai_strategy = {
 		type = equipment_production_factor
@@ -76,21 +111,22 @@ SOV_unit_production = {
 		id = anti_tank
 		value = 20
 	}
+
+	############## ARM + MOTO ############
+
 	ai_strategy = {
 		type = equipment_production_factor
 		id = armor
 		value = 5	# will be increased later
 	}
+
+
 	ai_strategy = {
 		type = equipment_variant_production_factor
-		id = strat_bomber_equipment
-		value = -100  ## again .. when nuclear ???
+		id = motorized_equipment
+		value = 30	## too high ??
 	}
-	ai_strategy = {
-		type = equipment_production_min_factories
-		id = fighter
-		value = 20
-	}
+
 }
 
 
@@ -245,6 +281,69 @@ SOV_increase_mspart_production = {
 }
 
 
+######################
+# CIC - MIC
+######################
+
+build_cics_not_mics_comrade = {
+	enable = {
+		tag = SOV
+		date < 1939.06.01
+		has_war = no
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = building_target
+		id = industrial_complex
+		value = 900
+	}
+	ai_strategy = {
+		type = added_military_to_civilian_factory_ratio
+		value = -150
+	}
+}
+
+
+SOV_start_building_MIL = {   # come se non ci fosse un domani...
+	enable = {
+		tag = SOV
+		date > 1939.6.1
+	}
+	ai_strategy = {
+		type = added_military_to_civilian_factory_ratio
+		value = 9000
+	}
+	ai_strategy = {
+		type = building_target
+		id = arms_factory
+		value = 9000
+	}
+}
+
+
+##############################################
+#  SOV NO DOCKYARD if AT WAR
+#################################################
+SOV_dockyards_useless_now = {
+	enable = {
+		tag = SOV
+		has_war_with = GER
+	}
+	abort = {
+		NOT = {
+			has_war_with = GER
+		}
+	}
+	ai_strategy = {
+		type = dockyard_to_military_factory_ratio
+		value = 0
+	}
+	ai_strategy = {
+		type = building_target
+		id = dockyard
+		value = -1000
+	}
+}
 
 
 

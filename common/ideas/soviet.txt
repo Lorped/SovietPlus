@@ -1371,12 +1371,8 @@ ideas = {
 			allowed = {
 				original_tag = SOV
 			}
-			available =
-			{
-				NOT = { has_country_flag = purge_2_group_a }
-			}
 			# Not Purged, but imprisoned
-			traits = { air_chief_reform_3 }
+			traits = { SOV_air_chief_reform_3 }
 			ai_will_do = {
 				factor = 1
 			}
@@ -1401,9 +1397,7 @@ ideas = {
 				original_tag = SOV
 			}
 			available =
-			{
-				NOT = { has_country_flag = purge_2_group_a }
-			}
+
 			# PURGED
 			traits = { air_chief_safety_2 } # Could also have reform
 			ai_will_do = {
@@ -1416,9 +1410,7 @@ ideas = {
 				original_tag = SOV
 			}
 			available =
-			{
-				NOT = { has_country_flag = purge_2_group_a }
-			}
+
 			# PURGED
 			traits = { air_chief_all_weather_2 }
 			ai_will_do = {
@@ -1581,7 +1573,6 @@ ideas = {
 			}
 			available =
 			{
-				NOT = { has_country_flag = purge_2_group_a }
 				hidden_trigger = {
 					NOT = {
 						any_other_country = {
