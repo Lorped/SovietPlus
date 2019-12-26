@@ -79,45 +79,88 @@ if = {
 
 1939.1.1 = {
 
-	add_political_power = 1198
+	add_political_power = 150
 
 	#adding ministers, already have 2 set
+
 	add_ideas = {
+		# home_of_revolution
+
+		lavrentiy_beria
 		SOV_vyacheslav_molotov
-		stalingrad_tractor_factory
-		tula_arms_plant
-		vladimir_kasatonov
+		nikita_khrushchev
+
+		alexander_novikov
+		boris_shaposhnikov
+
+		idea_stakanovite
+		SOV_soviet_propaganda
+		nkvd
+		militarized_schools
+		SOV_idea_third_five_year_plan_2
+		officers_purged_4
+		peoples_commissariat_focus
+		volunteer_only
+		morozov_design_bureau
+
+		SOV_idea_third_five_year_plan_2
+
 
 		#laws
 		war_economy
-		extensive_conscription
+		limited_conscription
+		limited_exports
 	}
 
 	#purge stuff
-	unlock_national_focus = SOV_great_purge
 	remove_ideas = trotskyite_plot
-	add_ideas = trotskyite_plot_purged
+
 	set_stability = 0.75
 	add_timed_idea = {
-		idea = officers_purged_6
+		idea = officers_purged_4
 		days = 730
 	}
 	country_event = { id = soviet.42 days = 146 }
-	set_country_flag = purged_party_members
+	set_country_flag = SOV_purge_started
+	set_country_flag = SOV_The_Great_Purge
+	set_country_flag = purged_zinoviev
+	set_country_flag = purged_kamenev
+	set_country_flag = purged_radek
 	set_country_flag = purged_generals
-	remove_ideas = mikhail_tukhachevsky
+	set_country_flag = purged_rokossovsky
+	set_country_flag = purged_bucharin
+	set_country_flag = purged_yezhov
+	set_country_flag = SOV_purged_4
+
+	remove_ideas = SOV_nikolai_yezhov
+
 	remove_unit_leader = 401
+	remove_ideas = alexander_yegorov
+	remove_ideas = lev_kamenev
+	remove_ideas = grigory_zinoviev
+	remove_ideas = karl_radek
+	remove_unit_leader = 401 #mikhail_tukhachevsky, field marshal
+	remove_unit_leader = 413 #yegorov, field marshal
+	remove_unit_leader = 414 #blucher, field marshal
+	remove_unit_leader = 415 #primakov, general
+	remove_unit_leader = 416 #kork, general
+	remove_unit_leader = 402 #konstantin_rokossovsky, general  ## we will add later
+	remove_ideas = mikhail_tukhachevsky
 	remove_ideas = alexander_yegorov
 	remove_ideas = vasily_blucher
 	remove_ideas = pyotr_smirnov
 	remove_ideas = mikhail_frinovsky
-	set_country_flag = purge_2_group_a
-	remove_ideas = SOV_nikolai_yezhov
-	remove_ideas = yakov_smushkevich
-	remove_ideas = pavel_rychagov
-	remove_ideas = gordey_levchenko
-	remove_unit_leader = 406
-	remove_ideas = alexander_novikov
+	remove_ideas = nikolaj_bucharin
+
+	remove_ideas = trotskyite_plot
+
+	##
+	remove_ideas = SOV_idea_2_5_year_plan
+	remove_ideas = SOV_foreign_production
+	remove_ideas = SOV_foreign_production
+
+
+
 	set_global_flag = SOV_fourth_international_fired #news happened 1938
 	#purge stuff end
 
@@ -168,23 +211,31 @@ if = {
 	}
 	#Germany soviet treaty end
 
-	complete_national_focus = SOV_finish_five_year_plan
-	complete_national_focus = SOV_move_industry_to_urals
-	complete_national_focus = SOV_defense_of_moscow
-	complete_national_focus = SOV_production_effort
-	unlock_national_focus = SOV_stalin_constitution
-	unlock_national_focus = SOV_socialist_realism
-	complete_national_focus = SOV_nkvd_primacy
-	complete_national_focus = SOV_nkvd_divisions
-	complete_national_focus = SOV_improve_railway
+	complete_national_focus = SOV_finish_the_five_year_plan
+	complete_national_focus = SOV_strength_gosplan
+	complete_national_focus = SOV_focus_on_heavy_industry
+	complete_national_focus = SOV_improve_infrastructure
+	#complete_national_focus = SOV_spanish_war
+	complete_national_focus = SOV_add_production_quota
+	complete_national_focus = SOV_stakanovite
+	complete_national_focus = SOV_socialist_science
+	complete_national_focus = SOV_great_purge
+	complete_national_focus = SOV_air_volunteers
+	complete_national_focus = SOV_positive_heroism
+	complete_national_focus = SOV_operation_zet
+	complete_national_focus = SOV_nkvd_power
+	complete_national_focus = SOV_stalin_constitution
+	complete_national_focus = SOV_increase_rubber
+	complete_national_focus = SOV_transsiberian
+	complete_national_focus = SOV_magnitogorsk
+	complete_national_focus = SOV_komsomol
+	complete_national_focus = SOV_third_five_year_plan
+	complete_national_focus = SOV_closed_cities_network
 	complete_national_focus = SOV_transpolar_flights
-	complete_national_focus = SOV_ocean_going_navy
 	complete_national_focus = SOV_peoples_commissariat
-	complete_national_focus = SOV_anti_fascist_diplomacy
-	complete_national_focus = SOV_improve_stalin_line
-	complete_national_focus = SOV_claims_on_baltic
+	complete_national_focus = SOV_far_east_fortification
+	complete_national_focus = SOV_morozov
 
-	#Soviet starts with 1 less focus, too many branches
 
 	oob = "SOV_1939"
 	if = {

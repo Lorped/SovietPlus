@@ -104,9 +104,9 @@ bookmarks = {
 				nkvd_2
 			}
 			focuses = {
-				SOV_move_industry_to_urals
-				SOV_claims_on_baltic
 				SOV_great_patriotic
+				SOV_move_industry_to_urals
+				SOV_soviet_women
 			}
 		}
 

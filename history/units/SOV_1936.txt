@@ -55,7 +55,7 @@ division_template = {
 		motorized = { x = 0 y = 2 }
 		motorized = { x = 1 y = 0 }
 		motorized = { x = 1 y = 1 }
-		mot_artillery_brigade = { x = 2 y = 0 }
+		motorized = { x = 1 y = 2 }
 	}
 	support = {
 		#recon = { x = 0 y = 0 } 		# Recon bn had 16x L tanks, 45 ACs #Eng and recon removed and they seem rather OP. Could revisit if balance changes
@@ -124,7 +124,7 @@ division_template = {
 ## }
 
 division_template = {
-	name = "Diviziya Morskoi Pekhoty"
+	name = "Morskoi Pekhoty Polk"
 	division_names_group = SOV_MAR_01
 
 	regiments = {
@@ -150,7 +150,7 @@ units = {
 			name_order = 1
 		}
 		location = 149
-		division_template = "Diviziya Morskoi Pekhoty"
+		division_template = "Morskoi Pekhoty Polk"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 	}
@@ -160,7 +160,7 @@ units = {
 			name_order = 2
 		}
 		location = 3686
-		division_template = "Diviziya Morskoi Pekhoty"
+		division_template = "Morskoi Pekhoty Polk"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
 	}

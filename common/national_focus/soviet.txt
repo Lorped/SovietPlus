@@ -2615,6 +2615,33 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			if = {
+				limit = {
+					not = { has_tech = motorized_rocket_unit  }
+				}
+				set_technology = {
+					motorized_rocket_unit = 1
+				}
+				division_template = {
+					name = "Raketnaya Artilleriya Diviziya"
+					division_names_group = SOV_GRA_01
+					regiments = {
+						motorized = { x = 0 y = 0 }
+						motorized = { x = 0 y = 1 }
+						motorized = { x = 1 y = 0 }
+						motorized = { x = 1 y = 1 }
+						motorized_rocket_brigade = { x = 2 y = 0 }
+						motorized_rocket_brigade = { x = 2 y = 1 }
+						motorized_rocket_brigade = { x = 2 y = 2 }
+						motorized_rocket_brigade = { x = 2 y = 3 }
+					}
+					support = {
+						recon = { x = 0 y = 0 }
+						engineer = { x = 0 y = 1 }
+					}
+					priority = 2
+				}
+			}
 			add_tech_bonus = {
 				bonus = 1
 				uses = 2
@@ -2668,30 +2695,17 @@ focus_tree = {
 
 		completion_reward = {
 			swap_ideas = { remove_idea = stavka add_idea = stavka2 }
-			create_field_marshal = {
-				name = "Georgy Zhukov"
-				id = 410
-				picture = "Portrait_Soviet_Gregory_Zhukov.dds"
-				traits = { expert_delegator thorough_planner brilliant_strategist aggressive_assaulter }
-				skill = 4
-
-				attack_skill = 4
-				defense_skill = 3
-				planning_skill = 4
-				logistics_skill = 3
+			every_unit_leader = {
+				limit = {
+					OR = {
+						has_id = 408
+						has_id = 410
+						has_id = 499
+					}
+				}
+				promote_leader = yes
 			}
-			create_field_marshal = {
-				name = "Ivan Konev"
-				id = 408
-				picture = "Portrait_Soviet_Ivan_Konev.dds"
-				traits = { armor_officer harsh_leader politically_connected }
-				skill = 5
 
-				attack_skill = 4
-				defense_skill = 5
-				planning_skill = 2
-				logistics_skill = 5
-			}
 		}
 	}
 
