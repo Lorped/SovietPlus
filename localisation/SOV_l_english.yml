@@ -382,3 +382,5 @@ SOV_rockets_desc:0 "Our scientists have been studying a different type of reacti
 
 SOV_massive_production:0 "Massive Industrial Production"
 SOV_massive_production_desc:0 "The Great Patriotic War requires that every effort be concentrated in war production. By improving the production lines and taking advantage of better manufacturing techniques, we will be able to achieve even higher production quotas."
+
+rocket_art_bonus:0 "Rocket Artillery bonus"

@@ -889,6 +889,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			add_tech_bonus = {
+				name = air_doc_bonus
 				bonus = 1.0
 				uses = 1
 				category = air_doctrine
@@ -921,6 +922,7 @@ focus_tree = {
 				category = light_air
 			}
 			add_tech_bonus = {
+				name = air_doc_bonus
 				bonus = 1.0
 				uses = 1
 				category = air_doctrine
@@ -1013,6 +1015,7 @@ focus_tree = {
 			completion_reward = {
 				add_ideas = leningrad_polytechnical_institute
 				add_tech_bonus = {
+					name = electronics_bonus
 					category = electronics
 					uses = 2
 					bonus = 1
@@ -1407,7 +1410,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_tech_bonus = {
-				name = CAS2_bonus
+				name = CAS_bonus
     		bonus = 1
     		uses = 1
 				category = cas_bomber
@@ -2347,6 +2350,7 @@ focus_tree = {
 		completion_reward = {
 			#custom_effect_tooltip = SOV_smersh_tt
 			add_tech_bonus = {
+				name = codebreaking_bonus
 				bonus = 0.5
 				uses = 2
 				category = encryption_tech
@@ -2565,6 +2569,7 @@ focus_tree = {
 				can_generate_female_aces = yes
 			}
 			add_tech_bonus = {
+				name = bomber_bonus
 				category = tactical_bomber
 				uses = 1
 				bonus = 0.5
@@ -2643,6 +2648,7 @@ focus_tree = {
 				}
 			}
 			add_tech_bonus = {
+				name = rocket_art_bonus
 				bonus = 1
 				uses = 2
 				technology = rocket_artillery
@@ -2669,6 +2675,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
+				name = jet_rocket_bonus
 				bonus = 1
 				uses = 1
 				technology = experimental_rockets
