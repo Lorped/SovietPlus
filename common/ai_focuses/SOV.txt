@@ -4,8 +4,8 @@ ai_focus_defense_SOV = {
 		defensive = 5.0
 		radar_tech = 1.0
 		construction_tech = 2.0
-		artillery = 30.0
-		rocketry = 10.0
+		artillery = 25.0
+		rocketry = 20.0
 	}
 }
 
@@ -39,14 +39,14 @@ ai_focus_military_equipment_SOV = {
 ai_focus_military_advancements_SOV = {
 	research = {
 		armor = 75.0
-		 cat_light_armor = 70.0
+		 cat_light_armor = 60.0
      cat_medium_armor = 80.0
 		 cat_heavy_armor = 70.0
 
 		infantry_weapons = 10.0
 		jet_technology = 5.0
 		land_doctrine = 100.0
-		rocketry = 20.0
+		rocketry = 25.0
 		radar_tech = 13.0
 		encryption_tech = 7.5
 		decryption_tech = 7.5

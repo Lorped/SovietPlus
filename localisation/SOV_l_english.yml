@@ -309,8 +309,8 @@ soviet.57.a:0 "Dispose him and the books"
  SOV_t34:0 "The T-34"
  SOV_t34_desc:0 "Mikhail Koshkin's masterpiece, the T-34, has an unprecedented combination of firepower, mobility, protection and ruggedness. its full implementation in production should start as soon as possible."
 
- SOV_defense_of_leningrad:0 "Defence of Leningrad"
- SOV_defense_of_leningrad_desc:0 "Since the tzar Peter the Great, Leningrad is our gate to the Baltic. It cannot fall at any cost, every possible defence must be erected to protect it."
+ SOV_defense_of_leningrad:0 "defense of Leningrad"
+ SOV_defense_of_leningrad_desc:0 "Since the tzar Peter the Great, Leningrad is our gate to the Baltic. It cannot fall at any cost, every possible defense must be erected to protect it."
  SOV_defense_of_leningrad_tt:0 "Adds [Root.FortsForleningrad] in and around Lenigrad[Root.FortsForleningradB]"
  SOV_leningrad_fort_16:0 "§Y16 Land forts§!"
  SOV_leningrad_fort_16_b:0 "."
@@ -359,7 +359,7 @@ SOV_night_witches_desc:0 "Major Marina Raskova asked the Comrade Stalin to obtai
 SOV_women_pilots:0 "The Night Witches"
 SOV_women_pilots_desc:0 "Major Marina Raskova asked the Comrade Stalin to obtain a permission to form female combat units. The 588th Night Bomber Regiment, the \"Night Witches\" was one of them".
 
-SOV_defense_of_stalingrad:0 "Defence of Stalingrad"
+SOV_defense_of_stalingrad:0 "defense of Stalingrad"
 SOV_defense_of_stalingrad_desc:0 "With the enemy advancing toward the Volga, we have to prepare a strong defensive line to protect tha Caucasus olifiled and the new industrial regions of the Urals"
 SOV_defense_of_stalingrad_tt:0 "Adds a total of §Y70 Land forts§! along the eastern shore of Volga River.\nYou must control the affected provinces when finishing this focus, for the effects to apply."
 

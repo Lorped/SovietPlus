@@ -57,13 +57,13 @@ SOV_historical_plan = {
 
 		SOV_morozov
 		SOV_leningrad_institute
-		SOV_build_molotov_line
-		SOV_improve_stalin_line
 
 		SOV_il2
 		SOV_t34
 		SOV_tula
 		SOV_progress_cult
+		SOV_build_molotov_line
+		SOV_improve_stalin_line
 
 
 		SOV_establish_the_stavka
@@ -80,7 +80,7 @@ SOV_historical_plan = {
 		SOV_women_pilots
 		SOV_partisans
 
-		
+
 
 		SOV_war_with_japan
 	}

@@ -17,8 +17,8 @@ SOV_unit_production = {
 	ai_strategy = {	type = role_ratio		id = cavalry			value = 0		}
 	ai_strategy = {	type = role_ratio		id = mountaineers	value = 2		}
 	ai_strategy = {	type = role_ratio		id = motorized		value = 10	}
-	ai_strategy = {	type = role_ratio		id = armor				value = 5	  } ##starting low
-	ai_strategy = {	type = role_ratio		id = infantry			value = 78	}
+	ai_strategy = {	type = role_ratio		id = armor				value = 10  } ##starting low
+	ai_strategy = {	type = role_ratio		id = infantry			value = 73	}
 
 	###
 	# Air unit_ratio
@@ -186,9 +186,9 @@ SOV_higher_armor_tank_production = {
 		}
 	}
 
-	ai_strategy = {	type = role_ratio		id = motorized		value = 15	}
+	ai_strategy = {	type = role_ratio		id = motorized		value = 20	}
 	ai_strategy = {	type = role_ratio		id = armor				value = 25	}
-	ai_strategy = {	type = role_ratio		id = infantry			value = 63	}
+	ai_strategy = {	type = role_ratio		id = infantry			value = 53	}
 
 	ai_strategy = {	type = equipment_variant_production_factor	id = motorized_equipment		value = 40	}
 	ai_strategy = {	type = equipment_variant_production_factor	id = medium_tank_equipment	value = 180	}

@@ -632,7 +632,7 @@ motorized_SOV = {
 			}
 			regiments = {
 				motorized = 7
-				motorized_artillery_brigade = 2
+				mot_artillery_brigade = 2
 			}
 		}
 
@@ -640,7 +640,7 @@ motorized_SOV = {
 			motorized
 			artillery_brigade
 			motorized_rocket_brigade
-			motorized_artillery_brigade
+			mot_artillery_brigade
 
 			engineer
 			recon
@@ -691,7 +691,7 @@ motorized_SOV = {
 			mechanized
 			light_sp_artillery_brigade
 			medium_sp_artillery_brigade
-			motorized_artillery_brigade
+			mot_artillery_brigade
 			motorized_rocket_brigade
 
 			engineer
