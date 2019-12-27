@@ -441,3 +441,29 @@ country_event = {
 		add_political_power = -25
 	}
 }
+country_event = {
+	id = soviet.59
+	title = soviet.59.t
+	desc = soviet.59.d
+	picture = GFX_report_event_vvs_scandal
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SOV
+		date > 1941.04.02
+	}
+
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = soviet.59.a
+		remove_ideas = pavel_rychagov
+		remove_ideas = yakov_smushkevich
+		air_experience = -25
+		add_political_power = -10
+		hidden_effect = {
+			set_country_flag = vvs_scandal
+		}
+	}
+}

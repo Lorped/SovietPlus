@@ -137,7 +137,11 @@
 
   soviet.120.t:0 "Operation Barbarossa"
   soviet.120.d:0 "The German army's sudden attack took our forces off guard. It will be difficult to regain control of military operations, and for a few weeks we will only have to resist and reorganize"
-  soviet.120.a:0 "Comrade Stalin will not be happy"
+  soviet.120.a:0 "Activate every division of the Red Army"
+
+  soviet.121.t:0 "Scandal inside the VVS"
+  soviet.121.d:0 "A Politburo inquiry into the high accident rate in the Air Forces asked for the removal of the VVS High Commanders. Furthermore, a German Junkers Ju.52 just landed in Moscow, undetected by the VVS beforehand: unacceptable!"
+  soviet.121.a:0 "Incompetence is a crime against the state"
 
   finland.89.t:0 "Retake our lands"
   finland.89.d:0 "The soviets are fighting against the Germany, we can retake our core territories"
@@ -384,6 +388,7 @@
   purged_bucharin:0 "Purged by Stalin"
   purged_generals:0 "Purged by Stalin"
   zhukov_available:0 "Georgy Zhukov is a general"
+  vvs_scandal:0 "Purged by Stalin"
 
   SOV_veteran_communist:0 "Veteran Communist"
   SOV_secret_police_chief_0:0 "Efficient Executioner"
