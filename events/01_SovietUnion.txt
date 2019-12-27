@@ -55,7 +55,7 @@ country_event = {
 	id = soviet.120
 	title = soviet.120.t
 	desc = soviet.120.d
-	picture = GFX_report_event_soviet_soldiers
+	picture = GFX_report_event_barbarossa
 
 	fire_only_once = yes
 

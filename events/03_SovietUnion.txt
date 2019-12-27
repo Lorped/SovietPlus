@@ -396,3 +396,48 @@ country_event = {
 		add_political_power = -50
 	}
 }
+
+country_event = {
+	id = soviet.57
+	title = soviet.57.t
+	desc = soviet.57.d
+	picture = GFX_report_event_stalin_meeting
+
+	fire_only_once = no
+
+	trigger = {
+		tag = SOV
+		has_idea = SOV_idea_purge_time
+	}
+
+	mean_time_to_happen = { days = 360 }
+
+	option = {
+		name = soviet.57.a
+		ai_chance = { factor = 100 }
+		add_stability = 0.04
+		add_political_power = -50
+	}
+}
+
+country_event = {
+	id = soviet.58
+	title = soviet.58.t
+	desc = soviet.58.d
+	picture = GFX_report_event_purge_trial_2
+
+	fire_only_once = no
+
+	trigger = {
+		tag = SOV
+		has_idea = SOV_idea_purge_time
+	}
+
+	mean_time_to_happen = { days = 220 }
+
+	option = {
+		name = soviet.58.a
+		ai_chance = { factor = 100 }
+		add_political_power = -25
+	}
+}

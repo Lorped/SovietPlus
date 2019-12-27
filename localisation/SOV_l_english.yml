@@ -1,386 +1,414 @@
 ﻿l_english:
- SOV_idea_2_5_year_plan:0 "The second Five-Year Plan"
- SOV_idea_2_5_year_plan_desc:0 "The second Five-Year Plan is an essential step in the modernization of our country. Every effort must be aimed at achieving the set goals, in the established times."
- SOV_idea_2_5_year_plan_CIC:0 "The second Five-Year Plan (industrial focus)"
- SOV_idea_2_5_year_plan_CIC_desc:0 "The second Five-Year Plan is an essential step in the modernization of our country. Every effort must be aimed at achieving the set goals, in the established times."
- SOV_idea_2_5_year_plan_MIL:0 "The second Five-Year Plan (mixed focus)"
- SOV_idea_2_5_year_plan_MIL_desc:0 "The second Five-Year Plan is an essential step in the modernization of our country. Every effort must be aimed at achieving the set goals, in the established times."
+
+####### IDEAS ############
+  SOV_idea_2_5_year_plan:0 "The second Five-Year Plan"
+  SOV_idea_2_5_year_plan_desc:0 "The second Five-Year Plan is an essential step in the modernization of our country. Every effort must be aimed at achieving the set goals, in the established times."
+  SOV_idea_2_5_year_plan_CIC:0 "The second Five-Year Plan (industrial focus)"
+  SOV_idea_2_5_year_plan_CIC_desc:0 "The second Five-Year Plan is an essential step in the modernization of our country. Every effort must be aimed at achieving the set goals, in the established times."
+  SOV_idea_2_5_year_plan_MIL:0 "The second Five-Year Plan (mixed focus)"
+  SOV_idea_2_5_year_plan_MIL_desc:0 "The second Five-Year Plan is an essential step in the modernization of our country. Every effort must be aimed at achieving the set goals, in the established times."
+
+  SOV_idea_third_five_year_plan:0 "The third Five-Year Plan"
+  SOV_idea_third_five_year_plan_desc:0 "Workers, onward! On the path to progress and prosperity"
+  SOV_idea_third_five_year_plan_2:0 "The third Five-Year Plan"
+  SOV_idea_third_five_year_plan_2_desc:0 "Workers, onward! On the path to progress and prosperity"
+
+  SOV_idea_purge_time:0 "The Great Purge"
+  SOV_idea_purge_time_desc:0 "Traitors and spies are everywhere. We must eradicate every troskist and reactionary element that is working for the ruin of the Soviet Union."
+
+  lev_kamenev:0 "Lev Kamenev"
+  grigory_zinoviev:0 "Grigory Zinoviev"
+  karl_radek:0 "Karl Radek"
+  nikolaj_bucharin:0 "Nikolaj Bucharin"
+
+  tankograd:0 "Tankograd"
+  tankograd_desc:0 "Chelyabinsk is nicknamed Tankograd: the \"Tank City\" "
+
+  SOV_soviet_propaganda:0 "Soviet Propaganda"
+
+  SOV_idea_purge_intellectuals:0 "Rectification of Intelligentsia"
+  SOV_idea_purge_intellectuals_desc:0 "Our intelligentsia must be cleaned of counter-revolutionaries elements"
+
+  SOV_foreign_production:0 "Support for China"
+  SOV_foreign_production_desc:0 "We support China in its war against Japan."
+
+  SOV_helping_spain:0 "Support to Republican Spain"
+  SOV_helping_spain_desc:0 "We support the Republican Spain in its war against the fascists."
+
+  idea_gosstandart:0 "The Gosstandart Committee"
+  idea_gosstandart_desc:0 "The National Committee for Quality and Standardization assures the maximum quality of our production"
+  idea_stakanovite:0 "The Stackhanovite Movement"
+  idea_stakanovite_desc:0 "Alexey Stakhanov, true soviet model worker, inspires other workers in the whole Soviet Union"
+
+  SOV_military_build:0 "Diverted Resources"
+  SOV_military_build:0 "Our resources are partially committed to important military projects"
+
+  SOV_barbarossa:0 "German surprise attack"
+
+  SOV_the_great_patriotic_war:0 "The Great Patriotic War"
+  SOV_the_great_patriotic_war_w:0 "The Great Patriotic War"
+  SOV_the_great_patriotic_war_2:0 "The Great Patriotic War"
+  SOV_the_great_patriotic_war_2w:0 "The Great Patriotic War"
+
+  stavka:0 "Stavka"
+  stavka_desc:0 "The Stakva is the high command of the armed forces of the Soviet Union"
+  stavka2:0 "Stavka"
+  stavka2_desc:0 "The Stakva is the high command of the armed forces of the Soviet Union"
+
+  massive_air_production:0 "Increase Aircraft Production"
+  massive_air_production_desc:0 "The Red Army needs aircraft as the air it breathes"
+
+  massive_air_production:0 "Increase Aircraft Production"
+  massive_air_production_desc:0 "The Red Army needs aircraft as the air it breathes"
+
+  massive_war_production:0 "Massive Industrial Production"
+  massive_war_production_desc:0 "Every effort must be aimed toward the victory"
+
+  FIN_support_fascists:0 "Fascist propaganda"
+  FIN_support_fascists_desc:0 "Fascist idea spreads"
+  FIN_german_support:0 "German support"
+  FIN_german_support_desc:0 "Germany supports our war effort"
+  FIN_german_advisors:0 "German military advisors"
+  FIN_german_advisors_desc:0 "German military advisors collaborate with our officers"
+
+  soviet_partisans:0 "Partisans activity"
+  soviet_partisans_desc:0 "Civilians in the occupied territories tirelessly strike the enemy rear."
+
+############## EVENTS  ##############
+
+  soviet.55.t:0 "Scientist accused of Anti-Sovietic Activities"
+  soviet.55.d:0 "Academic activity must be constantly monitored, because even among scientists the seed of betrayal can be nested."
+  soviet.55.a:0 "A few months in Siberia will be enough"
+
+  soviet.56.t:0 "Army Officer Accused of Treason"
+  soviet.56.d:0 "An unwise official criticized the Red Army's training systems. Obviously this is a clear sign of defeatism and betrayal."
+  soviet.56.a:0 "He will be better trained in Siberia"
+
+  soviet.57.t:0 "Writer Published an apology of Trotskyism"
+  soviet.57.d:0 "A writer's books are a clear apology of Troskism and of the worst revisionist ideologies."
+  soviet.57.a:0 "Dispose him and the books"
+
+  soviet.58.t:0 "Local CPSU members show revisionist drift"
+  soviet.58.d:0 "Some members of a local section of the PCUS have expressed some concern about the removal of prestigious members of the party. They certainly belong to the same group of traitors."
+  soviet.58.a:0 "In the work camps in Siberia they will be able to review their beliefs"
+
+  soviet.125.t:0 "Trial of the Trotskyite-Zinovievite Bloc"
+  soviet.125.d:0 "Despite Leon Trotsky being forced into exile, Joseph Stalin fears that he has secret supporters within the party. A series of rapid arrests and brutal interrogations have yielded confessions and testimonies conveniently pointing to some of Stalin's rivals. However, the more questions are asked and the deeper the secret police delves into letters and journals, the more people are implicated, if indirectly.\n\nAmong other accusations, the member of the Counter-Revolutionary Bloc were incriminated with the assassination of Kirov and plotting to kill Stalin. After confessing to the charges, all were sentenced to death and executed"
+  soviet.125.a:0 "Kamenev and Zinoviev are both guilty, like their fellows"
+  soviet.125.b:0 "Their confession is sufficient, for now, but we must further investigate"
+
+  soviet.126.t:0 "Trial of the Anti-Soviet Trotskyite Centre"
+  soviet.126.d:0 "The Trotskyist center led by Radek and other intellectuals is certainly in contact with both Trotsky and emissaries of foreign nations who are conspiring against the Soviet Union. Their confessions also show that betrayal is much more extensive than one might think."
+  soviet.126.a:0 "We cannot afford to leave them unpunished"
+  soviet.126.b:0 "A light sentence is sufficient"
+
+  soviet.127.t:0 "Secret Trial of the Generals"
+  soviet.127.d:0 "The Red Army has always been home to subversive elements, ever since Trotsky himself was Commissar of War. Documents acquired by the NKVD have implicated several high-ranking officers as not only traitors, but spies. Mikhail Tukhachevsky is among the most prominent of the suspects, and one Stalin is keen to rid the army of. Meanwhile, the navy's frequent contact with foreigners has led to many of them being arrested as well.\n\nAlthough there are documents from our enemies proving their guilt, there is no telling if they fabricated them, or if they were given false information by those who wanted this purge in motion to begin with."
+  soviet.127.a:0 "Tukhachevsky and others must be tried in secret and executed immediately."
+  soviet.127.b:0 "We must look for rotten apples in the lower ranks of the army"
+
+  soviet.128.t:0 "The Trial of the 21"
+  soviet.128.d:0 "Bukharin and the other right-wing members of the party must be tried in a large public trial, so that everyone sees the degeneration of the conspiracy of Rightists and Trotskyites."
+  soviet.128.a:0 "The confession of Bucharin decided its fate"
+  soviet.128.b:0 "A character of this caliber must be spared"
+
+  soviet.200.t:0 "A generation of new generals"
+  soviet.200.d:0 "These officers are emerging as the new leaders of the Red Army. We need to exploit their skills by giving them more responsibility, an higher rank and a more prominent leadership role."
+  soviet.200.a:0 "For the glory of the mighty Soviet Union"
+
+  soviet.210.t:0 "Rokossovsky reintegrated"
+  soviet.210.d:0 "Rokossovsky is an experienced officer and the charges against him were slight: reinstate him in his former rank"
+  soviet.210.a:0 "He may bravely serve the Red Army"
+
+  soviet.118.t:0 "Stalin is happy"
+  soviet.118.d:0 "The effort required to bring the Union to the same level as the western capitalist powers has been immense. However, every Soviet citizen has contributed to this fundamental success. The full completion of this Five-Year Plan is the proof that the socialist model can bring social progress and the full development of our nation."
+  soviet.118.a:0 "For the glory of the mighty Soviet Union"
+
+  soviet.119.t:0 "Stalin is not happy"
+  soviet.119.d:0 "Having failed the objectives of our Five-Year Plan is a heavy defeat for the Union. Certainly reactionary, troskists elements and spies of the capitalist powers have been working in the shadows to prevent Socialism in the Soviet Union from bridging the gap with other nations. This will surely have consequences in the future. At the moment we have to concentrate even more on eradicating these elements within ourselves. "
+  soviet.119.a:0 "A serious defeat for the Socialism"
+
+  finland.90.t:0 "German-Finnish agreement "
+  finland.90.d:0 "After the war lost with the Soviet Union, the possibility of recovering the lost provinces and extending our control throughout the peninsula is too tempting."
+  finland.90.a:0 "Berlin will provide us with what we need"
+
+  soviet.46.dx:0 "The recent purges among our officers have left the Red Army far more vulnerable to German aggression"
+  soviet.46.ax:0 "we must fix it as soon as possible!"
+
+  soviet.120.t:0 "Operation Barbarossa"
+  soviet.120.d:0 "The German army's sudden attack took our forces off guard. It will be difficult to regain control of military operations, and for a few weeks we will only have to resist and reorganize"
+  soviet.120.a:0 "Comrade Stalin will not be happy"
+
+  finland.89.t:0 "Retake our lands"
+  finland.89.d:0 "The soviets are fighting against the Germany, we can retake our core territories"
+  finland.89.a:0 "The time is now!"
+  finland.91.t:0 "The war is lost. Again."
+  finland.91.d:0 "The war is lost. We must seek an agreement with the Soviet Union to prevent further suffering."
+  finland.91.a:0 "The best thing to do."
+  finland.91.b:0 "No! Death before disonor."
+  finland.91.t:0 "Finland offers peace"
+  finland.91.d:0 "Our forces are spreading over Finnish territory and Helsinki offers us a peace treaty."
+  finland.91.a:0 "Yes, Germany is our main enemy."
+  finland.91.b:0 "Sorry, too late"
+  finland.92.t:0 "The Moscow Armistice"
+  finland.91.d:0 "The conditions for peace are similar to what had been agreed after the Winter War. Anyway our northern borders are safe."
+  finland.91.a:0 "Problem resolved"
+
+  FIN_agree_peace:0 "Peace, comrades"
+
+########## FOCUS ##############
+
+  SOV_finish_the_five_year_plan:0 "Complete the Five-Year Plan"
+  SOV_finish_the_five_year_plan_desc:0 "The Union needs to increase its industrial capacity. The second Five-Year Plan is essential for its development. We must complete it, whatever it takes."
+
+  SOV_strength_gosplan:0 "Strength the GOSPLAN"
+  SOV_strength_gosplan_desc:0 "The State Planning Committee of the USSR (Gos. komitet po Plan.) is essential for the development and planning of our industry. Its portfolio and managerial capacity must be strengthened and extended."
+
+  SOV_review_gosplan:0 "Review the GOSPLAN"
+  SOV_review_gosplan_desc:0 "The State Planning Committee of the USSR (Gos. komitet po Plan.) is filled with reformist and possible Trotskyist bureaucrats. We must integrate its ranks with some, more reliable, officers from the Red Army."
+
+  SOV_focus_on_heavy_industry:0 "Focus on Heavy Industry"
+  SOV_focus_on_heavy_industry_desc:0 "Soviet Union's development must focus primarily on heavy industry, to build a solid foundation for our future."
+
+  SOV_focus_on_military_industry:0 "Mixed Military-Industrial focus"
+  SOV_focus_on_military_industry_desc:0 "The military industry must support the civil industry to guide the development of the Soviet Union."
+
+  SOV_improve_infrastructure:0 "Improve our railroad network"
+  SOV_improve_infrastructure_desc:0 "The Soviet Union's infrastructures and raildroads are old. We must improve and modernize them in order to substain the industrialization effort"
+
+  SOV_add_production_quota:0 "Increase the Production Quotas"
+  SOV_add_production_quota_desc:0 "The Five-Year Plan requires that the production quotas of basic resources must be incremented."
+
+  SOV_gosstandart:0 "The Gosstandart Committee"
+  SOV_gosstandart_desc:0 "Our production must focus on quality rather than sheer quantity, to reach the hightest standard in the world"
+
+  SOV_stakanovite:0 "The Stakhanovite Movement"
+  SOV_stakanovite_desc:0 "The Stakhanovite Movement encourages the Soviet workers to work harder and more efficiently, increasing the overall production"
+
+  SOV_nkvd_power:0 "NKVD Primacy"
+  SOV_nkvd_power_desc:0 "Our security agency must be strengthened to better control the activities of Soviet citizens and ensure greater safety for the Union"
+
+  SOV_transsiberian:0 "Modernization the Trans-Siberian Railway"
+  SOV_transsiberian_desc:0 "The Trans-Siberian was built more than 30 years ago. The whole structure must be modernized in order to allow us to exploit the enormous resources of our Motherland."
+  SOV_transsiberian_tt:0 "It increases the level of infrastructure along the Trans-Siberian Railway."
+
+  SOV_spanish_war:0 "The Spanish Civil War"
+  SOV_spanish_war_desc:0 "Although the Comrade Stalin has signed the Non-Intervention Agreement, we have to support the spanish comrades in their fight against the fascists as much as we can."
+
+  SOV_increase_rubber:0 "Increase the Synthetic Rubber Production "
+  SOV_increase_rubber_desc:0 "Rubber is an essential element for modern industrial production. Being dependent on foreign imports could bring the Soviet Union into a dangerous condition in case of conflict."
+
+  SOV_third_five_year_plan:0 "The third Five-Year Plan"
+  SOV_third_five_year_plan_desc:0 "The third Five-Year Plan will be the final step for bringing our country into the future."
+
+  SOV_cult_of_personality:0 "The Cult of Personality"
+  SOV_cult_of_personality_desc:0 "Stalin, the father of the socialism, is the undisputed leader of our country. Under his guide we cannot fail."
+
+  SOV_komsomol:0 "The Komsomol"
+  SOV_komsomol_desc:0 "The Soviet League of Leninist Communist Youth (Kom.So.Mol) educates Soviet youth in the ideals of Marxism and helps to shape the future citizens of the Union."
+
+  SOV_magnitogorsk:0 "Magnitogorsk"
+  SOV_magnitogorsk_desc:0 "Magnitogorsk, a remote siberian city, must become one of the largest industrial installations of the Soviet Union. The city itself, due to the high concentration of steel mills, will be a national strategic hub, to be protected with appropriate secrecy."
+
+  SOV_closed_cities_network:0 "Closed City Network"
+  SOV_closed_cities_network_desc:0 "We must extend the network of closed cities, not just for production but also for research. In the long term this will benefit both industry and military research."
+
+  SOV_lessons_of_the_winter_war:0 "Lessons of the Winter War"
+  SOV_lessons_of_the_winter_war_desc:0 "The war with Finland taught us the value of logistics in harsh terrains, as well as the correct use of tanks and airforces. Our generals have learnt invaluable lessons that will surely prove useful in the future."
+
+  SOV_leningrad_institute:0 "The Leningrad Institute of Technology"
+  SOV_leningrad_institute_desc:0 "We must enhance our oldest and most prestigious universities in order to train technicians and scientists at the forefront in new disciplines"
+
+  SOV_morozov:0 "Kharkiv Morozov Design Bureau"
+  SOV_morozov_desc:0 "The innovative ideas of the Kharkov design office, led by Eng. Mikhail Koshkin, push for a new generation of medium tanks."
+
+  SOV_okmo:0 "OKMO Design Bureau"
+  SOV_okmo_desc:0 "The OKMO design team, together with the engineers from the Kirov plant in Leningrad, recommends developing a new line of heavy tanks"
+
+  SOV_air_volunteers:0 "Air Volunteers"
+  SOV_air_volunteers_desc:0 "Aiding other comrades and our allies, would help us to develop new tactics and improve our airplanes"
+
+  SOV_great_patriotic:0 "The Great Patriotic War"
+  SOV_great_patriotic_desc:0 "The enemy throws new forces to the front without regard to heavy losses and penetrates deep into the Soviet Union, seizing new regions, destroying our cities and villages, killing the Soviet population.\nNot one step back! Such should now be our main slogan.\n-- Stalin"
+
+  SOV_il2:0 "The Ilyushin IL-2 prototye"
+  SOV_il2_desc:0 "The idea for an armored ground-attack aircraft is quite old, but our models lacks the required power and performance. A new model must be designed and produced in a short timeframe."
+
+  SOV_tankograd:0 "Tankograd"
+  SOV_tankograd_desc:0 "During the relocation of our industries toward the Urals, concentrating our tank factories in the Chelyabinsk area will improve the efficiency in logistic and production."
+
+  SOV_establish_the_stavka:0 "Establish the Stavka"
+  SOV_establish_the_stavka_desc:0 "Creating the supreme headquarters of the armed forces of the Soviet Union, we will be able to better coordinate the war operations for land, sea and air."
+
+  SOV_build_molotov_line:0 "Build the Molotov Line"
+  SOV_build_molotov_line_desc:0 "We have to improve the fortifications in our new westerns fronteers: the Baltic States, Eastern Poland and Bessarabia."
+
+  SOV_increase_il2_production:0 "Increase IL-2 Production"
+  SOV_increase_il2_production_desc:0 "Our Red Army now needs IL-2 aircraft like the air it breathes, like the bread it eats. I ask you not to try the government's patience, and demand that you manufacture more ILs. This is my final warning.\n-- Stalin"
+
+  SOV_military_research:0 "Military Research"
+  SOV_military_research_desc:0 "Our research centers must expand, increasing the ability to produce advanced technologies. The technological advantage can be translated into a military advantage in the field.""
+
+  SOV_borodino:0 "Operation Borodino"
+  SOV_borodino_desc:0 "Operation Borodino is the code name of our secret project to build the atomic bomb. It is a matter of utmost importance that must be terminated as soon as possible"
+
+  SOV_t34:0 "The T-34"
+  SOV_t34_desc:0 "Mikhail Koshkin's masterpiece, the T-34, has an unprecedented combination of firepower, mobility, protection and ruggedness. its full implementation in production should start as soon as possible."
+
+  SOV_tula:0  "The Tula Arms Plant"
+  SOV_tula_desc:0 "Created by decree by Peter the Great in 1712, the old Tula Arsenal well served the tzarist army. The new Tula Arms Plant must be re-organized and fully mechanized for mass production"
+
+  SOV_partisans:0 "Soviet Partisans"
+  SOV_partisans_desc:0 "In the occupied territories, Soviet citizens organize themselves, forming partisan groups that tirelessly hit the enemy lines of communication. This land will never be fascist."
+
+  SOV_operational_command:0 "Restructuring the Fronts"
+  SOV_operational_command_desc:0 "The war is not proceeding well, a restructuring of our armies and a reassignment to the various operational fronts is necessary. A Front will be mobilized for a specific operation, after which it could be reformed and tasked with another operation."
+
+  SOV_guards:0 "The Guards"
+  SOV_guards_desc:0 "In the past times, the Guards status were awarded to the tsarist elite units. We have to bring this tradition back, awarding this name and the correspondig elite status, to the divisions of the Red Army which have distinguished themselves in service."
+
+  SOV_katyusha:0 "The Katyusha Launchers"
+  SOV_katyusha_desc:0 "Our engineers in Voronezh have a simple but effective idea, consisting of racks of parallel rails on which rockets can be mounted. This can be applied to trucks, artillery tractors, tanks, and even armoured trains."
+
+  SOV_rockets:0 "Soviet Rocketry"
+  SOV_rockets_desc:0 "Our scientists have been studying a different type of reactive propulsion engine since early '30s. It is the time to concretize these theoretical studies into something useful for the war effort."
+
+  SOV_massive_production:0 "Massive Industrial Production"
+  SOV_massive_production_desc:0 "The Great Patriotic War requires that every effort be concentrated in war production. By improving the production lines and taking advantage of better manufacturing techniques, we will be able to achieve even higher production quotas."
+
+  SOV_defense_of_leningrad:0 "Defense of Leningrad"
+  SOV_defense_of_leningrad_desc:0 "Since the tzar Peter the Great, Leningrad is our gate to the Baltic. It cannot fall at any cost, every possible defense must be erected to protect it."
+  SOV_defense_of_leningrad_tt:0 "Adds [Root.FortsForleningrad] in and around Lenigrad[Root.FortsForleningradB]"
+  SOV_leningrad_fort_16:0 "§Y16 Land forts§!"
+  SOV_leningrad_fort_16_b:0 "."
+  SOV_leningrad_fort_22:0 "§Y22 Land forts§!"
+  SOV_leningrad_fort_22_b:0 " and Karjala."
+
+  SOV_defense_of_stalingrad:0 "Defense of Stalingrad"
+  SOV_defense_of_stalingrad_desc:0 "With the enemy advancing toward the Volga, we have to prepare a strong defensive line to protect tha Caucasus olifiled and the new industrial regions of the Urals"
+  SOV_defense_of_stalingrad_tt:0 "Adds a total of §Y70 Land forts§! along the eastern shore of Volga River.\nYou must control the affected provinces when finishing this focus, for the effects to apply."
+
+  SOV_soviet_women:0 "The Soviet Women"
+  SOV_soviet_women_desc:0 "I'm a sniper. A woman sniper, because in our country women fight in war with men. Every now and then, someone asks me how many men I killed.\nI answer: no man, only fascists. Three hundred nine.\n--Lyudmila Pavlichenko, Hero of the Soviet Union"
+
+  #SOV_night_witches:0 "The Night Witches"
+  #SOV_night_witches_desc:0 "Major Marina Raskova asked the Comrade Stalin to obtain a permission to form female combat units. The 588th Night Bomber Regiment, the \"Night Witches\" was one of them".
+  SOV_women_pilots:0 "The Night Witches"
+  SOV_women_pilots_desc:0 "Major Marina Raskova asked the Comrade Stalin to obtain a permission to form female combat units. The 588th Night Bomber Regiment, the \"Night Witches\" was one of them".
 
 
+############# DECISIONS ##########
 
- SOV_finish_the_five_year_plan:0 "Complete the Five-Year Plan"
- SOV_finish_the_five_year_plan_desc:0 "The Union needs to increase its industrial capacity. The second Five-Year Plan is essential for its development. We must complete it, whatever it takes."
- SOV_strength_gosplan:0 "Strength the GOSPLAN"
- SOV_strength_gosplan_desc:0 "The State Planning Committee of the USSR (Gos. komitet po Plan.) is essential for the development and planning of our industry. Its portfolio and managerial capacity must be strengthened and extended."
- SOV_review_gosplan:0 "Review the GOSPLAN"
- SOV_review_gosplan_desc:0 "The State Planning Committee of the USSR (Gos. komitet po Plan.) is filled with reformist and possible Trotskyist bureaucrats. We must integrate its ranks with some, more reliable, officers from the Red Army."
- SOV_focus_on_heavy_industry:0 "Focus on Heavy Industry"
- SOV_focus_on_heavy_industry_desc:0 "Soviet Union's development must focus primarily on heavy industry, to build a solid foundation for our future."
- SOV_focus_on_military_industry:0 "Mixed Military-Industrial focus"
- SOV_focus_on_military_industry_desc:0 "The military industry must support the civil industry to guide the development of the Soviet Union."
- SOV_improve_infrastructure:0 "Improve our railroad network"
- SOV_improve_infrastructure_desc:0 "The Soviet Union's infrastructures and raildroads are old. We must improve and modernize them in order to substain the industrialization effort"
- SOV_add_production_quota:0 "Increase the Production Quotas"
- SOV_add_production_quota_desc:0 "The Five-Year Plan requires that the production quotas of basic resources must be incremented."
- SOV_nkvd_power:0 "NKVD Primacy"
- SOV_nkvd_power_desc:0 "Our security agency must be strengthened to better control the activities of Soviet citizens and ensure greater safety for the Union"
+  SOV_5_year_plan_tt:0 "Our effort will increase the completion of the Five-Year Plan by §G5%§!"
 
+  SOV_5_year_plan_decisions:0 "The Five-Year Plan"
+  SOV_5_year_plan_decisions_desc:0 "The Five-Year Plan requires to boost our Industry and increase our Production Quotas. This mission will be completed once you have §G100%§! progress through Decisions and Focuses. Right now it is [Root.Get5YearPlanLevel] complete."
+  SOV_5_year_plan_0:0 "§R0%§!"
+  SOV_5_year_plan_10:0 "§R10%§!"
+  SOV_5_year_plan_20:0 "§R20%§!"
+  SOV_5_year_plan_30:0 "§R20%§!"
+  SOV_5_year_plan_40:0 "§Y40%§!"
+  SOV_5_year_plan_50:0 "§Y50%§!"
+  SOV_5_year_plan_60:0 "§Y60%§!"
+  SOV_5_year_plan_65:0 "§Y65%§!"
+  SOV_5_year_plan_70:0 "§Y70%§!"
+  SOV_5_year_plan_75:0 "§G75%§!"
+  SOV_5_year_plan_80:0 "§G80%§!"
+  SOV_5_year_plan_85:0 "§G85%§!"
+  SOV_5_year_plan_90:0 "§G90%§!"
+  SOV_5_year_plan_91:0 "§G91%§!"
+  SOV_5_year_plan_92:0 "§G92%§!"
+  SOV_5_year_plan_93:0 "§G93%§!"
+  SOV_5_year_plan_94:0 "§G94%§!"
+  SOV_5_year_plan_95:0 "§G95%§!"
+  SOV_5_year_plan_96:0 "§G96%§!"
+  SOV_5_year_plan_97:0 "§G97%§!"
+  SOV_5_year_plan_98:0 "§G98%§!"
+  SOV_5_year_plan_99:0 "§G99%§!"
+  SOV_5_year_plan_100:0 "§G100%§!"
 
- SOV_5_year_plan_tt:0 "Our effort will increase the completion of the Five-Year Plan by §G5%§!"
+  SOV_exhausted_resources:0 "State's Resources has not been exhausted"
+  SOV_already_improved:0 "State's Industry has not been improved"
 
- SOV_5_year_plan_decisions:0 "The Five-Year Plan"
- SOV_5_year_plan_decisions_desc:0 "The Five-Year Plan requires to boost our Industry and increase our Production Quotas. This mission will be completed once you have §G100%§! progress through Decisions and Focuses. Right now it is [Root.Get5YearPlanLevel] complete."
- SOV_5_year_plan_0:0 "§R0%§!"
- SOV_5_year_plan_10:0 "§R10%§!"
- SOV_5_year_plan_20:0 "§R20%§!"
- SOV_5_year_plan_30:0 "§R20%§!"
- SOV_5_year_plan_40:0 "§Y40%§!"
- SOV_5_year_plan_50:0 "§Y50%§!"
- SOV_5_year_plan_60:0 "§Y60%§!"
- SOV_5_year_plan_65:0 "§Y65%§!"
- SOV_5_year_plan_70:0 "§Y70%§!"
- SOV_5_year_plan_75:0 "§G75%§!"
- SOV_5_year_plan_80:0 "§G80%§!"
- SOV_5_year_plan_85:0 "§G85%§!"
- SOV_5_year_plan_90:0 "§G90%§!"
- SOV_5_year_plan_91:0 "§G91%§!"
- SOV_5_year_plan_92:0 "§G92%§!"
- SOV_5_year_plan_93:0 "§G93%§!"
- SOV_5_year_plan_94:0 "§G94%§!"
- SOV_5_year_plan_95:0 "§G95%§!"
- SOV_5_year_plan_96:0 "§G96%§!"
- SOV_5_year_plan_97:0 "§G97%§!"
- SOV_5_year_plan_98:0 "§G98%§!"
- SOV_5_year_plan_99:0 "§G99%§!"
- SOV_5_year_plan_100:0 "§G100%§!"
+  SOV_2_5_year_plan_mission:0 "Five-Year Plan time schedule"
+  SOV_5_year_plan_mission_tt:0 "This mission will be completed once you have §G100% progress§! through Decisions and Focuses."
 
- SOV_exhausted_resources:0 "State's Resources has not been exhausted"
- SOV_already_improved:0 "State's Industry has not been improved"
+  SOV_5_year_plan_oil:0 "Increase Quotas for Petrochemical plants"
+  SOV_5_year_plan_steel:0 "Increase Quotas for Steel foundries"
+  SOV_5_year_plan_tungsten:0 "Increase Quotas for Tungsten mines"
+  SOV_5_year_plan_aluminium:0 "Increase Quotas for Aluminium production"
+  SOV_5_year_plan_chromium:0 "Increase Quotas for Rare Materials mines"
+  SOV_5_year_plan_industry:0 "Improve our Industrial Capacity"
 
- SOV_2_5_year_plan_mission:0 "Five-Year Plan time schedule"
- SOV_5_year_plan_mission_tt:0 "This mission will be completed once you have §G100% progress§! through Decisions and Focuses."
+  SOV_The_Great_Purge_Decisions:0 "The Great Purge"
+  SOV_The_Great_Purge_Decisions_desc:0 "To identify and eliminate every spy and traitor of the Revolution will not be an easy or quick task"
+  SOV_The_Great_Purge_mission:0 "The time of the Great Purge"
+  SOV_The_Great_Purge_Completed:0 "The Soviet Union is free from Troskists and traitors"
 
- SOV_5_year_plan_oil:0 "Increase Quotas for Petrochemical plants"
- SOV_5_year_plan_steel:0 "Increase Quotas for Steel foundries"
- SOV_5_year_plan_tungsten:0 "Increase Quotas for Tungsten mines"
- SOV_5_year_plan_aluminium:0 "Increase Quotas for Aluminium production"
- SOV_5_year_plan_chromium:0 "Increase Quotas for Rare Materials mines"
- SOV_5_year_plan_industry:0 "Improve our Industrial Capacity"
+  SOV_relocate_industry_from_dnipropetrovsk:0 "Relocate Industry from Dnipropetrovsk"
+  SOV_relocate_industry_from_dnipropetrovsk_desc:0 "Evacuating the heavy machinery of our Dnipropetrovsk factories to the Urals is a huge undertaking, but it is necessary to secure our war production."
+  SOV_relocate_industry_from_dnipropetrovsk_tt:0 "§RThese effects require control of Dnipropetrovsk when the decision times out.§!"
 
- soviet.118.t:0 "Stalin is happy"
- soviet.118.d:0 "The effort required to bring the Union to the same level as the western capitalist powers has been immense. However, every Soviet citizen has contributed to this fundamental success. The full completion of this Five-Year Plan is the proof that the socialist model can bring social progress and the full development of our nation."
- soviet.118.a:0 "For the glory of the mighty Soviet Union"
+  SOV_relocate_industry_from_cherkasy:0 "Relocate Industry from Cherkasy"
+  SOV_relocate_industry_from_cherkasy_desc:0 "Evacuating the heavy machinery of our Cherkasy factories to the Urals is a huge undertaking, but it is necessary to secure our war production."
+  SOV_relocate_industry_from_cherkasy_tt:0 "§RThese effects require control of Cherkasy when the decision times out.§!"
 
- soviet.119.t:0 "Stalin is not happy"
- soviet.119.d:0 "Having failed the objectives of our Five-Year Plan is a heavy defeat for the Union. Certainly reactionary, troskists elements and spies of the capitalist powers have been working in the shadows to prevent Socialism in the Soviet Union from bridging the gap with other nations. This will surely have consequences in the future. At the moment we have to concentrate even more on eradicating these elements within ourselves. "
- soviet.119.a:0 "A serious defeat for the Socialism"
+  SOV_relocate_industry_from_kiev:0 "Relocate Industry from Kiev"
+  SOV_relocate_industry_from_kiev_desc:0 "Evacuating the heavy machinery of our Kiev factories to the Urals is a huge undertaking, but it is necessary to secure our war production."
+  SOV_relocate_industry_from_kiev_tt:0 "§RThese effects require control of Kiev when the decision times out.§!"
 
+  SOV_relocate_industry_from_rostov:0 "Relocate Industry from Rostov"
+  SOV_relocate_industry_from_rostov_desc:0 "Evacuating the heavy machinery of our Rostov factories to the Urals is a huge undertaking, but it is necessary to secure our war production."
+  SOV_relocate_industry_from_rostov_tt:0 "§RThese effects require control of Rostov when the decision times out.§!"
 
- SOV_transsiberian:0 "Modernization the Trans-Siberian Railway"
- SOV_transsiberian_desc:0 "The Trans-Siberian was built more than 30 years ago. The whole structure must be modernized in order to allow us to exploit the enormous resources of our Motherland."
- SOV_transsiberian_tt:0 "It increases the level of infrastructure along the Trans-Siberian Railway."
+  SOV_relocate_industry_from_kharkov:0 "Relocate Industry from Kharkov"
+  SOV_relocate_industry_from_kharkov_desc:0 "Evacuating the heavy machinery of our Kharkov factories to the Urals is a huge undertaking, but it is necessary to secure our war production."
+  SOV_relocate_industry_from_kharkov_tt:0 "§RThese effects require control of Kharkov when the decision times out.§!"
 
- SOV_idea_purge_time:0 "The Great Purge"
- SOV_idea_purge_time:0 "Traitors and spies are everywhere. We must eradicate every troskist and reactionary element that is working for the ruin of the Soviet Union."
+  SOV_relocate_industry_from_odessa:0 "Relocate Industry from Odessa"
+  SOV_relocate_industry_from_odessa_desc:0 "Evacuating the heavy machinery of our Odessa factories to the Urals is a huge undertaking, but it is necessary to secure our war production."
+  SOV_relocate_industry_from_odessa_tt:0 "§RThese effects require control of Odessa when the decision times out.§!"
 
- SOV_The_Great_Purge_Decisions:0 "The Great Purge"
- SOV_The_Great_Purge_Decisions_desc:0 "To identify and eliminate every spy and traitor of the Revolution will not be an easy or quick task"
- SOV_The_Great_Purge_mission:0 "The time of the Great Purge"
- SOV_The_Great_Purge_Completed:0 "The Soviet Union is free from Troskists and traitors"
+  SOV_relocate_industry_from_minsk:0 "Relocate Industry from Minsk"
+  SOV_relocate_industry_from_minsk_desc:0 "Evacuating the heavy machinery of our Minsk factories to the Urals is a huge undertaking, but it is necessary to secure our war production."
+  SOV_relocate_industry_from_minsk_tt:0 "§RThese effects require control of Minsk when the decision times out.§!"
 
+############ FLAGS & BONUSES ##########
 
- soviet.55.t:0 "Scientist accused of Anti-Sovietic Activities"
- soviet.55.d:0 "Academic activity must be constantly monitored, because even among scientists the seed of betrayal can be nested."
- soviet.55.a:0 "A few months in Siberia will be enough"
+  purged_voznesensky:0 "Purged by Stalin"
+  purged_kamenev:0 "Purged by Stalin"
+  purged_zinoviev:0 "Purged by Stalin"
+  purged_radek:0 "Purged by Stalin"
+  purged_rokossovsky:0 "Purged by Stalin"
+  purged_yezhov:0 "Purged by Stalin"
+  purged_bucharin:0 "Purged by Stalin"
+  purged_generals:0 "Purged by Stalin"
+  zhukov_available:0 "Georgy Zhukov is a general"
 
- soviet.56.t:0 "Army Officer Accused of Treason"
- soviet.56.d:0 "An unwise official criticized the Red Army's training systems. Obviously this is a clear sign of defeatism and betrayal."
- soviet.56.a:0 "He will be better trained in Siberia"
+  SOV_veteran_communist:0 "Veteran Communist"
+  SOV_secret_police_chief_0:0 "Efficient Executioner"
+  SOV_secret_police_chief_1:0 "Prince of Terror"
+  SOV_comintern_workhorse:0 "Comintern Workhorse"
+  SOV_politburo_veteran:0 "Politburo Veteran"
+  SOV_trickleback:0 "Political Commissars"
+  SOV_tough_negotiator:0 "Expert Negotiator"
+  SOV_CAS_manufacturer:0 "CAS Designer"
+  SOV_fighter_manufacturer:0 "Fighter Designer"
+  SOV_fighter_manufacturer_2:0 "Fighter Designer"
 
-soviet.57.t:0 "Writer Published an apology of Trotskyism"
-soviet.57.d:0 "A writer's books are a clear apology of Troskism and of the worst revisionist ideologies."
-soviet.57.a:0 "Dispose him and the books"
+  SOV_quality:0 "Quality Focus"
 
+  rocket_art_bonus:0 "Rocket Artillery bonus"
 
- soviet.125.t:0 "Trial of the Trotskyite-Zinovievite Bloc"
- soviet.125.d:0 "Despite Leon Trotsky being forced into exile, Joseph Stalin fears that he has secret supporters within the party. A series of rapid arrests and brutal interrogations have yielded confessions and testimonies conveniently pointing to some of Stalin's rivals. However, the more questions are asked and the deeper the secret police delves into letters and journals, the more people are implicated, if indirectly.\n\nAmong other accusations, the member of the Counter-Revolutionary Bloc were incriminated with the assassination of Kirov and plotting to kill Stalin. After confessing to the charges, all were sentenced to death and executed"
- soviet.125.a:0 "Kamenev and Zinoviev are both guilty, like their fellows"
- soviet.125.b:0 "Their confession is sufficient, for now, but we must further investigate"
-
- soviet.126.t:0 "Trial of the Anti-Soviet Trotskyite Centre"
- soviet.126.d:0 "The Trotskyist center led by Radek and other intellectuals is certainly in contact with both Trotsky and emissaries of foreign nations who are conspiring against the Soviet Union. Their confessions also show that betrayal is much more extensive than one might think."
- soviet.126.a:0 "We cannot afford to leave them unpunished"
- soviet.126.b:0 "A light sentence is sufficient"
-
- soviet.127.t:0 "Secret Trial of the Generals"
- soviet.127.d:0 "The Red Army has always been home to subversive elements, ever since Trotsky himself was Commissar of War. Documents acquired by the NKVD have implicated several high-ranking officers as not only traitors, but spies. Mikhail Tukhachevsky is among the most prominent of the suspects, and one Stalin is keen to rid the army of. Meanwhile, the navy's frequent contact with foreigners has led to many of them being arrested as well.\n\nAlthough there are documents from our enemies proving their guilt, there is no telling if they fabricated them, or if they were given false information by those who wanted this purge in motion to begin with."
- soviet.127.a:0 "Tukhachevsky and others must be tried in secret and executed immediately."
- soviet.127.b:0 "We must look for rotten apples in the lower ranks of the army"
-
- soviet.128.t:0 "The Trial of the 21"
- soviet.128.d:0 "Bukharin and the other right-wing members of the party must be tried in a large public trial, so that everyone sees the degeneration of the conspiracy of Rightists and Trotskyites."
- soviet.128.a:0 "The confession of Bucharin decided its fate"
- soviet.128.b:0 "A character of this caliber must be spared"
-
- soviet.200.t:0 "A generation of new generals"
- soviet.200.d:0 "These officers are emerging as the new leaders of the Red Army. We need to exploit their skills by giving them more responsibility, an higher rank and a more prominent leadership role."
- soviet.200.a:0 "For the glory of the mighty Soviet Union"
- soviet.210.t:0 "Rokossovsky reintegrated"
- soviet.210.d:0 "Rokossovsky is an experienced officer and the charges against him were slight: reinstate him in his former rank"
- soviet.210.a:0 "He may bravely serve the Red Army"
-
- SOV_idea_purge_intellectuals:0 "Rectification of Intelligentsia"
- SOV_idea_purge_intellectuals_desc:0 "Our intelligentsia must be cleaned of counter-revolutionaries elements"
- SOV_foreign_production:0 "Support for China"
- SOV_foreign_production_desc:0 "We support China in its war against Japan."
-
- SOV_spanish_war:0 "The Spanish Civil War"
- SOV_spanish_war_desc:0 "Although the Comrade Stalin has signed the Non-Intervention Agreement, we have to support the spanish comrades in their fight against the fascists as much as we can."
-
- purged_voznesensky:0 "Purged by Stalin"
- purged_kamenev:0 "Purged by Stalin"
- purged_zinoviev:0 "Purged by Stalin"
- purged_radek:0 "Purged by Stalin"
- purged_rokossovsky:0 "Purged by Stalin"
- purged_yezhov:0 "Purged by Stalin"
- purged_bucharin:0 "Purged by Stalin"
- purged_generals:0 "Purged by Stalin"
- zhukov_available:0 "Georgy Zhukov is a general"
-
- lev_kamenev:0 "Lev Kamenev"
- grigory_zinoviev:0 "Grigory Zinoviev"
- karl_radek:0 "Karl Radek"
- nikolaj_bucharin:0 "Nikolaj Bucharin"
- soviet_propaganda:0 "Soviet Propaganda"
-
- SOV_veteran_communist:0 "Veteran Communist"
- SOV_secret_police_chief_0:0 "Efficient Executioner"
- SOV_secret_police_chief_1:0 "Prince of Terror"
- SOV_comintern_workhorse:0 "Comintern Workhorse"
- SOV_politburo_veteran:0 "Politburo Veteran"
- SOV_trickleback:0 "Political Commissars"
- SOV_tough_negotiator:0 "Expert Negotiator"
- SOV_CAS_manufacturer:0 "CAS Designer"
- SOV_fighter_manufacturer:0 "Fighter Designer"
- SOV_fighter_manufacturer_2:0 "Fighter Designer"
-
- SOV_gosstandart:0 "The Gosstandart Committee"
- SOV_gosstandart_desc:0 "Our production must focus on quality rather than sheer quantity, to reach the hightest standard in the world"
- SOV_stakanovite:0 "The Stakhanovite Movement"
- SOV_stakanovite_desc:0 "The Stakhanovite Movement encourages the Soviet workers to work harder and more efficiently, increasing the overall production"
- idea_gosstandart:0 "The Gosstandart Committee"
- idea_gosstandart_desc:0 "The National Committee for Quality and Standardization assures the maximum quality of our production"
- idea_stakanovite:0 "The Stackhanovite Movement"
- idea_stakanovite_desc:0 "Alexey Stakhanov, true soviet model worker, inspires other workers in the whole Soviet Union"
-
- SOV_quality:0 "Quality Focus"
-
- SOV_helping_spain:0 "Support to Republican Spain"
- SOV_helping_spain_desc:0 "We support the Republican Spain in its war against the fascists."
 
  ## SOV_transpolar_flights:0 "sov trans fli"
  ## SOV_transpolar_flights_desc:0 "trans fli desc"
- SOV_aviation_cult:0 "sov av c"
- SOV_aviation_cult_desc:0 "sov av c desc"
- SOV_soviet_propaganda:0 "Soviet Propaganda"
+ ## SOV_aviation_cult:0 "sov av c"
+ ## SOV_aviation_cult_desc:0 "sov av c desc"
 
  ## SOV_socialist_science:0 "Socialist science"
  ## SOV_socialist_science_desc:0 "Socialist science desc"
  ## SOV_stalin_constitution:0 "SOV_stalin_constitution"
  ## SOV_stalin_constitution_desc:0 "SOV_stalin_constitution_desc"
- SOV_increase_rubber:0 "Increase the Synthetic Rubber Production "
- SOV_increase_rubber_desc:0 "Rubber is an essential element for modern industrial production. Being dependent on foreign imports could bring the Soviet Union into a dangerous condition in case of conflict."
  ## SOV_claims_on_baltic:0 ""
  ## SOV_claims_on_baltic_desc:0 ""
-
- SOV_third_five_year_plan:0 "The third Five-Year Plan"
- SOV_third_five_year_plan_desc:0 "The third Five-Year Plan will be the final step for bringing our country into the future."
- SOV_idea_third_five_year_plan:0 "The third Five-Year Plan"
- SOV_idea_third_five_year_plan_2:0 "The third Five-Year Plan"
- SOV_idea_third_five_year_plan_desc:0 "Workers, onward! On the path to progress and prosperity"
- SOV_idea_third_five_year_plan_2_desc:0 "Workers, onward! On the path to progress and prosperity"
-
- SOV_cult_of_personality:0 "The Cult of Personality"
- SOV_cult_of_personality_desc:0 "Stalin, the father of the socialism, is the undisputed leader of our country. Under his guide we cannot fail."
-
- SOV_komsomol:0 "The Komsomol"
- SOV_komsomol_desc:0 "The Soviet League of Leninist Communist Youth (Kom.So.Mol) educates Soviet youth in the ideals of Marxism and helps to shape the future citizens of the Union."
-
- SOV_magnitogorsk:0 "Magnitogorsk"
- SOV_magnitogorsk_desc:0 "Magnitogorsk, a remote siberian city, must become one of the largest industrial installations of the Soviet Union. The city itself, due to the high concentration of steel mills, will be a national strategic hub, to be protected with appropriate secrecy."
-
- SOV_closed_cities_network:0 "Closed City Network"
- SOV_closed_cities_network_desc:0 "We must extend the network of closed cities, not just for production but also for research. In the long term this will benefit both industry and military research."
-
-
- SOV_lessons_of_the_winter_war:0 "Lessons of the Winter War"
- SOV_lessons_of_the_winter_war_desc:0 "The war with Finland taught us the value of logistics in harsh terrains, as well as the correct use of tanks and airforces. Our generals have learnt invaluable lessons that will surely prove useful in the future."
-
- finland.90.t:0 "German-Finnish agreement "
- finland.90.d:0 "After the war lost with the Soviet Union, the possibility of recovering the lost provinces and extending our control throughout the peninsula is too tempting."
- finland.90.a:0 "Berlin will provide us with what we need"
- FIN_support_fascists:0 "Fascist propaganda"
- FIN_support_fascists_desc:0 "Fascist idea spreads"
- FIN_german_support:0 "German support"
- FIN_german_support_desc:0 "Germany supports our war effort"
- FIN_german_advisors:0 "German military advisors"
- FIN_german_advisors_desc:0 "German military advisors collaborate with our officers"
-
- finland.89.t:0 "Retake our lands"
- finland.89.d:0 "The soviets are fighting against the Germany, we can retake our core territories"
- finland.89.a:0 "The time is now!"
- finland.91.t:0 "The war is lost. Again."
- finland.91.d:0 "The war is lost. We must seek an agreement with the Soviet Union to prevent further suffering."
- finland.91.a:0 "The best thing to do."
- finland.91.b:0 "No! Death before disonor."
- finland.91.t:0 "Finland offers peace"
- finland.91.d:0 "Our forces are spreading over Finnish territory and Helsinki offers us a peace treaty."
- finland.91.a:0 "Yes, Germany is our main enemy."
- finland.91.b:0 "Sorry, too late"
- finland.92.t:0 "The Moscow Armistice"
- finland.91.d:0 "The conditions for peace are similar to what had been agreed after the Winter War. Anyway our northern borders are safe."
- finland.91.a:0 "Problem resolved"
- FIN_agree_peace:0 "Peace, comrades"
-
- soviet.46.dx:0 "The recent purges among our officers have left the Red Army far more vulnerable to German aggression"
- soviet.46.ax:0 "we must fix it as soon as possible!"
-
- SOV_military_build:0 "Diverted Resources"
- SOV_military_build:0 "Our resources are partially committed to important military projects"
-
- soviet.120.t:0 "Operation Barbarossa"
- soviet.120.d:0 "The German army's sudden attack took our forces off guard. It will be difficult to regain control of military operations, and for a few weeks we will only have to resist and reorganize"
- soviet.120.a:0 "Comrade Stalin will not be happy"
-
- SOV_barbarossa:0 "German surprise attack"
-
- SOV_leningrad_institute:0 "The Leningrad Institute of Technology"
- SOV_leningrad_institute_desc:0 "We must enhance our oldest and most prestigious universities in order to train technicians and scientists at the forefront in new disciplines"
-
- SOV_morozov:0 "Kharkiv Morozov Design Bureau"
- SOV_morozov_desc:0 "The innovative ideas of the Kharkov design office, led by Eng. Mikhail Koshkin, push for a new generation of medium tanks."
-
- SOV_okmo:0 "OKMO Design Bureau"
- SOV_okmo_desc:0 "The OKMO design team, together with the engineers from the Kirov plant in Leningrad, recommends developing a new line of heavy tanks"
-
- SOV_air_volunteers:0 "Air Volunteers"
- SOV_air_volunteers_desc:0 "Aiding other comrades and our allies, would help us to develop new tactics and improve our airplanes"
-
- SOV_great_patriotic:0 "The Great Patriotic War"
- SOV_great_patriotic_desc:0 "The enemy throws new forces to the front without regard to heavy losses and penetrates deep into the Soviet Union, seizing new regions, destroying our cities and villages, killing the Soviet population.\nNot one step back! Such should now be our main slogan.\n-- Stalin"
-
- SOV_il2:0 "The Ilyushin IL-2 prototye"
- SOV_il2_desc:0 "The idea for an armored ground-attack aircraft is quite old, but our models lacks the required power and performance. A new model must be designed and produced in a short timeframe."
-
- tankograd:0 "Tankograd"
- tankograd_desc:0 "Chelyabinsk is nicknamed Tankograd: the \"Tank City\" "
- SOV_tankograd:0 "Tankograd"
- SOV_tankograd_desc:0 "During the relocation of our industries toward the Urals, concentrating our tank factories in the Chelyabinsk area will improve the efficiency in logistic and production."
-
- stavka:0 "Stavka"
- stavka_desc:0 "The Stakva is the high command of the armed forces of the Soviet Union"
- stavka2:0 "Stavka"
- stavka2_desc:0 "The Stakva is the high command of the armed forces of the Soviet Union"
-
- massive_air_production:0 "Increase Aircraft Production"
- massive_air_production_desc:0 "The Red Army needs aircraft as the air it breathes"
-
- SOV_tula:0  "The Tula Arms Plant"
- SOV_tula_desc:0 "Created by decree by Peter the Great in 1712, the old Tula Arsenal well served the tzarist army. The new Tula Arms Plant must be re-organized and fully mechanized for mass production"
-
-
- SOV_establish_the_stavka:0 "Establish the Stavka"
- SOV_establish_the_stavka_desc:0 "Creating the supreme headquarters of the armed forces of the Soviet Union, we will be able to better coordinate the war operations for land, sea and air."
- SOV_build_molotov_line:0 "Build the Molotov Line"
- SOV_build_molotov_line_desc:0 "We have to improve the fortifications in our new westerns fronteers: the Baltic States, Eastern Poland and Bessarabia."
- SOV_increase_il2_production:0 "Increase IL-2 Production"
- SOV_increase_il2_production_desc:0 "Our Red Army now needs IL-2 aircraft like the air it breathes, like the bread it eats. I ask you not to try the government's patience, and demand that you manufacture more ILs. This is my final warning.\n-- Stalin"
- massive_air_production:0 "Increase Aircraft Production"
- massive_air_production_desc:0 "The Red Army needs aircraft as the air it breathes"
- massive_war_production:0 "Massive Industrial Production"
- massive_war_production_desc:0 "Every effort must be aimed toward the victory"
-
- SOV_military_research:0 "Military Research"
- SOV_military_research_desc:0 "Our research centers must expand, increasing the ability to produce advanced technologies. The technological advantage can be translated into a military advantage in the field.""
-
- SOV_borodino:0 "Operation Borodino"
- SOV_borodino_desc:0 "Operation Borodino is the code name of our secret project to build the atomic bomb. It is a matter of utmost importance that must be terminated as soon as possible"
-
- SOV_t34:0 "The T-34"
- SOV_t34_desc:0 "Mikhail Koshkin's masterpiece, the T-34, has an unprecedented combination of firepower, mobility, protection and ruggedness. its full implementation in production should start as soon as possible."
-
- SOV_defense_of_leningrad:0 "Defense of Leningrad"
- SOV_defense_of_leningrad_desc:0 "Since the tzar Peter the Great, Leningrad is our gate to the Baltic. It cannot fall at any cost, every possible defense must be erected to protect it."
- SOV_defense_of_leningrad_tt:0 "Adds [Root.FortsForleningrad] in and around Lenigrad[Root.FortsForleningradB]"
- SOV_leningrad_fort_16:0 "§Y16 Land forts§!"
- SOV_leningrad_fort_16_b:0 "."
- SOV_leningrad_fort_22:0 "§Y22 Land forts§!"
- SOV_leningrad_fort_22_b:0 " and Karjala."
-
- SOV_the_great_patriotic_war:0 "The Great Patriotic War"
- SOV_the_great_patriotic_war_w:0 "The Great Patriotic War"
- SOV_the_great_patriotic_war_2:0 "The Great Patriotic War"
- SOV_the_great_patriotic_war_2w:0 "The Great Patriotic War"
-
-
- SOV_relocate_industry_from_dnipropetrovsk:0 "Relocate Industry from Dnipropetrovsk"
- SOV_relocate_industry_from_dnipropetrovsk_desc:0 "Evacuating the heavy machinery of our Dnipropetrovsk factories to the Urals is a huge undertaking, but it is necessary to secure our war production."
- SOV_relocate_industry_from_dnipropetrovsk_tt:0 "§RThese effects require control of Dnipropetrovsk when the decision times out.§!"
-
- SOV_relocate_industry_from_cherkasy:0 "Relocate Industry from Cherkasy"
- SOV_relocate_industry_from_cherkasy_desc:0 "Evacuating the heavy machinery of our Cherkasy factories to the Urals is a huge undertaking, but it is necessary to secure our war production."
- SOV_relocate_industry_from_cherkasy_tt:0 "§RThese effects require control of Cherkasy when the decision times out.§!"
-
- SOV_relocate_industry_from_kiev:0 "Relocate Industry from Kiev"
- SOV_relocate_industry_from_kiev_desc:0 "Evacuating the heavy machinery of our Kiev factories to the Urals is a huge undertaking, but it is necessary to secure our war production."
- SOV_relocate_industry_from_kiev_tt:0 "§RThese effects require control of Kiev when the decision times out.§!"
-
- SOV_relocate_industry_from_rostov:0 "Relocate Industry from Rostov"
- SOV_relocate_industry_from_rostov_desc:0 "Evacuating the heavy machinery of our Rostov factories to the Urals is a huge undertaking, but it is necessary to secure our war production."
- SOV_relocate_industry_from_rostov_tt:0 "§RThese effects require control of Rostov when the decision times out.§!"
-
- SOV_relocate_industry_from_kharkov:0 "Relocate Industry from Kharkov"
- SOV_relocate_industry_from_kharkov_desc:0 "Evacuating the heavy machinery of our Kharkov factories to the Urals is a huge undertaking, but it is necessary to secure our war production."
- SOV_relocate_industry_from_kharkov_tt:0 "§RThese effects require control of Kharkov when the decision times out.§!"
-
- SOV_relocate_industry_from_odessa:0 "Relocate Industry from Odessa"
- SOV_relocate_industry_from_odessa_desc:0 "Evacuating the heavy machinery of our Odessa factories to the Urals is a huge undertaking, but it is necessary to secure our war production."
- SOV_relocate_industry_from_odessa_tt:0 "§RThese effects require control of Odessa when the decision times out.§!"
-
- SOV_relocate_industry_from_minsk:0 "Relocate Industry from Minsk"
- SOV_relocate_industry_from_minsk_desc:0 "Evacuating the heavy machinery of our Minsk factories to the Urals is a huge undertaking, but it is necessary to secure our war production."
- SOV_relocate_industry_from_minsk_tt:0 "§RThese effects require control of Minsk when the decision times out.§!"
-
-SOV_soviet_women:0 "The Soviet Women"
-SOV_soviet_women_desc:0 "I'm a sniper. A woman sniper, because in our country women fight in war with men. Every now and then, someone asks me how many men I killed.\nI answer: no man, only fascists. Three hundred nine.\n--Lyudmila Pavlichenko, Hero of the Soviet Union"
-
-SOV_night_witches:0 "The Night Witches"
-SOV_night_witches_desc:0 "Major Marina Raskova asked the Comrade Stalin to obtain a permission to form female combat units. The 588th Night Bomber Regiment, the \"Night Witches\" was one of them".
-SOV_women_pilots:0 "The Night Witches"
-SOV_women_pilots_desc:0 "Major Marina Raskova asked the Comrade Stalin to obtain a permission to form female combat units. The 588th Night Bomber Regiment, the \"Night Witches\" was one of them".
-
-SOV_defense_of_stalingrad:0 "Defense of Stalingrad"
-SOV_defense_of_stalingrad_desc:0 "With the enemy advancing toward the Volga, we have to prepare a strong defensive line to protect tha Caucasus olifiled and the new industrial regions of the Urals"
-SOV_defense_of_stalingrad_tt:0 "Adds a total of §Y70 Land forts§! along the eastern shore of Volga River.\nYou must control the affected provinces when finishing this focus, for the effects to apply."
-
-soviet_partisans:0 "Partisans activity"
-soviet_partisans_desc:0 "Civilians in the occupied territories tirelessly strike the enemy rear."
-SOV_partisans:0 "Soviet Partisans"
-SOV_partisans_desc:0 "In the occupied territories, Soviet citizens organize themselves, forming partisan groups that tirelessly hit the enemy lines of communication. This land will never be fascist."
-
-SOV_operational_command:0 "Restructuring the Fronts"
-SOV_operational_command_desc:0 "The war is not proceeding well, a restructuring of our armies and a reassignment to the various operational fronts is necessary. A Front will be mobilized for a specific operation, after which it could be reformed and tasked with another operation."
-
-SOV_guards:0 "The Guards"
-SOV_guards_desc:0 "In the past times, the Guards status were awarded to the tsarist elite units. We have to bring this tradition back, awarding this name and the correspondig elite status, to the divisions of the Red Army which have distinguished themselves in service."
-
-SOV_katyusha:0 "The Katyusha Launchers"
-SOV_katyusha_desc:0 "Our engineers in Voronezh have a simple but effective idea, consisting of racks of parallel rails on which rockets can be mounted. This can be applied to trucks, artillery tractors, tanks, and even armoured trains."
-
-SOV_rockets:0 "Soviet Rocketry"
-SOV_rockets_desc:0 "Our scientists have been studying a different type of reactive propulsion engine since early '30s. It is the time to concretize these theoretical studies into something useful for the war effort."
-
-SOV_massive_production:0 "Massive Industrial Production"
-SOV_massive_production_desc:0 "The Great Patriotic War requires that every effort be concentrated in war production. By improving the production lines and taking advantage of better manufacturing techniques, we will be able to achieve even higher production quotas."
-
-rocket_art_bonus:0 "Rocket Artillery bonus"
