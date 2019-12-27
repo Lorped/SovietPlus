@@ -17,8 +17,8 @@ SOV_unit_production = {
 	ai_strategy = {	type = role_ratio		id = cavalry			value = 0		}
 	ai_strategy = {	type = role_ratio		id = mountaineers	value = 2		}
 	ai_strategy = {	type = role_ratio		id = motorized		value = 10	}
-	ai_strategy = {	type = role_ratio		id = armor				value = 10  } ##starting low
-	ai_strategy = {	type = role_ratio		id = infantry			value = 73	}
+	ai_strategy = {	type = role_ratio		id = armor				value = 5  } ##starting low
+	ai_strategy = {	type = role_ratio		id = infantry			value = 78	}
 
 	###
 	# Air unit_ratio

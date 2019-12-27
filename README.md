@@ -1,12 +1,12 @@
 # SovietPlus
 
 This Mod is a complete Overhaul of the Soviet Union. The aim is to depict the initial struggle of this country to reach a decent level of industrialization, the critical initial months of the war and the huge effort to stop the german Army and push it back up to Berlin.
-The mod should be played with historical focus on.
+I can better enjoy the mod playing with historical focus on.
 
 ## Some other changes
 (Without any specific order)
 * AI finally build decent INF and ARM templates!
-* Added a lot of political advisors (most historically purged)
+* Added a lot of political advisors (most of them historically purged)
 * Changed the traits of vanilla political advisors
 * Changed the generic portraits with historical ones
 * You cannot use absurdly ahistorical advisors
@@ -21,6 +21,7 @@ The mod should be played with historical focus on.
 * You can relocate industries from more states (if you have the PP)
 * FIN goes to war for Karjela when SOV start losing terrain after Barbarossa (5% capitulation)
 * SOV AI has no hardocoded block on reasearch by dates but related to stored equipment
+* Just for flavor, added two regiments of marine fusiliers in Leningrad and Sevastopol
 
 
 ## QA

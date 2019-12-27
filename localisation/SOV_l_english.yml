@@ -139,9 +139,9 @@
   soviet.120.d:0 "The German army's sudden attack took our forces off guard. It will be difficult to regain control of military operations, and for a few weeks we will only have to resist and reorganize"
   soviet.120.a:0 "Activate every division of the Red Army"
 
-  soviet.121.t:0 "Scandal inside the VVS"
-  soviet.121.d:0 "A Politburo inquiry into the high accident rate in the Air Forces asked for the removal of the VVS High Commanders. Furthermore, a German Junkers Ju.52 just landed in Moscow, undetected by the VVS beforehand: unacceptable!"
-  soviet.121.a:0 "Incompetence is a crime against the state"
+  soviet.59.t:0 "Scandal inside the VVS"
+  soviet.59.d:0 "A Politburo inquiry into the high accident rate in the Air Forces asked for the removal of the VVS High Commanders. Furthermore, a German Junkers Ju.52 just landed in Moscow, undetected by the VVS beforehand: unacceptable!"
+  soviet.59.a:0 "Incompetence is a crime against the state"
 
   finland.89.t:0 "Retake our lands"
   finland.89.d:0 "The soviets are fighting against the Germany, we can retake our core territories"
@@ -295,10 +295,18 @@
   SOV_soviet_women:0 "The Soviet Women"
   SOV_soviet_women_desc:0 "I'm a sniper. A woman sniper, because in our country women fight in war with men. Every now and then, someone asks me how many men I killed.\nI answer: no man, only fascists. Three hundred nine.\n--Lyudmila Pavlichenko, Hero of the Soviet Union"
 
-  #SOV_night_witches:0 "The Night Witches"
-  #SOV_night_witches_desc:0 "Major Marina Raskova asked the Comrade Stalin to obtain a permission to form female combat units. The 588th Night Bomber Regiment, the \"Night Witches\" was one of them".
-  SOV_women_pilots:0 "The Night Witches"
-  SOV_women_pilots_desc:0 "Major Marina Raskova asked the Comrade Stalin to obtain a permission to form female combat units. The 588th Night Bomber Regiment, the \"Night Witches\" was one of them".
+  SOV_night_witches:0 "The Night Witches"
+  SOV_night_witches_desc:0 "Major Marina Raskova asked the Comrade Stalin to obtain a permission to form female combat units. The 588th Night Bomber Regiment, the \"Night Witches\" was one of them".
+  #SOV_women_pilots:0 "The Night Witches"
+  #SOV_women_pilots_desc:0 "Major Marina Raskova asked the Comrade Stalin to obtain a permission to form female combat units. The 588th Night Bomber Regiment, the \"Night Witches\" was one of them".
+
+  SOV_anti_colonialist_rebels:0 "The Cominform"
+  SOV_anti_colonialist_rebels_desc:0 "The Information Bureau of the Communist and Workers' Parties (Cominform) is responsible for cohordinating the action of all the Communist parties in Europe, under the direction of the Soviet Union."
+
+  #SOV_southern_thrust:0 "Restart the Great Game"
+  #SOV_southern_thrust_desc:0 "The English colonial empire is falling apart. Iran and Afghanistan must fall into our sphere of influence to guarantee us access to the Indian Ocean."
+  SOV_restart_the_great_game:0 "Restart the Great Game"
+  SOV_restart_the_great_game_desc:0 "The English colonial empire is falling apart. Iran and Afghanistan must fall into our sphere of influence to guarantee us the access to the Indian Ocean."
 
 
 ############# DECISIONS ##########
@@ -400,6 +408,8 @@
   SOV_CAS_manufacturer:0 "CAS Designer"
   SOV_fighter_manufacturer:0 "Fighter Designer"
   SOV_fighter_manufacturer_2:0 "Fighter Designer"
+
+  SOV_air_chief_reform_3:0 "Air Reformer\n(Genius)"
 
   SOV_quality:0 "Quality Focus"
 

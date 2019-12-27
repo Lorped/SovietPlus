@@ -825,6 +825,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = SOV_magnitogorsk }
+		available = { has_idea = SOV_idea_third_five_year_plan }
 		ai_will_do = {
 			factor = 1
 		}
@@ -2549,8 +2550,8 @@ focus_tree = {
 	}
 
 	focus = {
-		#id = SOV_night_witches
 		id = SOV_women_pilots
+		text = SOV_night_witches  ###################
 		icon = GFX_sov_night_witches
 		prerequisite = { focus = SOV_soviet_women }
 		x = 0
@@ -3081,88 +3082,266 @@ focus_tree = {
 
 
 	focus = {
-			id = SOV_claims_on_poland
-			icon = GFX_sov_eastern_poland
-			prerequisite = { focus = SOV_stalin_constitution }
-			x = 1
-			y = 2
-			relative_position_id = SOV_baltic_security
-			cost = 10
-			ai_will_do = {
+		id = SOV_claims_on_poland
+		icon = GFX_sov_eastern_poland
+		prerequisite = { focus = SOV_stalin_constitution }
+		x = 1
+		y = 2
+		relative_position_id = SOV_baltic_security
+		cost = 10
+		ai_will_do = {
+			factor = 0
+			modifier = {
 				factor = 0
-				modifier = {
-					factor = 0
-					date > 1942.1.1
-				}
-				modifier = {
-					factor = 200
-					GER = { has_government = democratic }
-				}
+				date > 1942.1.1
 			}
-
-			bypass = {
-				OR = {
-					has_idea = SOV_molotov_ribbentrop_pact
-
-					NOT = { country_exists = POL }
-
-					AND = {
-						OR = {
-							owns_state = 91
-							91 = { is_claimed_by = ROOT }
-						}
-						OR = {
-							owns_state = 93
-							93 = { is_claimed_by = ROOT }
-						}
-						OR = {
-							owns_state = 94
-							94 = { is_claimed_by = ROOT }
-						}
-						OR = {
-							owns_state = 95
-							95 = { is_claimed_by = ROOT }
-						}
-						OR = {
-							owns_state = 96
-							96 = { is_claimed_by = ROOT }
-						}
-						OR = {
-							owns_state = 89
-							89 = { is_claimed_by = ROOT }
-						}
-					}
-				}
-			}
-
-			completion_reward = {
-				# REVISIT Covers Polish border, may want to add/remove some states
-				add_state_claim = 96
-				add_state_claim = 95
-				add_state_claim = 94
-				add_state_claim = 93
-				add_state_claim = 91
-				add_state_claim = 89
-				add_named_threat = { threat = 3 name = SOV_claims_on_poland }
-
-				every_other_country = {
-					limit = {
-						OR = {
-							owns_state = 96
-							owns_state = 95
-							owns_state = 94
-							owns_state = 93
-							owns_state = 91
-							owns_state = 89
-						}
-					}
-					add_opinion_modifier = { target = SOV modifier = claimed_eastern_poland }
-				}
+			modifier = {
+				factor = 200
+				GER = { has_government = democratic }
 			}
 		}
 
+		bypass = {
+			OR = {
+				has_idea = SOV_molotov_ribbentrop_pact
 
+				NOT = { country_exists = POL }
 
+				AND = {
+					OR = {
+						owns_state = 91
+						91 = { is_claimed_by = ROOT }
+					}
+					OR = {
+						owns_state = 93
+						93 = { is_claimed_by = ROOT }
+					}
+					OR = {
+						owns_state = 94
+						94 = { is_claimed_by = ROOT }
+					}
+					OR = {
+						owns_state = 95
+						95 = { is_claimed_by = ROOT }
+					}
+					OR = {
+						owns_state = 96
+						96 = { is_claimed_by = ROOT }
+					}
+					OR = {
+						owns_state = 89
+						89 = { is_claimed_by = ROOT }
+					}
+				}
+			}
+		}
+		completion_reward = {
+			# REVISIT Covers Polish border, may want to add/remove some states
+			add_state_claim = 96
+			add_state_claim = 95
+			add_state_claim = 94
+			add_state_claim = 93
+			add_state_claim = 91
+			add_state_claim = 89
+			add_named_threat = { threat = 3 name = SOV_claims_on_poland }
+
+			every_other_country = {
+				limit = {
+					OR = {
+						owns_state = 96
+						owns_state = 95
+						owns_state = 94
+						owns_state = 93
+						owns_state = 91
+						owns_state = 89
+					}
+				}
+				add_opinion_modifier = { target = SOV modifier = claimed_eastern_poland }
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_anti_colonialist_rebels
+		icon = GFX_sov_the_cominform
+		prerequisite = {
+			focus = SOV_stalin_constitution
+		}
+		available = {
+			has_army_manpower = { size > 2000000 }
+			custom_trigger_tooltip = {
+				tooltip = SOV_has_not_officers_purged_tt
+				NOT = { has_idea = officers_purged }
+				NOT = { has_idea = officers_purged_2 }
+				NOT = { has_idea = officers_purged_3 }
+				NOT = { has_idea = officers_purged_4 }
+				NOT = { has_idea = officers_purged_5 }
+				NOT = { has_idea = officers_purged_6 }
+				NOT = { has_idea = officers_purged_7 }
+				NOT = { has_idea = officers_purged_8 }
+				NOT = { has_idea = officers_purged_9 }
+				NOT = { has_idea = officers_purged_10 }
+			}
+			has_war = no
+		}
+		x = 1
+		y = 1
+		relative_position_id = SOV_expand_red_fleet
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+		completion_reward = {
+			every_other_country = {
+				limit = { has_government = communism }
+				add_opinion_modifier = { target = SOV modifier = large_increase }
+			}
+			USA = {
+				if = {
+					limit = { NOT = { has_government = communism } }
+					add_opinion_modifier = { target = SOV modifier = anti_capitalist_diplomacy_capitalists }
+				}
+			}
+			ENG = {
+				if = {
+					limit = { NOT = { has_government = communism } }
+					add_opinion_modifier = { target = SOV modifier = anti_capitalist_diplomacy_capitalists }
+				}
+			}
+			FRA = {
+				if = {
+					limit = { NOT = { has_government = communism } }
+					# add_opinion_modifier = { target = SOV modifier = anti_capitalist_diplomacy_capitalists }
+					add_timed_idea = { idea = comintern_influence days = 1095 }
+				}
+			}
+			ITA = {
+				if = {
+					limit = {
+						has_government = democratic
+					}
+					#add_opinion_modifier = { target = SOV modifier = anti_capitalist_diplomacy_capitalists }
+					add_timed_idea = { idea = comintern_influence days = 1095 }
+				}
+			}
+			add_named_threat = { threat = 1 name = SOV_anti_colonialist_rebels }
+		}
+	}
+
+	focus = {
+		id = SOV_southern_thrust
+		text = SOV_restart_the_great_game
+		icon = GFX_sov_the_great_game
+		prerequisite = { focus = SOV_anti_colonialist_rebels }
+		x = 0
+		y = 1
+		relative_position_id = SOV_anti_colonialist_rebels
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+		will_lead_to_war_with = PER
+		# will_lead_to_war_with = IRQ
+		will_lead_to_war_with = AFG
+		bypass = {
+			PER = {
+				NOT = { owns_state = 419 }
+				NOT = { owns_state = 420 }
+				NOT = { owns_state = 266 }
+			}
+			# IRQ = {
+			# 	NOT = { owns_state = 676 }
+			# 	NOT = { owns_state = 291 }
+			# }
+			AFG = {
+				NOT = { owns_state = 267 }
+				NOT = { owns_state = 415 }
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					PER = {
+						OR = {
+							owns_state = 419
+							owns_state = 420
+							owns_state = 266
+						}
+					}
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = PER
+				}
+			}
+			if = {
+				limit = {
+					AFG = {
+						OR = {
+							owns_state = 267
+							owns_state = 415
+						}
+					}
+				}
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = AFG
+				}
+			}
+			ENG = {
+				add_opinion_modifier = { target = SOV modifier = middle_east_expansionism }
+			}
+			FRA = {
+				add_opinion_modifier = { target = SOV modifier = middle_east_expansionism }
+			}
+			USA = {
+				add_opinion_modifier = { target = SOV modifier = middle_east_expansionism }
+			}
+		}
+	}
+
+	focus = {
+			id = SOV_war_with_uk
+			icon = GFX_focus_attack_britain
+			prerequisite = { focus = SOV_southern_thrust }
+			available = {
+				has_army_manpower = { size > 2500000 }
+				country_exists = ENG
+				NOT = { ENG = { has_government = communism } }
+				NOT = { has_idea = trotskyite_plot }
+				custom_trigger_tooltip = {
+					tooltip = SOV_has_not_officers_purged_tt
+					NOT = { has_idea = officers_purged }
+					NOT = { has_idea = officers_purged_2 }
+					NOT = { has_idea = officers_purged_3 }
+					NOT = { has_idea = officers_purged_4 }
+					NOT = { has_idea = officers_purged_5 }
+					NOT = { has_idea = officers_purged_6 }
+					NOT = { has_idea = officers_purged_7 }
+					NOT = { has_idea = officers_purged_8 }
+					NOT = { has_idea = officers_purged_9 }
+					NOT = { has_idea = officers_purged_10 }
+				}
+				has_war = no
+			}
+			bypass = {
+				has_war_with = ENG
+			}
+			will_lead_to_war_with = ENG
+			x = 0
+			y = 1
+			relative_position_id = SOV_southern_thrust
+			cost = 10
+			ai_will_do = {
+				factor = 0
+			}
+			completion_reward = {
+				create_wargoal = {
+					type = puppet_wargoal_focus
+					target = ENG
+				}
+			}
+		}
 
 
 	focus = {

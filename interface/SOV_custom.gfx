@@ -399,4 +399,14 @@ spriteTypes = {
     texturefile = "gfx/interface/goals/SOV_eastern_poland.dds"
   }
 
+  spriteType = {
+    name = "GFX_sov_the_cominform"
+    texturefile = "gfx/interface/goals/SOV_the_cominform.dds"
+  }
+
+  spriteType = {
+    name = "GFX_sov_the_great_game"
+    texturefile = "gfx/interface/goals/SOV_the_great_game.dds"
+  }
+
  }
