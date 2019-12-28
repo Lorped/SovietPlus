@@ -398,7 +398,8 @@
   zhukov_available:0 "Georgy Zhukov is a general"
   vvs_scandal:0 "Purged by Stalin"
 
-  SOV_veteran_communist:0 "Veteran Communist"
+  SOV_veteran_communist:0 "Old School Bolshevik"
+  SOV_soviet_activist:0 "Soviet Activist"
   SOV_secret_police_chief_0:0 "Efficient Executioner"
   SOV_secret_police_chief_1:0 "Prince of Terror"
   SOV_comintern_workhorse:0 "Comintern Workhorse"

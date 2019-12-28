@@ -72,9 +72,15 @@ leader_traits = {
 		industrial_capacity_factory = 0.05
 	}
 
+	SOV_soviet_activist = {
+		sprite = 13
+		stability_factor = 0.05
+		industrial_capacity_factory = 0.05
+	}
+
 	SOV_comintern_workhorse = {
 		sprite = 13
-		stability_weekly = 0.002
+		communism_drift = 0.1
 		stability_factor = 0.05
 	}
 

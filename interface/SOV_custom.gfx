@@ -98,6 +98,10 @@ spriteTypes = {
     texturefile = "gfx/interface/ideas/SOV_soviet_propaganda.dds"
   }
 
+  spriteType = {
+		name = "GFX_sov_finish_the_plan"
+		texturefile = "gfx/interface/goals/SOV_finish_the_plan.dds"
+	}
 
   spriteType = {
 		name = "GFX_sov_five_year_plan_IC_1"

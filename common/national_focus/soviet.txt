@@ -54,7 +54,7 @@ focus_tree = {
 	#Focus for Finish the Five Year plan
 	focus = {
 		id = SOV_finish_the_five_year_plan
-		icon = GFX_goal_generic_construct_civ_factory
+		icon = GFX_sov_finish_the_plan
 		x = 2
 		y = 0
 		cost = 7.15

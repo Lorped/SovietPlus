@@ -1102,7 +1102,7 @@ ideas = {
 			{
 				NOT = { has_country_flag = purged_zinoviev }
 			}
-			traits = { communist_revolutionary }
+			traits = { SOV_soviet_activist }
 			do_effect = {
 				NOT = {
 					has_government = communism
