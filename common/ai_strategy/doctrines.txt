@@ -1,3 +1,8 @@
+########################################
+##  VANILLA FILE but the "NOT = {  original_tag = SOV }   "
+##  in the mass_assault  entries
+########################################
+
 stop_making_horsies = {
 	enable = {
 		num_of_factories > 20

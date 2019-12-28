@@ -1,3 +1,8 @@
+########################
+### VANILLA file but removed the block for SOV to infantry_equipment_2
+#######################
+
+
 technologies = {
 
 	@1918 = 0

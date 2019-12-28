@@ -1,3 +1,9 @@
+#################
+##  VANILLA FILE but THE "not = { original_tag = SOV }"
+## 	in the  default_unit_production entry
+################
+
+
 # Written by Henrik "Groogy" Hansson
 # Modified by Daniel "Da9L" Sjöberg
 
