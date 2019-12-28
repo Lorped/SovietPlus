@@ -19,6 +19,11 @@ spriteTypes = {
   }
 
   spriteType = {
+    name = "GFX_idea_mikhail_kalinin"
+    texturefile = "gfx/interface/ideas/idea_mikhail_kalinin.dds"
+  }
+
+  spriteType = {
     name = "GFX_idea_lev_kamenev"
     texturefile = "gfx/interface/ideas/idea_lev_kamenev.dds"
   }

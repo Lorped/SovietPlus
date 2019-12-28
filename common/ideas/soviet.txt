@@ -992,10 +992,6 @@ ideas = {
 			allowed = {
 				original_tag = "SOV"
 			}
-			available =
-			{
-				NOT = { has_country_flag = purged_kalinin }
-			}
 			traits = { popular_figurehead }
 		}
 
