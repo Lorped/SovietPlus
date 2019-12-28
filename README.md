@@ -1,17 +1,17 @@
 # SovietPlus
 
 This Mod is a complete Overhaul of the Soviet Union. The aim is to depict the initial struggle of this country to reach a decent level of industrialization, the critical initial months of the war and the huge effort to stop the german Army and push it back up to Berlin.
-I can better enjoy the mod playing with historical focus on.
+You can better enjoy the mod playing with historical focus on.
 
 ## Some other changes
 (Without any specific order)
-* AI finally build decent INF and ARM templates!
+* SOV AI finally builds decent INF and ARM templates!
 * Added a lot of political advisors (most of them historically purged)
 * Changed the traits of vanilla political advisors
 * Changed the generic portraits with historical ones
 * You cannot use absurdly ahistorical advisors
 * The only two parties are the Soviet Communist Party and the Socialist Revolutionary Party
-* Fixed some vanilla typos like "Debakrist for "Dekabrist" , "Guerevich" for Gurevich" etc
+* Fixed some vanilla typos like "Debakrist for "Dekabrist", "Guerevich" for Gurevich" etc
 * Added the two missing Field Marshals in '36
 * Added the Fugas Class (minesweeper)
 * Fixed the correct order of the Great Trials, and their historical outcomes
@@ -22,6 +22,8 @@ I can better enjoy the mod playing with historical focus on.
 * FIN goes to war for Karjela when SOV start losing terrain after Barbarossa (5% capitulation)
 * SOV AI has no hardocoded block on reasearch by dates but related to stored equipment
 * Just for flavor, added two regiments of marine fusiliers in Leningrad and Sevastopol
+* Removed the STRAT bombers (the first flight of Pe-8 was in december '36), SOV has the tech anyway
+* Added the T-35 tech (first built in '33 , but too few to appear in any template )
 
 
 ## QA
@@ -47,4 +49,4 @@ Yes, it is. The Red Army has a terrible penalty for the first three months, and 
 With this mod you can't, sorry.
 
 ### Why Finland doesn't join Axis but starts a new war alone in 1941?
-Because joining axis may lead to strange AI behaviors, like moving there 2 hundreds GER division there and depleting the main front..
+Because joining axis may lead to strange AI behaviors, like moving there 2 hundreds GER division and depleting the main front..
