@@ -385,6 +385,17 @@
   SOV_relocate_industry_from_minsk_desc:0 "Evacuating the heavy machinery of our Minsk factories to the Urals is a huge undertaking, but it is necessary to secure our war production."
   SOV_relocate_industry_from_minsk_tt:0 "§RThese effects require control of Minsk when the decision times out.§!"
 
+  SOV_relocate_industry_from_khmelnytskyi:0 "Relocate Industry from Khmelnytskyi"
+  SOV_relocate_industry_from_khmelnytskyi_desc:0 "Evacuating the heavy machinery of our Khmelnytskyi factories to the Urals is a huge undertaking, but it is necessary to secure our war production."
+  SOV_relocate_industry_from_khmelnytskyi_tt:0 "§RThese effects require control of Khmelnytskyi when the decision times out.§!"
+
+  SOV_relocate_industry_from_tula:0 "Relocate Industry from Tula"
+  SOV_relocate_industry_from_tula_desc:0 "Evacuating the heavy machinery of our Tula factories to the Urals is a huge undertaking, but it is necessary to secure our war production."
+  SOV_relocate_industry_from_tula_tt:0 "§RThese effects require control of Tula when the decision times out.§!"
+
+
+
+
 ############ FLAGS & BONUSES ##########
 
   purged_voznesensky:0 "Purged by Stalin"

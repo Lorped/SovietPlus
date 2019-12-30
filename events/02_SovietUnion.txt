@@ -24,7 +24,13 @@ country_event = {
 			country_event = { id = soviet.38 days = 146 }
 			country_event = { id = soviet.200 days = 365 }  ## 5 more generals
 			country_event = { id = soviet.201 days = 500 }  ## 4 more generals
-			country_event = { id = soviet.210 days = 700 }  ## Rokossovsky
+			if = {
+				limit = {
+					has_country_flag = purged_rokossovsky
+				}
+				country_event = { id = soviet.210 days = 700 }  ## Rokossovsky
+			}
+
 		}
 	}
 	option = {
