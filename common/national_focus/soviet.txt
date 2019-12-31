@@ -81,8 +81,8 @@ focus_tree = {
 					add_political_power = 100
 			}
 			add_to_variable = { var = 5_year_plan_progress value = 10 }
+			custom_effect_tooltip = SOV_5_year_plan_10_tt
 		}
-		custom_effect_tooltip = SOV_5_year_plan_10_tt
 	}
 
 	#Focus for Strength GOSPLAN
@@ -105,8 +105,8 @@ focus_tree = {
 			add_ideas = nikolai_voznesensky
 			swap_ideas = { remove_idea = SOV_idea_2_5_year_plan add_idea = SOV_idea_2_5_year_plan_CIC }
 			add_to_variable = { var = 5_year_plan_progress value = 10 }
+			custom_effect_tooltip = SOV_5_year_plan_10_tt
 		}
-		custom_effect_tooltip = SOV_5_year_plan_10_tt
 	}
 
 	#Focus for Review GOSPLAN
@@ -126,8 +126,8 @@ focus_tree = {
 		completion_reward = {
 			swap_ideas = { remove_idea = SOV_idea_2_5_year_plan add_idea = SOV_idea_2_5_year_plan_MIL }
 			add_to_variable = { var = 5_year_plan_progress value = 10 }
+			custom_effect_tooltip = SOV_5_year_plan_10_tt
 		}
-		custom_effect_tooltip = SOV_5_year_plan_10_tt
 	}
 
 	#Focus for Focus on Heavy industry
@@ -228,8 +228,8 @@ focus_tree = {
 				}
 			}
 			add_to_variable = { var = 5_year_plan_progress value = 10 }
+			custom_effect_tooltip = SOV_5_year_plan_10_tt
 		}
-		custom_effect_tooltip = SOV_5_year_plan_10_tt
 	}
 
 	#Focus for Focus on Military industry
@@ -370,8 +370,8 @@ focus_tree = {
 				}
 			}
 			add_to_variable = { var = 5_year_plan_progress value = 10 }
+			custom_effect_tooltip = SOV_5_year_plan_10_tt
 		}
-		custom_effect_tooltip = SOV_5_year_plan_10_tt
 	}
 
 
@@ -580,8 +580,8 @@ focus_tree = {
 				}
 			}
 			add_to_variable = { var = 5_year_plan_progress value = 5 }
+			custom_effect_tooltip = SOV_5_year_plan_tt
 		}
-		custom_effect_tooltip = SOV_5_year_plan_tt
 	}
 
 	#Focus for Add Production Quota
@@ -600,8 +600,9 @@ focus_tree = {
 
 		completion_reward {
 			add_to_variable = { var = 5_year_plan_progress value = 5 }
+			custom_effect_tooltip = SOV_5_year_plan_tt
+			custom_effect_tooltip = SOV_5_year_plan_quota_tt
 		}
-		custom_effect_tooltip = SOV_5_year_plan_tt
 	}
 
 	#Focus for Transiberiana
@@ -759,8 +760,8 @@ focus_tree = {
 				}
 			}
 			add_to_variable = { var = 5_year_plan_progress value = 5 }
+			custom_effect_tooltip = SOV_5_year_plan_tt
 		}
-		custom_effect_tooltip = SOV_5_year_plan_tt
 	}
 
 	#Focus for Magnitogorsk
