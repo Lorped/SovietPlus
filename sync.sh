@@ -1,1 +1,1 @@
-rsync -avz --delete --exclude "work" --exclude ".git" --exclude ".gitignore"  --exclude "sync.sh"  "/media/share/SovietPlus/" "/home/lorenzo/Paradox/HOI4/localfiles/mod/SovietPlus/"
+rsync -avz --delete --exclude "work" --exclude ".git" --exclude ".gitignore"  --exclude "descriptor.mod" --exclude "sync.sh"  "/media/share/SovietPlus/" "/home/lorenzo/Paradox/HOI4/localfiles/mod/SovietPlus/"

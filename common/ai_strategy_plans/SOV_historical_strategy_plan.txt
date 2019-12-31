@@ -43,8 +43,8 @@ SOV_historical_plan = {
 		SOV_transsiberian
 		SOV_magnitogorsk
 		SOV_komsomol
-		SOV_third_five_year_plan
-		SOV_closed_cities_network
+		SOV_third_five_year_plan_2
+
 		SOV_transpolar_flights
 		SOV_peoples_commissariat
 
@@ -62,6 +62,7 @@ SOV_historical_plan = {
 		SOV_t34
 		SOV_tula
 		SOV_progress_cult
+		SOV_closed_cities_network
 		SOV_build_molotov_line
 		SOV_improve_stalin_line
 

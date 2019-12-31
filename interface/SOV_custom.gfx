@@ -198,6 +198,11 @@ spriteTypes = {
   }
 
   spriteType = {
+    name = "GFX_sov_third_five_year_plan_2"
+    texturefile = "gfx/interface/goals/SOV_third_five_year_plan_2.dds"
+  }
+
+  spriteType = {
     name = "GFX_idea_third_five_year_plan"
     texturefile = "gfx/interface/ideas/SOV_third_five_year_plan.dds"
   }
@@ -420,6 +425,11 @@ spriteTypes = {
   spriteType = {
     name = "GFX_sov_the_great_game"
     texturefile = "gfx/interface/goals/SOV_the_great_game.dds"
+  }
+
+  spriteType = {
+    name = "GFX_sov_stalingrad"
+    texturefile = "gfx/interface/goals/SOV_stalingrad.dds"
   }
 
  }

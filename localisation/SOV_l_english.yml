@@ -74,6 +74,9 @@
   soviet_partisans:0 "Partisans activity"
   soviet_partisans_desc:0 "Civilians in the occupied territories tirelessly strike the enemy rear."
 
+  progress_cult_focus_2:0 "Progress Cult"
+
+
 ############## EVENTS  ##############
 
   soviet.55.t:0 "Scientist accused of Anti-Sovietic Activities"
@@ -207,8 +210,11 @@
   SOV_increase_rubber:0 "Increase the Synthetic Rubber Production "
   SOV_increase_rubber_desc:0 "Rubber is an essential element for modern industrial production. Being dependent on foreign imports could bring the Soviet Union into a dangerous condition in case of conflict."
 
-  SOV_third_five_year_plan:0 "The third Five-Year Plan"
+  SOV_third_five_year_plan:0 "Strict Adherence to the Plan"
   SOV_third_five_year_plan_desc:0 "The third Five-Year Plan will be the final step for bringing our country into the future."
+
+  SOV_third_five_year_plan_2:0 "Extend the Scope of the Plan"
+  SOV_third_five_year_plan_2_desc:0 "The changing international conditions and the climate of uncertainty compel us to consider a further expansion of our war industry, in the framework of the Third Five-Year Plan"
 
   SOV_cult_of_personality:0 "The Cult of Personality"
   SOV_cult_of_personality_desc:0 "Stalin, the father of the socialism, is the undisputed leader of our country. Under his guide we cannot fail."
@@ -233,6 +239,10 @@
 
   SOV_okmo:0 "OKMO Design Bureau"
   SOV_okmo_desc:0 "The OKMO design team, together with the engineers from the Kirov plant in Leningrad, recommends developing a new line of heavy tanks"
+
+  SOV_stalingrad:0 "The Dzerzhinskiy Tractor Plant"
+  SOV_stalingrad_desc:0 "The Dzerzhinskiy Tractor Plant in Stalingrad was one of the first industrial facilities to be built. Its industrial capability must me further expanded."
+
 
   SOV_air_volunteers:0 "Air Volunteers"
   SOV_air_volunteers_desc:0 "Aiding other comrades and our allies, would help us to develop new tactics and improve our airplanes"

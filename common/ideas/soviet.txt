@@ -51,6 +51,7 @@ ideas = {
 				production_speed_bunker_factor = -0.25
 			}
 		}
+
 		SOV_idea_third_five_year_plan_2 = {
 			available = { has_defensive_war = no }
 			removal_cost = -1
@@ -60,12 +61,12 @@ ideas = {
 			allowed_civil_war = {
 				has_government = communism
 			}
-			picture = third_five_year_plan
 			research_bonus = {
-				industry = 0
+				industry = -0.1
 			}
+			picture = third_five_year_plan
 			modifier = {
-				production_speed_industrial_complex_factor = 0.05
+				production_speed_industrial_complex_factor = 0
 				production_speed_arms_factory_factor = -0.05
 				production_speed_synthetic_refinery_factor = 0.05
 				production_speed_bunker_factor = -0.25
@@ -843,6 +844,37 @@ ideas = {
 		}
 	}
 
+	progress_cult_focus = {
+		removal_cost = -1
+		allowed = {
+			always = no # Added via focus
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		picture = generic_research_bonus
+		modifier = {
+			research_speed_factor = 0.10
+		}
+	}
+
+	progress_cult_focus_2 = {
+		removal_cost = -1
+		allowed = {
+			always = no # Added via focus
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		picture = generic_research_bonus
+		modifier = {
+			research_speed_factor = 0.10
+		}
+		research_bonus = {
+			industry = 0.1
+		}
+	}
+
 
 
 ###############################################
@@ -910,19 +942,8 @@ ideas = {
 			}
 		}
 
-		progress_cult_focus = {
-			removal_cost = -1
-			allowed = {
-				always = no # Added via focus
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			picture = generic_research_bonus
-			modifier = {
-				research_speed_factor = 0.10
-			}
-		}
+
+
 		socialist_science_focus = {
 			removal_cost = -1
 			allowed = {

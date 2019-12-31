@@ -1,4 +1,4 @@
-name="SovietPlus"
+name="SovietPlus -DEVEL-"
 tags={
 	"Historical"
 	"National Focuses"
