@@ -432,4 +432,19 @@ spriteTypes = {
     texturefile = "gfx/interface/goals/SOV_stalingrad.dds"
   }
 
+  spriteType = {
+    name = "GFX_sov_op_dist"
+    texturefile = "gfx/interface/goals/SOV_op_dist.dds"
+  }
+
+  spriteType = {
+    name = "GFX_sov_batt_supp"
+    texturefile = "gfx/interface/goals/SOV_batt_supp.dds"
+  }
+
+  spriteType = {
+    name = "GFX_sov_pe2"
+    texturefile = "gfx/interface/goals/SOV_pe2.dds"
+  }
+
  }

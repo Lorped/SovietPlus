@@ -11,7 +11,7 @@ focus_tree = {
 		}
 	}
 
-	continuous_focus_position = { x = 0 y = 800 }
+	continuous_focus_position = { x = 1 y = 800 }
 
 	default = no
 
@@ -1178,7 +1178,7 @@ focus_tree = {
 		available = {
 			has_government = communism
 		}
-		x = 19
+		x = 20
 		y = 0
 		cost = 2
 		ai_will_do = {
@@ -1510,13 +1510,59 @@ focus_tree = {
 	}
 
 	focus = {
+		id = SOV_batt_supp
+		icon = GFX_sov_batt_supp
+		prerequisite = { focus = SOV_air_volunteers }
+		mutually_exclusive = { focus = SOV_op_dist }
+		x = -1
+		y = 1
+		relative_position_id = SOV_air_volunteers
+		cost = 4.29
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = air_doc_bonus
+    		bonus = 0.5
+    		uses = 1
+				category = battlefield_support_tree
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_op_dist
+		icon = GFX_sov_op_dist
+		prerequisite = { focus = SOV_air_volunteers }
+		x = 1
+		y = 1
+		relative_position_id = SOV_air_volunteers
+		cost = 4.29
+		ai_will_do = {
+			factor = 5
+		}
+		mutually_exclusive = { focus = SOV_batt_supp }
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = air_doc_bonus
+    		bonus = 0.5
+    		uses = 1
+				category = operational_integrity_tree
+			}
+		}
+	}
+
+	focus = {
 		id = SOV_il2
 		icon = GFX_sov_il2
-		prerequisite = { focus = SOV_air_volunteers }
+		prerequisite = { focus = SOV_batt_supp }
 		available = { has_tech = CAS1 }
 		x = 0
 		y = 1
-		relative_position_id = SOV_air_volunteers
+		relative_position_id = SOV_batt_supp
 		cost = 4.29
 		ai_will_do = {
 			factor = 5
@@ -1537,6 +1583,34 @@ focus_tree = {
 				category = cas_bomber
 			}
 			add_ideas = ilyushin_design_bureau
+		}
+	}
+
+	focus = {
+		id = SOV_pe2
+		icon = GFX_sov_pe2
+		prerequisite = { focus = SOV_op_dist }
+		available = { has_tech = CAS1 }
+		x = 0
+		y = 1
+		relative_position_id = SOV_op_dist
+		cost = 4.29
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 5
+				has_war = yes
+			}
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = bomber_bonus
+    		bonus = 1
+    		uses = 1
+				category = tactical_bomber
+			}
+			add_ideas = tupolev_design_bureau
 		}
 	}
 
