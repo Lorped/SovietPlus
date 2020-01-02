@@ -1590,7 +1590,7 @@ focus_tree = {
 		id = SOV_pe2
 		icon = GFX_sov_pe2
 		prerequisite = { focus = SOV_op_dist }
-		available = { has_tech = CAS1 }
+
 		x = 0
 		y = 1
 		relative_position_id = SOV_op_dist
