@@ -325,6 +325,17 @@
 
   SOV_5_year_plan_10_tt:0 "Our effort will increase the completion of the Five-Year Plan by §G10%§!"
   SOV_5_year_plan_quota_tt:0 "\nIt will enable the §YIncrease Quotas§! decisions."
+
+  SOV_batt_supp:0 "Air to Ground Tactical Doctrine"
+  SOV_batt_supp_desc:0 "We have experienced the effectiveness of aviation tactical support. We must develop the most effective strike tactics to make this support even more decisive."
+
+  SOV_op_dist:0 "Strategic VVS command"
+  SOV_op_dist_desc:0 "Until now, the VVS wings are cohordinated by the Front commands. We have seen how a strategic vision of air warfare focused on air superiority and the use of bombers can lead to much more consistent results."
+
+  SOV_pe2:0 "The Pe-2 Project"
+  SOV_pe2_desc:0 "The Soviet Air Force needs a modern, mid-range tactical bomber. The Pe-2 (nicknamed \"Peshka\") will perfectly fit this role. The prototype designed by eng. Vladimir Petlyakov must start its full production."
+
+
 ############# DECISIONS ##########
 
   SOV_5_year_plan_tt:0 "Our effort will increase the completion of the Five-Year Plan by §G5%§!"
