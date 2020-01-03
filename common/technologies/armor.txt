@@ -756,6 +756,7 @@ technologies = {
 			armor
 			cat_medium_armor
 		}
+
 	}
 
 	basic_medium_td = {
