@@ -3607,6 +3607,7 @@ focus_tree = {
 				type = puppet_wargoal_focus
 				target = JAP
 			}
+			add_state_claim = 537 #Sud. Sakhalin
 		}
 	}
 

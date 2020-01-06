@@ -1,0 +1,153 @@
+
+add_namespace = soviet
+
+country_event = {
+  id = soviet.500
+  picture = GFX_report_event_countenance1
+  title = soviet.500.t
+	desc = soviet.500.d
+
+  trigger = {
+		original_tag = ENG
+		has_war_with = GER
+    PER = { NOT = {
+      is_in_faction_with = ENG
+      is_in_faction_with = SOV
+      }
+    }
+    SOV = { has_war = GER }
+	}
+
+  mean_time_to_happen = {	days = 45 }
+  fire_only_once = yes
+
+  option = {
+		name = soviet.500.a
+		ai_chance = { factor = 100 }
+    SOV = {
+      country_event = {
+        id = soviet.501
+        days = 1
+      }
+    }
+  }
+  option = {
+    name = soviet.500.b
+    ai_chance = { factor = 0 }
+    set_global_flag = countenance_alone
+    ENG = {
+      country_event = {
+        id = soviet.510
+        days = 15
+      }
+    }
+  }
+  option = {
+    name = soviet.500.c
+    ai_chance = { factor = 0 }
+    set_global_flag = no_countenance
+  }
+}
+
+country_event = {
+  id = soviet.501
+  picture = GFX_report_event_countenance1
+  title = soviet.501.t
+	desc = soviet.501.d
+
+  triggered_only = yes
+
+  fire_only_once = yes
+
+  option = {
+		name = soviet.501.a
+		ai_chance = { factor = 100 }
+    ENG = {
+      country_event = {
+        id = soviet.510
+        days = 15
+      }
+    }
+    SOV = {
+      country_event = {
+        id = soviet.511
+        days = 15
+      }
+    }
+    set_global_flag = countenance_twin
+  }
+  option = {
+    name = soviet.501.b
+    ai_chance = { factor = 0 }
+    set_global_flag = countenance_alone
+    ENG = {
+      country_event = {
+        id = soviet.510
+        days = 15
+      }
+    }
+  }
+}
+
+
+country_event = {
+	id = soviet.510
+	picture = GFX_report_event_soviet_soldiers
+	title = soviet.510.t
+	desc = soviet.510.d
+
+  is_triggered_only = yes
+
+
+	fire_only_once = yes
+	option = {
+		name = soviet.510.a
+		ai_chance = { factor = 100 }
+		declare_war_on = {
+    	target = PER
+    	type = puppet_wargoal_focus
+		}
+	}
+}
+
+country_event = {
+	id = soviet.510
+	picture = GFX_report_event_soviet_soldiers
+	title = soviet.510.t
+	desc = soviet.510.d
+
+  is_triggered_only = yes
+
+
+	fire_only_once = yes
+	immediate = {
+		declare_war_on = {
+    	target = PER
+    	type = puppet_wargoal_focus
+		}
+	}
+  option = {
+    name = soviet.510.a
+  }
+}
+
+country_event = {
+	id = soviet.511
+	picture = GFX_report_event_soviet_soldiers
+	title = soviet.511.t
+	desc = soviet.511.d
+
+  is_triggered_only = yes
+
+
+	fire_only_once = yes
+	immediate = {
+		declare_war_on = {
+    	target = PER
+    	type = puppet_wargoal_focus
+		}
+	}
+  option = {
+    name = soviet.511.a
+  }
+}

@@ -715,10 +715,10 @@ ideas = {
 
 		equipment_bonus = {
 			CAS_equipment = {
-				build_cost_ic = -0.1 instant = yes
+				build_cost_ic = -0.05 instant = yes
 			}
 			fighter_equipment = {
-				build_cost_ic = -0.1 instant = yes
+				build_cost_ic = -0.05 instant = yes
 			}
 		}
 	}
