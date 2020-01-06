@@ -1,0 +1,56 @@
+add_namespace = soviet
+
+country_event = {
+	id = soviet.700
+	picture = GFX_report_event_generic_sign_treaty2
+	title = soviet.700.t
+	desc = soviet.700.d
+
+	trigger = {
+		original_tag = SOV
+		has_global_flag = had_yalta_conference
+		has_war = no
+		AND = {
+			country_exists = SLO
+			country_exists = CZE
+			SLO = { is_subject_of SOV }
+			CZE = { is_subject_of SOV }
+		}
+	}
+
+	mean_time_to_happen = {	days = 1 }
+	fire_only_once = yes
+
+	option = {
+		name = soviet.700.a
+		ai_chance = { factor = 100 }
+
+    set_state_owner = 763 #Koenisberg / kaliningrad
+    set_state_owner = 73 #ruthenia
+    ## add_state_claim = 537 #Sud. Sakhalin
+
+		every_state = { 
+    	limit = { is_owned_by = SLO  is_core_of = CZE }
+    	CZE = { transfer_state = PREV }
+		}
+
+
+
+		#if = {
+		#	limit = {
+		#		AND = {
+		#			country_exists = SLO
+		#			country_exists = CZE
+		#			SLO = { is_puppet_of SOV }
+		#			CZE = { is_puppet_of SOV }
+		#		}
+		#	}
+		# every_state = {
+    #	limit = { is_owned_by = SLO  is_core_of = CZE }
+    #	CZE = { transfer_state = PREV }
+		# }
+		#}
+
+
+	}
+}

@@ -27,10 +27,10 @@ country_event = {
 	option = {
 		name = finland.90.a
 
-		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 15000 producer = GER }
-		add_equipment_to_stockpile = { type = support_equipment_1 amount = 500 producer = GER }
-		add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 300 producer = GER }
-		add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 100 producer = GER }
+		add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 30000 producer = GER }
+		add_equipment_to_stockpile = { type = support_equipment_1 amount = 400 producer = GER }
+		add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 100 producer = GER }
+		add_equipment_to_stockpile = { type = fighter_equipment_1 amount = 200 producer = GER }
 
 		add_tech_bonus = {
 			name = land_doc_bonus

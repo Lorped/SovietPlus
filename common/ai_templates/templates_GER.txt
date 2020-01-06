@@ -14,7 +14,7 @@ armored_GER = {
 		factor = 2.0
 
 		modifier = {
-			factor = 5
+			factor = 10
 			OR = {
 				has_tech = basic_medium_tank
 			}
@@ -210,10 +210,10 @@ armored_GER = {
 	medium_armor_default_GER = {
 
 		upgrade_prio = {
-			factor = 2
+			factor = 10
 
 			modifier = {
-				factor = 10
+				factor = 100
 				has_tech = basic_medium_tank
 				NOT = {
 					has_tech = main_battle_tank
@@ -280,8 +280,8 @@ armored_GER = {
 			}
 
 			regiments = {
-				medium_armor = 3
-				light_armor = 3
+				medium_armor = 4
+				light_armor = 2
 				motorized = 4
 			}
 		}
@@ -324,12 +324,12 @@ armored_GER = {
 			}
 
 			modifier = {
-				factor = 30
+				factor = 40
 				has_tech = basic_medium_tank
 				NOT = {
 					has_tech = main_battle_tank
 				}
-				has_equipment = { light_tank_equipment < 50 }
+				#has_equipment = { light_tank_equipment < 50 }
 				has_equipment = { medium_tank_equipment > 25 }
 			}
 		}

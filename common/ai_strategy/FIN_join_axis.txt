@@ -37,3 +37,24 @@ Dont_ever_think_about_China2 = {
 	ai_strategy = { type = alliance   	id = "PRC"     value = -1000 }
 	ai_strategy = { type = alliance   	id = "FIN"     value = -1000 }
 }
+
+###################
+
+
+fin_you_have_to_fight = {
+	enable = {
+		tag = FIN
+		FIN = { has_idea = FIN_german_support }
+	}
+	abort = {
+		OR = {
+			has_war_with = SOV
+			date > 1944.01.01
+		}
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = "SOV"
+		value = 100
+	}
+}

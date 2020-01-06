@@ -1,0 +1,10 @@
+PER_love_GER = {
+	enable = {
+		tag = PER
+    has_global_flag = fall_of_france
+		NOT = { has_global_flag = op_countenance_completed }
+	}
+	abort_when_not_enabled = yes
+	reversed = yes
+	ai_strategy = { type = befriend id = "GER" value = 1000 }
+}
