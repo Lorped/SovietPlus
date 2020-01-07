@@ -179,6 +179,8 @@
   soviet.501.a:0 "We will do our part."
   soviet.501.b:0 "Our troops are requested elsewere."
 
+  soviet_answer:0 "The United Kingdom will receive our answer"
+
   soviet.508.t:0 "Operation Countenance"
   soviet.508.d:0 "The Soviet Union will agreed with the plan, we will act in 15 days. Get ready"
   soviet.508.a:0 "It will be an easy task."
@@ -194,6 +196,12 @@
   soviet.511.t:0 "Operation Countenance"
   soviet.511.d:0 "Operation Countenance is starting, our troops are crossing the border right now."
   soviet.511.a:0 "We will be in Tabriz in a couple of weeks"
+
+  PER_agree_peace:0 "The persian forces surrendered"
+
+  soviet.512.t:0 "Persia Surrends"
+  soviet.512.d:0 "Persian forces are in disarray, enemy troops march on the capital, the Shah was arrested shortly before fleeing Tehran"
+  soviet.512.a:0 "We have to give up the fight"
 
 
 ########## FOCUS ##############

@@ -3,7 +3,7 @@ add_namespace = soviet
 
 country_event = {               # ENG may propose the plan, act alone or ignore
   id = soviet.500
-  picture = GFX_report_event_countenance1
+  picture = GFX_report_event_countenance_1
   title = soviet.500.t
 	desc = soviet.500.d
 
@@ -51,7 +51,7 @@ country_event = {               # ENG may propose the plan, act alone or ignore
 
 country_event = {               # ENG propose the plan, SOV may accept or refuse
   id = soviet.501
-  picture = GFX_report_event_countenance1
+  picture = GFX_report_event_countenance_1
   title = soviet.501.t
 	desc = soviet.501.d
 
@@ -62,40 +62,46 @@ country_event = {               # ENG propose the plan, SOV may accept or refuse
   option = {
 		name = soviet.501.a
 		ai_chance = { factor = 100 }
-    ENG = {
-      country_event = {
-        id = soviet.508
-        days = 1
-      }
-    }
-    ENG = {
-      country_event = {
-        id = soviet.510
-        days = 15
-      }
-    }
-    SOV = {
-      country_event = {
-        id = soviet.511
-        days = 15
-      }
-    }
     set_global_flag = countenance_twin
+    custom_effect_tooltip = soviet_answer
+    hidden_effect = {
+      ENG = {
+        country_event = {
+          id = soviet.508
+          days = 1
+        }
+      }
+      ENG = {
+        country_event = {
+          id = soviet.510
+          days = 15
+        }
+      }
+      SOV = {
+        country_event = {
+          id = soviet.511
+          days = 15
+        }
+      }
+    }
   }
   option = {
     name = soviet.501.b
     ai_chance = { factor = 0 }
     set_global_flag = countenance_alone
-    ENG = {
-      country_event = {
-        id = soviet.509
-        days = 1
+    custom_effect_tooltip = soviet_answer
+    hidden_effect = {
+      ENG = {
+        country_event = {
+          id = soviet.509
+          days = 1
+        }
       }
-    }
-    ENG = {
-      country_event = {
-        id = soviet.510
-        days = 15
+      ENG = {
+        country_event = {
+          id = soviet.510
+          days = 15
+        }
       }
     }
   }
@@ -113,7 +119,7 @@ country_event = {               # SOV  say  yes
   }
 }
 
-  country_event = {               # SOV  say  no
+country_event = {               # SOV  say  no
   id = soviet.509
   picture = GFX_report_event_stalin_2
   title = soviet.509.t
@@ -127,7 +133,7 @@ country_event = {               # SOV  say  yes
 
 country_event = {               # ENG DoW PER
 	id = soviet.510
-	picture = GFX_report_event_soviet_soldiers
+	picture = GFX_report_event_countenance_2
 	title = soviet.510.t
 	desc = soviet.510.d
 
@@ -148,7 +154,7 @@ country_event = {               # ENG DoW PER
 
 country_event = {               # SOV DoW PER
 	id = soviet.511
-	picture = GFX_report_event_soviet_soldiers
+	picture = GFX_report_event_countenance_4
 	title = soviet.511.t
 	desc = soviet.511.d
 
@@ -205,6 +211,11 @@ country_event = {               # PER Surrender
         tag = PER
         message = PER_agree_peace
       }
+      country_event = {
+        id = soviet.513
+        days = 1
+      }
+
     }
     if = {
       limit = {
@@ -216,8 +227,63 @@ country_event = {               # PER Surrender
           tag = PER
           message = PER_agree_peace
         }
+        country_event = {
+          id = soviet.514
+          days = 1
+        }
       }
     }
     set_global_flag = op_countenance_completed
+  }
+}
+
+country_event = {               # ENG Aftermath
+	id = soviet.513
+	picture = GFX_report_event_countenance_5
+	title = soviet.513.t
+	desc = soviet.513.d
+
+  is_triggered_only = yes
+
+
+	fire_only_once = yes
+  option = {
+    name = soviet.513.a
+    puppet = PER
+    transfer_state = 412
+    transfer_state = 413
+    PER = {
+      retire_country_leader = yes
+      create_country_leader = {
+        name = "Mohammad Reza Pahlavi"
+        desc = "POLITICS_MOHAMMAD_REZA_PAHLAVI_DESC"
+        picture = "gfx/leaders/PER/Portrait_Iran_Mohamed_Reza_Pahlavi.dds"
+        expire = "1979.11.2"
+        ideology = despotism
+        traits = {
+        }
+      }
+    }
+  }
+}
+
+
+country_event = {               # SOV Aftermath
+	id = soviet.514
+	picture = GFX_report_event_countenance_3
+	title = soviet.514.t
+	desc = soviet.514.d
+
+  is_triggered_only = yes
+
+
+	fire_only_once = yes
+  option = {
+    name = soviet.514.a
+
+    transfer_state = 419
+    transfer_state = 420
+    transfer_state = 416
+    #transfer_state = 266
   }
 }
