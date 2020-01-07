@@ -8,3 +8,75 @@ PER_love_GER = {
 	reversed = yes
 	ai_strategy = { type = befriend id = "GER" value = 1000 }
 }
+
+
+PER_love_a_lot_GER = {
+	enable = {
+		tag = PER
+    has_global_flag = fall_of_france
+		has_global_flag = no_countenance
+	}
+	abort_when_not_enabled = yes
+	reversed = yes
+	ai_strategy = { type = alliance id = "GER" value = 1000 }
+}
+
+ENG_prepare_for_countenance = {
+	enable = {
+		tag = ENG
+		OR = {
+			has_global_flag = countenance_alone
+			has_global_flag = countenance_twin
+		}
+	}
+	abort = {
+		OR = {
+			has_war_with = PER
+			date > 1944.01.01
+		}
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = "PER"
+		value = 100
+	}
+}
+
+RAJ_prepare_for_countenance = {
+	enable = {
+		tag = RAJ
+		OR = {
+			has_global_flag = countenance_alone
+			has_global_flag = countenance_twin
+		}
+	}
+	abort = {
+		OR = {
+			has_war_with = PER
+			date > 1944.01.01
+		}
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = "PER"
+		value = 100
+	}
+}
+
+SOV_prepare_for_countenance = {
+	enable = {
+		tag = SOV
+		has_global_flag = countenance_twin
+	}
+	abort = {
+		OR = {
+			has_war_with = PER
+			date > 1944.01.01
+		}
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = "PER"
+		value = 100
+	}
+}

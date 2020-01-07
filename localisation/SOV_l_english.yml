@@ -168,6 +168,34 @@
 
   FIN_agree_peace:0 "Peace, comrades"
 
+  soviet.500.t:0 "Operation Countenance"
+  soviet.500.d:0 "The kingdom of Persia has ever more frequent contacts with Germany. if we do not intervene, a simple \"friendship\" can become an alliance, very dangerous for the entire Middle East quadrant."
+  soviet.500.a:0 "A joint operation with the Soviet Union is needed"
+  soviet.500.b:0 "We can handle this alone"
+  soviet.500.c:0 "An alliance with Hitler? It will never happen."
+
+  soviet.501.t:0 "Operation Countenance"
+  soviet.501.d:0 "The United Kingdom is proposing preventive action, to start in 15 days, to prevent Persia from siding with Nazi Germany. A new war front in the Middle East is dangerous, but neglecting the issue could prove even more dangerous."
+  soviet.501.a:0 "We will do our part."
+  soviet.501.b:0 "Our troops are requested elsewere."
+
+  soviet.508.t:0 "Operation Countenance"
+  soviet.508.d:0 "The Soviet Union will agreed with the plan, we will act in 15 days. Get ready"
+  soviet.508.a:0 "It will be an easy task."
+
+  soviet.509.t:0 "Operation Countenance"
+  soviet.509.d:0 "The Soviet Union declined. Nevertheless, we will act in 15 days. Get ready"
+  soviet.509.a:0 "It will be an easy task."
+
+  soviet.510.t:0 "Operation Countenance"
+  soviet.510.d:0 "Operation Countenance is starting, our troops are crossing the border right now."
+  soviet.510.a:0 "We will be in Teheran in a couple of weeks"
+
+  soviet.511.t:0 "Operation Countenance"
+  soviet.511.d:0 "Operation Countenance is starting, our troops are crossing the border right now."
+  soviet.511.a:0 "We will be in Tabriz in a couple of weeks"
+
+
 ########## FOCUS ##############
 
   SOV_finish_the_five_year_plan:0 "Complete the Five-Year Plan"

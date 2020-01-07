@@ -1,7 +1,7 @@
 
 add_namespace = soviet
 
-country_event = {
+country_event = {               # ENG may propose the plan, act alone or ignore
   id = soviet.500
   picture = GFX_report_event_countenance1
   title = soviet.500.t
@@ -15,7 +15,7 @@ country_event = {
       is_in_faction_with = SOV
       }
     }
-    SOV = { has_war = GER }
+    SOV = { has_war_with = GER }
 	}
 
   mean_time_to_happen = {	days = 45 }
@@ -49,19 +49,25 @@ country_event = {
   }
 }
 
-country_event = {
+country_event = {               # ENG propose the plan, SOV may accept or refuse
   id = soviet.501
   picture = GFX_report_event_countenance1
   title = soviet.501.t
 	desc = soviet.501.d
 
-  triggered_only = yes
+  is_triggered_only = yes
 
   fire_only_once = yes
 
   option = {
 		name = soviet.501.a
 		ai_chance = { factor = 100 }
+    ENG = {
+      country_event = {
+        id = soviet.508
+        days = 1
+      }
+    }
     ENG = {
       country_event = {
         id = soviet.510
@@ -82,6 +88,12 @@ country_event = {
     set_global_flag = countenance_alone
     ENG = {
       country_event = {
+        id = soviet.509
+        days = 1
+      }
+    }
+    ENG = {
+      country_event = {
         id = soviet.510
         days = 15
       }
@@ -89,8 +101,31 @@ country_event = {
   }
 }
 
+country_event = {               # SOV  say  yes
+  id = soviet.508
+  picture = GFX_report_event_soviet_soldiers
+  title = soviet.508.t
+	desc = soviet.508.d
+  fire_only_once = yes
 
-country_event = {
+  option = {
+    name = soviet.508.a
+  }
+}
+
+  country_event = {               # SOV  say  no
+  id = soviet.509
+  picture = GFX_report_event_stalin_2
+  title = soviet.509.t
+	desc = soviet.509.d
+  fire_only_once = yes
+
+  option = {
+    name = soviet.509.a
+  }
+}
+
+country_event = {               # ENG DoW PER
 	id = soviet.510
 	picture = GFX_report_event_soviet_soldiers
 	title = soviet.510.t
@@ -98,40 +133,20 @@ country_event = {
 
   is_triggered_only = yes
 
+  immediate = {
+		declare_war_on = {
+    	target = PER
+    	type = puppet_wargoal_focus
+		}
+	}
 
 	fire_only_once = yes
 	option = {
 		name = soviet.510.a
-		ai_chance = { factor = 100 }
-		declare_war_on = {
-    	target = PER
-    	type = puppet_wargoal_focus
-		}
-	}
-}
-
-country_event = {
-	id = soviet.510
-	picture = GFX_report_event_soviet_soldiers
-	title = soviet.510.t
-	desc = soviet.510.d
-
-  is_triggered_only = yes
-
-
-	fire_only_once = yes
-	immediate = {
-		declare_war_on = {
-    	target = PER
-    	type = puppet_wargoal_focus
-		}
-	}
-  option = {
-    name = soviet.510.a
   }
 }
 
-country_event = {
+country_event = {               # SOV DoW PER
 	id = soviet.511
 	picture = GFX_report_event_soviet_soldiers
 	title = soviet.511.t
@@ -149,5 +164,60 @@ country_event = {
 	}
   option = {
     name = soviet.511.a
+  }
+}
+
+country_event = {               # PER Surrender
+	id = soviet.512
+	picture = GFX_report_event_soviet_soldiers
+	title = soviet.512.t
+	desc = soviet.512.d
+
+  trigger = {
+    tag = PER
+    has_war_with = ENG
+    surrender_progress > 0.25
+    has_civil_war = no
+    OR = {
+      has_global_flag = countenance_twin
+      has_global_flag = countenance_alone
+    }
+  }
+
+  mean_time_to_happen = {	days = 1 }
+
+	fire_only_once = yes
+
+  option = {
+    name = soviet.512.a
+
+    PER = {
+      if = {
+        limit = {
+          is_in_faction = yes
+        }
+        leave_faction = yes
+      }
+    }
+
+    ENG = {
+      white_peace = {
+        tag = PER
+        message = PER_agree_peace
+      }
+    }
+    if = {
+      limit = {
+        has_global_flag = countenance_twin
+        SOV = { has_war_with = PER }
+      }
+      SOV = {
+        white_peace = {
+          tag = PER
+          message = PER_agree_peace
+        }
+      }
+    }
+    set_global_flag = op_countenance_completed
   }
 }

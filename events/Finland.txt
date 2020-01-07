@@ -314,7 +314,7 @@ country_event = {
 	option = {
 		name = finland.7.a
 		ai_chance = {
-			base = 8
+			base = 100
 		}
 		SOV = {
 			country_event = { id = finland.8 }
@@ -384,31 +384,6 @@ country_event = {
 				type = antagonize
 				id = "SOV"
 				value = 200
-			}
-		}
-		if = {
-			limit = {
-				GER = {
-					is_subject = no
-					not = { is_in_faction_with = SOV}
-				}
-			}
-			add_ai_strategy = {
-				type = alliance
-				id = "GER"
-				value = 200
-			}
-			add_ai_strategy = {
-				type = befriend
-				id = "GER"
-				value = 200
-			}
-			GER = {
-				add_ai_strategy = {
-					type = alliance
-					id = "FIN"
-					value = 200
-				}
 			}
 		}
 	}
