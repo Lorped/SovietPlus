@@ -1,9 +1,26 @@
 spriteTypes = {
 
   spriteType = {
-    name = "GFX_report_event_countenance1"
+    name = "GFX_report_event_countenance_1"
     texturefile = "gfx/event_pictures/report_event_countenance_1.dds"
   }
+  spriteType = {
+    name = "GFX_report_event_countenance_2"
+    texturefile = "gfx/event_pictures/report_event_countenance_2.dds"
+  }
+  spriteType = {
+    name = "GFX_report_event_countenance_3"
+    texturefile = "gfx/event_pictures/report_event_countenance_3.dds"
+  }
+  spriteType = {
+    name = "GFX_report_event_countenance_4"
+    texturefile = "gfx/event_pictures/report_event_countenance_4.dds"
+  }
+  spriteType = {
+    name = "GFX_report_event_countenance_5"
+    texturefile = "gfx/event_pictures/report_event_countenance_5.dds"
+  }
+
 
   spriteType = {
     name = "GFX_report_event_purge_trial_2"
