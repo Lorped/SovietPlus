@@ -262,6 +262,7 @@ country_event = {               # ENG Aftermath
         ideology = despotism
         traits = {
         }
+        set_country_leader_ideology = despotism
       }
     }
   }
