@@ -197,11 +197,27 @@
   soviet.511.d:0 "Operation Countenance is starting, our troops are crossing the border right now."
   soviet.511.a:0 "We will be in Tabriz in a couple of weeks"
 
-  PER_agree_peace:0 "The persian forces surrendered"
+  PER_agree_peace:0 "The Persian government accepts our requests."
 
   soviet.512.t:0 "Persia Surrends"
   soviet.512.d:0 "Persian forces are in disarray, enemy troops march on the capital, the Shah was arrested shortly before fleeing Tehran"
   soviet.512.a:0 "We have to give up the fight"
+
+  soviet.513.t:0 "Secure Southern Persia"
+  soviet.513.d:0 "Even though Persia is a sovereign state, it is necessary to protect the southern part of the country until the end of the war with Germany. We will also need to oversee state policy to avoid other unfortunate situations."
+  soviet.513.a:0 "It's for their safety"
+
+  soviet.514.t:0 "Secure Northern Persia"
+  soviet.514.d:0 "Even though Persia is a sovereign state, it is necessary to protect the northern part of the country until the end of the war with Germany."
+  soviet.514.a:0 "It's for their safety"
+
+  soviet.515.t:0 "Release the Northern Persia"
+  soviet.515.d:0 "It's time to return the northern provinces of Iran to their government."
+  soviet.515.a:0 "We don't need them anymore"
+
+  soviet.516.t:0 "Release the Southern Persia"
+  soviet.516.d:0 "It's time to return the southern provinces of Iran to their government."
+  soviet.516.a:0 "We don't need them anymore"
 
 
 ########## FOCUS ##############

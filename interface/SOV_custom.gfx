@@ -20,6 +20,14 @@ spriteTypes = {
     name = "GFX_report_event_countenance_5"
     texturefile = "gfx/event_pictures/report_event_countenance_5.dds"
   }
+  spriteType = {
+    name = "GFX_report_event_countenance_6"
+    texturefile = "gfx/event_pictures/report_event_countenance_6.dds"
+  }
+  spriteType = {
+    name = "GFX_report_event_countenance_7"
+    texturefile = "gfx/event_pictures/report_event_countenance_7.dds"
+  }
 
 
   spriteType = {
