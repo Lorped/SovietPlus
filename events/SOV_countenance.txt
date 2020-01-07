@@ -383,10 +383,10 @@ country_event = {               # AFTER WAR ENG
     }
     if = {
       limit = {
-        owns_state = 416
+        owns_state = 413
       }
       PER = {
-        transfer_state = 416
+        transfer_state = 413
       }
     }
     if = {
