@@ -27,30 +27,12 @@ country_event = {
 
     set_state_owner = 763 #Koenisberg / kaliningrad
     set_state_owner = 73 #ruthenia
-    
+
 
 		every_state = {
     	limit = { is_owned_by = SLO  is_core_of = CZE }
     	CZE = { transfer_state = PREV }
 		}
-
-
-
-		#if = {
-		#	limit = {
-		#		AND = {
-		#			country_exists = SLO
-		#			country_exists = CZE
-		#			SLO = { is_puppet_of SOV }
-		#			CZE = { is_puppet_of SOV }
-		#		}
-		#	}
-		# every_state = {
-    #	limit = { is_owned_by = SLO  is_core_of = CZE }
-    #	CZE = { transfer_state = PREV }
-		# }
-		#}
-
 
 	}
 }

@@ -80,3 +80,16 @@ SOV_prepare_for_countenance = {
 		value = 100
 	}
 }
+
+stop_bulling_persia = {
+	enable = {
+		tag = SOV
+		has_global_flag = op_countenance_completed
+		country_exists = PER
+	}
+	ai_strategy = {
+		type = befriend
+		id = "PER"
+		value = 50
+	}
+}

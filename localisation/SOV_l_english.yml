@@ -197,7 +197,8 @@
   soviet.511.d:0 "Operation Countenance is starting, our troops are crossing the border right now."
   soviet.511.a:0 "We will be in Tabriz in a couple of weeks"
 
-  PER_agree_peace:0 "The Persian government accepts our requests."
+  PER_agree_peace1:0 "The Persian government accepts the Allied requests."
+  PER_agree_peace2:0 "The Persian government accepts the Soviet requests."
 
   soviet.512.t:0 "Persia Surrends"
   soviet.512.d:0 "Persian forces are in disarray, enemy troops march on the capital, the Shah was arrested shortly before fleeing Tehran"

@@ -209,7 +209,7 @@ country_event = {               # PER Surrender
     ENG = {
       white_peace = {
         tag = PER
-        message = PER_agree_peace
+        message = PER_agree_peace1
       }
       country_event = {
         id = soviet.513
@@ -225,7 +225,7 @@ country_event = {               # PER Surrender
       SOV = {
         white_peace = {
           tag = PER
-          message = PER_agree_peace
+          message = PER_agree_peace2
         }
         country_event = {
           id = soviet.514

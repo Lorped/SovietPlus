@@ -98,13 +98,13 @@ GER_unit_production = {
 	ai_strategy = {
 		type = unit_ratio
 		id = tactical_bomber
-		value = 10
+		value = 5         ## WAS -40
 	}
 
 	ai_strategy = {
 		type = unit_ratio
 		id = strategic_bomber
-		value = 0
+		value = -10
 	}
 
 	ai_strategy = {
@@ -196,7 +196,7 @@ GER_unit_production = {
 	ai_strategy = {
 		type = equipment_production_factor
 		id = armor
-		value = 0  ## WILL be increased later
+		value = 0  ## WAS -10
 	}
 	ai_strategy = {
 		type = equipment_production_factor
@@ -300,7 +300,7 @@ GER_highered_armored_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = armor
-		value = 25
+		value = 25        ###  WAS 20
 	}
 }
 
