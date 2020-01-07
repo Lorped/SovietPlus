@@ -262,7 +262,15 @@ country_event = {               # ENG Aftermath
         ideology = despotism
         traits = {
         }
-        set_country_leader_ideology = despotism
+      }
+      set_politics = {
+        ruling_party = neutrality
+      }
+      set_popularities = {
+        democratic = 5
+        neutrality = 92
+        fascism = 3
+        communism = 0
       }
     }
   }
