@@ -220,6 +220,10 @@
   soviet.516.d:0 "It's time to return the southern provinces of Iran to their government."
   soviet.516.a:0 "We don't need them anymore"
 
+  soviet.517.t:0 "Persia Surrends"
+  soviet.517.desc:0 "Persian forces are in disarray, enemy troops march on the capital, the Shah was arrested shortly before fleeing Tehran."
+  soviet.517.a:0 "They have to give up the fight"
+
   soviet.700.t:0 "The Potsdam Conference"
   soviet.700.d:0 "The Potsdam conference reaffirms the decisions taken during the Yalta conference and defines the precise boundaries of the new Europe."
   soviet.700.a:0 "A new hope of peace"
@@ -394,6 +398,14 @@
   SOV_pe2_desc:0 "The Soviet Air Force needs a modern, mid-range tactical bomber. The Pe-2 (nicknamed \"Peshka\") will perfectly fit this role. The prototype designed by eng. Vladimir Petlyakov must start its full production."
 
 
+  SOV_persian_corridor:0 "The Persian Corridor"
+  SOV_persian_corridor_desc:0 "The Persian Corridor is a supply route through Iran into Soviet Azerbaijan by which British aid and American Lend-Lease supplies can be transferred to the Soviet Union to support our war efforts."
+
+  op_countenance_completed:0 "Operation Countenance has completed successfully"
+  countenance_twin:0 "Soviet Union participated to the Operation"
+
+  SOV_persian_corridor_tt:0 "Activate the §GPersian Corridor§! decision"
+
 ############# DECISIONS ##########
 
   SOV_5_year_plan_tt:0 "Our effort will increase the completion of the Five-Year Plan by §G5%§!"
@@ -479,7 +491,7 @@
   SOV_relocate_industry_from_tula_tt:0 "§RThese effects require control of Tula when the decision times out.§!"
 
 
-
+  SOV_persian_corridor_decision:0 "The Persian Corridor"
 
 ############ FLAGS & BONUSES ##########
 

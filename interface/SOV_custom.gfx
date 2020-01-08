@@ -34,6 +34,11 @@ spriteTypes = {
     texturefile = "gfx/event_pictures/report_event_potsdam.dds"
   }
 
+  spriteType = {
+    name = "GFX_news_event_countenance"
+    texturefile = "gfx/event_pictures/news_event_countenance.dds"
+  }
+
 
   spriteType = {
     name = "GFX_report_event_purge_trial_2"
@@ -480,6 +485,11 @@ spriteTypes = {
   spriteType = {
     name = "GFX_sov_pe2"
     texturefile = "gfx/interface/goals/SOV_pe2.dds"
+  }
+
+  spriteType = {
+    name = "GFX_sov_persian_corridor"
+    texturefile = "gfx/interface/goals/SOV_persian_corridor.dds"
   }
 
  }

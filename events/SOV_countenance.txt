@@ -213,7 +213,7 @@ country_event = {               # PER Surrender
       }
       country_event = {
         id = soviet.513
-        days = 1
+        days = 2
       }
 
     }
@@ -229,10 +229,11 @@ country_event = {               # PER Surrender
         }
         country_event = {
           id = soviet.514
-          days = 1
+          days = 2
         }
       }
     }
+    hidden_effect = { news_event = { id = soviet.517 days = 1 } }
     set_global_flag = op_countenance_completed
   }
 }
@@ -396,3 +397,20 @@ country_event = {               # AFTER WAR ENG
       ## end_puppet = PER
     }
   }
+}
+
+news_event = {
+  	id = soviet.517
+  	title = soviet.517.t
+  	desc = soviet.517.desc
+  	picture = GFX_news_event_countenance
+
+  	major = yes
+
+  	is_triggered_only = yes
+
+  	option = {
+  		name = soviet.517.a
+  	}
+
+}

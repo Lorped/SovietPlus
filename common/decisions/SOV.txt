@@ -1314,6 +1314,7 @@ SOV_industry_relocation = {
 #Category only allowed for SOV
 SOV_great_patriotic_war = {
 
+
 	SOV_order_227 = {
 
 		icon = generic_army_support
@@ -1352,6 +1353,80 @@ SOV_great_patriotic_war = {
 			}
 		}
 	}
+
+	SOV_persian_corridor_decision = {
+
+		icon = ger_mefo_bills
+
+		available = {
+			NOT = { has_war = yes }
+		}
+		visible = {
+			tag = SOV
+			has_war = yes
+		}
+
+		activation = {
+			has_war = yes
+			has_completed_focus = SOV_persian_corridor
+		}
+
+		selectable_mission = no
+
+ 		days_mission_timeout = 180
+
+		is_good = yes
+
+		fire_only_once = no
+
+		timeout_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+					amount = 5000
+					producer = USA
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+					amount = 2500
+					producer = USA
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_1
+					amount = 1000
+					producer = USA
+			}
+			add_equipment_to_stockpile = {
+				type = anti_tank_equipment_1
+					amount = 250
+					producer = USA
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment_1
+					amount = 500
+					producer = USA
+			}
+
+			hidden_effect = {
+				activate_mission = SOV_persian_corridor_decision
+			}
+		}
+
+		remove_effect = {
+		}
+
+		complete_effect = {
+		}
+
+		cancel_trigger = {
+			has_war = no
+		}
+
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+
 	SOV_scorched_earth = {
 
 		icon = generic_scorched_earth
@@ -1393,6 +1468,7 @@ SOV_great_patriotic_war = {
 			}
 		}
 	}
+
 	SOV_scorched_earth_baltics = {
 
 		icon = generic_scorched_earth

@@ -2197,10 +2197,30 @@ focus_tree = {
 	}
 
 	focus = {
+		id = SOV_persian_corridor
+		icon = GFX_sov_persian_corridor
+		prerequisite = { focus = SOV_great_patriotic }
+		available = {
+			has_global_flag = op_countenance_completed
+			has_global_flag = countenance_twin
+		}
+		x = 3
+		y = 1
+		relative_position_id = SOV_great_patriotic
+		cost = 2.15
+		ai_will_do = {
+			factor = 3
+		}
+		completion_reward = {
+			custom_effect_tooltip = SOV_persian_corridor_tt
+		}
+	}
+
+	focus = {
 		id = SOV_move_industry_to_urals
 		icon = GFX_sov_move_industry
 		prerequisite = { focus = SOV_great_patriotic }
-		x = 3
+		x = 4
 		y = 2
 		relative_position_id = SOV_great_patriotic
 		cost = 2.15
@@ -2529,7 +2549,7 @@ focus_tree = {
 		prerequisite = {
 			focus = SOV_great_patriotic
 		}
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = SOV_great_patriotic
 		ai_will_do = {
@@ -2548,7 +2568,7 @@ focus_tree = {
 		id = SOV_smersh
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = SOV_great_patriotic }
-		x = 2
+		x = 1
 		y = 1
 		relative_position_id = SOV_great_patriotic
 		cost = 10
@@ -2801,7 +2821,7 @@ focus_tree = {
 		id = SOV_partisans
 		icon = GFX_sov_partisans
 		prerequisite = { focus = SOV_great_patriotic }
-		x = -2
+		x = -3
 		y = 1
 		relative_position_id = SOV_great_patriotic
 		cost = 10
