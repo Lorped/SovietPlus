@@ -29,6 +29,11 @@ spriteTypes = {
     texturefile = "gfx/event_pictures/report_event_countenance_7.dds"
   }
 
+  spriteType = {
+    name = "GFX_report_event_potsdam"
+    texturefile = "gfx/event_pictures/report_event_potsdam.dds"
+  }
+
 
   spriteType = {
     name = "GFX_report_event_purge_trial_2"

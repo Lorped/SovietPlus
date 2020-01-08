@@ -249,7 +249,7 @@ country_event = {               # ENG Aftermath
 	fire_only_once = yes
   option = {
     name = soviet.513.a
-    puppet = PER
+    ## puppet = PER
     transfer_state = 412
     transfer_state = 413
     PER = {
@@ -393,6 +393,6 @@ country_event = {               # AFTER WAR ENG
       limit = {
         PER = { is_subject_of = ENG }
       }
-      end_puppet = PER
+      ## end_puppet = PER
     }
   }
