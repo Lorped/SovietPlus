@@ -1210,7 +1210,7 @@ focus_tree = {
 		}
 		# mutually_exclusive = { focus = SOV_rehabilitated_military }
 		relative_position_id = SOV_great_purge
-		x = 0
+		x = 1
 		y = 1
 		cost = 4.29
 		ai_will_do = {
@@ -1233,7 +1233,7 @@ focus_tree = {
 		icon = GFX_sov_stalin_constitution
 		prerequisite = { focus = SOV_great_purge }
 		relative_position_id = SOV_great_purge
-		x = 2
+		x = 3
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -1659,7 +1659,7 @@ focus_tree = {
 		icon = GFX_sov_eastern_security
 		prerequisite = { focus = SOV_operation_zet }
 		relative_position_id = SOV_great_purge
-		x = 0
+		x = -1
 		y = 2
 		continue_if_invalid = yes
 		cost = 7.16
@@ -3578,7 +3578,7 @@ focus_tree = {
 		id = SOV_war_with_japan
 		icon = GFX_focus_attack_japan
 		prerequisite = { focus = SOV_far_east_fortification }
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = SOV_far_east_fortification
 		available = {

@@ -151,8 +151,8 @@
   soviet.121.a:0 "A not easy but achievable goal"
 
 
-  finland.89.t:0 "Retake our lands"
-  finland.89.d:0 "The soviets are fighting against the Germany, we can retake our core territories"
+  finland.89.t:0 "The Continuation War"
+  finland.89.d:0 "The soviets are fighting against the Germany, we can retake our core territories, unjustly taken in the past war. Karjala will be finnish again."
   finland.89.a:0 "The time is now!"
   finland.91.t:0 "The war is lost. Again."
   finland.91.d:0 "The war is lost. We must seek an agreement with the Soviet Union to prevent further suffering."
@@ -225,7 +225,7 @@
   soviet.517.a:0 "They have to give up the fight"
 
   soviet.700.t:0 "The Potsdam Conference"
-  soviet.700.d:0 "The Potsdam conference reaffirms the decisions taken during the Yalta conference and defines the precise boundaries of the new Europe."
+  soviet.700.d:0 "The Potsdam Conference reaffirms the decisions taken during the Yalta Conference and defines the precise boundaries of the new Europe."
   soviet.700.a:0 "A new hope of peace"
 
 
@@ -312,7 +312,7 @@
   SOV_great_patriotic:0 "The Great Patriotic War"
   SOV_great_patriotic_desc:0 "The enemy throws new forces to the front without regard to heavy losses and penetrates deep into the Soviet Union, seizing new regions, destroying our cities and villages, killing the Soviet population.\nNot one step back! Such should now be our main slogan.\n-- Stalin"
 
-  SOV_il2:0 "The Ilyushin IL-2 prototye"
+  SOV_il2:0 "The Ilyushin IL-2 Prototye"
   SOV_il2_desc:0 "The idea for an armored ground-attack aircraft is quite old, but our models lacks the required power and performance. A new model must be designed and produced in a short timeframe."
 
   SOV_tankograd:0 "Tankograd"

@@ -71,7 +71,7 @@ country_event = {
 
 country_event = {
 	id = finland.89
-	picture = GFX_report_event_soviet_soldiers
+	picture = GFX_report_event_finnish_soldiers_snow
 	title = finland.89.t
 	desc = finland.89.d
 
