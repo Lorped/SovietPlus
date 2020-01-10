@@ -163,8 +163,9 @@
   finland.91.a:0 "Yes, Germany is our main enemy."
   finland.91.b:0 "Sorry, too late"
   finland.92.t:0 "The Moscow Armistice"
-  finland.91.d:0 "The conditions for peace are similar to what had been agreed after the Winter War. Anyway our northern borders are safe."
-  finland.91.a:0 "Problem resolved"
+  finland.92.d:0 "The conditions for peace are similar to what had been agreed after the Winter War. Anyway our northern borders are safe."
+  finland.92.a:0 "Problem resolved"
+  finland.92.b:0 "We have other plans"
 
   FIN_agree_peace:0 "Peace, comrades"
 
