@@ -1359,15 +1359,15 @@ SOV_great_patriotic_war = {
 		icon = ger_mefo_bills
 
 		available = {
-			NOT = { has_war = yes }
+			NOT = { has_war_with = GER }
 		}
 		visible = {
 			tag = SOV
-			has_war = yes
+			has_war_with = GER
 		}
 
 		activation = {
-			has_war = yes
+			has_war_with = GER
 			has_completed_focus = SOV_persian_corridor
 		}
 
@@ -1418,7 +1418,7 @@ SOV_great_patriotic_war = {
 		}
 
 		cancel_trigger = {
-			has_war = no
+			NOT = { has_war_with = GER }
 		}
 
 

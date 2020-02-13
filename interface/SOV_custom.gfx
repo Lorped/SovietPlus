@@ -492,4 +492,14 @@ spriteTypes = {
     texturefile = "gfx/interface/goals/SOV_persian_corridor.dds"
   }
 
+  spriteType = {
+    name = "GFX_sov_cruisers"
+    texturefile = "gfx/interface/goals/SOV_cruisers.dds"
+  }
+
+  spriteType = {
+    name = "GFX_sov_submarines"
+    texturefile = "gfx/interface/goals/SOV_submarines.dds"
+  }
+
  }

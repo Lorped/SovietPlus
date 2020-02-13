@@ -407,6 +407,12 @@
 
   SOV_persian_corridor_tt:0 "Activate the §GPersian Corridor§! decision"
 
+  SOV_submarine_design:0 "Expand the Podvodnyy fleets"
+  SOV_submarine_design_desc:0 "Expanding our submarines fleets we will achieve the control of our seas."
+
+  SOV_cruisers_design:0 "Improve the Surface Fleets"
+  SOV_cruisers_design_desc:0 "The cruisers are the mainstay of every fleet, we have to improve and develop our models."
+
 ############# DECISIONS ##########
 
   SOV_5_year_plan_tt:0 "Our effort will increase the completion of the Five-Year Plan by §G5%§!"

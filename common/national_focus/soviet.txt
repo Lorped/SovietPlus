@@ -2155,8 +2155,8 @@ focus_tree = {
 		id = SOV_tula
 		icon = GFX_sov_tula
 		prerequisite = { focus = SOV_peoples_commissariat }
-		x = -1
-		y = 2
+		x = 2
+		y = 1
 		relative_position_id = SOV_peoples_commissariat
 		cost = 7.15
 		ai_will_do = {
@@ -2544,6 +2544,59 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = {
+		id = SOV_cruisers_design
+		icon = GFX_sov_cruisers
+		mutually_exclusive = { focus = SOV_submarine_design }
+		prerequisite = { focus = SOV_expand_red_fleet }
+		x = -1
+		y = 1
+		relative_position_id = SOV_expand_red_fleet
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			navy_experience = 50
+			add_tech_bonus = {
+				name = ships_bonus
+				bonus = 0.5
+				uses = 2
+				category = cl_tech
+				category = ca_tech
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_submarine_design
+		icon = GFX_sov_submarines
+		mutually_exclusive = { focus = SOV_cruisers_design }
+		prerequisite = { focus = SOV_expand_red_fleet }
+		x = 1
+		y = 1
+		relative_position_id = SOV_expand_red_fleet
+		cost = 5
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			navy_experience = 50
+			add_tech_bonus = {
+				name = ships_bonus
+				bonus = 0.5
+				uses = 2
+				category = ss_tech
+			}
+		}
+	}
+
 
 	focus = {
 		id = SOV_military_research
@@ -3420,7 +3473,7 @@ focus_tree = {
 			}
 			has_war = no
 		}
-		x = 1
+		x = 3
 		y = 1
 		relative_position_id = SOV_expand_red_fleet
 		cost = 10

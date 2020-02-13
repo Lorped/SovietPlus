@@ -60,8 +60,15 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-	original_tag = SOV
+		original_tag = SOV
 		SOV = { has_defensive_war_with = GER }
+		OR = {
+			SOV = { is_ai = no }
+			AND = {
+				SOV = { is_ai = yes }
+				GER = { is_ai = yes }
+			}
+		}
 	}
 
 	mean_time_to_happen = {
