@@ -840,7 +840,8 @@ ideas = {
 		removal_cost = -1
 
 		modifier = {
-			partisan_effect = 0.6
+			### partisan_effect = 0.6
+			resistance_damage_to_garrison_on_our_occupied_states = 0.2
 		}
 	}
 
@@ -902,26 +903,7 @@ ideas = {
 			}
 		}
 
-		partisan_suppression_focus = {
 
-			removal_cost = -1
-
-			allowed = {
-				always = no # Added via focus
-			}
-
-			allowed_civil_war = {
-				NOT = {
-					has_government = democratic
-				}
-			}
-
-			picture = generic_intel_bonus
-
-			modifier = {
-				enemy_partisan_effect = -0.2
-			}
-		}
 
 		comintern_influence = {
 
@@ -1405,6 +1387,7 @@ ideas = {
 	high_command = {
 
 		ivan_konev = {
+			ledger = army
 			#Also unit leader: 408
 			allowed = {
 				original_tag = SOV
@@ -1417,6 +1400,7 @@ ideas = {
 		}
 
 		aleksandr_vasilevsky = {
+			ledger = army
 			#Also unit leader: 407
 			allowed = {
 				original_tag = SOV
@@ -1429,6 +1413,7 @@ ideas = {
 		}
 
 		konstantin_rokossovsky = {
+			ledger = army
 			#Also unit leader: 402
 			allowed = {
 				original_tag = SOV # Unlocked via focus
@@ -1446,6 +1431,7 @@ ideas = {
 		}
 
 		pavel_zhigarev = {
+			ledger = air
 			allowed = {
 				original_tag = SOV
 			}
@@ -1456,6 +1442,7 @@ ideas = {
 		}
 
 		sergei_khudyakov = {
+			ledger = air
 			allowed = {
 				original_tag = SOV
 			}
@@ -1467,6 +1454,7 @@ ideas = {
 		}
 
 		stepan_krasovsky = {
+			ledger = air
 			allowed = {
 				original_tag = SOV
 			}
@@ -1477,6 +1465,7 @@ ideas = {
 		}
 
 		vladimir_kasatonov = {
+			ledger = navy
 			#Also unit leader: 403
 			allowed = {
 				original_tag = SOV
@@ -1488,6 +1477,7 @@ ideas = {
 		}
 
 		gordey_levchenko = {
+			ledger = navy
 			#Also unit leader: 406
 			allowed = {
 				original_tag = SOV
@@ -1501,6 +1491,7 @@ ideas = {
 		}
 
 		arseniy_golovko = {
+			ledger = navy
 			#Also unit leader: 409
 			allowed = {
 				original_tag = SOV
@@ -1728,6 +1719,7 @@ ideas = {
 	theorist = {
 
 		mikhail_tukhachevsky = {
+			ledger = army
 			allowed = {
 				original_tag = SOV
 			}
@@ -1742,6 +1734,7 @@ ideas = {
 		}
 
 		boris_shaposhnikov = {
+			ledger = army
 			allowed = {
 				original_tag = SOV
 			}
@@ -1752,6 +1745,7 @@ ideas = {
 		}
 
 		georgy_zhukov = {
+			ledger = army
 			allowed = {
 				original_tag = SOV # Unlocked via focus
 			}
@@ -1767,6 +1761,7 @@ ideas = {
 		}
 
 		sergey_gorshkov = {
+			ledger = navy
 			allowed = {
 				original_tag = SOV
 			}
@@ -1782,6 +1777,7 @@ ideas = {
 		}
 
 		vladimir_tributs = {
+			ledger = navy
 			allowed = {
 				original_tag = SOV
 			}
@@ -1793,6 +1789,7 @@ ideas = {
 		}
 
 		sergei_rudenko = {
+			ledger = air
 			allowed = {
 				original_tag = SOV
 			}
@@ -1808,6 +1805,7 @@ ideas = {
 		}
 
 		alexander_golovanov = {
+			ledger = air
 			allowed = {
 				original_tag = SOV
 			}
@@ -1818,6 +1816,7 @@ ideas = {
 		}
 
 		igor_kurchatov = {
+			ledger = army
 			allowed = {
 				original_tag = SOV
 			}
@@ -1828,6 +1827,7 @@ ideas = {
 		}
 
 		sergei_korolev = {
+			ledger = air
 			allowed = {
 				original_tag = SOV
 			}

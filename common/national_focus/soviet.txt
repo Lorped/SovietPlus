@@ -1,3 +1,10 @@
+### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
 
 focus_tree = {
 	id = soviet_focus
@@ -18,6 +25,7 @@ focus_tree = {
 	focus = {
 		id = SOV_spanish_war
 		icon = GFX_sov_spanish_war
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
 
 		available = {
 			has_global_flag = spanish_civil_war
@@ -55,6 +63,7 @@ focus_tree = {
 	focus = {
 		id = SOV_finish_the_five_year_plan
 		icon = GFX_sov_finish_the_plan
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		x = 2
 		y = 0
 		cost = 7.15
@@ -89,6 +98,7 @@ focus_tree = {
 	focus = {
 		id = SOV_strength_gosplan
 		icon = GFX_sov_five_year_plan_IC_1
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		x = 4
 		y = 1
 		cost = 4.29
@@ -113,6 +123,7 @@ focus_tree = {
 	focus = {
 		id = SOV_review_gosplan
 		icon = GFX_sov_five_year_plan_MIC_1
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		x = 7
 		y = 1
 		cost = 4.29
@@ -134,6 +145,7 @@ focus_tree = {
 	focus = {
 		id = SOV_focus_on_heavy_industry
 		icon = GFX_sov_five_year_plan_IC_2
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		x = 4
 		y = 2
 		cost = 10
@@ -236,6 +248,7 @@ focus_tree = {
 	focus = {
 		id = SOV_focus_on_military_industry
 		icon = GFX_sov_five_year_plan_MIC_2
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		x = 0
 		y = 1
 		relative_position_id = SOV_review_gosplan
@@ -380,6 +393,7 @@ focus_tree = {
 	focus = {
 		id = SOV_third_five_year_plan
 		icon = GFX_sov_third_five_year_plan
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		relative_position_id = SOV_focus_on_heavy_industry
 		x = 0
 		y = 1
@@ -487,6 +501,7 @@ focus_tree = {
 	focus = {
 		id = SOV_third_five_year_plan_2
 		icon = GFX_sov_third_five_year_plan_2
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		relative_position_id = SOV_focus_on_military_industry
 		x = 0
 		y = 1
@@ -519,6 +534,7 @@ focus_tree = {
 	focus = {
 		id = SOV_improve_infrastructure
 		icon = GFX_goal_generic_construct_infrastructure
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		relative_position_id = SOV_finish_the_five_year_plan
 		x = -2
 
@@ -693,6 +709,7 @@ focus_tree = {
 	focus = {
 		id = SOV_add_production_quota
 		icon = GFX_sov_add_production_quota
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		relative_position_id = SOV_improve_infrastructure
 		x = 0
 		y = 1
@@ -714,6 +731,7 @@ focus_tree = {
 	focus = {
 		id = SOV_transsiberian
 		icon = GFX_goal_generic_construct_infrastructure
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		relative_position_id = SOV_improve_infrastructure
 		x = 2
 		y = 1
@@ -873,6 +891,7 @@ focus_tree = {
 	focus = {
 		id = SOV_magnitogorsk
 		icon = GFX_sov_magnitogorsk
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		relative_position_id =  SOV_transsiberian
 		x = 0
 		y = 1
@@ -934,6 +953,7 @@ focus_tree = {
 	focus = {
 		id = SOV_closed_cities_network
 		icon = GFX_sov_closed_cities
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		relative_position_id =  SOV_magnitogorsk
 		x = 0
 		y = 1
@@ -960,6 +980,7 @@ focus_tree = {
 	focus = {
 		id = SOV_gosstandart
 		icon = GFX_gosstandart
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		x = 10
 		y = 1
 		cost = 10
@@ -978,6 +999,7 @@ focus_tree = {
 	focus = {
 		id = SOV_stakanovite
 		icon = GFX_stakanovite
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 		x = 2
 		y = 0
 		relative_position_id = SOV_gosstandart
@@ -997,6 +1019,7 @@ focus_tree = {
 	focus = {
 		id = SOV_transpolar_flights
 		icon = GFX_sov_transpolar_flight
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		x = 13
 		y = 0
 		cost = 4.29
@@ -1018,6 +1041,7 @@ focus_tree = {
 	focus = {
 		id = SOV_air_volunteers
 		icon = GFX_sov_air_volunteers
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		prerequisite = {
 			focus = SOV_transpolar_flights
 			focus = SOV_operation_zet
@@ -1052,6 +1076,7 @@ focus_tree = {
 	focus = {
 		id = SOV_positive_heroism
 		icon = GFX_sov_positive_heroism
+		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
 		prerequisite = {
 			focus = SOV_stakanovite
 			focus = SOV_gosstandart
@@ -1074,6 +1099,7 @@ focus_tree = {
 	focus = {
 		id = SOV_cult_of_personality
 		icon = GFX_sov_cult_of_personality
+		search_filters = { FOCUS_FILTER_STABILITY }
 		prerequisite = { focus = SOV_positive_heroism }
 		x = 0
 		y = 1
@@ -1096,6 +1122,7 @@ focus_tree = {
 	focus = {
 		id = SOV_socialist_science
 		icon = GFX_sov_socialist_science
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		prerequisite = {
 			focus = SOV_stakanovite
 			focus = SOV_gosstandart
@@ -1117,6 +1144,7 @@ focus_tree = {
 	focus = {
 		id = SOV_leningrad_institute
 			icon = GFX_sov_leningrad_institute
+			search_filters = {FOCUS_FILTER_RESEARCH}
 			prerequisite = { focus = SOV_socialist_science }
 			continue_if_invalid = yes
 			available_if_capitulated = yes
@@ -1149,6 +1177,7 @@ focus_tree = {
 	focus = {
 		id = SOV_increase_rubber
 		icon = GFX_goal_generic_soviet_construction
+		search_filters = {FOCUS_FILTER_INDUSTRY}
 		prerequisite = {
 			focus = SOV_add_production_quota
 		}
@@ -1175,6 +1204,7 @@ focus_tree = {
 	focus = {
 		id = SOV_great_purge
 		icon = GFX_goal_generic_war_with_comintern
+		search_filters = {FOCUS_FILTER_POLITICAL}
 		available = {
 			has_government = communism
 		}
@@ -1205,6 +1235,7 @@ focus_tree = {
 	focus = {
 		id = SOV_nkvd_power
 		icon = GFX_sov_nkvd_power
+		search_filters = {FOCUS_FILTER_POLITICAL}
 		prerequisite = {
 			focus = SOV_great_purge
 		}
@@ -1231,6 +1262,7 @@ focus_tree = {
 	focus = {
 		id = SOV_stalin_constitution
 		icon = GFX_sov_stalin_constitution
+		search_filters = {FOCUS_FILTER_POLITICAL}
 		prerequisite = { focus = SOV_great_purge }
 		relative_position_id = SOV_great_purge
 		x = 3
@@ -1254,6 +1286,7 @@ focus_tree = {
 	focus = {
 		id = SOV_claims_on_baltic
 		icon = GFX_sov_secure_baltic
+		search_filters = {FOCUS_FILTER_ANNEXATION}
 		prerequisite = { focus = SOV_stalin_constitution }
 		relative_position_id = SOV_stalin_constitution
 		x = 0
@@ -1316,6 +1349,7 @@ focus_tree = {
 	focus = {
 			id = SOV_baltic_security
 			icon = GFX_sov_secure_finland
+			search_filters = {FOCUS_FILTER_ANNEXATION}
 			prerequisite = { focus = SOV_claims_on_baltic }
 			relative_position_id = SOV_claims_on_baltic
 			x = 0
@@ -1351,6 +1385,7 @@ focus_tree = {
 	focus = {
 		id = SOV_claim_bessarabia
 		icon = GFX_sov_secure_bessarabia
+		search_filters = {FOCUS_FILTER_ANNEXATION}
 		prerequisite = { focus = SOV_baltic_security }
 		relative_position_id = SOV_baltic_security
 		x = 0
@@ -1433,6 +1468,7 @@ focus_tree = {
 	focus = {
 		id = SOV_komsomol
 		icon = GFX_sov_komsomol
+		search_filters = {FOCUS_FILTER_MANPOWER}
 		prerequisite = { focus = SOV_stalin_constitution }
 		x = 2
 		y = 1
@@ -1456,6 +1492,7 @@ focus_tree = {
 	focus = {
 		id = SOV_peoples_commissariat
 		icon = GFX_sov_pdci
+		search_filters = {FOCUS_FILTER_INDUSTRY}
 		prerequisite = { focus = SOV_stalin_constitution }
 		x = 4
 		y = 1
@@ -1479,6 +1516,7 @@ focus_tree = {
 	focus = {
 		id = SOV_t34
 		icon = GFX_sov_t34
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		prerequisite = { focus = SOV_peoples_commissariat }
 		available = {
 			has_tech = basic_medium_tank
@@ -1512,6 +1550,7 @@ focus_tree = {
 	focus = {
 		id = SOV_batt_supp
 		icon = GFX_sov_batt_supp
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		prerequisite = { focus = SOV_air_volunteers }
 		mutually_exclusive = { focus = SOV_op_dist }
 		x = -1
@@ -1535,6 +1574,7 @@ focus_tree = {
 	focus = {
 		id = SOV_op_dist
 		icon = GFX_sov_op_dist
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		prerequisite = { focus = SOV_air_volunteers }
 		x = 1
 		y = 1
@@ -1558,6 +1598,7 @@ focus_tree = {
 	focus = {
 		id = SOV_il2
 		icon = GFX_sov_il2
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		prerequisite = { focus = SOV_batt_supp }
 		available = { has_tech = CAS1 }
 		x = 0
@@ -1589,6 +1630,7 @@ focus_tree = {
 	focus = {
 		id = SOV_pe2
 		icon = GFX_sov_pe2
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		prerequisite = { focus = SOV_op_dist }
 
 		x = 0
@@ -1618,6 +1660,7 @@ focus_tree = {
 	focus = {
 		id = SOV_operation_zet
 		icon = GFX_sov_operation_zet
+		search_filters = {FOCUS_FILTER_POLITICAL}
 		prerequisite = {
 			focus = SOV_great_purge
 		}
@@ -1767,6 +1810,7 @@ focus_tree = {
 	focus = {
 		id = SOV_lessons_of_the_winter_war
 		icon = GFX_sov_lessons_of_war
+		search_filters = { FOCUS_FILTER_RESEARCH  }
 		prerequisite = { focus = SOV_far_east_fortification }
 		relative_position_id = SOV_great_purge
 		x = 0
@@ -1817,6 +1861,7 @@ focus_tree = {
 	focus = {
 		id = SOV_nkvd_divisions
 		icon = GFX_sov_nkvd_divisions
+		search_filters = {FOCUS_FILTER_STABILITY}
 		prerequisite = { focus = SOV_nkvd_power }
 		prerequisite = { focus = SOV_lessons_of_the_winter_war }
 		relative_position_id = SOV_nkvd_power
@@ -2100,6 +2145,7 @@ focus_tree = {
 	focus = {
 		id = SOV_stalingrad
 		icon = GFX_sov_stalingrad
+		search_filters = {FOCUS_FILTER_INDUSTRY}
 		prerequisite = { focus = SOV_third_five_year_plan }
 		x = 0
 		y = 1
@@ -2116,6 +2162,7 @@ focus_tree = {
 	focus = {
 		id = SOV_morozov
 		icon = GFX_sov_morozov
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		prerequisite = { focus = SOV_third_five_year_plan_2 }
 		mutually_exclusive = { focus = SOV_okmo }
 		x = -1
@@ -2137,6 +2184,7 @@ focus_tree = {
 	focus = {
 		id = SOV_okmo
 		icon = GFX_sov_okmo
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		prerequisite = { focus = SOV_third_five_year_plan_2 }
 		mutually_exclusive = { focus = SOV_morozov }
 		x = 1
@@ -2154,6 +2202,7 @@ focus_tree = {
 	focus = {
 		id = SOV_tula
 		icon = GFX_sov_tula
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		prerequisite = { focus = SOV_peoples_commissariat }
 		x = 2
 		y = 1
@@ -2174,6 +2223,7 @@ focus_tree = {
 	focus = {
 		id = SOV_great_patriotic
 		icon = GFX_sov_great_patriotic
+		search_filters = {FOCUS_FILTER_MANPOWER}
 		available = {
 			SOV = { has_war_with = GER }
 			SOV = { has_defensive_war = yes }
@@ -2348,6 +2398,7 @@ focus_tree = {
 	focus = {
 		id = SOV_tankograd
 		icon = GFX_sov_tankograd
+		search_filters = {FOCUS_FILTER_INDUSTRY}
 		cost = 7.16
 		prerequisite = {
 			focus = SOV_move_industry_to_urals
@@ -2370,6 +2421,7 @@ focus_tree = {
 	focus = {
 		id = SOV_massive_production
 		icon = GFX_sov_massive_production
+		search_filters = {FOCUS_FILTER_INDUSTRY}
 		cost = 10
 		prerequisite = {
 			focus = SOV_tankograd
@@ -2416,6 +2468,7 @@ focus_tree = {
 	focus = {
 		id = SOV_increase_il2_production
 		icon = GFX_sov_increase_il2_production
+		search_filters = {FOCUS_FILTER_INDUSTRY}
 		prerequisite = {
 			focus = SOV_establish_the_stavka
 			focus = SOV_move_industry_to_urals
@@ -2465,6 +2518,7 @@ focus_tree = {
 	focus = {
 		id = SOV_expand_red_fleet
 		icon = GFX_goal_generic_build_navy
+		search_filters = {FOCUS_FILTER_INDUSTRY}
 		prerequisite = { focus = SOV_peoples_commissariat }
 		available = { has_offensive_war = no }
 		x = 0
@@ -2548,6 +2602,7 @@ focus_tree = {
 	focus = {
 		id = SOV_cruisers_design
 		icon = GFX_sov_cruisers
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		mutually_exclusive = { focus = SOV_submarine_design }
 		prerequisite = { focus = SOV_expand_red_fleet }
 		x = -1
@@ -2573,6 +2628,7 @@ focus_tree = {
 	focus = {
 		id = SOV_submarine_design
 		icon = GFX_sov_submarines
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		mutually_exclusive = { focus = SOV_cruisers_design }
 		prerequisite = { focus = SOV_expand_red_fleet }
 		x = 1
@@ -2601,6 +2657,7 @@ focus_tree = {
 	focus = {
 		id = SOV_military_research
 		icon = GFX_sov_military_research
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		cost = 7.16
 		prerequisite = {
 			focus = SOV_great_patriotic
@@ -2623,6 +2680,7 @@ focus_tree = {
 	focus = {
 		id = SOV_smersh
 		icon = GFX_goal_generic_forceful_treaty
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		prerequisite = { focus = SOV_great_patriotic }
 		x = 1
 		y = 1
@@ -2649,6 +2707,7 @@ focus_tree = {
 	focus = {
 		id = SOV_progress_cult
 		icon = GFX_sov_progress_cult
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		prerequisite = { focus = SOV_leningrad_institute }
 		x = 0
 		y = 1
@@ -2668,6 +2727,7 @@ focus_tree = {
 	focus = {
 		id = SOV_borodino
 		icon = GFX_sov_borodino
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		prerequisite = { focus = SOV_progress_cult }
 		available = {
 
@@ -2806,6 +2866,7 @@ focus_tree = {
 	focus = {
 		id = SOV_soviet_women
 		icon = GFX_sov_soviet_women
+		search_filters = {FOCUS_FILTER_MANPOWER}
 		cost = 7.16
 		prerequisite = {
 			focus = SOV_establish_the_stavka
@@ -2839,6 +2900,7 @@ focus_tree = {
 		id = SOV_women_pilots
 		text = SOV_night_witches  ###################
 		icon = GFX_sov_night_witches
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		prerequisite = { focus = SOV_soviet_women }
 		x = 0
 		y = 1
@@ -2898,6 +2960,7 @@ focus_tree = {
 	focus = {
 		id = SOV_katyusha
 		icon = GFX_sov_katyusha
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		prerequisite = { focus = SOV_military_research }
 		x = -1
 		y = 1
@@ -2952,6 +3015,7 @@ focus_tree = {
 	focus = {
 		id = SOV_rockets
 		icon = GFX_sov_rockets
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		prerequisite = { focus = SOV_military_research }
 		x = 1
 		y = 1
@@ -3373,6 +3437,7 @@ focus_tree = {
 	focus = {
 		id = SOV_claims_on_poland
 		icon = GFX_sov_eastern_poland
+		search_filters = {FOCUS_FILTER_ANNEXATION}
 		prerequisite = { focus = SOV_stalin_constitution }
 		x = 1
 		y = 2
