@@ -84,7 +84,7 @@ armored_GER = {
 
 			support = {
 				engineer = 1
-				recon = 1
+				mot_recon = 1
 				artillery = 1
 			}
 
@@ -98,7 +98,9 @@ armored_GER = {
 			light_armor
 			motorized
 			engineer
-			recon
+			mot_recon
+			armored_car_recon
+			light_tank_recon
 			artillery
 		}
 
@@ -165,7 +167,7 @@ armored_GER = {
 
 			support = {
 				engineer = 1
-				recon = 1
+				mot_recon = 1
 				logistics_company = 1
 				maintenance_company = 1
 				artillery = 1
@@ -192,7 +194,9 @@ armored_GER = {
 			motorized_rocket_brigade
 
 			engineer
-			recon
+			mot_recon
+			armored_car_recon
+			light_tank_recon
 			signal_company
 			maintenance_company
 			logistics_company
@@ -274,7 +278,7 @@ armored_GER = {
 
 			support = {
 				engineer = 1
-				recon = 1
+				mot_recon = 1
 				anti_tank = 1
 				artillery = 1
 			}
@@ -298,7 +302,9 @@ armored_GER = {
 			motorized_rocket_brigade
 
 			engineer
-			recon
+			mot_recon
+			armored_car_recon
+			light_tank_recon
 			signal_company
 			maintenance_company
 			logistics_company
@@ -383,7 +389,7 @@ armored_GER = {
 
 			support = {
 				engineer = 1
-				recon = 1
+				mot_recon = 1
 				artillery = 1
 				maintenance_company = 1
 				logistics_company = 1
@@ -406,7 +412,9 @@ armored_GER = {
 			medium_sp_anti_air_brigade
 			#motorized_rocket_brigade
 			engineer
-			recon
+			mot_recon
+			armored_car_recon
+			light_tank_recon
 			signal_company
 			maintenance_company
 			logistics_company
@@ -478,7 +486,7 @@ armored_GER = {
 
 			support = {
 				engineer = 1
-				recon = 1
+				mot_recon = 1
 				maintenance_company = 1
 				logistics_company = 1
 				artillery = 1
@@ -500,7 +508,9 @@ armored_GER = {
 			motorized_rocket_brigade
 			medium_sp_artillery_brigade
 			engineer
-			recon
+			mot_recon
+			armored_car_recon
+			light_tank_recon
 			signal_company
 			maintenance_company
 			logistics_company
@@ -921,7 +931,7 @@ marines_GER = {
 				artillery = 1
 				anti_tank = 1
 				logistics_company = 1
-				recon = 1
+				mot_recon = 1
 			}
 
 			regiments = {
@@ -1035,7 +1045,9 @@ paratroopers_GER = {
 		allowed_types = {
 			paratrooper
 			engineer
-			recon
+			mot_recon
+			armored_car_recon
+			light_tank_recon
 			signal_company
 			field_hospital
 			logistics_company

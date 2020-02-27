@@ -82,7 +82,7 @@ armored_SOV = {
 
 			support = {
 				engineer = 1
-				recon = 1
+				mot_recon = 1
 			}
 
 			regiments = {
@@ -95,7 +95,9 @@ armored_SOV = {
 			light_armor
 			motorized
 			engineer
-			recon
+			mot_recon
+			armored_car_recon
+			light_tank_recon
 		}
 
 		replace_at_match = 0.3
@@ -161,7 +163,7 @@ armored_SOV = {
 
 			support = {
 				engineer = 1
-				recon = 1
+				mot_recon = 1
 				logistics_company = 1
 				maintenance_company = 1
 				artillery = 1
@@ -186,7 +188,9 @@ armored_SOV = {
 			motorized_rocket_brigade
 
 			engineer
-			recon
+			mot_recon
+			armored_car_recon
+			light_tank_recon
 			signal_company
 			maintenance_company
 			logistics_company
@@ -268,7 +272,7 @@ armored_SOV = {
 
 			support = {
 				engineer = 1
-				recon = 1
+				mot_recon = 1
 				anti_tank = 1
 				artillery = 1
 			}
@@ -292,7 +296,9 @@ armored_SOV = {
 			motorized_rocket_brigade
 
 			engineer
-			recon
+			mot_recon
+			armored_car_recon
+			light_tank_recon
 			signal_company
 			maintenance_company
 			logistics_company
@@ -377,7 +383,7 @@ armored_SOV = {
 
 			support = {
 				engineer = 1
-				recon = 1
+				armored_car_recon = 1
 				maintenance_company = 1
 				logistics_company = 1
 				anti_air = 1
@@ -400,7 +406,9 @@ armored_SOV = {
 			medium_sp_anti_air_brigade
 			motorized_rocket_brigade
 			engineer
-			recon
+			mot_recon
+			armored_car_recon
+			light_tank_recon
 			signal_company
 			maintenance_company
 			logistics_company
@@ -472,7 +480,7 @@ armored_SOV = {
 
 			support = {
 				engineer = 1
-				recon = 1
+				mot_recon = 1
 				maintenance_company = 1
 				logistics_company = 1
 				artillery = 1
@@ -494,7 +502,9 @@ armored_SOV = {
 			motorized_rocket_brigade
 			medium_sp_artillery_brigade
 			engineer
-			recon
+			mot_recon
+			armored_car_recon
+			light_tank_recon
 			signal_company
 			maintenance_company
 			logistics_company
@@ -555,7 +565,9 @@ motorized_SOV = {
 			motorized
 			mechanized
 			engineer
-			recon
+			mot_recon
+			armored_car_recon
+			light_tank_recon
 			maintenance_company
 			logistics_company
 		}
@@ -587,7 +599,7 @@ motorized_SOV = {
 
 			support = {
 				engineer = 1
-				recon = 1
+				mot_recon = 1
 				logistics_company = 1
 			}
 			regiments = {
@@ -604,7 +616,9 @@ motorized_SOV = {
 			mot_artillery_brigade
 
 			engineer
-			recon
+			mot_recon
+			armored_car_recon
+			light_tank_recon
 			logistics_company
 			artillery
 			rocket_artillery
@@ -674,7 +688,7 @@ motorized_SOV = {
 
 			support = {
 				engineer = 1
-				recon = 1
+				mot_recon = 1
 				logistics_company = 1
 			}
 			regiments = {
@@ -691,7 +705,9 @@ motorized_SOV = {
 			mot_artillery_brigade
 
 			engineer
-			recon
+			mot_recon
+			armored_car_recon
+			light_tank_recon
 			logistics_company
 			artillery
 			rocket_artillery
@@ -721,7 +737,7 @@ motorized_SOV = {
 
 			support = {
 				engineer = 1
-				recon = 1
+				mot_recon = 1
 				logistics_company = 1
 			}
 			regiments = {
@@ -736,7 +752,9 @@ motorized_SOV = {
 			medium_sp_artillery_brigade
 			motorized_rocket_brigade
 			engineer
-			recon
+			mot_recon
+			armored_car_recon
+			light_tank_recon
 			maintenance_company
 			logistics_company
 			rocket_artillery

@@ -11,7 +11,7 @@ SOV_unit_production = {
 	# ARMY role_ratio
 	###
 	ai_strategy = { type = role_ratio		id = garrison			value = 0		}
-	ai_strategy = {	type = role_ratio		id = suppression	value = 0		}
+	### ai_strategy = {	type = role_ratio		id = suppression	value = 0		}
 	ai_strategy = {	type = role_ratio		id = paratroopers	value = 0		}
 	ai_strategy = {	type = role_ratio		id = marines			value = 0		}
 	ai_strategy = {	type = role_ratio		id = cavalry			value = 0		}
@@ -364,5 +364,25 @@ SOV_pp_spending = {
 		type = pp_spend_priority
 		id = admiral
 		value = -100
+	}
+}
+
+
+SOV_the_nkvd_is_all_the_intel_we_need = {
+	enable = {
+		tag = SOV
+		has_government = communism
+		has_dlc = "La Resistance"
+		num_of_civilian_factories < 90
+		num_of_civilian_factories > 35
+	}
+	abort = {
+		OR = {
+			num_of_civilian_factories > 90
+		}
+	}
+	ai_strategy = {
+		type = intelligence_agency_usable_factories
+		value = -20
 	}
 }
