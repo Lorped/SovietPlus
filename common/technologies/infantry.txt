@@ -188,7 +188,7 @@ technologies = {
 				num_of_military_factories < 50
 				factor = 0.5
 			}
-			## modifier = {      ## Modified in the SOV AI 
+			##modifier = {
 			##	factor = 0
 			##	tag = SOV
 			##	OR = {
@@ -198,7 +198,7 @@ technologies = {
 			##			surrender_progress < 0.1 # if we arent losing badly its ok
 			##		}
 			##	}
-			## }
+			##}
 		}
 	}
 	improved_infantry_weapons_2 = {

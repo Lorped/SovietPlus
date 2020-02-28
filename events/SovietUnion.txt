@@ -1,6 +1,25 @@
 ﻿###########################
 # Soviet Events
 ###########################
+##
+#   VANILLA but:
+#   REMOVE
+#   id = soviet.17 - # Improving the Stalin Line
+#		id = soviet.24 # Great Purge - Begins
+#		id = soviet.25 # Great Purge - Trial of the Anti-Soviet
+#		id = soviet.26 # Great Purge - Secret Trial
+#		id = soviet.27 # Great Purge - Trial of the 21
+#		id = soviet.28 # Trotsykist Coup
+
+#		# Purge - New officers less dumb.
+#							And all the other events
+#
+#   CHANGE
+#		id = soviet.31    no trigger, no b chance
+#		id = soviet.32    no trigger, no b chance
+#		id = soviet.33    no trigger, no b chance
+#		id = soviet.34    no trigger, no b chance
+
 
 add_namespace = soviet
 

@@ -1,3 +1,7 @@
+#########
+## VANILLA  - LOWER A LITTLE GARRISON  - MORE Tanks
+###########
+
 # befriend
 # conquer
 # antagonize
@@ -25,15 +29,15 @@ GER_unit_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = garrison
-		value = 2                   ####### WAS 4
+		value = 2  ############################ WAS 4
 	}
 
-	##No suppression after 1.9
-	#ai_strategy = {
-	#	type = role_ratio
-	#	id = suppression
-	#	value = 3                   ####### WAS 6
-	#}
+	# Old garrison system against resistance
+	# ai_strategy = {
+	# 	type = role_ratio
+	# 	id = suppression
+	# 	value = 6
+	# }
 
 	ai_strategy = {
 		type = role_ratio
@@ -74,7 +78,7 @@ GER_unit_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = armor
-		value = -5 #because doctrine this = 3   ##### WAS -17
+		value = -1  #################################   WAS  -17 #because doctrine this = 3
 	}
 
 	ai_strategy = {
@@ -99,7 +103,7 @@ GER_unit_production = {
 	ai_strategy = {
 		type = unit_ratio
 		id = tactical_bomber
-		value = 5         ## WAS -40
+		value = -40
 	}
 
 	ai_strategy = {
@@ -125,7 +129,7 @@ GER_unit_production = {
 	ai_strategy = {
 		type = unit_ratio
 		id = submarine
-		value = 20 #because doctrine this = 50  ##WAS -50
+		value = -50 #because doctrine this = 50
 	}
 
 	ai_strategy = {
@@ -143,7 +147,7 @@ GER_unit_production = {
 	ai_strategy = {
 		type = equipment_production_factor
 		id = fighter
-		value = 170
+		value = 180
 	}
 
 	ai_strategy = {
@@ -191,13 +195,13 @@ GER_unit_production = {
 	ai_strategy = {
 		type = equipment_production_factor
 		id = artillery
-		value = 70 #20 to 40
+		value = 85 #20 to 40
 	}
 
 	ai_strategy = {
 		type = equipment_production_factor
 		id = armor
-		value = 0  ## WAS -10
+		value = -10
 	}
 	ai_strategy = {
 		type = equipment_production_factor
@@ -288,6 +292,23 @@ GER_halt_light_armor_production_in_transitioning = {
 	}
 }
 
+GER_stockpile_less_early_game = {
+	allowed = {
+		tag = GER
+	}
+
+	enable = {
+		tag = GER
+		date < 1940.1.1
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = equipment_stockpile_surplus_ratio
+		value = -20 # reduce while we build up in case of CZE or Austria issues
+	}
+}
+
 
 GER_highered_armored_production = {
 	enable = {
@@ -301,7 +322,7 @@ GER_highered_armored_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = armor
-		value = 25        ###  WAS 20
+		value = 20
 	}
 }
 
@@ -717,8 +738,6 @@ spain_ally_resistance = {
 		value = 100
 	}
 }
-
-
 
 denmark_ally = {
 	enable = {
@@ -1452,7 +1471,7 @@ GER_industry_we_are_the_baddies = {
 	enable = {
 		tag = GER
 		date < 1940.1.1
-		date > 1937.1.1
+		date > 1937.8.1
 	}
 	abort={
 		date > 1940.1.1
@@ -1569,7 +1588,6 @@ GER_share_borders_with_ITA_against_SOV = {
 		}
 	}
 
-	abort_when_not_enabled = yes
 	ai_strategy = {
 		type = dont_defend_ally_borders
 		id = "CRO"
@@ -1599,6 +1617,7 @@ GER_share_borders_with_ITA_against_SOV = {
 
 GER_we_dont_fight_pathetic_sweden = { # :O
 	enable = {
+		is_historical_focus_on = no
 		tag = GER
 		has_government = fascism
 		SWE = {
