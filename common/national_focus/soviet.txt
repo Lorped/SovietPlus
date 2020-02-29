@@ -2693,13 +2693,24 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			#custom_effect_tooltip = SOV_smersh_tt
-			add_tech_bonus = {
-				name = codebreaking_bonus
-				bonus = 0.5
-				uses = 2
-				category = encryption_tech
-				category = decryption_tech
+			if = {
+				limit = {
+					NOT = { has_dlc = "La Resistance" }
+				}
+				#custom_effect_tooltip = SOV_smersh_tt
+				add_tech_bonus = {
+					name = codebreaking_bonus
+					bonus = 0.5
+					uses = 2
+					category = encryption_tech
+					category = decryption_tech
+				}
+			}
+			else = {
+				hidden_effect = {
+					set_technology = { lar_decryption_bonus_tech = 1 }
+				}
+				custom_effect_tooltip = lar_decryption_bonus_tt
 			}
 		}
 	}
