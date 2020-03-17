@@ -482,7 +482,14 @@ war_with_poland = {
 		id = "POL"
 		value = 200
 	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = "POL"
+		value = 200
+		}
 }
+
+
 
 danzig_of_war_preparation = {
 	enable = {
@@ -1314,23 +1321,40 @@ make_sure_poland_is_ganked_before_we_move = {
 	}
 }
 
-GER_after_poland_falls_we_want_more_suppression_units_for_france = {
+war_with_france = {
 	enable = {
 		tag = GER
-		POL = { has_capitulated = yes }
-		has_war = yes
+		FRA = { has_capitulated = no }
+		OR  = {
+		has_completed_focus = GER_war_with_france
+		has_war_with = FRA }
 	}
 	abort = {
-		has_war = no
+		FRA = { has_capitulated = yes }
 	}
 
-	# Old garrison system against resistance
-	# ai_strategy = {
-	# 	type = role_ratio
-	# 	id = suppression
-	# 	value = 10
-	# }
+	ai_strategy = { type = antagonize id = "FRA" value = 150 }
+	ai_strategy = { type = conquer id = "FRA" value = 150 }
 }
+
+############ COMPLETELY REMOVE THIS
+##GER_after_poland_falls_we_want_more_suppression_units_for_france = {
+##	enable = {
+##		tag = GER
+##		POL = { has_capitulated = yes }
+##		has_war = yes
+##	}
+##	abort = {
+##		has_war = no
+##	}
+##
+##	# Old garrison system against resistance
+##	# ai_strategy = {
+##	# 	type = role_ratio
+##	# 	id = suppression
+##	# 	value = 10
+##	# }
+##}
 
 GER_want_to_invade_FRA_without_ITA = {
 	enable = {
@@ -1435,6 +1459,129 @@ dont_take_claims_on_POL_we_got_focus = {
 		value = 1
 	}
 }
+
+play_nice_with_benelux = {
+	enable = {
+		tag = GER
+		date < 1940.3.1
+	}
+	abort = {
+	    date > 1940.3.1
+	}
+
+	# leave britney alone!
+	ai_strategy = {
+		type = antagonize
+		id = "BEL"
+		value = -100
+	}
+	ai_strategy = {
+		type = ignore
+		id = "BEL"
+		value = 200
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "HOL"
+		value = -100
+	}
+	ai_strategy = {
+		type = ignore
+		id = "HOL"
+		value = 200
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "LUX"
+		value = -100
+	}
+	ai_strategy = {
+		type = ignore
+		id = "LUX"
+		value = 200
+	}
+}
+play_nice_with_benelux_2 = {
+	enable = {
+		tag = GER
+	}
+	abort = {
+	    tag = GER
+		HOL = {	has_capitulated = yes }
+		BEL = {	has_capitulated = yes }
+	}
+
+	ai_strategy = {
+		type = conquer
+		id = "FRA"
+		value = -5000
+	}
+}
+kill_benelux = {
+	enable = {
+		tag = GER
+		date > 1940.5.5
+		HOL = {	has_capitulated = no }
+		BEL = {	has_capitulated = no }
+	}
+	abort = {
+	    tag = GER
+		HOL = {	has_capitulated = yes }
+		BEL = {	has_capitulated = yes }
+	}
+
+	# kill britney
+	ai_strategy = {
+		type = antagonize
+		id = "BEL"
+		value = 100
+	}
+
+	ai_strategy = {
+		type = antagonize
+		id = "HOL"
+		value = 100
+	}
+
+	ai_strategy = {
+		type = antagonize
+		id = "LUX"
+		value = 100
+	}
+	ai_strategy = {
+		type = conquer
+		id = "BEL"
+		value = 100
+	}
+
+	ai_strategy = {
+		type = conquer
+		id = "HOL"
+		value = 100
+	}
+
+	ai_strategy = {
+		type = conquer
+		id = "LUX"
+		value = 100
+	}
+    ai_strategy = {
+		type = prepare_for_war
+		id = "HOL"
+		value = 100
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = "BEL"
+		value = 100
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = "LUX"
+		value = 100
+	}
+}
+
 
 axis_dont_mess_with_volunteers = {
 	enable = {
