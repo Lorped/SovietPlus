@@ -708,6 +708,11 @@ country_event = {
 
 	is_triggered_only = yes
 
+	trigger = {
+		tag = SOV
+		NOT = { has_country_flag = karjala_demand }
+	}
+
 	#trigger = {
 	#	tag = SOV
 	#	FROM = { tag = FIN }
