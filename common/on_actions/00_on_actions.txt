@@ -1,3 +1,5 @@
+### VANILLA BUT THE SOVIET EVENTS (REMOVED)
+
 on_actions = {
 	# country
 	on_new_term_election = {
@@ -108,11 +110,11 @@ on_actions = {
 			100 = war_justification.19
 			17000 = 0
 			#Soviet demands
-			1000 = soviet.30
-			1000 = soviet.31
-			1000 = soviet.32
-			1000 = soviet.33
-			1000 = soviet.34
+			##  1000 = soviet.30
+			## 1000 = soviet.31
+			## 1000 = soviet.32
+			## 1000 = soviet.33
+			## 1000 = soviet.34
 		}
 	}
 
@@ -1030,7 +1032,18 @@ on_actions = {
 	#ROOT is winner #FROM gets annexed - For civil wars on_civil_war_end is also fired
 	on_annex = {
 		effect = {
-
+			every_country = {
+				limit = {
+					OR = {
+						original_tag = RAJ
+						original_tag = CAN
+						original_tag = MAL
+						original_tag = INS
+					}
+					is_puppet = no
+				}
+				abandon_colony_tag = yes
+			}
 		}
 	}
 
@@ -1748,20 +1761,15 @@ on_actions = {
 		}
 	}
 	on_ruling_party_change = {
+		# temp var old_ideology_token is available for effects
 		effect = {
-			every_owned_state = {
+			every_controlled_state = {
 				limit = {
-					is_controlled_by = ROOT
-					NOT = {
-						is_core_of = ROOT
-					}
+					has_resistance = yes
 				}
-
-				set_temp_variable = { comp_change = random }
-				multiply_temp_variable = { comp_change = -15 }
-				add_to_temp_variable = { comp_change = -10 }
-
-				add_compliance = comp_change
+				set_temp_variable = { new_compliance = compliance }
+				multiply_temp_variable = { new_compliance = 0.5 }
+				set_compliance = new_compliance
 			}
 		}
 	}

@@ -531,6 +531,8 @@
 
   rocket_art_bonus:0 "Rocket Artillery bonus"
 
+  sov_pyotr_fedotov:0 "Pyotr Fedotov"
+
 
  ## SOV_transpolar_flights:0 "sov trans fli"
  ## SOV_transpolar_flights_desc:0 "trans fli desc"

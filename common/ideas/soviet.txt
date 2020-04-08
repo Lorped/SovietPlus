@@ -1167,6 +1167,26 @@ ideas = {
 			}
 		}
 
+		sov_pyotr_fedotov = {
+
+			available = {
+				has_intelligence_agency = yes
+			}
+
+			allowed = {
+				original_tag = SOV
+				has_dlc = "La Resistance"
+			}
+
+
+			picture = generic_political_advisor_europe_2
+
+			traits = { head_of_intelligence }
+
+		}
+
+
+
 
 #####
 ##

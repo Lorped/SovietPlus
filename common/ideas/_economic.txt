@@ -4,6 +4,8 @@ ideas = {
 
 	economy = {
 		law = yes
+		use_list_view = yes
+
 		undisturbed_isolation = {
 
 
@@ -282,6 +284,14 @@ ideas = {
 					factor = 20
 					manpower_per_military_factory >  1000
 				}
+
+				modifier = {
+					add = 1800
+
+					# revert from closed_economy if we have large allies
+					has_idea = closed_economy
+					has_large_ally_not_pick_closed_economy = yes
+				}
    			}
 		}
 
@@ -392,6 +402,7 @@ ideas = {
 
 	trade_laws = {
 		law = yes
+		use_list_view = yes
 
 		free_trade = {
 
@@ -510,8 +521,6 @@ ideas = {
 		}
 
 		limited_exports = {
-
-
 			available = {
 				OR = {
 					AND = {
@@ -570,7 +579,7 @@ ideas = {
    				factor = 1
 
    				modifier = {
-					factor = 0
+					add = -1
 
 					is_major = no
 					is_in_faction = yes
@@ -579,13 +588,22 @@ ideas = {
 
 				# minors not at war should want to get the bonuses from free trade
 				modifier = {
-					factor = 0
+					add = -1
 
 					is_major = no
 					has_war = no
 				}
+
+				modifier = {
+					add = 1500
+
+					# revert from closed_economy if we have large allies
+					has_idea = closed_economy
+					has_large_ally_not_pick_closed_economy = yes
+				}
    			}
 		}
+
 
 		closed_economy = {
 
